@@ -11,16 +11,31 @@ and open the template in the editor.
         <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url(); ?>CSS/ui-lightness/jquery-ui-1.8.13.custom.css" rel="Stylesheet"/>
 
+        <script>
+            function textCounter( field, countfield, maxlimit ) {
+                if ( field.value.length > maxlimit )
+                {
+                    field.value = field.value.substring( 0, maxlimit );
+                    alert( 'Your motto can only be 65 characters in length.' );
+                    return false;
+                }
+                else
+                {
+                    countfield.value = maxlimit - field.value.length;
+                }
+            }
+
+        </script>
     </head>
     <body>
-            <div id="header">
-                <div id="menu">
-                    <ul>
-                        <li class="current_page_item"><a href="<?php echo base_url(); ?>index.php/home/">Home</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/cms/index/">Website Statistics By Nationality</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/cms/add_article/">Add Articles</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/cms/update_article/">Maintain Articles</a></li>
-                    </ul>
-                </div>
+        <div id="header">
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item"><a href="<?php echo base_url(); ?>index.php/home/">Home</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/cms/index/">Website Statistics By Nationality</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/cms/add_article/">Add Articles</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/cms/update_article/">Maintain Articles</a></li>
+                </ul>
             </div>
-            <!--end #header -->
+        </div>
+        <!--end #header -->

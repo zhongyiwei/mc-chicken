@@ -58,7 +58,7 @@ class Login extends CI_Controller {
         $this->form_validation->set_rules('gender', 'Gender', 'trim|required');
         $this->form_validation->set_rules('date_of_birth', 'Date Of Birth', 'trim|required|');
         $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required|alpha');
-        $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric');
+        $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric|max_length[8]');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]|max_length[32]');
         $this->form_validation->set_rules('password2', 'Confirm Password', 'trim|required|matches[password]');
@@ -76,6 +76,59 @@ class Login extends CI_Controller {
         }
     }
 
-}
 
+
+
+    function forgot_password()
+    {
+
+        $this->load->library('form_validation');
+
+        // field name, error message, validation rules
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+
+        if ($this->form_validation->run() == FALSE)
+        {
+            $this->load->view('register/forgot_password');
+        }
+        else
+        {
+            $this->load->model('membership_model');
+            $result = $this->membership_model->reset_password();
+            $sql = $result['sql'];
+            if ($sql->num_rows != 0)
+            {
+                date_default_timezone_set('Asia/Singapore');
+                $to = $this->input->post('email');
+                $from = 'admin@oxygen.com';
+                $subject = 'Oxygen - Password Reset';
+                $headers = "From: $from";
+
+                
+
+                $data['msg'] = "<h3>Your password has been reset. The new password has been sent to your account.</h3>";
+                $msg = "Hi, " . $result['name'] . " \n\n";
+                $msg .= "Here is your new account details:\n\n";
+                $msg .= "Email address: " . $to . "\n";
+                $msg .= "New password: " . $result['password'] . "\n\n";
+                $msg .= "You may go to " . base_url() . "index.php/home/index to login.";
+                $msg .= "\n\n";
+                $msg .= "The Oxygen Team";
+
+                if ($result['result'])
+                {
+                    mail($to, $subject, $msg, $headers);
+
+                    $this->load->view('includes/template_password_reset',$data);
+                }
+            }
+            else {
+                $data['msg'] = "<h3>The email address that you have entered has not been registered in our system! Please re-enter your registered emaill address.</h3>";
+                $this->load->view('register/forgot_password',$data);
+            }
+        }
+    
+
+    }
+}
 ?>

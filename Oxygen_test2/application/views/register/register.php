@@ -4,7 +4,7 @@
 <?php $this->load->view('includes/banner_general'); ?>
 <h1>Create An Account</h1>
 
-<table cellpadding="5" cellspace="5">
+<table cellpadding="5" cellspace="5" style="text-align: left;">
     <?php echo form_open('login/create_member'); ?>
 
     <tr>
@@ -53,7 +53,7 @@
     <tr>
         <th>Mobile Number:</th>
         <td><?php echo form_input('mobile_number', ''); ?></td>
-        <td><?php echo form_error('monile_number'); ?></td>
+        <td><?php echo form_error('mobile_number'); ?></td>
     </tr>
 
     <tr>

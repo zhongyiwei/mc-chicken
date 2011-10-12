@@ -84,12 +84,17 @@ class Home extends CI_Controller {
 	
 	//Arian ---- activity Tracking
     function activity_tracking(){
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
         parse_str($_SERVER['QUERY_STRING'],$_GET);
         $this->load->model('activity_tracking_model');
         $this->activity_tracking_model->update_activity_status();
         $data['main_activity']='set_activity/activity_tracking';
         $data['nav_goal']='includes/left_nav_goal';
         $this->load->view('set_activity/template_sc',$data);
+        }else{
+            $this->load->view('portfolio/page_visitor');
+        }
     }
 	//End of tracking --- Arian
 	
@@ -211,7 +216,7 @@ function see_goal() {
         $this->load->view('set_activity/template_sc',$data);
         }
         else{
-            echo "here";
+            //echo "here";
             $data['main_activity']='set_activity/main_do_sr';
             $data['nav_goal']='includes/left_nav_goal';
             $this->load->view('set_activity/template_sc',$data);
@@ -250,6 +255,9 @@ function see_goal() {
 
 
     function update_activity(){
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true'))
+        {
         parse_str($_SERVER['QUERY_STRING'],$_GET); //converts query string into global GET 
         $this->load->model('link_db_model');
         $data['rows'] = $this->link_db_model->get_activity();
@@ -257,17 +265,34 @@ function see_goal() {
         $data['main_activity']='set_activity/main_ua';
         $data['nav_goal']='includes/left_nav_goal';
         $this->load->view('set_activity/template_sc',$data);
+        }
+         else{
+            $this->load->view('portfolio/page_visitor');
+        }
     }
     function activity_list(){
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true'))
+        {
         $data['main_activity']='set_activity/main_al';
         $data['nav_goal']='includes/left_nav_goal';
         $this->load->view('set_activity/template_sc',$data);
+        }
+         else{
+            $this->load->view('portfolio/page_visitor');
+        }
     }
 
      function coat_of_arm(){
+                 $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true'))
+        {
         $data['main']='mission_statement/main_coa';
         $data['nav_value']='mission_statement/left_nav_value';
         $this->load->view('mission_statement/template_ms',$data);
+        }else{
+            $this->load->view('portfolio/page_visitor');
+        }
      }
 
     function why_coat_of_arm(){
@@ -277,12 +302,28 @@ function see_goal() {
     }
 
     function update_coa(){
-            $this->load->model('link_db_model');
-            $data['rows'] = $this->link_db_model->get_mission();
+         $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true'))
+        {
+        $this->load->model('link_db_model');
+        $data['rows'] = $this->link_db_model->get_mission();
+        $query = $this->link_db_model->get_coa2();
+        if ($query->num_rows() > 0) {
+            $row=$query->result();
+            $data['shield']=$row[0]->shield;
+            $data['banner']=$row[0]->banner;
+            $data['crest']=$row[0]->crest;
+        }
+        else{
+
+        }
 
             $data['main_portfolio']='portfolio/main_ucoa';
             $data['nav_portfolio']='portfolio/left_nav_mp';
             $this->load->view('portfolio/template_mp',$data);
+             }else{
+            $this->load->view('portfolio/page_visitor');
+        }
     }
 
     function view_coa_ms(){
@@ -327,6 +368,9 @@ function see_goal() {
     }
 
     function update_ms(){
+                $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true'))
+        {
         $this->load->model('link_db_model');
         $query = $this->link_db_model->get_mission();
         if ($query->num_rows() > 0) {
@@ -337,6 +381,9 @@ function see_goal() {
         $data['main']='mission_statement/main_ums';
         $data['nav_value']='mission_statement/left_nav_value';
         $this->load->view('mission_statement/template_ms',$data);
+        }else{
+            $this->load->view('portfolio/page_visitor');
+        }
     }
 
    
@@ -507,12 +554,18 @@ function see_goal() {
     }
 
     function portfolio_tracking(){
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true'))
+        {
         parse_str($_SERVER['QUERY_STRING'],$_GET);
         $this->load->model('activity_tracking_model');
         $this->activity_tracking_model->update_activity_status();
         $data['main_portfolio']='set_activity/activity_tracking';
         $data['nav_portfolio']='portfolio/left_nav_mp';
         $this->load->view('portfolio/template_mp',$data);
+        }else{
+            $this->load->view('portfolio/page_visitor');
+        }
     }
 
     function portfolio_value(){

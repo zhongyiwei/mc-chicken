@@ -1,7 +1,7 @@
 <div >
     <h1>Maintain article</h1>
     <div>
-        <table border="2" align="center">
+        <table border="2" align="center" style="text-align: left;">
             <th>Title</th>
             <th>Content</th>
             <th>Update</th>

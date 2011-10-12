@@ -3,8 +3,8 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Simple Test</title>
-        <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../excanvas.js"></script><![endif]-->
+        <title>Oxygen</title>
+        <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="<?php echo base_url()?>graph/excanvas.js"></script><![endif]-->
 
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>graph/jquery.jqplot.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>graph/examples.css" />

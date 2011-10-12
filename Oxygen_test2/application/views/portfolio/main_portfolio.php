@@ -25,10 +25,10 @@
                       <th width="120px">Value 3</th>
                       <th width="120px">Value 4</th>
                        <tbody><tr>                           
-                <td width="120px"><?php echo $value1;?></td>
-                <td width="120px"><?php echo $value2;?></td>
-                <td width="120px"><?php echo $value3;?></td>
-                <td width="120px"><?php echo $value4;?></td>
+                <td width="120px" align="center"><?php echo $value1;?></td>
+                <td width="120px" align="center"><?php echo $value2;?></td>
+                <td width="120px" align="center"><?php echo $value3;?></td>
+                <td width="120px" align="center"><?php echo $value4;?></td>
                        </tr></tbody>
                    </table>
                 <br><br><br><br>
@@ -36,17 +36,17 @@
 
             <h2 class="title" id="ACHIEVEMENT">My Achievement</h2>
             <div class="entry">
-
-                <table border="1">
-                      <th>Description</th>
-                      <th width="500px">What I have achieved</th>
-                       <tbody>
              <?php
             //echo "here".$rows;
             if($rows==null){
-            echo "No goal has been accomplished at this moment";
+            echo "<p>No goal has been accomplished at this moment</p>";
             }
-            else{
+            else{?>
+                        <table border="1">
+                      <th>Description</th>
+                      <th width="500px">What I have achieved</th>
+                       <tbody>
+                <?php
                 foreach($rows as $r) :?>                   
                 <tr><td><b>Goal Type:</b></td><td><b><p style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->goal_category;?></p></b></td></tr>
               <tr><td><b>Goal Description:</b></td><td><p style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r->goal_desc;?></p></td></tr>

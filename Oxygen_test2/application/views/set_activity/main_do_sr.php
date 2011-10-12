@@ -25,7 +25,7 @@
                 </p></li>
                <?php } ?>
                 </ul>
-            <h3>My reminder frequency </h3>
+            <h3>My reminder frequency is</h3>
             <ul>
             <li><p style="font-size:150%">
                     <?php echo $frequency; ?>

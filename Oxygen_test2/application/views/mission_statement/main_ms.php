@@ -1,7 +1,7 @@
 <div id="page">
     <div id="content_sub">
         <div class="post">
-            <h2 class="title">The 1st Step: Set the Mission Statement of your life</h2>
+            <h2 class="title">Set the Mission Statement of your life</h2>
             <div class="entry">
 
         <h3>Write down your Mission Statement here: </h3>
@@ -17,7 +17,9 @@
      ?>
 <br>
         <?php  //$attributes = array('id'=>'form_submit','class'=>'form_submit');
-        echo form_submit('submit','Submit','id="form_submit"'); ?>
+        echo "<div style='padding-left:460px;'>";
+        echo form_submit('submit','Submit','id="form_submit"');
+        echo "</div>"?>
         <?php echo form_close(); ?>
 
               

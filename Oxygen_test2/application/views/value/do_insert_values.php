@@ -35,7 +35,7 @@ $errFound=false;
                                     }
                         }
                                     }
-                                      $query=$this->db->query("INSERT INTO `ci`.`value` (`value_name`, `value_symbol`) VALUES ( '$insertValue', '$newpath');");
+                                      $query=$this->db->query("INSERT INTO `value` (`value_name`, `value_symbol`) VALUES ( '$insertValue', '$newpath');");
                         }
             if($errFound==false){
              ?>

@@ -3,17 +3,17 @@
         <li class="menu">
 
             <ul>
-                <li class="button"><a href="#" class="green">Do you know... <span></span></a></li>
+                <li class="button"><a href="#" class="green">Do You Know... <span></span></a></li>
 
                 <li class="dropdown">
                     <ul>
                         <!--<li><a href="<?php //echo base_url();?>index.php/home/why_ms/#MSV">Mission Statement</a></li>-->
 
-                        <li><a href="<?php echo base_url();?>index.php/home/why_ms/#WMS">Why Mission Statement</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/why_ms/#WMS">Why Mission Statement?</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/why_ms/#PMS">Your Mission Statement</a></li>                       
-                        <li><a href="<?php echo base_url();?>index.php/home/why_ms/#HMS">How to set MS</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/value">What is Values?</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/whyValue">Why values</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/why_ms/#HMS">How To Set Mission?</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/value">What are Values?</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/whyValue">Why Values?</a></li>
                     </ul>
                 </li>
 

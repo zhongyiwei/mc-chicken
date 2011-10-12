@@ -22,7 +22,10 @@
               echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));
         ?>
 <br>
-        <?php echo form_submit('submit','Update','id="form_submit"'); ?>
+        <?php
+        echo "<div style='padding-left:460px;'>";
+        echo form_submit('submit','Update','id="form_submit"');
+        echo "</div>"?>
         <?php echo form_close(); ?>
 
 

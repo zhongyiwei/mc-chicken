@@ -9,7 +9,13 @@ class Register extends CI_Controller{
     function create_member(){
         $this->load->model('membership_model');
         if($query= $this->membership_model->create_member()){
-            $this->load->view('includes/template');
+            if($query!=null){
+                $this->load->view('includes/template');
+            }else{
+                $this->load->view('register/error_email');
+                $this->output->set_header('refresh:3; url='.base_url().'index.php/login/register/');
+            }
+            
         }else{
             $this->load->view('register/register');
         }

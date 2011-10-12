@@ -8,7 +8,7 @@
          <div class="post">
                      <h2 class="title" id="COA">Your Coat of Arms</h2>
             <div class="entry">
-
+<?php //echo $shield?>
 
 <h2>Select the shield here:</h2>
 
@@ -78,9 +78,7 @@
 
             <h2 class="title" id="COA">Your Coat of Arms</h2>
             <div class="entry">
-                <h2>The Coat of Arms: </h2>
-                <p>A coat of arms is a distinctive heraldic design on a tunic used to cover and protect armor, but the term is more broadly applied to mean a full heraldic achievement which consists of a shield and certain accessories. In either sense, the design is a symbol unique to a person, family, corporation, or state. Such displays are also commonly called armorial bearings, armorial devices, heraldic devices, or arms.</p>
-                 <?php $this->load->view('portfolio/coa_set');?>
+                <?php $this->load->view('portfolio/coa_set');?>
                 <?php //$this->load->view('portfolio/portfolio_translate');?>
             </div>
 

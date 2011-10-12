@@ -144,7 +144,7 @@
                         $g_descriptor=" is moderately optimistic";
                     }
                     else if($GoodEvents<=16) {
-                        $g_descriptor=" average in optimism";
+                        $g_descriptor=" is average in optimism";
                     }
                     else if($GoodEvents<=19) {
                         $g_descriptor=" is quite pessimistic";
@@ -154,7 +154,7 @@
                     }
                     ?>
                     <?php if($BadEvents<=6) {
-                        $b_descriptor=" marvellously optimistic";
+                        $b_descriptor=" is marvellously optimistic";
                     }
                     else if($BadEvents<=9) {
                         $b_descriptor=" is moderately optimistic";
@@ -177,7 +177,7 @@
                 Dear <?php echo $name; ?>,<br/><br/>
 
             Your Hope score shows that you are <?php echo $h_descriptor1;?>. <?php echo $h_descriptor2;?>.<br/>
-                    Your optimism level indicates that you are <?php echo $op_descriptor;?>. More specifically, the way you think about good events is <?php echo $g_descriptor; ?> and the way you think about bad events is <?php echo $b_descriptor;?>. These ways of thinking influence WHAT YOU WOULD likely do when these events happen, and hence make a difference to the outcomes or how things eventually turn out.<br/>
+                    Your optimism level indicates that you are <?php echo $op_descriptor;?> More specifically, the way you think about good events <?php echo $g_descriptor; ?> and the way you think about bad events <?php echo $b_descriptor;?>. These ways of thinking influence WHAT YOU WOULD likely do when these events happen, and hence make a difference to the outcomes or how things eventually turn out.<br/>
                     We have created some <a href="#">games and activities</a> for you to be inspired, to practise and improve the way you can think about events that happen to you so that you can achieve optimal results for yourself!  Remember, being optimistic is not about wearing rose-tinted glasses and being unrealistic, but it is about taking every opportunity to do something for ourselves and others so that we pave the way for ourselves to succeed!<br/>
                     Optimistic people do have special eyes that can help them look out for chances, they have super arms to gather resources and they have mighty legs that will keep running until they reach their goals. <?php echo $h_descriptor3; ?>!<br/>
                     So do set yourself the goals you want to achieve, and plan the steps to help yourself set your goals <a href="<?php echo base_url();?>index.php/home/holistic/">here</a>. Knowing what is important to you enables you to prioritise your time and effort affirm your values <a href="<?php echo base_url();?>index.php/home/determineValue/">here</a>.<br/>

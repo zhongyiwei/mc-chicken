@@ -16,11 +16,11 @@ $(function() {
 	<style>
 	#format { margin-top: 2em; }
 	</style>
-<br><br><br>
+
 
 
          <div class="left"><h4>How frequently you want the reminder to be sent to you? </h4></div>
-<br><br><br>
+         <br><br><br><br>
             <div id="radio_frequency">
                  <?php
      $attributes = array('class' => 'form', 'id' => 'form', 'name' => 'set_reminder_form');
@@ -43,23 +43,25 @@ $(function() {
 
 
          <div class="left"><h4>How to remind you?</h4></div>
-<br><br><br>
+<br><br><br><br>
             <div id="checkbox_preference">
-            <label for="email_reminder">Email</label> <?php
+            <label for="email_reminder">&nbspEmail&nbsp</label> <?php
                     $data = array('name' => 'email','id'=> 'email_reminder','value'=> 1,'checked'=> TRUE);
                     echo form_checkbox($data);
                     ?>
 
-            <label for="SMS_reminder">Send SMS</label> <?php
+            <label for="SMS_reminder">&nbsp&nbspSMS&nbsp&nbsp</label> <?php
                   $data2 = array('name' => 'SMS','id'=> 'SMS_reminder','value'=> 1);
                   echo form_checkbox($data2);
                  ?>
         </div>
 
    <br>
-<?php echo
-         form_submit('submit','Submit','id="form_submit"'); ?>
-        <?php echo form_close(); ?>
+<?php 
+echo "<div style='padding-left:495px;'>";
+        echo form_submit('submit','Submit','id="form_submit"');
+   echo "</div>";
+       echo form_close(); ?>
 
 <div class="form_content">
 </div>

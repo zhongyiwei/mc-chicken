@@ -37,96 +37,94 @@
                 ?>
             <br/>
             <center>
+                          <?php if($Hope<=2) {
+                        $h_descriptor1=" extraordinarily hopeful about life";
+                        $h_descriptor2="This is a very good sign that you can survive challenging times. You don’t give up easily";
+                        $h_descriptor3="We believe in your potential";
+
+
+                    }
+                    else if($Hope<=6) {
+                        $h_descriptor1=" moderately hopeful  about life";
+                        $h_descriptor2="This is a good sign that you can survive challenging times. You don’t give up easily";
+                        $h_descriptor3="We believe in your potential";
+
+                    }
+                    else if($Hope<=8) {
+                        $h_descriptor1=" average in being hopeful about life";
+                        $h_descriptor2=" This is a sign that you can survive challenging times. You don’t give up so easily";
+                        $h_descriptor3="We want YOU to have these special abilities";
+
+                    }
+                    else if($Hope<=11) {
+                        $h_descriptor1=" not so hopeful about life";
+                        $h_descriptor2="These are signs that you may feel more vulnerable than hopeful people around you when you are dealing with challenging issues. You tend to give up more readily. This is quite worrying";
+                        $h_descriptor3="We want YOU to have these special abilities";
+
+                    }
+                    else if($Hope<=16) {
+                        $h_descriptor1=" really not hopeful";
+                        $h_descriptor2="These are signs that you may feel a lot more vulnerable than hopeful people around you when you are dealing with challenging issues. You tend to give up readily. This is really worrying";
+                        $h_descriptor3="We want YOU to have these special abilities";
+
+                    }
+                    ?><?php if($Optimism<0) {
+                        $op_descriptor=" very pessimistic in general.";
+                    }
+                    else if($Optimism<=2) {
+                        $op_descriptor=" quite pessimistic in general.";
+                    }
+                    else if($Optimism<=5) {
+                        $op_descriptor=" average in being optimistic in general.";
+                    }
+                    else if($Optimism<=8) {
+                        $op_descriptor=" moderately optimistic in general.";
+                    }
+                    else {
+                        $op_descriptor=" very optimistic in general.";
+                    }
+                    ?><?php if($GoodEvents<=10) {
+                        $g_descriptor=" is very optimistic";
+                    }
+                    else if($GoodEvents<=13) {
+                        $g_descriptor=" is moderately optimistic";
+                    }
+                    else if($GoodEvents<=16) {
+                        $g_descriptor=" average in optimism";
+                    }
+                    else if($GoodEvents<=19) {
+                        $g_descriptor=" is quite pessimistic";
+                    }
+                    else {
+                        $g_descriptor=" is very pessimistic";
+                    }
+                    ?>
+                    <?php if($BadEvents<=6) {
+                        $b_descriptor=" marvellously optimistic";
+                    }
+                    else if($BadEvents<=9) {
+                        $b_descriptor=" is moderately optimistic";
+                    }
+                    else if($BadEvents<=11) {
+                        $b_descriptor=" is average in optimism";
+                    }
+                    else if($BadEvents<=14) {
+                        $b_descriptor=" is quite pessimistic";
+                    }
+                    else {
+                        $b_descriptor=" is very pessimistic";
+                    }
+
+                    ?>
                 <table border="1">
-                    <tr>
-                        <td> <b>Indicators</b> </td>
-                        <td> <b>Score</b> </td>
-                        <td> <b>Explanation</b> </td>
-                    </tr>
-                    <tr>
-                        <td>Hope</td>
-                        <td><?php echo $Hope; ?></td>
-                        <td><?php if($Hope<=2) {
-                                    echo "You are extraodinarily Hopeful!";
-                                }
-                                else if($Hope<=6) {
-                                    echo "You are moderately Hopeful!";
-                                }
-                                else if($Hope<=8) {
-                                    echo "You are average Hopeful!";
-                                }
-                                else if($Hope<=11) {
-                                    echo "You are moderately Hopeless!";
-                                }
-                                else if($Hope<=16) {
-                                    echo "You are severely Hopeless!";
-                                }
-                                ?></td>
-                    </tr>
-                    <tr>
-                        <td>Overall level of Optimism</td>
-                        <td><?php echo $Optimism; ?></td>
-                        <td><?php if($Optimism<0) {
-                                    echo "You are very pessimistic!";
-                                }
-                                else if($Optimism<=2) {
-                                    echo "You are moderately pessimistic!";
-                                }
-                                else if($Optimism<=5) {
-                                    echo "You are average pessimistic!";
-                                }
-                                else if($Optimism<=8) {
-                                    echo "You are moderately optimistic!";
-                                }
-                                else {
-                                    echo "You are very optimistic across the board!";
-                                }
-                                ?></td>
-                    </tr>
-                    <tr>
-                        <td>Explanatory Style For Good Events</td>
-                        <td><?php echo $GoodEvents; ?></td>
-                        <td><?php if($GoodEvents<=10) {
-                                    echo "You have great pessimism in you!";
-                                }
-                                else if($GoodEvents<=13) {
-                                    echo "You think quite pessimistically!";
-                                }
-                                else if($GoodEvents<=16) {
-                                    echo "You think about good events average!";
-                                }
-                                else if($GoodEvents<=19) {
-                                    echo "Your thinking is moderately optimistic!";
-                                }
-                                else {
-                                    echo "You think about good events very optimistic!";
-                                }
-                                ?></td>
-                    </tr>
-                    <tr>
-                        <td>Explanatory Style For Bad Events</td>
-                        <td><?php echo $BadEvents; ?></td>
-                        <td><?php if($BadEvents<=6) {
-                                    echo "You are marvelously optimistic!";
-                                }
-                                else if($BadEvents<=9) {
-                                    echo "You are moderately optimistic!";
-                                }
-                                else if($BadEvents<=11) {
-                                    echo "You are about average when you think about bad events!";
-                                }
-                                else if($BadEvents<=14) {
-                                    echo "Your are moderately pessimistic!";
-                                }
-                                else {
-                                    echo "You require a change badly!";
-                                }
-
-?></td>
-                    </tr>
-
+                    <tr><th><b>Indicators</b></th>
+                   <th><b>Explanation</b></th></tr>
+                    <tr><td>Hope</td><td>Your Hope score shows that you are <?php echo $h_descriptor1;?>. <?php echo $h_descriptor2;?>.<br/><br/>
+                        Optimistic people do have special eyes that can help them look out for chances, they have super arms to gather resources and they have mighty legs that will keep running until they reach their goals. <?php echo $h_descriptor3; ?>!</td></tr>
+                    <tr><td>Optimism</td><td>Your optimism level indicates that you are <?php echo $op_descriptor;?></td></tr>
+                    <tr><td>Good Events</td><td>The way you think about good events <?php echo $g_descriptor; ?>. </td></tr>
+<tr><td>Bad Events</td><td>The way you think about bad events <?php echo $b_descriptor;?>.</td></tr>
                 </table>
-
             </center>
 <?php
 //$query = $this->db->query("INSERT INTO `test_result` (`result_id`, `PmB_score`, `PmG_score`, `PvB_score`, `PvG_score`, `PsB_score`, `PsG_score`, `test_type_id`, `seeker_id`) VALUES (NULL, '$PmBscore', '$PmGscore', '$PvBscore', '$PvGscore', '$PsBscore', '$PsGscore', '1', '$seeker_id')");

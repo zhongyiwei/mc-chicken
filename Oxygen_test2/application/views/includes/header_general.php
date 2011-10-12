@@ -71,10 +71,10 @@ and open the template in the editor.
 					es:'Espa?ol',
 					de:'Deutsch',
 					ja:'日本語',
-					ar:'???????',
+					ar:'Arabic',
                                         hr:'hrvatski',
                                         id:'Indonesia',
-                                        ko:'頃滉淡鞏?',
+                                        ko:'Korean',
                                         lt:'Lietuvi懦',
                                         lv:'latvie拧u',
                                         nl:'Nederlands',
@@ -82,14 +82,12 @@ and open the template in the editor.
                                         pl:'Polski',
                                         pt:'Portugu锚s',
                                         ro:'Rom芒n膬',
-                                        ru:'袪褍褋褋泻懈泄',
+                                        ru:'Russian',
                                         sk:'sloven膷ina',
                                         sl:'sloven拧膷ina',
-                                        sr:'褋褉锌褋泻懈',
                                         sv:'Svenska',
                                         tl:'Filipino',
-                                        vi:'Ti岷縩g Vi峄噒',
-                                        CN:'涓枃 (绠€浣?'
+                                        CN:'简体中文'
 				}
 			});
 
@@ -115,7 +113,7 @@ and open the template in the editor.
 		</script>
 
      <script language="javascript" type="text/javascript">
-                 $(function() {
+        $(function() {
 		$( "#activity_accordion" ).accordion({
 			autoHeight: false,
 			navigation: true
@@ -124,57 +122,43 @@ and open the template in the editor.
 
 
              $(function() {
-		$( ".start_date" ).datepicker({
+                 for (var i = 1; i <= 8; i++) {
+		$( "#start_date"+i ).datepicker({
                         minDate: 0,
 			numberOfMonths: 3,
 			showButtonPanel: true,
                         dateFormat:"yy-mm-dd"
 		});
-                $( ".end_date" ).datepicker({
+                $( "#end_date"+i ).datepicker({
                         minDate: 0,
 			numberOfMonths: 3,
 			showButtonPanel: true,
                         dateFormat:"yy-mm-dd"
 		});
-	});
+                 }});
         </script>
      <script language="javascript" type="text/javascript">
-function getElementsByClass(searchClass,node,tag) {
-	var classElements = new Array();
-	if ( node == null )
-		node = document;
-	if ( tag == null )
-		tag = '*';
-	var els = node.getElementsByTagName(tag);
-	var elsLen = els.length;
-	var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
-	for (i = 0, j = 0; i < elsLen; i++) {
-		if ( pattern.test(els[i].className) ) {
-			classElements[j] = els[i];
-			j++;
-		}
-	}
-	return classElements;
-}
-
-
-
         function ValidateDate()
     {
-        //document.write("here");
-        var SDate = document.getElementsByID('start_date_id').value;
-        var EDate =  document.getElementsById("end_date_id").value;
         var alertReason1 =  'End Date must be greater than or equal to Start Date.';
-        //var endDate = new Date(EDate);
-        //var startDate= new Date(SDate);
+         for (var i = 1; i <= 8; i++) {
+        //document.write("here");        
+      if(document.getElementById('start_date'+i)){
+       // alert('start_date'+i);
+        var SDate = document.getElementById('start_date'+i).value;
+        var EDate =  document.getElementById('end_date'+i).value;
         if(SDate > EDate && SDate != '' && EDate != '')
         {
             alert(alertReason1);
-            document.getElementById('end_date').value = "";
+            document.getElementById('end_date'+i).value = "";
             return false;
         }
-        return true;
+  
+         }
+         }
     }
+
+
  </script>
 
     <script language="javascript" type="text/javascript">
@@ -283,91 +267,50 @@ $(function() {
 
 });
 //end of function for dynamic "HELP" effect(drop-show effect) for "set_activity_form" on page "set activity"
-              $(document).ready(function() {
+              $(function() {
 
-    $("area.three").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/3.jpg)";
-                
-
-	});
-
-	$("area.seven").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/7.jpg)";
-
-	});
-
-	$("area.eight").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/8.jpg)";
-	});
-
-        $("area.twelve").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/12.jpg)";
-	});
-
-	$("area.fifteen").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/15.jpg)";
-
-	});
-
-	$("area.twenty").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/20.jpg)";
-	});
-
-        $("area.twenty_three").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/23.jpg)";
-	});
-
-	$("area.twenty_four").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/24.jpg)";
-
-	});
-
-	$("area.twenty_eight").click( function(){
-		document.getElementById("logo").style.background = "URL(<?php echo base_url(); ?>web_images/colour/28.jpg)";
-	});
-
+    
 //Begin of the activity tracking
-        $('#Educational,#Financial,#Spiritual,#Physical,#Career,#Social,#Family').hide();
+        $('.Educational,.Financial,.Spiritual,.Physical,.Career,.Social,.Family').hide();
 
-          $('#goal_type').change(function() {
-            var selectedGoal = $( "#goal_type" ).val();
+          $('.goal_type').change(function() {
+            var selectedGoal = $( ".goal_type" ).val();
 
             if (selectedGoal === "Family") {
-              $('#Educational,#Financial,#Spiritual,#Physical,#Career,#Social').hide();
-              $('#Family').effect('slide');
+              $('.Educational,.Financial,.Spiritual,.Physical,.Career,.Social').hide();
+              $('.Family').effect('slide');
             }
             else if (selectedGoal === "Educational") {
-              $('#Family,#Financial,#Spiritual,#Physical,#Career,#Social').hide();
-              $('#Educational').effect('slide');
+              $('.Family,.Financial,.Spiritual,.Physical,.Career,.Social').hide();
+              $('.Educational').effect('slide');
             }
             else if (selectedGoal === "Financial") {
-              $('#Educational,#Family,#Spiritual,#Physical,#Career,#Social').hide();
-              $('#Financial').effect('slide');
+              $('.Educational,.Family,.Spiritual,.Physical,.Career,.Social').hide();
+              $('.Financial').effect('slide');
             }
             else if (selectedGoal === "Spiritual") {
-              $('#Educational,#Family,#Financial,#Physical,#Career,#Social').hide();
-              $('#Spiritual').effect('slide');
+              $('.Educational,.Family,.Financial,.Physical,.Career,.Social').hide();
+              $('.Spiritual').effect('slide');
             }
             else if (selectedGoal === "Physical") {
-              $('#Educational,#Family,#Spiritual,#Financial,#Career,#Social').hide();
-              $('#Physical').effect('slide');
+              $('.Educational,.Family,.Spiritual,.Financial,.Career,.Social').hide();
+              $('.Physical').effect('slide');
             }
             else if (selectedGoal === "Career") {
-              $('#Educational,#Family,#Spiritual,#Physical,#Financial,#Social').hide();
-              $('#Career').effect('slide');
+              $('.Educational,.Family,.Spiritual,.Physical,.Financial,.Social').hide();
+              $('.Career').effect('slide');
             }
             else if (selectedGoal === "Social") {
-              $('#Educational,#Family,#Spiritual,#Physical,#Career,#Financial').hide();
-              $('#Social').effect('slide');
+              $('.Educational,.Family,.Spiritual,.Physical,.Career,.Financial').hide();
+              $('.Social').effect('slide');
             }
           }); // ends $('#questions_set').change
 
       }); // ends (document).ready(function()
 
 
-
                   $(function() {
-                $( "#accordion_Family, #accordion_Education, #accordion_Financial, #accordion_Career, #accordion_Social, #accordion_Physical, #accordion_Spiritual" ).accordion({
+                $( ".accordion_Family, .accordion_Educational, .accordion_Financial, .accordion_Career, .accordion_Social, .accordion_Physical, .accordion_Spiritual" ).accordion({
                     autoHeight: false,
                     navigation: true
                 });

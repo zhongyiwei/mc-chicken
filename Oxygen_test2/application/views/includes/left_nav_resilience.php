@@ -3,7 +3,7 @@
         <li class="menu">
 
             <ul>
-                <li class="button"><a href="#" class="green">Do you know... <span></span></a></li>
+                <li class="button"><a href="#" class="green">Do You Know... <span></span></a></li>
 
                 <li class="dropdown">
                     <ul>

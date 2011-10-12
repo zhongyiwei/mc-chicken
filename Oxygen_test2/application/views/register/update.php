@@ -4,7 +4,7 @@
 <?php $this->load->view('includes/banner_general'); ?>
 <h1>Update User Info</h1>
 
-<table cellpadding="5" cellspace="5">
+<table cellpadding="5" cellspace="5" style="text-align: left;">
     <?php echo form_open('update_info/info'); ?>
 
     <tr>
@@ -22,6 +22,7 @@
     );
     echo form_dropdown('gender', $options, set_value('gender',$gender));
     ?></td>
+        <td><?php echo form_error('gender'); ?></td>
     </tr>
 
     <tr>

@@ -38,26 +38,7 @@
 
         </div>
 
-        <div class="post">
-            <h2 class="title" id="H3">Know Holistic Goals</h2>
-            <div class="entry">
-                <div>Family Goal</div>
-                <div>Content 1<br /><br /><br /><br /><br /><br /><br /><br />Long Example</div>
-                <div>Career Goal</div>
-                <div>Content 2<br /><br /><br /><br /><br />Medium Example</div>
-                <div>Education Goal</div>
-                <div>Content 1<br />Short Example</div>
-                <div>Spiritual Goal</div>
-                <div>Content 4<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Extra Long Example</div>
-                <div>Financial Goal</div>
-                <div>Content 1<br />Short Example</div>
-                <div>Social Goal</div>
-                <div>Content 1<br />Short Example</div>
-                <div>Physical Goal</div>
-                <div>Content 1<br />Short Example</div>
-            </div>
-
-        </div>     
+        
 
     </div>
     <!-- end #content -->

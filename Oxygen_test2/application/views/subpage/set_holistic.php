@@ -3,7 +3,7 @@
         <div class="post">
             <h2 class="title">Please Set Your Goal</h2>
             <div class="entry">
-                <table cellpadding="5" cellspace="5">
+                <table cellpadding="5" cellspace="5" style="text-align: left;">
                     
                     <div id="accordion">
                         <h3><a href="#">Family</a></h3>
@@ -27,7 +27,7 @@
                             );
                             echo form_textarea($data); ?><br><br>
 
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_family_goal');?></p>
+                           <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
 
@@ -52,7 +52,7 @@
                             );
                             echo form_textarea($data); ?>
                             <br><br>
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_career_goal');?></p>
+                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
 
@@ -78,7 +78,7 @@
                             echo form_textarea($data); ?>
 
                             <br><br>
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_career_goal');?></p>
+                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
 
@@ -104,7 +104,7 @@
                             echo form_textarea($data); ?>
 
                             <br><br>
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_career_goal');?></p>
+                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
 
@@ -130,7 +130,7 @@
                             echo form_textarea($data); ?>
 
                             <br><br>
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_career_goal');?></p>
+                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
 
@@ -156,7 +156,7 @@
                             echo form_textarea($data); ?>
 
                             <br><br>
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_career_goal');?></p>
+                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
 
@@ -182,7 +182,7 @@
                             echo form_textarea($data); ?>
 
                             <br><br>
-                            <p><?php echo form_submit('submit', 'Submit', 'id=submit_career_goal');?></p>
+                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); ?>
                         </div>
                     </div>

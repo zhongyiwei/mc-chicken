@@ -3,13 +3,13 @@
         <li class="menu">
 
             <ul>
-                <li class="button"><a href="#" class="green">Do you know... <span></span></a></li>
+                <li class="button"><a href="#" class="green">Do You Know... <span></span></a></li>
 
                 <li class="dropdown">
                     <ul>
                         <!--<li><a href="<?php echo base_url();?>index.php/home/activity_info/#H3">Activities for your goals</a></li>-->
-                        <li><a href="<?php echo base_url();?>index.php/home/activity_info/#AC">Why set activity</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/activity_info/#AC2">How to set activity</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/activity_info/#AC">Why Set Activity?</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/activity_info/#AC2">How To Set Activity?</a></li>
 
                     </ul>
                 </li>
@@ -26,9 +26,9 @@
                 <li class="dropdown">
                     <ul>
                         <li><a href="<?php echo base_url();?>index.php/home/activity/">Set Activity</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/set_reminder/">Set reminder</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/set_reminder/">Set Reminder</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/activity_list/">View Your Activities</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/activity_tracking/">Track your Activities</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/activity_tracking/">Track Your Activities</a></li>
                         
                     </ul>
                 </li>

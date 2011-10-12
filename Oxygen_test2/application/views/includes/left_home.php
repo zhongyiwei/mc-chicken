@@ -7,13 +7,13 @@
             $is_logged_in = $this->session->userdata('is_logged_in');
             $name = $this->session->userdata('name');
             if(isset($is_logged_in)&& ($is_logged_in=='true')){
-                echo '<strong>'.$name.'<strong>'.' , Welcome!<br>';
-                echo "<div id='link'>".anchor('login/log_out', 'Log Out')."<br>";
+                echo '<strong>Welcome, '.$name.'!<br><br>';
+                echo anchor('login/log_out', 'Log Out')."<br>";
                 echo anchor('home/personal_info', 'Update Your Information')."<br>";
-                echo anchor('home/change_password', 'Change Your Password')."</div>";
+                echo anchor('home/change_password', 'Change Your Password');
             }else{
             ?>
-            <table cellpadding="5" cellspace="5">
+            <table cellpadding="5" cellspace="5" style="text-align: left;">
                 <?php echo form_open('login/validate');?>
                 <tr>
                     <th>Email:</th>
@@ -26,9 +26,13 @@
                 </tr>
 
                 <tr>
-                    <td><?php echo form_submit('submit','Login','id="submit"');?></td>
-                    
-                    <td align="right"><?php echo anchor('login/register','Register');?></td>
+                    <td align="left"></td>
+                    <td align="right"><?php echo form_submit('submit','Login','id="submit"');?></td>
+                    <?php echo form_close();?>
+                </tr>
+				                <tr>
+                    <td align="left"><?php echo anchor('login/register','Register');?></td>
+                    <td align="right"><small><?php echo anchor('update_info/forgot_password','Forgot Password?');?></small></td>
                 </tr>
             </table>
             <?php } ?>
@@ -45,31 +49,31 @@
                     <MAP NAME="colour">
 
                         <AREA
-                            ALT="38" TITLE="38" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="38" TITLE="38" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="170,48,185,20,197,28,179,53">
                         <AREA
                             ALT="1" TITLE="1" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="182,56,202,30,213,42,190,63">
                         <AREA
-                            ALT="2" TITLE="2" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="2" TITLE="2" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="191,66,215,44,226,57,197,75">
                         <AREA
                             ALT="3" TITLE="3" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="200,77,227,59,236,74,206,87">
                         <AREA
-                            ALT="4" TITLE="4" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
+                            ALT="4" TITLE="4" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="236,76, 242,96, 212,103, 205,88">
                         <AREA
                             ALT="5" TITLE="5" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="243,95, 245,112, 212,116, 210,102">
                         <AREA
-                            ALT="6" TITLE="6" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
+                            ALT="6" TITLE="6" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="246,115, 246,133, 212,131, 213,117">
                         <AREA
                             ALT="7" TITLE="7" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="246,135, 243,151, 210,144, 214,131">
                         <AREA
-                            ALT="8" TITLE="8" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
+                            ALT="8" TITLE="8" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="242,153, 237,170, 206,158, 210,146">
                         <AREA
                             ALT="9" TITLE="9" CLASS="twelve" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=12.jpg"
@@ -84,16 +88,16 @@
                             ALT="12" TITLE="12" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="200,220, 185,229, 169,197, 180,192">
                         <AREA
-                            ALT="13" TITLE="13" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
+                            ALT="13" TITLE="13" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="183,231, 167,239, 155,204, 166,199">
                         <AREA
-                            ALT="14" TITLE="14" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
+                            ALT="14" TITLE="14" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="166,238, 148,244 142,207, 155,204">
                         <AREA
                             ALT="15" TITLE="15" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="147,244, 128,244, 129,208, 141,210">
                         <AREA
-                            ALT="16" TITLE="16" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="16" TITLE="16" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="127,248, 108,243, 113,206, 128,210">
                         <AREA
                             ALT="17" TITLE="17" CLASS="seven" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=7.jpg"
@@ -105,19 +109,19 @@
                             ALT="19" TITLE="19" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="84,200, 70,228, 55,220, 75,193">
                         <AREA
-                            ALT="20" TITLE="20" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="20" TITLE="20" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="73,190, 53,217, 40,205, 64,182">
                         <AREA
-                            ALT="21" TITLE="21" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
+                            ALT="21" TITLE="21" CLASS="twenty" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="62,181, 38,204, 28,190, 57,172">
                         <AREA
                             ALT="22" TITLE="22" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="56,169, 26,187, 19,173, 51,159">
                         <AREA
-                            ALT="23" TITLE="23" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
+                            ALT="23" TITLE="23" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="49,157, 18,171, 11,154, 45,148">
                         <AREA
-                            ALT="24" TITLE="24" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="24" TITLE="24" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="45,142, 11,151, 7,135, 43,132">
                         <AREA
                             ALT="25" TITLE="25" CLASS="twenty_four" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=24.jpg"
@@ -126,16 +130,16 @@
                             ALT="26" TITLE="26" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="41,114, 7,113, 12,94, 43,105">
                         <AREA
-                            ALT="27" TITLE="27" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="27" TITLE="27" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
                             SHAPE=POLY COORDS="45,101, 12,93, 16,78, 46,92">
                         <AREA
-                            ALT="28" TITLE="28" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="28" TITLE="28" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="49,87, 18,76, 28,60, 55,78">
                         <AREA
-                            ALT="29" TITLE="29" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=8.jpg"
+                            ALT="29" TITLE="29" CLASS="eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
                             SHAPE=POLY COORDS="56,75, 28,58, 38,45, 64,67">
                         <AREA
-                            ALT="30" TITLE="30" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=15.jpg"
+                            ALT="30" TITLE="30" CLASS="fifteen" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=20.jpg"
                             SHAPE=POLY COORDS="64,64, 39,41, 53,30, 72,57">
                         <AREA
                             ALT="31" TITLE="31" CLASS="twenty_eight" HREF="<?php echo base_url() ?>index.php/home/get_session?colour=28.jpg"
