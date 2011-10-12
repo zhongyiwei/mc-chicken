@@ -6,8 +6,8 @@
 
 <div>
     <h1>Update article</h1>
-    <div>
-        <table border="2" align="center">
+    <div style="padding-right: 30px; padding-left: 30px">
+        <table border="2" align="center" style="text-align: left;">
             <th>Title</th>
             <th>Content</th>
             <th>Update</th>
@@ -23,8 +23,15 @@
                     <tr>
                 <?php echo form_open('cms/update'); ?>
                 <?php echo form_hidden('article_id', $row->article_id); ?>
-                    <td><?php echo $row->title;?></td>
-                    <td><?php echo $row->article; ?></td>
+                    <td valign="top"><?php echo $row->title;?></td>
+                    <td><?php 
+                    $data=array(
+                        'name'=>'article',
+                        'size'=>'50',
+                        'style'=>'width:20%',
+                        'value'=>$row->article
+                    );
+                    echo form_textarea($data); ?></td>
                     <td><?php echo form_submit('submit', 'Update'); ?></td>
                 <?php echo form_close(); ?>
 

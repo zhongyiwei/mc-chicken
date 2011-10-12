@@ -1,5 +1,6 @@
 <?php
 class Content extends CI_Model{
+    
     function view_seek(){
         $query="SELECT * FROM seeker";
         $answer = $this->db->query($query);
@@ -8,6 +9,7 @@ class Content extends CI_Model{
     }
 
     function add_article(){
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $this->load->library('session');
         $date = date('Y-m-d');
@@ -24,6 +26,7 @@ class Content extends CI_Model{
     }
 
     function update_article(){
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 

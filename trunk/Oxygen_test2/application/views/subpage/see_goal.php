@@ -3,7 +3,7 @@
         <div class="post">
             <h2 class="title">See your goals</h2>
             <div class="entry">
-                <table cellpadding="5" cellspace="5" frame="rhs">
+                <table cellpadding="5" cellspace="5" frame="rhs" style="text-align: left;">
                     <tr>
                         <th width="10%">Type Of Goal</th>
                         <th width="25%">Goal Description</th>

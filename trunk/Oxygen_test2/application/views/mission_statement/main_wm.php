@@ -12,7 +12,7 @@
 
 
 
-            <h2 class="title" id="WMS">Why mission statement?</h2>
+            <h2 class="title" id="WMS">Why Mission Statement?</h2>
             <div class="entry">
 
              <iframe width="560" height="349" src="http://www.youtube.com/embed/VWLf6IVDjSs" frameborder="0" allowfullscreen></iframe>
@@ -78,20 +78,6 @@
 
             </div>
         </div>
-
-                 <div class="post">
-            <h2 class="title" id="SOA">The Coat of arms</h2>
-            <div class="entry">
-                <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms1.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
-                <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms2.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
-                <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms4.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
-                <h2>The Coat of Arms: </h2>
-                <p>A coat of arms is a distinctive heraldic design on a tunic used to cover and protect armor, but the term is more broadly applied to mean a full heraldic achievement which consists of a shield and certain accessories. In either sense, the design is a symbol unique to a person, family, corporation, or state. Such displays are also commonly called armorial bearings, armorial devices, heraldic devices, or arms.</p>
-
-
-            </div>
-
-         </div>
 
 
 

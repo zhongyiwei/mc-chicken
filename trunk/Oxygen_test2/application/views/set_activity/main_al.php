@@ -11,17 +11,18 @@ $id=$this->session->userdata('seeker_id');
     <div id="content_sub">
         <div class="post">
             <h2 class="title">View all your records below</h2>
-            <div class="entry">
+            <div class="entry" width="">
+                <p style="font-family:arial;color:green;font-size:16px">Please click the activity name to update your activity:</p>
                 
-                <table id="myTable" class="tablesorter">
+                <table id="myTable" style="table-layout:fixed; width: 660px" class="tablesorter">
                    <thead>
                     <tr>
                       <th width="55px">Goal Type</th>
                       <th width="90px">Activity Name</th>
                       <th width="250px">Activity Description</th>
-                      <th width="55px">Start Date</th>
-                      <th width="55px">End Date</th>
-                      <th width="55px">Status</th>
+                      <th width="60px">Start Date</th>
+                      <th width="60px">End Date</th>
+                      <th width="60px">Status</th>
                     </tr>
                   </thead>
 

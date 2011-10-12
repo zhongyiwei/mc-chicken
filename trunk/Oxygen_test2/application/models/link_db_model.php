@@ -23,6 +23,7 @@ function input_activity(){
         'seeker_goal_id'=>$this->input->post('seeker_goal_id')
         
     );
+    $this->db->where('seeker_goal_id', $this->input->post('goal_type_id'));
     $insert = $this->db->insert('activity',$new_activity);
     return $insert;
 

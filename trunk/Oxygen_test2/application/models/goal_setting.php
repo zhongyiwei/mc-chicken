@@ -18,6 +18,7 @@ class Goal_setting extends CI_Model {
     }
 
     function update_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -70,6 +71,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_family_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -87,6 +89,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_career_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -104,6 +107,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_education_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -121,6 +125,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_spiritual_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -138,6 +143,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_financial_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -155,6 +161,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_social_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 
@@ -172,6 +179,7 @@ class Goal_setting extends CI_Model {
     }
 
     function create_physical_goal() {
+        date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
         $date = date('Y-m-d');
 

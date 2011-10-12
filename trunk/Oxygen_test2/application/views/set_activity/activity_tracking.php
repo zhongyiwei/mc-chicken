@@ -11,7 +11,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
             <div class="entry">
 <!--Dropdown list to select goal category                -->
                 <h3>Goal Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select name="goal_type" id="goal_type">
+                    <select name="goal_type" class="goal_type">
                         <option value="">-Select a goal type-</option>
                         <?php
                         foreach ($goal_cat_query->result() as $row) {
@@ -42,7 +42,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                                 AND gc.goal_category ="'.$goal_cat.'"');
                 ?>
 
-                <div id="<?php echo $goal_cat; ?>">
+                <div class="<?php echo $goal_cat; ?>">
                 <?php
                         if($goal_query->num_rows()===0) {
                                 echo "";
@@ -56,7 +56,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                             }
 
                 ?>
-                    <div id="accordion_<?php echo $goal_cat; ?>">
+                    <div class="accordion_<?php echo $goal_cat; ?>">
                         <?php
                             if($goal_query->num_rows()===0) {
                                 echo $goal_cat . " goal has not been set!";

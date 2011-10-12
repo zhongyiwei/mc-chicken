@@ -36,7 +36,7 @@ and open the template in the editor.
                     dateFormat:"yy-mm-dd",
                     changeMonth: true,
                     changeYear: true,
-                    yearRange: '-100y:-6y'
+                    yearRange: '-100y:-12y'
                 });
             });
         </script>
@@ -52,10 +52,10 @@ and open the template in the editor.
                 <div id="menu" align="center">
                     <ul>
                         <li class="current_page_item"><a href="<?php echo base_url(); ?>index.php/home/">Home</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/home/test_resilience/">Resilience Test</a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/home/why_ms/#MS/">Mission & Value</a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/home/goal/">Set Goals</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Activity</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/testResilience/">Resilience Test</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Activity</a></li>                        
                         <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS">My Portfolio</a></li>
                         <li><a href="#">About us</a></li>
                     </ul>

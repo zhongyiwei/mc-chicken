@@ -1,14 +1,13 @@
 <div id="page">
     <div id="content_sub">
         <div class="post">
-            <h2 class="title">Set the activity for your goal here</h2>
+            <h2 class="title">Set the Activity for Your Goals Here</h2>
             <div class="entry">
                 <!--<p style="font-size:150%; color:green;" > Set your activities for your goals below: </p>-->
                 
 <div class="goal_for_activity">
 <div id="activity_accordion">
         <?php
-        //$activity_type=array['Family','Career','Educational','Spiritual',,'Financial','Social','Physical'];
         $activity_type=array('Family','Career','Educational','Spiritual','Financial','Social','Physical');
         for($i=1; $i<=7; $i++){
 ?>
@@ -33,9 +32,65 @@
                  echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));
                  
 
-                 $this->load->view('set_activity/activity_form');
-                 $js = 'onchange="ValidateDate(this)"';
-                 echo form_submit('submit','Submit','id="form_submit"',$js);
+                 //$this->load->view('set_activity/activity_form');
+                 ?>
+
+
+                     <div class="row">
+        <h4>Activity Name: </h4>
+
+        <div class="right">
+                 <?php
+                 $data = array(
+              'name' => 'activity_name','id'=> 'activity_name','value'=> '','maxlength'=> '100','size'=> '88',);
+                 echo form_input($data);
+                 echo form_error('activity_name');
+                 ?></div>
+
+        <div class="clear"></div>
+        </div>
+
+        <!--start_date selection begin-->
+        <div class="row">
+         <h4>Description:</h4>
+        <div class="">
+
+     <?php
+      $data = array(
+              'name'=> 'activity_desc','id'=> 'activity_desc','value'=> '','rows'=> '5','cols'=> '88',
+            );
+                 echo form_textarea($data);
+                 echo form_error('activity_desc');
+     ?><br></div>
+        </div>
+
+        <div class="row">
+             <h4>Start Date:
+
+             <?php
+             //$js = 'onchange="ValidateDate(this)"';
+                 $data = array('name' => 'start_date','class'=> 'start_date','value'=> '','id'=> 'start_date'.$i.'','size'=> '35',  'onchange'=>'ValidateDate(this)');
+                 echo form_input($data);
+                 echo form_error('start_date');
+                 ?>
+             </h4></div>
+
+        <div class="row">
+            <h4>End Date:&nbsp&nbsp
+             <?php
+             //$js = 'onchange="ValidateDate(this)"';
+                 $data = array('name' => 'end_date','class'=> 'end_date','id'=> 'end_date'.$i.'','value'=> '','size'=> '35','onchange'=>'ValidateDate(this)');
+                 echo form_input($data);
+                 echo form_error('end_date');
+                 ?>
+             </h4></div>
+
+
+                 <?php
+                 //$js = 'onchange="ValidateDate(this)"';
+                 echo "<div align='right'>";
+                 echo form_submit('submit','Submit','id="form_submit"');
+                 echo "</div>";
                  echo form_close();
         }            else{
                 ?>
