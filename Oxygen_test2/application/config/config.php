@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://sit.rp.edu.sg/91149/oxygen_1/';
+$config['base_url']	= 'http://localhost:9081';
 
 /*
 |--------------------------------------------------------------------------
