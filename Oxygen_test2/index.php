@@ -201,3 +201,5 @@ require_once BASEPATH.'core/CodeIgniter'.EXT;
 
 /* End of file index.php */
 /* Location: ./index.php */
+
+/*fjeufheofajsdfajlsdfajldjalsk  hahahahahaha)::)):):):)*/
