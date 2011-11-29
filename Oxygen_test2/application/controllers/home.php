@@ -8,6 +8,12 @@ class Home extends CI_Controller {
     function index(){
         $this->load->view('includes/template');
     }
+    function BuildResilience(){
+        $data['main'] = 'resilience_game/build_resilience';
+        $data['nav'] = 'includes/left_nav_resilience';
+        $this->load->view('resilience_game/game_template', $data);
+    }
+	
 	
 	//Wenjie-----Value & Resilience
 	
