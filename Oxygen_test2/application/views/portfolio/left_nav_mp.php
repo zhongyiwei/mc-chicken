@@ -10,7 +10,7 @@
                 <li class="dropdown">
                     <ul>
                         <li><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS" >Why & How?</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/portfolio_motto/" >My Motto</a></li>
+                        <!--<li><a href="<?php echo base_url();?>index.php/home/portfolio_motto/" >My Motto</a></li>-->
                         <li><a href="<?php echo base_url();?>index.php/home/portfolio/#COA" >My Coat of Arms</a></li>
 
                     </ul>
@@ -29,7 +29,7 @@
 
                 <li class="dropdown">
                     <ul>
-                        <li><a href="<?php echo base_url();?>index.php/home/portfolio_mission/#MOTTO">My Motto</a></li>
+                        <!--<li><a href="<?php echo base_url();?>index.php/home/portfolio_mission/#MOTTO">My Motto</a></li>-->
                         <li><a href="<?php echo base_url();?>index.php/home/portfolio_mission/#MS">My Mission</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/portfolio_mission/#VALUE">My Values</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/portfolio_mission/#ACHIEVEMENT">My Achievement</a></li>

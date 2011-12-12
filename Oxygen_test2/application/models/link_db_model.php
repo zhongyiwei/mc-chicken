@@ -142,8 +142,8 @@ function get_reminder(){
 function input_coa(){
         $new_coa=array(
         'shield'=>$this->input->post('shield_coa'),
-        'banner'=>$this->input->post('banner_coa'),
-        'crest'=>$this->input->post('crest_coa'),
+        //'banner'=>$this->input->post('banner_coa'),
+        //'crest'=>$this->input->post('crest_coa'),
         'seeker_id'=>$this->input->post('id_seeker'),
     );
     $insert = $this->db->insert('coat_of_arm',$new_coa);
@@ -155,8 +155,8 @@ function update_coa(){
 
    $update_coa = array(
             'shield'=>$this->input->post('shield_coa'),
-            'banner'=>$this->input->post('banner_coa'),
-            'crest'=>$this->input->post('crest_coa'),
+          //  'banner'=>$this->input->post('banner_coa'),
+          //  'crest'=>$this->input->post('crest_coa'),
     );
 
     $this->db->where('seeker_id', $this->session->userdata('seeker_id'));

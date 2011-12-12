@@ -53,7 +53,7 @@
     <tr>
         <th>Mobile Number:</th>
         <td><?php echo form_input('mobile_number', ''); ?></td>
-        <td><?php echo form_error('mobile_number'); ?></td>
+        <td><?php echo form_error('monile_number'); ?></td>
     </tr>
 
     <tr>

@@ -149,7 +149,7 @@ function ChgText_crest(imgvalue)
 <?php //$this->load->view('portfolio/value_image');?>
 <div align=center class="coa" id="coa">
 	<div align=center class="image" id="image">
-  <img alt="" src="<?php echo base_url();?>web_images/coa_image/shield/coa2.jpg" /></div>
+  <img alt="" src="<?php echo base_url();?>web_images/coa_image/shield/coa2.png" /></div>
 
  <?php
   $this->load->model('link_db_model');
@@ -159,7 +159,7 @@ function ChgText_crest(imgvalue)
 $this->load->view('portfolio/value_symbol');
   }
 ?>
-   <div class="banner" id="banner" align=center>
+   <!--<div class="banner" id="banner" align=center>
   <img alt="" src="<?php echo base_url();?>web_images/coa_image/banner/banner1.png" />
   </div>
   <div class="supporter" align=center>
@@ -167,7 +167,7 @@ $this->load->view('portfolio/value_symbol');
   </div>
     <div class="crest" id="crest" align=center>
           <img alt="" src="<?php echo base_url();?>web_images/coa_image/crest/crest5.jpg" />
-           </div>
+           </div>-->
         <?php
          $this->load->model('link_db_model');
                 $data = $this->link_db_model->get_motto();

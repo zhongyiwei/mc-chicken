@@ -12,14 +12,9 @@
                     'name'=> 'title',
                     'id'=>'title',
                     'maxlength'   => '100',
-                    'size'=>'80',
-                    'onkeypress'=>"textCounter(this,this.form.counter,65);"
+                    'size'=>'115'
                 );
-                echo form_input($title);?>&nbsp;&nbsp;&nbsp;You have<?php
-              $data = array(
-              'name' => 'counter','value'=> '65','maxlength'=> '3','size'=> '3','onblur'=>'textCounter(this.form.counter,this,65);');
-                 echo form_input($data);
-              ?>characters left</td>
+                echo form_input($title);?></td>
             </tr>
 
             <tr>
