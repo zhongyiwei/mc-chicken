@@ -11,36 +11,37 @@
 <?php //echo $shield?>
 
 <h2>Select the shield here:</h2>
-
 <ul class="thumb">
-	<li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa2.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa2.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa2.jpg"/></a>
+	<li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa1.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa1.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa1.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa8.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa8.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa8.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa2.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa2.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa2.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa9.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa9.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa9.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa3.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa3.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa3.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa4.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa4.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa4.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa4.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa4.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa4.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa10.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa10.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa10.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa5.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa5.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa5.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa12.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa12.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa12.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa6.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa6.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa6.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa13.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa13.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa13.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa7.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa7.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa7.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa14.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa14.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa14.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa8.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa8.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa8.png"/></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa17.jpg"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa17.jpg" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa17.jpg"/></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa9.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa9.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa9.png"/></a>
+	</li>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa10.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa10.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa10.png"/></a>
 	</li>
 
 </ul>
 
-
+<!--
 <h2>Select the banner here:</h2>
 
 <ul class="thumb2">
 	<li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner1.png"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner1.png" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner1.png"/></a>
 	</li>
-	<li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner4.jpg"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner4.jpg" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner4.jpg" /></a>
+	<li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner4.png"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner4.png" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner4.png" /></a>
 	</li>
         <li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner2.png"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner2.png" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner2.png" /></a>
 	</li>
@@ -50,27 +51,27 @@
 <h2>Select the crown here:</h2>
 
 <ul class="thumb3">
-	<li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest5.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest5.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest5.jpg" /></a>
+	<li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest5.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest5.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest5.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest6.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest6.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest6.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest6.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest6.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest6.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest1.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest1.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest1.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest1.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest1.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest1.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest3.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest3.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest3.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest3.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest3.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest3.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest7.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest7.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest7.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest7.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest7.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest7.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest8.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest8.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest8.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest8.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest8.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest8.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest9.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest9.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest9.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest9.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest9.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest9.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest4.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest4.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest4.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest4.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest4.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest4.png" /></a>
 	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest2.jpg"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest2.jpg" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest2.jpg" /></a>
+        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest2.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest2.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest2.png" /></a>
 	</li>
 
-</ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</ul>-->
+<br><br><br><br><br>
 <?php $this->load->view('portfolio/ucoa_form');?>
           </div>
 

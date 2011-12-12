@@ -4,11 +4,11 @@
 
 
          <div class="post">
-            <h2 class="title" id="MOTTO">My Motto</h2>
+            <!--<h2 class="title" id="MOTTO">My Motto</h2>
             <div class="entry">
             
-        <p style="font-family:arial;color:black;font-size:14px"><?php echo $motto_set;?></p>
-            </div>
+        <p style="font-family:arial;color:black;font-size:14px"><?php //echo $motto_set;?></p>
+            </div>-->
 
             <h2 class="title" id="MS">My Mission Statement</h2>
             <div class="entry">

@@ -8,12 +8,6 @@ class Home extends CI_Controller {
     function index(){
         $this->load->view('includes/template');
     }
-    function BuildResilience(){
-        $data['main'] = 'resilience_game/build_resilience';
-        $data['nav'] = 'includes/left_nav_resilience';
-        $this->load->view('resilience_game/game_template', $data);
-    }
-	
 	
 	//Wenjie-----Value & Resilience
 	
@@ -317,8 +311,8 @@ function see_goal() {
         if ($query->num_rows() > 0) {
             $row=$query->result();
             $data['shield']=$row[0]->shield;
-            $data['banner']=$row[0]->banner;
-            $data['crest']=$row[0]->crest;
+           // $data['banner']=$row[0]->banner;
+           // $data['crest']=$row[0]->crest;
         }
         else{
 

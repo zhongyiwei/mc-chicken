@@ -221,8 +221,8 @@ class Db_control extends CI_Controller{
 
         // field name, error message, validation rules
         $this->form_validation->set_rules('shield_coa', 'Shield', 'trim|required');
-        $this->form_validation->set_rules('banner_coa', 'Banner', 'trim|required');
-        $this->form_validation->set_rules('crest_coa', 'Banner', 'trim|required');
+      //  $this->form_validation->set_rules('banner_coa', 'Banner', 'trim|required');
+      //  $this->form_validation->set_rules('crest_coa', 'Banner', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
             $this->load->model('link_db_model');
