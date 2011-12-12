@@ -377,12 +377,12 @@ function textCounter( field, countfield, maxlimit ) {
                 <div id="menu" align="center">
                     <ul>
                         <li class="current_page_item"><a href="<?php echo base_url();?>index.php/home/">Home</a></li>
-						<li><a href="<?php echo base_url();?>index.php/home/test_resilience/">Resilience Test</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/resilience_test/">Resilience Test</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/why_ms/#MS/">Mission & Value</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/goal/">Set Goals</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/activity_page/">Activity</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS">My Portfolio</a></li>                        
-                        <li><a href="#">About us</a></li>
+                        <li><a href="http://sit.rp.edu.sg/91234/assignment2/images/StartingSnow.swf">Game</a></li>
                     </ul>
                 </div>
             </div>

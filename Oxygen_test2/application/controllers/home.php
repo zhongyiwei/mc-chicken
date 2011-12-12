@@ -10,7 +10,23 @@ class Home extends CI_Controller {
     }
 	
 	//Wenjie-----Value & Resilience
+    function resilience_test() {
+        $this->load->view('resilience_test/subpage_resilience_test');
+    }
+
+    function session() {
+        $this->load->view('resilience_test/subpage_session');
+    }
+	    function resiliencequestion() {
+        $this->load->view('resilience_test/subpage_question');
+    }
 	
+
+
+    function result() {
+        $this->load->view('resilience_test/subpage_result');
+    }
+
     function value() {
         $data['main'] = 'value/value_understanding';
         $data['nav'] = 'mission_statement/left_nav_value';
