@@ -566,17 +566,23 @@ class Home extends CI_Controller {
 
     function portfolio_export_COA() {
         $this->load->model('link_db_model');
+
         $data = $this->link_db_model->get_value_symbol();
-        $row = $data->result();
-        $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
-        $valueSymbol['Symbol2'] = base_url() . $row[1]->value_symbol;
-        $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol;
-        $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol;
+        if ($data != NULL) {
+            $row = $data->result();
+            $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
+            $valueSymbol['Symbol2'] = base_url() . $row[1]->value_symbol;
+            $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol;
+            $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol;
 
-        $data2 = $this->link_db_model->get_coa2();
-        $row2 = $data2->result();
-        $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
+            $data2 = $this->link_db_model->get_coa2();
+            $row2 = $data2->result();
+            $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
 
+            $valueSymbol['COAStatus'] = '';
+        } else {
+            $valueSymbol['COAStatus'] = 'Please choose your value first.<br/><a href="'.  base_url().'index.php/home/determineValue/">Go to Set Value Page</a>';
+        }
         //echo    $valueSymbol['Shield1'];
 
         $this->load->view('portfolio/coa_drawCOA.php', $valueSymbol);
@@ -716,6 +722,9 @@ class Home extends CI_Controller {
                 $data['op_descriptor'] = $op_descriptor;
                 $data['g_descriptor'] = $g_descriptor;
                 $data['b_descriptor'] = $b_descriptor;
+                $data['resillentScaleStatus'] = '';
+            } else {
+                $data['resillentScaleStatus'] = 'You have never completed resilience test yet.';
             }
         }
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
