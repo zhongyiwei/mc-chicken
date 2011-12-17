@@ -270,7 +270,17 @@ function get_portfolio_goal_activity(){
     }
     //return $q;
 }
+function get_num_portfolio_goal_activity(){
+        $sql='SELECT * FROM goal g, goal_category gc
+        WHERE g.goal_cat_id = gc.goal_cat_id
+        AND g.goal_completion_status = "Completed"
+        AND g.seeker_id = ?';
+        $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
 
+    $data = $q->num_rows();
+    return $data;   
+    //return $q;
+}
 
 function get_value(){
     //$query="SELECT motto FROM motto WHERE seeker_id=?";

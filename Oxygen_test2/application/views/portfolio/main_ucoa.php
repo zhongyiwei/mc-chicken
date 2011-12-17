@@ -32,7 +32,7 @@
 	</li>
         <li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa10.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa10.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa10.png"/></a>
 	</li>
-
+        
 </ul>
 
 <!--

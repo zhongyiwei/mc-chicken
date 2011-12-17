@@ -152,7 +152,7 @@ function ChgText_crest(imgvalue)
                  foreach($data->result() as $r) :
                          echo $r->shield;
                  endforeach;?>" /></div>
-<?php $this->load->view('portfolio/value_symbol');?>
+        <?php $this->load->view('portfolio/value_symbol'); ?>
   <!-- <div class="banner" id="banner" align=center>
   <img alt="" src="<?php echo base_url();$this->load->model('link_db_model');
                 $data = $this->link_db_model->get_coa2();
