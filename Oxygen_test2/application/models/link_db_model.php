@@ -190,7 +190,26 @@ function get_coa2(){
 }
 
 function get_value_symbol(){
+    $sql2 = "SELECT date_of_birth FROM seeker WHERE seeker_id=?";
+    $q2 = $this->db->query($sql2, array($this->session->userdata('seeker_id')));    
+    
+    if($q2 >= "1997-01-01"){
     $sql = "SELECT value_symbol FROM value v, seeker_value sv WHERE v.value_id = sv.value_id AND seeker_id=?";
+    $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
+    if($q->num_rows() > 0){
+    return $q;
+    }
+    else{
+    $sql = "SELECT value_symbol_kids FROM value v, seeker_value sv WHERE v.value_id = sv.value_id AND seeker_id=?";
+    $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
+    if($q->num_rows() > 0){
+    return $q;
+    }
+    }
+}
+}
+function get_value_symbol_kids(){
+    $sql = "SELECT value_symbol_kids FROM value v, seeker_value sv WHERE v.value_id = sv.value_id AND seeker_id=?";
     $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
     if($q->num_rows() > 0){
     return $q;
