@@ -1,4 +1,5 @@
 <?php
+
 class Link_db_model extends CI_Model{
 
 function activity_sa(){
@@ -191,28 +192,47 @@ function get_coa2(){
 
 function get_value_symbol(){
     $sql2 = "SELECT date_of_birth FROM seeker WHERE seeker_id=?";
-    $q2 = $this->db->query($sql2, array($this->session->userdata('seeker_id')));    
+    $q2 = $this->db->query($sql2, array($this->session->userdata('seeker_id'))); 
+    //return $q2;
+
+	date_default_timezone_set('Asia/Singapore');
+	$date=array();
+	foreach($q2->result() as $row){
+	$date[]=array(
+	'date' =>$row->date_of_birth
+	);
+	}
+
+	list($y,$m,$d) = explode("-", $date[0]['date']);
+	$y_diff = date("Y") - $y;
+	$m_diff = date("m") - $m;
+	$d_diff = date("d") - $d;
+	if($d_diff<0 || $m_diff<0){
+	$y_diff--;
+	}
+
     
-    if($q2 >= "1997-01-01"){
+    if($y_diff >= 15){        
+	$session_data = array('category'=>'adult'
+	);
+	$this->session->set_userdata($session_data);
     $sql = "SELECT value_symbol FROM value v, seeker_value sv WHERE v.value_id = sv.value_id AND seeker_id=?";
     $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
+	//print_r($q->result());
     if($q->num_rows() > 0){
     return $q;
     }
+	}
     else{
+	$session_data2 = array('category'=>'child'
+	);
+	$this->session->set_userdata($session_data2);
     $sql = "SELECT value_symbol_kids FROM value v, seeker_value sv WHERE v.value_id = sv.value_id AND seeker_id=?";
     $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
+	//print_r($q->result());
     if($q->num_rows() > 0){
     return $q;
     }
-    }
-}
-}
-function get_value_symbol_kids(){
-    $sql = "SELECT value_symbol_kids FROM value v, seeker_value sv WHERE v.value_id = sv.value_id AND seeker_id=?";
-    $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
-    if($q->num_rows() > 0){
-    return $q;
     }
 }
 
@@ -289,17 +309,7 @@ function get_portfolio_goal_activity(){
     }
     //return $q;
 }
-function get_num_portfolio_goal_activity(){
-        $sql='SELECT * FROM goal g, goal_category gc
-        WHERE g.goal_cat_id = gc.goal_cat_id
-        AND g.goal_completion_status = "Completed"
-        AND g.seeker_id = ?';
-        $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
 
-    $data = $q->num_rows();
-    return $data;   
-    //return $q;
-}
 
 function get_value(){
     //$query="SELECT motto FROM motto WHERE seeker_id=?";
