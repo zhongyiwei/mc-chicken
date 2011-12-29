@@ -81,6 +81,20 @@
             <div class="entry">
                 <?php $this->load->view('portfolio/coa_design');?>
                 <?php //$this->load->view('portfolio/portfolio_translate');?>
+				<h4 align="center" style="color:purple;">The symbols in the centres of the Coat of Arms represent your values: </h4>
+                <table border="1" align="center">
+                        <th width="120px">Value 1: Top Left Symbol</th>
+                        <th width="120px">Value 2: Top Right Symbol</th>
+                        <th width="120px">Value 3: Bottom Left Symbol</th>
+                        <th width="120px">Value 4: Bottom Right Symbol</th>
+                        <tbody><tr>                           
+                                <td width="120px" align="center"><?php echo $value1; ?></td>
+                                <td width="120px" align="center"><?php echo $value2; ?></td>
+                                <td width="120px" align="center"><?php echo $value3; ?></td>
+                                <td width="120px" align="center"><?php echo $value4; ?></td>
+                            </tr>
+							</tbody>
+                    </table>
             </div>
          </div>
         </div>
