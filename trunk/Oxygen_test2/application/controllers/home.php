@@ -319,7 +319,21 @@ class Home extends CI_Controller {
             } else {
                 
             }
-
+			$query2 = $this->link_db_model->get_value();
+            if ($query2->num_rows() > 0) {
+                $row_value = $query2->result();
+                $data['value1'] = $row_value[0]->value_name;
+                $data['value2'] = $row_value[1]->value_name;
+                $data['value3'] = $row_value[2]->value_name;
+                $data['value4'] = $row_value[3]->value_name;
+				//print_r($query2->result());
+                //$this->load->view('mission_statement/template_ms', $data);
+            } else {
+                $data['value1'] = "No value";
+                $data['value2'] = "No value";
+                $data['value3'] = "No value";
+                $data['value4'] = "No value";
+            }
             $data['main_portfolio'] = 'portfolio/main_ucoa';
             $data['nav_portfolio'] = 'portfolio/left_nav_mp';
             $this->load->view('portfolio/template_mp', $data);
@@ -397,6 +411,21 @@ class Home extends CI_Controller {
                 $this->load->view('portfolio/template_mp', $data);
                 //echo "here";
             } else {
+			        $query2 = $this->link_db_model->get_value();
+        if ($query2->num_rows() > 0) {
+            $row2=$query2->result();
+            $data['value1']=$row2[0]->value_name;
+            $data['value2']=$row2[1]->value_name;
+            $data['value3']=$row2[2]->value_name;
+            $data['value4']=$row2[3]->value_name;
+            //$this->load->view('mission_statement/template_ms', $data);
+        }
+        else{
+            $data['value1']="No value";
+            $data['value2']="No value";
+            $data['value3']="No value";
+            $data['value4']="No value";
+        }
                 $data['rows2'] = $this->link_db_model->get_coa(); //change to get_goal in future
                 if ($data['rows2'] == null) {
                     $data['rows'] = $this->link_db_model->get_motto();
