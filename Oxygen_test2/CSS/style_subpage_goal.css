@@ -11,7 +11,7 @@ body {
     font-family: BPreplay,Arial,Helvetica,sans-serif;
     font-size: 13px;
     color: #837669;
-    background: url(images/background/home_background.png) no-repeat  50% 0%;
+    background: url(images/background/sub_background.png) no-repeat  50% 0%;
     text-align: left;
 }
 
@@ -185,11 +185,7 @@ padding-top: 160px; }
 #logo p a:hover { text-decoration: underline; }
 
 /* Register */
-#register{
-    margin-left: 20%;
-    margin-top: 7%;
-    background: url(images/background/registerpopup.png) no-repeat 0 0;
-}
+
 
 /* Content */
 
@@ -509,92 +505,6 @@ padding-top: 160px; }
         text-decoration: none;
 }
 
-/* subpage nav */
-/*
-#subpage {
-	float: left;
-	width: 280px;
-}
-
-#subpage ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#subpage li {
-	padding: 0 0 5px 0px;
-}
-
-
-#subpage a{
-        width: 280px;
-        height: 33px;
-	margin: 0 0 0px 0px;
-	padding: 5px 0 5px 50px;
-	background: url(images/logo_250.jpg) no-repeat ;
-	font-size: 20px;
-        text-decoration: none;
-	color: #FFFFFF;
-}
-#subpage a:hover{
-        margin-left: 20px;
-}*/
-
-
-/* Footer */
-
-#footer {
-    width: 1024px;
-    font-size: 12px;
-    height: 120px;
-    color: #33ff33;
-}
-
-#footer #image {
-        float: left;
-        margin-left: 250px;
-        width: 200px;
-}
-
-#footer #image :hover{
-        padding-top: 5px;
-}
-
-#sitemap{
-        float: right;
-        width: 450px;
-        margin-left: 100px;
-}
-
-#sitemap ul li{
-        list-style: none;
-        text-decoration: none;        
-}
-
-#sitemap ul li:hover{
-       text-decoration: underline;
-       color:#ff0033;
-        
-}
-
-#sitemap ul li a{
-        display: block;
-	float: left;
-        text-decoration: none;
-        padding-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-	font: 16px Georgia, "Times New Roman", Times, serif;
-        color: #FFF;
-        text-align: left;
-        width: 120px;
-}
-
-#sitemap ul li a:hover{
-        text-decoration: underline;
-        color:#ff0033;
-}
 
 #copy{
         margin-top: 10px;
