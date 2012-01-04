@@ -7,17 +7,15 @@ and open the template in the editor.
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>User Register Page</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
         <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
 
         <!-- password strength-->
-        <script type="text/javascript" src="<?php echo base_url(); ?>password/jquery.js"></script>
+<!--        <script type="text/javascript" src="<?php echo base_url(); ?>password/jquery.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>password/mocha.js"></script>
         <link type="text/css" href="<?php echo base_url(); ?>password/style.css" rel="stylesheet" />
 
         
-        <!-- datepicker strength-->
+         datepicker strength
         <link rel="stylesheet" href="<?php echo base_url(); ?>datepicker/jquery.ui.all.css"/>
 	<script src="<?php echo base_url(); ?>datepicker/jquery-1.6.2.js"></script>
 	<script src="<?php echo base_url(); ?>datepicker/jquery.ui.core.js"></script>
@@ -31,10 +29,11 @@ and open the template in the editor.
                         yearRange: '-80y:-10y'
 		});
 	});
-	</script>
+	</script>-->
 
         
         <!--validation-->
+        <script src="<?php echo base_url(); ?>validation/jquery.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>validation/jquery.validate.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>validation/additional-methods.js" type="text/javascript"></script>
         <script type="text/javascript">
