@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <!--load main css-->
+        <link href="<?php echo base_url();?>CSS/reset.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url();?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
 
         <link href="<?php echo base_url();?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
@@ -374,7 +375,7 @@ function textCounter( field, countfield, maxlimit ) {
         <div id="wrapper">
 
             <div id="header">
-                <div id="menu" align="center">
+                <div id="menu">
                     <ul>
                         <li class="current_page_item"><a href="<?php echo base_url();?>index.php/home/">Home</a></li>
                         <li><a href="<?php echo base_url();?>index.php/home/resilience_test/">Resilience Test</a></li>
