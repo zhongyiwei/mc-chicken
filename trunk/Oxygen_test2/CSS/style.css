@@ -544,7 +544,11 @@ padding-top: 160px; }
 #footer #image {
         float: left;
         margin-left: 250px;
-        width: 200px
+        width: 200px;
+}
+
+#footer #image :hover{
+        padding-top: 5px;
 }
 
 #sitemap{
