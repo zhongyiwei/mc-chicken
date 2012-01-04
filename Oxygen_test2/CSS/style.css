@@ -12,6 +12,9 @@ body {
     font-size: 13px;
     color: #837669;
     text-align: left;
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
