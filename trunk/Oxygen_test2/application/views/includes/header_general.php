@@ -2,7 +2,7 @@
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -371,7 +371,7 @@ function textCounter( field, countfield, maxlimit ) {
         <!--end of all table-->
     </head>
 
-    <body  style= "width:50%;margin-left:auto;margin-right:auto;">
+    <body>
         <div id="wrapper">
 
             <div id="header">
