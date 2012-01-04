@@ -9,7 +9,7 @@ and open the template in the editor.
         <title>Oxygen</title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
-        <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="<?php echo base_url(); ?>CSS/register.css" rel="stylesheet" type="text/css" media="screen" />
 
         <link href="<?php echo base_url(); ?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
         <link type="text/css" href="<?php echo base_url(); ?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
