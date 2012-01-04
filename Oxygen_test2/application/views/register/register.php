@@ -81,4 +81,8 @@
     </table>
 </div>
 
+<div id="home">
+    
+</div>
+
 <?php $this->load->view('includes/footer_general'); ?>
