@@ -3,7 +3,7 @@
     <div id="sitemap" >
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/test_resilience/">Register</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/login/register/">Register</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/home/why_ms/#MS/">Login</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/home/goal/">About Us</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Terms of Use</a></li>

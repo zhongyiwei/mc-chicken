@@ -181,6 +181,13 @@ padding-top: 160px; }
 
 #logo p a:hover { text-decoration: underline; }
 
+/* Register */
+#register{
+    margin-left: 20%;
+    margin-top: 7%;
+    background: url(images/background/registerpopup.png) no-repeat 0 0;
+}
+
 /* Content */
 
 #content {
