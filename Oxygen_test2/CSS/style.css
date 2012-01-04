@@ -11,7 +11,7 @@ body {
     font-family: BPreplay,Arial,Helvetica,sans-serif;
     font-size: 13px;
     color: #837669;
-    background: url(images/background/home_background.png) no-repeat 50% 0%;
+    
     height: 100%;
     text-align: left;
 }
@@ -78,6 +78,7 @@ hr { display: none; }
 }
 
 #wrapper {
+        background: url(images/background/home_background.png) no-repeat  50% 0%;
 }
 
 /* Header */
@@ -86,7 +87,7 @@ hr { display: none; }
 	width: 900px;
 	height: 60px;
 	margin: 0 auto;
-	background: url(images/img02.jpg) no-repeat left top;
+	background: url(images/img02.jpg) no-repeat 50% 0%;
 }
 
 /* Menu */
