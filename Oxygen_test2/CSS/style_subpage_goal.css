@@ -206,6 +206,8 @@ padding-top: 160px; }
 /* Post */
 
 .post {
+	background: url(images/background/brush.png) no-repeat;
+
 	margin-bottom: 25px;
 }
 
