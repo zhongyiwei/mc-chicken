@@ -8,13 +8,12 @@
 
 
 body {
-        margin-left: 15%;
-	padding: 0;
-	background: #FFFFFF url(images/img01.jpg) repeat-x left top;
-	font-family: BPreplay,Arial,Helvetica,sans-serif;
-	font-size: 13px;
-	color: #837669;
-        width: 900px;
+    font-family: BPreplay,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #837669;
+    background: url(image/home_background.png) no-repeat 50% 0%;
+    height: 100%;
+    text-align: left;
 }
 
 h1, h2, h3 {
