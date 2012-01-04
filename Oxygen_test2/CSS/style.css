@@ -11,8 +11,8 @@ body {
     font-family: BPreplay,Arial,Helvetica,sans-serif;
     font-size: 13px;
     color: #837669;
-    background: url(images/background/home_background.png) no-repeat  50% 0%;
     text-align: left;
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -77,8 +77,10 @@ hr { display: none; }
 }
 
 #wrapper {
-        margin-left: 0px !important;
+        margin-left: 10% !important;
         margin-left: 210px;
+        width: 1024px;
+        background: url(images/background/home_background.png) no-repeat  50% 0%;
 }
 
 /* Header */
@@ -86,7 +88,7 @@ hr { display: none; }
 #header {
 	width: 300px;
 	height: 550px;
-        margin-left: 880px !important;
+        margin-left: 700px !important;
 }
 
 /* Menu */
