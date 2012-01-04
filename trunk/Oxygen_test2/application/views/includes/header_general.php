@@ -371,7 +371,7 @@ function textCounter( field, countfield, maxlimit ) {
         <!--end of all table-->
     </head>
 
-    <body>
+    <body  style= "width:50%;margin-left:auto;margin-right:auto;">
         <div id="wrapper">
 
             <div id="header">
