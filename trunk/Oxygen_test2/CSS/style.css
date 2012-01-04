@@ -11,7 +11,7 @@ body {
     font-family: BPreplay,Arial,Helvetica,sans-serif;
     font-size: 13px;
     color: #837669;
-    background: url(image/home_background.png) no-repeat 50% 0%;
+    background: url(images/background/home_background.png) no-repeat 50% 0%;
     height: 100%;
     text-align: left;
 }
@@ -81,11 +81,6 @@ hr { display: none; }
 }
 
 /* Header */
-
-#header-wrapper {
-	width: 900px;
-	margin: 0 auto;
-}
 
 #header {
 	width: 900px;
@@ -544,11 +539,18 @@ padding-top: 160px; }
 /* Footer */
 
 #footer {
-	width: 900px;
-	margin: 0 auto;
-	padding: 0;
-	background: url(images/img07.jpg) no-repeat left top;
-	height: 75px;
+    width: 1024px;
+    font-size: 12px;
+    height: 120px;
+}
+
+#footer a {
+    color:#000;
+    text-decoration: underline;
+}
+
+#footer a:hover {
+    text-decoration: none;
 }
 
 #footer p {
@@ -557,10 +559,6 @@ padding-top: 160px; }
 	text-align: center;
 	line-height: normal;
 	color: #FFFFFF;
-}
-
-#footer a {
-	color: #F1B566;
 }
 
 #footer ul{
