@@ -12,7 +12,6 @@ body {
     font-size: 13px;
     color: #837669;
     text-align: left;
-    margin: 0;
 }
 
 h1, h2, h3 {
@@ -77,10 +76,9 @@ hr { display: none; }
 }
 
 #wrapper {
-        margin-left: 10% !important;
-        margin-left: 210px;
-        width: 1024px;
-        background: url(images/background/home_background.png) no-repeat  50% 0%;
+            background: url(images/background/home_background.png) no-repeat;
+            margin-left:23%;
+            float:left;           
 }
 
 /* Header */
@@ -89,6 +87,7 @@ hr { display: none; }
 	width: 300px;
 	height: 550px;
         margin-left: 700px !important;
+        float:left;
 }
 
 /* Menu */
@@ -105,7 +104,7 @@ hr { display: none; }
 /* Menu */
 
 #menu {
-        margin-top: 40%;
+        margin-top: 50px;
 	width: 200px;
 }
 
@@ -547,16 +546,18 @@ padding-top: 160px; }
 /* Footer */
 
 #footer {
+    margin-top:100px;
     width: 1024px;
     font-size: 12px;
     height: 120px;
     color: #33ff33;
+    float:left;
 }
 
 #footer #image {
         float: left;
-        margin-left: 250px;
         width: 200px;
+        height:60px;
 }
 
 #footer #image :hover{
@@ -564,9 +565,10 @@ padding-top: 160px; }
 }
 
 #sitemap{
-        float: right;
+        float: left;
         width: 450px;
-        margin-left: 100px;
+        height:60px;
+        margin-left:150px;
 }
 
 #sitemap ul li{
@@ -600,8 +602,8 @@ padding-top: 160px; }
 
 #copy{
         margin-top: 10px;
-        float: right;
-        margin-right: 150px;
+        float: left;
+        margin-left:280px;
 }
 
 
