@@ -6,59 +6,106 @@ and open the template in the editor.
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Oxygen</title>
+        <title>User Register Page</title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
 
-        <link href="<?php echo base_url(); ?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
-        <link type="text/css" href="<?php echo base_url(); ?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.5.1.min.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.8.12.custom.min.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.dropdown.easing.1.3.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/script.sidebar_dropdown.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/script.js"></script>
-
         <!-- password strength-->
+        <script type="text/javascript" src="<?php echo base_url(); ?>password/jquery.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>password/mocha.js"></script>
         <link type="text/css" href="<?php echo base_url(); ?>password/style.css" rel="stylesheet" />
 
-        <script>
-            $(function() {
-                $( "#datepicker" ).datepicker({
-                    dateFormat:"yy-mm-dd"
-                });
-            });
+        
+        <!-- datepicker strength-->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>datepicker/jquery.ui.all.css"/>
+	<script src="<?php echo base_url(); ?>datepicker/jquery-1.6.2.js"></script>
+	<script src="<?php echo base_url(); ?>datepicker/jquery.ui.core.js"></script>
+	<script src="<?php echo base_url(); ?>datepicker/jquery.ui.datepicker.js"></script>
+	<script>
+	$(function() {
+		$( "#datepicker" ).datepicker({
+                        dateFormat:"yy-mm-dd",
+			changeMonth: true,
+			changeYear: true,
+                        yearRange: '-80y:-10y'
+		});
+	});
+	</script>
 
-            $(function() {
-                $( "#datepicker123" ).datepicker({
-                    dateFormat:"yy-mm-dd",
-                    changeMonth: true,
-                    changeYear: true,
-                    yearRange: '-100y:-12y'
+        
+        <!--validation-->
+        <script src="<?php echo base_url(); ?>validation/jquery.validate.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>validation/additional-methods.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $().ready(function() {
+                // validate signup form on keyup and submit
+                $("#signupForm").validate({
+                    rules: {
+                        name: {
+                            required:true,
+                            lettersonly:true
+                        },
+                        gender: "required",
+                        date_of_birth:"required",
+                        nationality:"required",
+                        mobile_number:{
+                            required:true,
+                            digits: true,
+                            minlength: 8,
+                            maxlength:8
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        password2: {
+                            required: true,
+                            minlength: 8,
+                            maxlength:32,
+                            equalTo: "#password"
+                        },
+                        
+                        topic: {
+                            required: "#newsletter:checked",
+                            minlength: 2
+                        },
+                        agree: "required"
+                    },
+                    messages: {
+                        name: {
+                            required:"Please enter your Name",
+                            lettersonly: "Please enter letters only"
+                        },
+                        gender: "Please choose your Gender",
+                        date_of_birth:"Please type your Date Of Birth",
+                        nationality:"Please choose your Nationality",
+                        mobile_number:{
+                            required: "Please enter your Mobile Number",
+                            digit: "Please enter digits only",
+                            minlength: "Mobile Number must consist of at least 8 digits",
+                            maxlength: "Mobile Number must consist of at most 8 digits"
+                        },
+                        email:{
+                            required:"Please enter your Email",
+                            email:"Please enter a valid Email Address"
+                        },
+                        password2: {
+                            required: "Please provide a password",
+                            minlength: "The length of password should be >= 8",
+                            maxlength: "The length of password should be <= 32",
+                            equalTo: "Please enter the same password as above"
+                        },
+                       
+                        agree: "Please accept our policy"
+                    }
                 });
             });
         </script>
-
         <style>
             #format { margin-top: 2em; }
         </style>
     </head>
     <body>
         <div id="wrapper">
-
-            <div id="header">
-                <div id="menu" align="center">
-                    <ul>
-                        <li class="current_page_item"><a href="<?php echo base_url(); ?>index.php/home/">Home</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/test_resilience/">Resilience Test</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/why_ms/#MS/">Mission & Value</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/goal/">Set Goals</a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Activity</a></li>                        
-                        <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS">My Portfolio</a></li>
-                        <li><a href="#">About us</a></li>
-                    </ul>
-                </div>
-            </div>
             <!--end #header -->
