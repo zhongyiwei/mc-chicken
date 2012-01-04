@@ -1,16 +1,19 @@
-<div id="footer">
-    <p>Copyright (c) 2011 SIT-Sem1-2011-1074 All rights reserved.</p>
-    <div id="sitemap">
+<div id="footer" align="center">
+    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
+    <div id="sitemap" >
         <ul>
-            <li><a href="<?php echo base_url(); ?>index.php/home/">Home</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/test_resilience/">Resilience Test</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/why_ms/#MS/">Mission & Value</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/goal/">Set Goals</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Activity</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS">My Portfolio</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/test_resilience/">Register</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/why_ms/#MS/">Login</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/goal/">About Us</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Terms of Use</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS">Contact Us</a></li>
         </ul>
     </div>
+    <div id="copy">
+        <p>Copyright (c) 2011 SIT-Sem1-2011-1074 All rights reserved.</p>
+    </div>
+    
 </div>
 <!-- end #footer -->
 </div>
