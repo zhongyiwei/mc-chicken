@@ -54,9 +54,9 @@ class Login extends CI_Controller {
         $this->load->library('form_validation');
 
         // field name, error message, validation rules
-        $this->form_validation->set_rules('name', 'Name', 'trim|required');
+        $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
         $this->form_validation->set_rules('gender', 'Gender', 'trim|required');
-        $this->form_validation->set_rules('date_of_birth', 'Date Of Birth', 'trim|required|');
+        $this->form_validation->set_rules('date_of_birth', 'Date Of Birth', 'trim|required');
         $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required|alpha');
         $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
