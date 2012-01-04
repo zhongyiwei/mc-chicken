@@ -559,8 +559,7 @@ padding-top: 160px; }
 
 #sitemap ul li{
         list-style: none;
-        text-decoration: none;
-        
+        text-decoration: none;        
 }
 
 #sitemap ul li:hover{
@@ -573,9 +572,13 @@ padding-top: 160px; }
         display: block;
 	float: left;
         text-decoration: none;
-	padding: 15px 10px 5px 50px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 	font: 16px Georgia, "Times New Roman", Times, serif;
         color: #FFF;
+        text-align: left;
+        width: 120px;
 }
 
 #sitemap ul li a:hover{
