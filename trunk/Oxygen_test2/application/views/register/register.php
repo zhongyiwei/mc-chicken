@@ -6,14 +6,11 @@
     <h1>Create An Account</h1>
 
     <table cellpadding="5" cellspace="5" style="text-align: left;">
-        <?php 
-        $id_arr=array(
-            'id'=>'signupForm'
-        );
-        echo form_open('login/create_member', $id_arr); ?>
+        <?php echo form_open('login/create_member'); ?>
         <tr>
             <th>Name:</th>
-            <td><?php echo form_input('name', '', 'id="email"'); ?></td>
+            <td><?php echo form_input('name', set_value('name'), 'id="email"'); ?></td>
+            <td><?php echo form_error('name'); ?></td>
         </tr>
 
         <tr>
@@ -29,7 +26,8 @@
 
         <tr>
             <th>Date Of Birth:</th>
-            <td><?php echo form_input('date_of_birth', '', 'id="datepicker"'); ?></td>
+            <td><?php echo form_input('date_of_birth', set_value('date_of_birth'), 'id="datepicker123"'); ?></td>
+            <td><?php echo form_error('date_of_birth'); ?></td>
         </tr>
 
 
@@ -49,16 +47,19 @@
                 );
                 echo form_dropdown('nationality', $options);
         ?></td>
+            <td><?php echo form_error('nationality'); ?></td>
         </tr>
 
         <tr>
             <th>Mobile Number:</th>
-            <td><?php echo form_input('mobile_number', ''); ?></td>
+            <td><?php echo form_input('mobile_number', set_value('mobile_number')); ?></td>
+            <td><?php echo form_error('monile_number'); ?></td>
         </tr>
 
         <tr>
             <th>Email:</th>
-            <td><?php echo form_input('email', ''); ?></td>
+            <td><?php echo form_input('email', set_value('email')); ?></td>
+            <td><?php echo form_error('email'); ?></td>
         </tr>
 
         <tr>
@@ -70,6 +71,7 @@
         <tr>
             <th>Confirm Password:</th>
             <td><?php echo form_password('password2', ''); ?></td>
+            <td><?php echo form_error('password2'); ?></td>
         </tr>
 
         <tr>
@@ -78,4 +80,5 @@
         <?php echo form_close(); ?>
     </table>
 </div>
+
 <?php $this->load->view('includes/footer_general'); ?>
