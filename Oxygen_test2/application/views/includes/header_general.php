@@ -377,12 +377,13 @@ function textCounter( field, countfield, maxlimit ) {
             <div id="header">
                 <div id="menu">
                     <ul>
-                        <li class="current_page_item"><a href="<?php echo base_url();?>index.php/home/">Home</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/resilience_test/">Resilience Test</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/why_ms/#MS/">Mission & Value</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/goal/">Set Goals</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/activity_page/">Activity</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS">My Portfolio</a></li>                        
+                        <li class="current_page_item"><a href="<?php echo base_url();?>index.php/home/why_ms/#MS/"><img src="<?php echo base_url();?>CSS/images/background/mission.png"></a></li>
+			<li><a href="<?php echo base_url();?>index.php/home/why_ms/#MS/"><img src="<?php echo base_url();?>CSS/images/background/values.png"></a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/goal/"><img src="<?php echo base_url();?>CSS/images/background/goals.png"></a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/activity_page/"><img src="<?php echo base_url();?>CSS/images/background/activity.png"></a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/test_resilience/"<img src="<?php echo base_url();?>CSS/images/background/resilience.png"></a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS"><img src="<?php echo base_url();?>CSS/images/background/coat_of_arm.png"></a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS"><img src="<?php echo base_url();?>CSS/images/background/portfolio.png"></a></li>                        
                         <li><a href="http://sit.rp.edu.sg/91234/assignment2/images/StartingSnow.swf">Game</a></li>
                     </ul>
                 </div>
