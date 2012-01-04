@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="description" content="" />
         <!--load main css-->
         <link href="<?php echo base_url();?>CSS/reset.css" rel="stylesheet" type="text/css" media="screen" />
-
+        <link href="<?php echo base_url();?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
 
         <link href="<?php echo base_url();?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
         <link type="text/css" href="<?php echo base_url();?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
