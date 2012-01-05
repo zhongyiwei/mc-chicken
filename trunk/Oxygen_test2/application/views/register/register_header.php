@@ -7,6 +7,7 @@ and open the template in the editor.
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Oxygen</title>
+        <link rel="shortcut icon" href="<?php echo base_url(); ?>CSS/images/favicon.ico"/>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link href="<?php echo base_url(); ?>CSS/register.css" rel="stylesheet" type="text/css" media="screen" />
