@@ -1,7 +1,6 @@
 
 <?php $this->load->view('register/register_header'); ?>
 
-<?php $this->load->view('includes/banner_general'); ?>
 <div id="register">
     <h1>Create An Account</h1>
 

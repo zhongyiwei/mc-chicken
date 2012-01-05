@@ -81,6 +81,14 @@ hr { display: none; }
             float:left;           
 }
 
+/* login */
+#login{
+    background: url(images/background/registerpopup.png) no-repeat 0 0;
+    width: 300px;
+    height: 300px;
+}
+
+
 /* Register */
 #register{
     margin-left: 10%;
