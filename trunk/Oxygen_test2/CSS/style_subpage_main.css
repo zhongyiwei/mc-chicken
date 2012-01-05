@@ -523,21 +523,20 @@ padding-top: 160px; }
 }
 #sub-nav ul{
     list-style-type: none;
-    margin-left: 10px;
 }
 
 #sub-nav ul li{
-    width: 80px;
+    width: 150px;
     float: left;
 }
 #sub-nav ul li a{
-    background: #000 no-repeat 0 0; 
-    margin-left: 40px;
+    background: #ff0033 no-repeat 0 0;
     padding-left:10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 #sub-nav ul li a:hover{

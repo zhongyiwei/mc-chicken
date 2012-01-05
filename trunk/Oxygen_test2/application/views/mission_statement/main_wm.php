@@ -1,5 +1,5 @@
 <div id="page">
-    <div id="sub_nav">
+    <div id="sub-nav">
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/index/" >Set Value</a></li>
             <li><a href="#" >Update Goals</a></li>
