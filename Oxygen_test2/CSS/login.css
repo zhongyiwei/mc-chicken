@@ -59,12 +59,12 @@ a img {
     margin-top: 12%;
     background: url(images/background/registerpopup.png) no-repeat 0 0;
     width: 500px;
-    height: 400px;
+    height: 350px;
 }
 
-
-#register table tr td{
-    margin-top: 10px;
+#login table{
+    width: 300px;
+    height: 300px;
 }
 
 /* home button */
