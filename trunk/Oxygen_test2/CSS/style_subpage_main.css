@@ -143,7 +143,6 @@ hr { display: none; }
 #page {
 	width: 700px;
 	margin: 0px;
-	padding: 30px 0px 0px 0px;
 	height:500px;
 	float: left;
 }
@@ -199,8 +198,8 @@ padding-top: 160px; }
 #content {
 	float: right;
 	width: 600px;
-    margin-top: 0px;
-    margin-right: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
 }
 
 /* Post */
@@ -287,9 +286,11 @@ padding-top: 160px; }
 
 #content_sub {
 	float: right;
-	width: 700px;
-    margin-top: 0px;
-    margin-right: 0px;	
+	width: 720px;
+        margin-top: 0px;
+        margin-right: 0px;
+        overflow:auto;
+        height: 550px;
 }
 
 /* Post */
@@ -516,41 +517,60 @@ padding-top: 160px; }
         text-decoration: none;
 }
 
-/* subpage nav */
-/*
-#subpage {
-	float: left;
-	width: 280px;
+#sub-nav{
+    float: left;
+    
+}
+#sub-nav ul{
+    list-style-type: none;
+    margin-left: 10px;
 }
 
-#subpage ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+#sub-nav ul li{
+    width: 80px;
+    float: left;
+}
+#sub-nav ul li a{
+    background: #000 no-repeat 0 0; 
+    margin-left: 40px;
+    padding-left:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-align: center;
 }
 
-#subpage li {
-	padding: 0 0 5px 0px;
+#sub-nav ul li a:hover{
+    background:aqua no-repeat 0 0;
+    opacity:0.8;
 }
 
-
-#subpage a{
-        width: 280px;
-        height: 33px;
-	margin: 0 0 0px 0px;
-	padding: 5px 0 5px 50px;
-	background: url(images/logo_250.jpg) no-repeat ;
-	font-size: 20px;
-        text-decoration: none;
-	color: #FFFFFF;
+/* home button */
+#home {
+    margin-top: 60px;
+    width: 80px;
+    height: 100px;
 }
-#subpage a:hover{
-        margin-left: 20px;
-}*/
 
+#home a {
+    text-decoration: none;
+}
+
+#home a img{
+    width:50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+#home img:hover {
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+    margin-top: 30px;
+}
 
 /* Footer */
-
 #footer {
     margin-top:100px;
     width: 1024px;

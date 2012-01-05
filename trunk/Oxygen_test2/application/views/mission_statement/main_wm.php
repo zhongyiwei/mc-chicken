@@ -1,5 +1,12 @@
-<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
 <div id="page">
+    <div id="sub_nav">
+        <ul>
+            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >Set Value</a></li>
+            <li><a href="#" >Update Goals</a></li>
+            <li><a href="#" >Update Goals</a></li>
+            <li><a href="#" >Update Goals</a></li>
+        </ul>
+    </div>
     <div id="content_sub">
         <div class="post">
 
@@ -78,10 +85,6 @@
                 <p>That said, when people are confronted with a task that is complex for them, encouragement (e.g., urging to do their best) sometimes leads to better solving strategies than setting a specific difficult performance goal.</p>
 
             </div>
-        </div>
-
-
-
-       
+        </div>       
     </div>
     <!-- end #content -->
