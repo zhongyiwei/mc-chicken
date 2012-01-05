@@ -2,7 +2,7 @@
 $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
 
 ?>
-
+<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
 <div id="page">
     <div id="content_sub">
         <div class="post">
