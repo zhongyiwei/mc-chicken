@@ -1,4 +1,4 @@
-<div id="xxx">
+<div id="xxx" style="display: none;">
     <ul class="container">
         <li class="menu">
 
