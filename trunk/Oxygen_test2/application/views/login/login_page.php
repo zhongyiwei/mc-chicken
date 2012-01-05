@@ -8,20 +8,21 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
         <link rel="shortcut icon" href="<?php echo base_url(); ?>CSS/images/favicon.ico"/>
-        <link href="<?php echo base_url(); ?>CSS/register.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="<?php echo base_url(); ?>CSS/login.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
         <div id="wrapper">
             <div id="login">
+                <h1>User Login</h1>
                 <table>
                     <tr>
                         <th>Email:</th>
-                        <td></td>
+                        <td>14234</td>
                     </tr>
                     
                     <tr>
                         <th>Password:</th>
-                        <td></td>
+                        <td>124243</td>
                     </tr>
                 </table>
             </div>

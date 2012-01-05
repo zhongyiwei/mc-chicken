@@ -1,0 +1,160 @@
+/* 
+    Document   : style
+    Created on : May 4, 2011, 10:29:07 PM
+    Author     : 91150
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    font-family: BPreplay,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #837669;
+    text-align: left;
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+	margin-left: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #649632;
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 20px; }
+
+h3 { }
+
+p, ul, ol {
+	margin-top: 0;
+	text-align: justify;
+	font-family: BPreplay,Arial,Helvetica,sans-serif;
+	font-size: 14px;
+}
+
+ul, ol { }
+
+blockquote { }
+
+a { color: #000000; }
+
+a:hover { text-decoration: none; }
+
+a img {
+	border: none;
+}
+
+#wrapper {
+            background: url(images/background/home_background.png) no-repeat;
+            float:left;           
+}
+
+/* login */
+#login{
+    margin-left: 25%;
+    margin-top: 12%;
+    background: url(images/background/registerpopup.png) no-repeat 0 0;
+    width: 500px;
+    height: 400px;
+}
+
+
+#register table tr td{
+    margin-top: 10px;
+}
+
+/* home button */
+#home {
+    margin-top: 40px;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+#home a img{
+    width:50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#home img:hover {
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
+/* footer */
+#footer {
+    margin-top:30px;
+    width: 1024px;
+    font-size: 12px;
+    height: 120px;
+    color: #33ff33;
+    float:left;
+}
+
+#footer #image {
+        float: left;
+        width: 200px;
+        height:60px;
+}
+
+#footer #image :hover{
+        padding-top: 5px;
+}
+
+#sitemap{
+        float: left;
+        width: 450px;
+        height:60px;
+        margin-left:150px;
+}
+
+#sitemap ul li{
+        list-style: none;
+        text-decoration: none;        
+}
+
+#sitemap ul li:hover{
+       text-decoration: underline;
+       color:#ff0033;
+        
+}
+
+#sitemap ul li a{
+        display: block;
+	float: left;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+        color: #FFF;
+        text-align: left;
+        width: 120px;
+}
+
+#sitemap ul li a:hover{
+        text-decoration: underline;
+        color:#ff0033;
+}
+
+#copy{
+        margin-top: 10px;
+        float: left;
+        margin-left:280px;
+}
+
+/*        End*/
+
