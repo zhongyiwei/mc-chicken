@@ -6,4 +6,4 @@
 
 <?php $this->load->view($nav);?>
 
-<?php $this->load->view('includes/footer_general');?>
+<?php $this->load->view('subpage/sub_footer');?>

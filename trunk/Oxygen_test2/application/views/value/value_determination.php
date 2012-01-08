@@ -1,8 +1,14 @@
+<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
+
 <div id="page">
+
     <div id="content_sub">
+	
         <div class="post">
             <h2 class="title">Set Your Values</h2>
-
+			
+ <div class="entry">
+ <div id="popup">
             <script type="text/javascript">
                 function addToList(boxvalue,boxname){
                     var i=1;
@@ -27,10 +33,16 @@
                                 break;
                             }
                             if(i==4){
-alert("You can only select 4 values");
+							
+							input='input[name='+boxname+']';
+					
+							
+             
+				$(input).removeAttr("checked");
+				$(input).button( "refresh" );
+				alert("You can only select 4 values");
 
-                 input='input[name='+boxname+']';
-                $(input).attr('checked',false);
+                 
 
 
                             }
@@ -77,6 +89,7 @@ else {
 
 
             <center>
+			<br/>
                 <b> Choose only <font color="red">4</font> Values that matches you best</b>
                 <br/>
                 <?php   $role=$this->session->userdata('role');
@@ -95,10 +108,10 @@ else {
                 <form method="post" action="<?php echo base_url();?>index.php/home/evaluate_values" onsubmit="return checkBoxes();">
                     Your Values:<br/>
                     <?php for($fieldCount=1;$fieldCount<=4;$fieldCount++) { ?>
-                    <input type="text" id="field<?php echo $fieldCount; ?>" disabled='disabled'  /><br/>
+                    <input type="text" size="15" id="field<?php echo $fieldCount; ?>" disabled='disabled'  />
                     <input type="hidden" id="value<?php echo $fieldCount; ?>" name="value<?php echo $fieldCount; ?>" >
                         <?php } ?>
-                    <br />
+                    
                     <div id="format">
                         <?php $query = $this->db->query('SELECT * FROM value');
 
@@ -165,8 +178,10 @@ else {
                 <?php    }
             ?>
 
-
+</div>
         </div>
-
+</div>
     </div>
+	
+	
     <!-- end #content -->

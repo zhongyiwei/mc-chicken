@@ -90,8 +90,8 @@ class Home extends CI_Controller {
         $this->load->view('value/subpage_value', $data);
     }
 
-    function test_resilience() {
-        $data['main'] = 'resilience/test_resilience';
+    function resilience() {
+        $data['main'] = 'resilience/resilience';
         $data['nav'] = 'includes/left_nav_resilience';
         $this->load->view('resilience/subpage_resilience', $data);
     }
