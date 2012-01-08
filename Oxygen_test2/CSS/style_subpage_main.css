@@ -682,4 +682,11 @@ padding-top: 160px; }
           font-weight: bold;
           }
 /*        End*/
+/* popup box  added by WenJie*/ 
+#popup{
+    margin-left: 5%;
+    background: url(images/background/registerpopup.png) no-repeat 0 0;
+    width: 600px;
+    height: 100%;
+}
 
