@@ -1,4 +1,3 @@
-<link href="<?php echo base_url();?>CSS/style_subpage_coa.css" rel="stylesheet" type="text/css" media="screen" />
 <div id="page">
     <div id="content_sub">
         <div class="post">
