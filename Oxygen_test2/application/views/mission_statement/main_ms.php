@@ -1,5 +1,13 @@
-<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" /
+<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
 <div id="page">
+        <div id="sub-nav">
+        <ul>
+            <li><a href="<?php echo base_url(); ?>index.php/home/mission_statement/" >Set Mission</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >Why Mission Statement?</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >How to set mission</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >Successful Example</a></li>
+        </ul>
+    </div>
     <div id="content_sub">
         <div class="post">
             <h2 class="title">Set the Mission Statement of your life</h2>
