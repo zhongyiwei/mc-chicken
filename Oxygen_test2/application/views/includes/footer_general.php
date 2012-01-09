@@ -1,5 +1,4 @@
-    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
-<div id="sitemap" >
+    <div id="sitemap" >
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/login/register/">Register</a></li>
