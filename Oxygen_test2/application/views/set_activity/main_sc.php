@@ -13,8 +13,7 @@
         <div class="post">
             <h2 class="title">Set the Activity for Your Goals Here</h2>
             <div class="entry">
-                <!--<p style="font-size:150%; color:green;" > Set your activities for your goals below: </p>-->
-                
+                <p style="font-size:150%; color:white;" > Notice: Do submit one goal at a time before proceeding to the next: </p>
 <div class="goal_for_activity">
 <div id="activity_accordion">
         <?php

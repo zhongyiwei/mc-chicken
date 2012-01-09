@@ -44,7 +44,7 @@
 </div>
 <!-- end #page -->
 <div id="home">
-    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
+    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png" alt="Home"/></a>
 </div>
 
 
