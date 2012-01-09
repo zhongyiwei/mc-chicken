@@ -443,3 +443,4 @@ function textCounter( field, countfield, maxlimit ) {
                 </div>
             </div>
             <!--end #header -->
+            
