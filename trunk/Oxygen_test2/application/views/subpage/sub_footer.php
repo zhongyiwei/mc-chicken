@@ -1,13 +1,13 @@
-<div id="home">
-    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
-</div>
 
+<<<<<<< .mine
+=======
 
 <div id="footer" align="center">
 <div id="dialog" title="Your Flowchart">
 </div>
 
     <div id="image"><img id="opener" onclick="loadFlow()" src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></img></div>
+>>>>>>> .r96
     <div id="sitemap" >
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
