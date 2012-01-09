@@ -179,7 +179,7 @@ var loggedin=false; <?php } ?>
                 // Create our XMLHttpRequest object
                 var hr = new XMLHttpRequest();
                 // Create some variables we need to send to our PHP file
-                var url = '<?php echo base_url()."home/";?>'+"getflow";
+                var url = '<?php echo base_url()."index.php/home/";?>'+"getflow";
 alert(url);
                 var vars = "logged="+loggedin;
                 hr.open("POST", url, true);
@@ -190,7 +190,7 @@ alert(url);
                     if(hr.readyState == 4 && hr.status == 200) {
                         var return_data = hr.responseText;
 			
-                        document.getElementById("dialog").innerHTML = "BOO";
+                        document.getElementById("dialog").innerHTML = return_data;
                     }
                 }
                 // Send the data to PHP now... and wait for response to update the status div
