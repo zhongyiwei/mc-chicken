@@ -46,3 +46,5 @@
 <div style="clear: both;">&nbsp;</div>
 </div>
 <!-- end #page -->
+<div id="footer" align="center">
+    <div id="image"><a href="<?php echo base_url();?>index.php/home/holistic/"><img src="<?php echo base_url();?>CSS/images/background/do_u_know.png" alt="" /></a></div>
