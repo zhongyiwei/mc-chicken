@@ -103,6 +103,11 @@ class Home extends CI_Controller {
     }
 
     //End of Wenjie----Value & Resilience
+	//WenJie Flow
+	   function getflow() {
+        $this->load->view('next/subpage_flow');
+    }
+	//End of flow
     //Arian ---- activity Tracking
     function activity_tracking() {
         $is_logged_in = $this->session->userdata('is_logged_in');

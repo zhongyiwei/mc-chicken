@@ -4,7 +4,10 @@
 
 
 <div id="footer" align="center">
-    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
+<div id="dialog" title="Your Flowchart">
+</div>
+
+    <div id="image"><img id="opener" onclick="loadFlow()" src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></img></div>
     <div id="sitemap" >
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
