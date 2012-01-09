@@ -204,7 +204,9 @@ alert(url);
 	// increase the default animation speed to exaggerate the effect
 	$.fx.speeds._default = 1000;
 	$(function() {
+
 		$( "#dialog" ).dialog({
+		 width:800,
 			autoOpen: false,
 			show: "blind",
 			hide: "explode"
