@@ -1023,6 +1023,26 @@ class CI_Form_validation {
 	{
 		return ( ! preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $str)) ? FALSE : TRUE;
 	}
+        // --------------------------------------------------------------------
+        /**
+	 * Unique
+	 *
+	 * @access	public
+	 * @param	string
+	 * @param	field
+	 * @return	bool
+	 */
+	function unique($str, $field)
+	{
+		$CI =& get_instance();
+		list($table, $column) = explode('.', $field, 2);
+
+		$CI->form_validation->set_message('unique', 'The %s that you requested is being used.');
+
+		$query = $CI->db->query("SELECT COUNT(*) AS dupe FROM $table WHERE $column = '$str'");
+		$row = $query->row();
+		return ($row->dupe > 0) ? FALSE : TRUE;
+	}
 
 	// --------------------------------------------------------------------
 
@@ -1076,7 +1096,7 @@ class CI_Form_validation {
 	 */
 	function alpha($str)
 	{
-		return ( ! preg_match("/^([a-z])+$/i", $str)) ? FALSE : TRUE;
+		return ( ! preg_match("/^([a-z ])+$/i", $str)) ? FALSE : TRUE;
 	}
 
 	// --------------------------------------------------------------------
