@@ -3,7 +3,7 @@
          <div id="sub-nav">
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/resilience_test/gameproto.html" >Resilience Test</a></li>
-
+          <li><a href="<?php echo base_url(); ?>abc.html" >Resilience Game</a></li>
 
         </ul>
          </div>
