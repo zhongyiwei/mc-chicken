@@ -81,7 +81,7 @@ hr { display: none; }
 #wrapper {
             background: url(images/background/sub_background.png) no-repeat;
             float:left; 
-			height: 900px;
+			height: 768px;
 }
 
 /* Header */
@@ -107,7 +107,7 @@ hr { display: none; }
 /* Menu */
 
 #menu {
-        margin-top: 50px;
+	margin-top: 50px;
 	width: 200px;
 }
 
