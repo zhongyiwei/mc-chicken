@@ -3,9 +3,6 @@
         <div id="sub-nav">
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/mission_statement/" >Set Mission</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >Why Mission Statement?</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >How to set mission</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/index/" >Successful Example</a></li>
         </ul>
     </div>
     <div id="content_sub">
@@ -35,6 +32,3 @@
 
     </div>
 <!-- end #content -->
-<div id="footer" align="center">
-    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
-    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/do_u_know.png" alt="" /></a></div>
