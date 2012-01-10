@@ -37,7 +37,7 @@ class Login extends CI_Controller {
                 redirect('cms/index');
             }
         } else {
-            $this->index();
+            $this->load->view('login/login_fail');
         }
     }
 

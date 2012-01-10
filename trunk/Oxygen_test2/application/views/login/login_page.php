@@ -14,21 +14,31 @@ and open the template in the editor.
         <div id="wrapper">
             <div id="login">
                 <h1>User Login</h1>
-                <table>
+                <table  class="click">
+                    <?php echo form_open('login/validate'); ?>
                     <tr>
                         <th>Email:</th>
-                        <td>14234</td>
+                        <td><?php echo form_input('email','');?></td>
                     </tr>
-                    
+
                     <tr>
                         <th>Password:</th>
-                        <td>124243</td>
+                        <td><?php echo form_password('password','');?></td>
+                    </tr>
+                </table>
+                
+                <table>
+                    <tr>
+                        <td class="link_page"><?php echo anchor('login/register', 'Register'); ?></td>
+                        <td class="link_page"><?php echo anchor('update_info/forgot_password', 'Forgot Password?'); ?></td>
+                        <td class="link_page"><?php echo form_submit('submit', 'Login', 'id="submit"'); ?></td>
+                        <?php echo form_close(); ?>
                     </tr>
                 </table>
             </div>
-            
+
             <div id="home">
                 <a href="<?php echo base_url(); ?>index.php/home/index/"><img src="<?php echo base_url(); ?>CSS/images/background/home_button.png"/></a>
             </div>
 
-           <?php $this->load->view('register/register_footer'); ?>
+            <?php $this->load->view('register/register_footer'); ?>
