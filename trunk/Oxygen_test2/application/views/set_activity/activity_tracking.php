@@ -15,6 +15,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
          </div>
     <div id="content_sub">
         <div class="post">
+            <div id="popup">
             <h2 class="title">Activity Tracking</h2>
 
             <div class="entry">
@@ -150,7 +151,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
 
             </div> <!--Entry-->
 
-
+</div>
 
         </div>
         <!--     end #content -->
