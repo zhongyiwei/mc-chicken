@@ -2,7 +2,7 @@
 <div id="page">
          <div id="sub-nav">
         <ul>
-            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf/" >Generate report(PDF)</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf/" >Generate report</a></li>
         </ul>
          </div>
     <div id="content_sub">
@@ -50,7 +50,7 @@
                         ?>
                         <table border="1">
                             <th>Description</th>
-                            <th width="500px">What I have achieved</th>
+                            <th width="500px">My achievements</th>
                             <tbody>
                                 <?php foreach ($rows as $r) : ?>                   
                                     <tr><td><b>Goal Type:</b></td><td><b><p style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->goal_category; ?></p></b></td></tr>
