@@ -4,6 +4,7 @@
         <div class="post">
             <h2 class="title">Please Set Your Goal</h2>
             <div class="entry">
+                <p style="font-size:150%; color:white;" > Notice: Do submit one goal at a time before proceeding to the next: </p>
                 <table cellpadding="5" cellspace="5" style="text-align: left;">
                     
                     <div id="accordion">
