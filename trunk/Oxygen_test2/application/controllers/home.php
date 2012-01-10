@@ -41,7 +41,7 @@ class Home extends CI_Controller {
 
     function determineValue() {
         $data['main'] = 'value/value_determination';
-        $data['nav'] = 'mission_statement/left_nav_value';
+        $data['nav'] = 'includes/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
 

@@ -47,7 +47,6 @@
     <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png" alt="Home"/></a>
 </div>
 
-
 <div id="dialog" title="Your Flow Chart">
 </div>
 <div id="footer" align="center">
