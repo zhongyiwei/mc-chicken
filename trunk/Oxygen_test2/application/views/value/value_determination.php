@@ -83,7 +83,9 @@ else {
 }
 
                 }
-
+function meow(){
+alert("HI");
+}
 
             </script>
 
@@ -111,7 +113,7 @@ else {
                     <input type="text" size="15" id="field<?php echo $fieldCount; ?>" disabled='disabled'  />
                     <input type="hidden" id="value<?php echo $fieldCount; ?>" name="value<?php echo $fieldCount; ?>" >
                         <?php } ?>
-                    
+                    <br/>Right-Click the values to know its meaning!
                     <div id="format">
                         <?php $query = $this->db->query('SELECT * FROM value');
 
@@ -122,7 +124,7 @@ else {
                         $separator=1;
                         foreach($query->result()as $r):
                             ?>
-                        <input type="checkbox"  name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);" title="abc" /><label for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
+                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label oncontextmenu="event.preventDefault();alert('<?php echo "Meaning for ".$r->value_name.": the quality of being just; righteousness, equitableness, ormoral rightness: to uphold the justice of a cause"; ?>');"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
                             <?php        if($separator%5==0) {
                                 echo "<br/>";
                             }
