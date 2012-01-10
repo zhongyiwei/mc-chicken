@@ -3,7 +3,6 @@
         <div id="sub-nav">
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/mission_statement/" >Set Mission</a></li>
-            
         </ul>
     </div>
     <div id="content_sub">
