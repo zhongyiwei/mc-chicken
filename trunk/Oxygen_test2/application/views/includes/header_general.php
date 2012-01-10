@@ -147,7 +147,7 @@ loggedin='no'; <?php } ?>
 	$(function() {
 
 		$( "#dialog" ).dialog({
-		 width:1050,
+		 width:950,
 			autoOpen: false,
 			show: "blind",
 			hide: "explode"
