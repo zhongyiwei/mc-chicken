@@ -6,11 +6,8 @@
 
 
          <div class="post">
-                     <h2 class="title" id="COA">Your Coat of Arms</h2>
+                     <h2 class="title" id="COA">Select your shield</h2>
             <div class="entry">
-
-<h2>Select the shield here:</h2>
-
 <ul class="thumb">
 	<li><a href="<?php echo base_url();?>web_images/coa_image/shield/coa1.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa1.png" alt="Click Me!" onclick="ChgText(this.value)" id="img_input" value="web_images/coa_image/shield/coa1.png"/></a>
 	</li>
