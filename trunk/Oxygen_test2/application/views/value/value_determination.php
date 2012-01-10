@@ -83,9 +83,11 @@ else {
 }
 
                 }
-function meow(){
-alert("HI");
-}
+
+				function changeHTML(value) {
+				var text='<?php echo "Meaning for ";?>'+value+'<?php echo ": the quality of being just; righteousness, equitableness, ormoral rightness: to uphold the justice of a cause"; ?>';
+			document.getElementById('dialog2').innerHTML=text;
+				}
 
             </script>
 
@@ -114,6 +116,7 @@ alert("HI");
                     <input type="hidden" id="value<?php echo $fieldCount; ?>" name="value<?php echo $fieldCount; ?>" >
                         <?php } ?>
                     <br/>Right-Click the values to know its meaning!
+					<div title="Meaning Of Word" id="dialog2">aaa</div>
                     <div id="format">
                         <?php $query = $this->db->query('SELECT * FROM value');
 
@@ -124,7 +127,8 @@ alert("HI");
                         $separator=1;
                         foreach($query->result()as $r):
                             ?>
-                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label oncontextmenu="event.preventDefault();alert('<?php echo "Meaning for ".$r->value_name.": the quality of being just; righteousness, equitableness, ormoral rightness: to uphold the justice of a cause"; ?>');"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
+							
+                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label  oncontextmenu="event.preventDefault();changeHTML('<?php echo $r->value_name;?>');$( '#dialog2' ).dialog( 'open' );"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
                             <?php        if($separator%5==0) {
                                 echo "<br/>";
                             }
