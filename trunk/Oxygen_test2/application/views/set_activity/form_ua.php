@@ -2,7 +2,7 @@
 
                      <div class="row">                          <!--<form name="set_activity_form" class="form" id="form">-->
         <!--start_date selection begin-->
-        <div class="left_update"><h4>Enter your new Activity Name: </h4></div>
+        <div><h4>Enter your new Activity Name: </h4></div>
 
         <div class="">
                  <?php
@@ -16,7 +16,7 @@
 
         <!--start_date selection begin-->
         <div class="row">
-         <div class="left_update"><h4>Enter your new Description:</h4></div>
+         <div><h4>Enter your new Description:</h4></div>
     <div class="">
      <?php
       $data = array(
@@ -28,7 +28,7 @@
 
         <!--start_date selection begin-->
         <div class="row">
-         <div class="left_update"><h4>Enter your new Start Date:
+         <div><h4>Enter your new Start Date:
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <?php
                  $data = array('name' => 'start_date','id'=> 'start_date8','value'=> $rows[0]->start_date,'size'=> '50','onchange'=>'ValidateDate(this)');
@@ -38,7 +38,7 @@
         
         <!--end_date selection begin-->
         <div class="row">
-        <div class="left_update"><h4>Enter your new End Date:
+        <div><h4>Enter your new End Date:
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <?php
                  $data = array('name' => 'end_date','id'=> 'end_date8','value'=> $rows[0]->end_date,'size'=> '50','onchange'=>'ValidateDate(this)');
