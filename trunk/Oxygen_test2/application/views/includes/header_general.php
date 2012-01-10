@@ -50,69 +50,6 @@ and open the template in the editor.
       </style>
     <!--End of the style for Sortable textarea for specific tasks under page "set activity"   -->
      <!--Begin of TRANSLATION--Robin   -->
-              <script type="text/javascript">
-
-		//Cufon('h1')('h2')('h3')('h4')('h5')('h6')('.intro')('dt');
-
-		$(function() {
-			// DEMO -------------------------------------------
-                        //document.write("<p>" + Date() + "</p>");
-
-			$('p').Translator( { trigger:'dblclick' } );
-			$('p').TranslatorBubble( {  ctrlKey:true, shiftKey:true } );
-			$('dd').TranslatorBubble();
-
-			// EXAMPLE 1 ----------------------------------------
-			$('#example1 .example').TranslatorReset();
-			$('#example1 .example').Translator({
-				source:'en',
-				trigger:'dblclick',
-				destination:{
-					fr:'Fran?ais',
-					it:'Italiano',
-					es:'Espa?ol',
-					de:'Deutsch',
-					ja:'日本語',
-					ar:'Arabic',
-                                        hr:'hrvatski',
-                                        id:'Indonesia',
-                                        ko:'Korean',
-                                        lt:'Lietuvi懦',
-                                        lv:'latvie拧u',
-                                        nl:'Nederlands',
-                                        no:'norsk',
-                                        pl:'Polski',
-                                        pt:'Portugu锚s',
-                                        ro:'Rom芒n膬',
-                                        ru:'Russian',
-                                        sk:'sloven膷ina',
-                                        sl:'sloven拧膷ina',
-                                        sv:'Svenska',
-                                        tl:'Filipino',
-                                        CN:'简体中文'
-				}
-			});
-
-			// EXAMPLE 2 ----------------------------------------
-			$('#example2 .example').TranslatorReset();
-			$('#example2 .example').TranslatorBubble({
-				source:'en',
-				destination:'fr'
-			});
-
-			// EXAMPLE 3 ----------------------------------------
-			$('#example3 .example').TranslatorReset();
-			$('#example3 .example input[type=button]').click(function(evt) {
-				$.Translator(
-					$('#example3 input[type=text]').val(),
-					{ destination:'fr', menuLeft:evt.pageX, menuTop:evt.pageY},
-					function(response) {
-						$('#example3 input[type=text]').val(response.translation);
-					}
-				);
-			});
-		});
-		</script>
 
      <script language="javascript" type="text/javascript">
         $(function() {
