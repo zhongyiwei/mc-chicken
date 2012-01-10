@@ -26,10 +26,10 @@
                 <h2 class="title" id="VALUE">My Value</h2>
                 <div class="entry">
                     <table border="1">
-                        <th width="120px">Value 1</th>
-                        <th width="120px">Value 2</th>
-                        <th width="120px">Value 3</th>
-                        <th width="120px">Value 4</th>
+                        <th width="120px" align="center">Value 1</th>
+                        <th width="120px" align="center">Value 2</th>
+                        <th width="120px" align="center">Value 3</th>
+                        <th width="120px" align="center">Value 4</th>
                         <tbody><tr>                           
                                 <td width="120px" align="center"><?php echo $value1; ?></td>
                                 <td width="120px" align="center"><?php echo $value2; ?></td>
