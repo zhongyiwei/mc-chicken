@@ -20,6 +20,7 @@ $id=$this->session->userdata('seeker_id');
          </div>
     <div id="content_sub">
         <div class="post">
+            <div id="popup">
             <h2 class="title">View all your records below</h2>
             <div class="entry" width="">
                 <p style="font-family:arial;color:green;font-size:16px">Please click the activity name to update your activity:</p>
@@ -59,6 +60,6 @@ $id=$this->session->userdata('seeker_id');
 
             </div><!-- End of div class entry -->
         </div><!-- End of div class post -->
-
+        </div>
     </div>
 <!-- end #content -->
