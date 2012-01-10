@@ -17,6 +17,8 @@
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <!-- end #page -->
+<div id="dialog" title="Your Flow Chart">
+</div>
 <div id="footer" align="center">
-    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
+    <div id="image"><img id="opener" onclick="loadFlow()" src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></img></div>
     <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/do_u_know.png" alt="" /></a></div>
