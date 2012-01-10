@@ -23,29 +23,15 @@ h1, h2, h3 {
 	color: #649632;
 }
 
-h1 { font-size: 44px; }
+h1 { font-size: 44px; padding-top: 20px; }
 
 h2 { font-size: 20px; }
-
-h3 { }
 
 p, ul, ol {
 	margin-top: 0;
 	text-align: justify;
 	font-family: BPreplay,Arial,Helvetica,sans-serif;
 	font-size: 14px;
-}
-
-ul, ol { }
-
-blockquote { }
-
-a { color: #000000; }
-
-a:hover { text-decoration: none; }
-
-a img {
-	border: none;
 }
 
 #wrapper {
@@ -57,14 +43,47 @@ a img {
 #login{
     margin-left: 25%;
     margin-top: 12%;
+    padding-left: 50px;
     background: url(images/background/registerpopup.png) no-repeat 0 0;
-    width: 500px;
+    width: 450px;
     height: 350px;
 }
 
 #login table{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: auto;
+}
+
+#login table tr{
+    width: 500px;
+    height: 60px;
+}
+
+#login table th,td{
+    font-size: 20px;
+}
+
+#login table td.link_page{
+    font-size: 15px;
+}
+
+#login table td.link_page input[type=submit], table a{
+    border: none;
+    background: #348075;
+    padding: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 1em;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;    
+}
+
+#login table td.link_page input[type=submit]:hover, table a:hover {
+    background: #d5d5d5;
 }
 
 /* home button */
