@@ -69,9 +69,11 @@ class Login extends CI_Controller {
         } else {
             $this->load->model('membership_model');
             if ($query = $this->membership_model->create_member()) {
-                $this->load->view('includes/template');
+                $this->load->view('register/register_done_successful');
+                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/login/index/');
             } else {
-                $this->load->view('register/register');
+                $this->load->view('register/register_done_wrong');
+                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/login/register/');
             }
         }
     }
