@@ -159,6 +159,21 @@ loggedin='no'; <?php } ?>
 		});
 	});
 	</script>
+	<script> //Dialog box for values
+	// increase the default animation speed to exaggerate the effect
+	$.fx.speeds._default = 1000;
+	$(function() {
+
+		$( "#dialog2" ).dialog({
+	
+			autoOpen: false,
+			show: "blind",
+			hide: "explode"
+		});
+
+
+	});
+	</script>
     <script language="javascript" type="text/javascript">
 	//tabs---wenjie
 	            $(function() {
