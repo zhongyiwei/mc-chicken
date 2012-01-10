@@ -78,17 +78,17 @@
             <div class="entry">
                 <?php $this->load->view('portfolio/coa_design');?>
                 <?php //$this->load->view('portfolio/portfolio_translate');?>
-				<h4 align="center" style="color:purple;">The symbols in the centres of the Coat of Arms represent your values: </h4>
-                <table border="1" align="center">
-                        <th width="120px">Value 1: Top Left Symbol</th>
-                        <th width="120px">Value 2: Top Right Symbol</th>
-                        <th width="120px">Value 3: Bottom Left Symbol</th>
-                        <th width="120px">Value 4: Bottom Right Symbol</th>
+            <h4 align="center" style="color:purple;">The symbols in the center of the Coat of Arms represent your values: </h4>
+                <br/><table align="center" border="5">
+                        <th width="150px" align="center">Value 1: Top Left</th>
+                        <th width="150px" align="center">Value 2: Top Right</th>
+                        <th width="150px" align="center">Value 3: Bottom Left</th>
+                        <th width="150px" align="center">Value 4: Bottom Right</th>
                         <tbody><tr>                           
-                                <td width="120px" align="center"><?php echo $value1; ?></td>
-                                <td width="120px" align="center"><?php echo $value2; ?></td>
-                                <td width="120px" align="center"><?php echo $value3; ?></td>
-                                <td width="120px" align="center"><?php echo $value4; ?></td>
+                                <td width="150px" align="center"><?php echo $value1; ?></td>
+                                <td width="150px" align="center"><?php echo $value2; ?></td>
+                                <td width="150px" align="center"><?php echo $value3; ?></td>
+                                <td width="150px" align="center"><?php echo $value4; ?></td>
                             </tr>
 							</tbody>
                     </table>
