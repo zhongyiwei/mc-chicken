@@ -1,7 +1,7 @@
 <?php $logged=$_POST['logged'];
 
 if($logged=='yes'){
-$session_id='1';
+$session_id=$this->session->userdata('seeker_id');
 
 $checkMission = $this->db->query("SELECT * FROM mission WHERE seeker_id='$session_id'");
 $checkValue = $this->db->query("SELECT * FROM seeker_value WHERE seeker_id='$session_id'");

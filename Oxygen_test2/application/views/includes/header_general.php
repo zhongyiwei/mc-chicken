@@ -105,10 +105,11 @@ and open the template in the editor.
  
  
               <script language="JavaScript" type="text/javascript">//WenJie function for what's next
+	
             function loadFlow(){
 			var loggedin='no';  
 <?php
-
+$is_logged_in=$is_logged_in = $this->session->userdata('is_logged_in');
 if (isset($is_logged_in) && ($is_logged_in == 'true')) { ?>
 loggedin='yes';
 <?php } else {?>
@@ -120,7 +121,7 @@ loggedin='no'; <?php } ?>
                 var hr = new XMLHttpRequest();
                 // Create some variables we need to send to our PHP file
                 var url = '<?php echo base_url()."index.php/home/";?>'+"getflow";
-alert(url);
+
                 var vars = "logged="+loggedin;
                 hr.open("POST", url, true);
                 // Set content type header information for sending url encoded variables in the request

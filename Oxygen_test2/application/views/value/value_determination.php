@@ -122,7 +122,7 @@ else {
                         $separator=1;
                         foreach($query->result()as $r):
                             ?>
-                        <input type="checkbox"  name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"/><label for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
+                        <input type="checkbox"  name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);" title="abc" /><label for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
                             <?php        if($separator%5==0) {
                                 echo "<br/>";
                             }

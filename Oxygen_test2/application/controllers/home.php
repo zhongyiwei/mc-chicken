@@ -29,13 +29,13 @@ class Home extends CI_Controller {
 
     function value() {
         $data['main'] = 'value/value_understanding';
-        $data['nav'] = 'mission_statement/left_nav_value';
+        $data['nav'] = 'includes/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
 
     function whyValue() {
         $data['main'] = 'value/value_needs';
-        $data['nav'] = 'mission_statement/left_nav_value';
+        $data['nav'] = 'includes/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
 
