@@ -270,10 +270,10 @@ class Db_control extends CI_Controller{
         $this->load->library('form_validation');
 
         // field name, error message, validation rules
-  //      $this->form_validation->set_rules('shield_coa', 'Shield', 'trim|required');
+        $this->form_validation->set_rules('shield_coa', 'Shield', 'trim|required');
    //     $this->form_validation->set_rules('banner_coa', 'Banner', 'trim|required');
    //     $this->form_validation->set_rules('crest_coa', 'Banner', 'trim|required');
-/*
+
         if ($this->form_validation->run() == FALSE) {
             $this->load->model('link_db_model');
             $data['rows'] = $this->link_db_model->get_coa();
@@ -281,7 +281,7 @@ class Db_control extends CI_Controller{
             $data['main_portfolio']='portfolio/main_ucoa';
             $data['nav_portfolio']='portfolio/left_nav_mp';
             $this->load->view('portfolio/template_mp',$data);
-        } else {*/
+        } else {
             $this->load->model('link_db_model');
             if ($query = $this->link_db_model->update_coa()) {
                 $data['rows2'] = $this->link_db_model->get_coa();
@@ -311,9 +311,8 @@ class Db_control extends CI_Controller{
                 $data['nav_portfolio']='portfolio/left_nav_mp';
                 $this->load->view('portfolio/template_mp',$data);
             }
-        
     }
-
+        }
 
 
 

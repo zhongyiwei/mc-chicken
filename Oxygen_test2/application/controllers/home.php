@@ -414,9 +414,8 @@ class Home extends CI_Controller {
                 $data['main_portfolio'] = 'portfolio/main_error';
                 $data['nav_portfolio'] = 'portfolio/left_nav_mp';
                 $this->load->view('portfolio/template_mp', $data);
-                //echo "here";
             } else {
-			        $query2 = $this->link_db_model->get_value();
+        $query2 = $this->link_db_model->get_value();
         if ($query2->num_rows() > 0) {
             $row2=$query2->result();
             $data['value1']=$row2[0]->value_name;
@@ -458,7 +457,7 @@ class Home extends CI_Controller {
             $data['main_portfolio'] = 'portfolio/main_coa_info';
             $data['nav_portfolio'] = 'portfolio/left_nav_mp';
             $this->load->view('portfolio/template_mp', $data);
-        } else {
+      } else {
             $this->load->view('portfolio/page_visitor');
         }
     }
@@ -508,14 +507,14 @@ class Home extends CI_Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $this->load->model('link_db_model');
-            $query = $this->link_db_model->get_motto();
+ /*           $query = $this->link_db_model->get_motto();
             if ($query->num_rows() > 0) {
                 $row = $query->result();
                 $data['motto_set'] = $row[0]->motto;
                 //$this->load->view('mission_statement/template_ms', $data);
             } else {
                 $data['motto_set'] = "You have not set any motto yet";
-            }
+            }*/
 
             $query1 = $this->link_db_model->get_mission();
             if ($query1->num_rows() > 0) {
