@@ -151,8 +151,8 @@ and open the template in the editor.
             <div id="dialog" title="Your Flow Chart">
             </div>
             <div id="footer" align="center">
-                <div id="image"><img id="opener" onclick="loadFlow()" src="<?php echo base_url(); ?>CSS/images/background/what_is_now.png" alt="" /></img></div>
-                <div id="image"><a href="#"><img src="<?php echo base_url(); ?>CSS/images/background/do_u_know.png" alt="" /></a></div>
+                <div id="image_footer"><a href="#"><img id="opener" onclick="loadFlow()" src="<?php echo base_url(); ?>CSS/images/background/what_is_now.png" alt="" /></img></a></div>
+                <div id="image_footer"><a href="#"><img src="<?php echo base_url(); ?>CSS/images/background/do_u_know.png" alt="" /></a></div>
                 <div id="sitemap" >
                     <ul>
                         <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
