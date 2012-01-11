@@ -10,100 +10,108 @@ and open the template in the editor.
         <link rel="shortcut icon" href="<?php echo base_url(); ?>CSS/images/favicon.ico"/>
 
         <!--load main css-->
-        <link href="<?php echo base_url(); ?>CSS/reset.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
-        
+
         <!--load sliding login file-->
         <!-- stylesheets -->
-  	<link rel="stylesheet" href="<?php echo base_url();?>js/home_page/css/slide.css" type="text/css" media="screen" />
-	
-  	<!-- PNG FIX for IE6 -->
-  	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
-	<!--[if lte IE 6]>
-		<script type="text/javascript" src="<?php echo base_url();?>js/home_page/js/pngfix/supersleight-min.js"></script>
-	<![endif]-->
-	 
-    <!-- jQuery - the core -->
-	<script src="<?php echo base_url();?>js/home_page/js/jquery-1.3.2.min.js" type="text/javascript"></script>
-	<!-- Sliding effect -->
-	<script src="<?php echo base_url();?>js/home_page/js/slide.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>js/home_page/css/slide.css" type="text/css" media="screen" />
+
+        <!-- PNG FIX for IE6 -->
+        <!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
+        <!--[if lte IE 6]>
+                <script type="text/javascript" src="<?php echo base_url(); ?>js/home_page/js/pngfix/supersleight-min.js"></script>
+        <![endif]-->
+
+        <!-- jQuery - the core -->
+        <script src="<?php echo base_url(); ?>js/home_page/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+        <!-- Sliding effect -->
+        <script src="<?php echo base_url(); ?>js/home_page/js/slide.js" type="text/javascript"></script>
     </head>
 
     <body>
         <!-- Panel -->
-<div id="toppanel">
-	<div id="panel">
-		<div class="content clearfix">
-			<div class="left">
-				<h1>Welcome to Oxygen</h1>
-				<h2></h2>		
-				<p class="grey">You can put anything you want in this sliding panel: videos, audio, images, forms... The only limit is your imagination!</p>
-				<h2>Download</h2>
-				<p class="grey">To download this script go back to <a href="http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery" title="Download">article &raquo;</a></p>
-			</div>
-			<div class="left">
-                            <?php 
-                            $is_logged_in = $this->session->userdata('is_logged_in');
-                            $name = $this->session->userdata('name');
-                            if(isset($is_logged_in)&& $is_logged_in=='true'){
-                                ?>
-                            <h1>Welcome back, <strong><?php echo $name;?></strong>!</h1>
+        <div id="toppanel">
+            <div id="panel">
+                <div class="content clearfix">
+                    <div class="left">
+                        <h1>Welcome to Oxygen</h1>
+                        <h2></h2>		
+                        <p class="grey">You can put anything you want in this sliding panel: videos, audio, images, forms... The only limit is your imagination!</p>
+                        <h2>Download</h2>
+                        <p class="grey">To download this script go back to <a href="http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery" title="Download">article &raquo;</a></p>
+                    </div>
+                    <div class="left" id="userinfo">
+                        <?php
+                        $is_logged_in = $this->session->userdata('is_logged_in');
+                        $name = $this->session->userdata('name');
+                        if (isset($is_logged_in) && $is_logged_in == 'true') {
+                            ?>
+                            <h1>Welcome back, <strong><?php echo $name; ?></strong>!</h1>
                             <table>
                                 <tr>
-                                    <td><strong>Email:</strong></td>
-                                    <td><?php echo $this->session->userdata('email');?></td>
+                                    <td><strong><u>Email:</u></strong></td>
+                                    <td><?php echo $this->session->userdata('email'); ?></td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Gender:</strong><?php echo $this->session->userdata('gender');?></td>
-                                    <td><strong>Birthday:</strong><?php echo $this->session->userdata('dob');?></td>
+                                    <td><strong><u>Gender:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('gender'); ?></td>
+                                    <td><strong><u>Birthday:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('dob'); ?></td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Nationality:</strong><?php echo $this->session->userdata('nation');?></td>
-                                    <td><strong>Mobile:</strong><?php echo $this->session->userdata('mobile');?></td>
+                                    <td><strong><u>Nationality:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('nation'); ?></td>
+                                    <td><strong><u>Mobile:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('mobile'); ?></td>
                                 </tr>
                             </table>
-                            <p class="grey"><a href="<?php echo base_url();?>index.php/login/log_out/">Log out!</a></p>
-                            <p class="grey"><a href="<?php echo base_url();?>index.php/home/personal_info/">Update Your Information!</a></p>
-                            <p class="grey"><a href="<?php echo base_url();?>index.php/home/change_password/">Change Your Password!</a></p>
+                            <p class="grey"><a href="<?php echo base_url(); ?>index.php/login/log_out/">Log out!</a></p>
+                            <p class="grey"><a href="<?php echo base_url(); ?>index.php/home/personal_info/">Update Your Information!</a></p>
+                            <p class="grey"><a href="<?php echo base_url(); ?>index.php/home/change_password/">Change Your Password!</a></p>
                             <?php
-                            }else{
-                                ?>
-				<!-- Login Form -->
-                                <form class="clearfix" action="<?php echo base_url()?>index.php/login/validate/" method="post">
-					<h1>Member Login</h1>
-					<label class="grey" for="log">Email:</label>
-					<input class="field" type="text" name="email" id="log" value="" size="23" />
-					<label class="grey" for="pwd">Password:</label>
-					<input class="field" type="password" name="password" id="pwd" size="23" />
-	            	<label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Remember me</label>
-        			<div class="clear"></div>
-					<input type="submit" name="submit" value="Login" class="bt_login" />
-					<a class="lost-pwd" href="#">Lost your password?</a>
-				</form>
-                                <?php echo form_open('login/register');?>
-                                <input type="submit" name="submit" value="Register" class="bt_register" />
-                                <?php echo form_close();?>
-                                <!-- Login Form End-->
-                                <?php }?>
-			</div>
-		</div>
-</div> <!-- /login -->	
+                        } else {
+                            ?>
+                            <!-- Login Form -->
+                            <form class="clearfix" action="<?php echo base_url() ?>index.php/login/validate/" method="post">
+                                <h1>Member Login</h1>
+                                <label class="grey" for="log">Email:</label>
+                                <input class="field" type="text" name="email" id="log" value="" size="23" />
+                                <label class="grey" for="pwd">Password:</label>
+                                <input class="field" type="password" name="password" id="pwd" size="23" />
+                                <label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Remember me</label>
+                                <div class="clear"></div>
+                                <input type="submit" name="submit" value="Login" class="bt_login" />
+                                <a class="lost-pwd" href="#">Lost your password?</a>
+                            </form>
+                            <?php echo form_open('login/register'); ?>
+                            <input type="submit" name="submit" value="Register" class="bt_register" />
+                            <?php echo form_close(); ?>
+                            <!-- Login Form End-->
+                        <?php } ?>
+                    </div>
+                </div>
+            </div> <!-- /login -->	
 
-	<!-- The tab on top -->	
-	<div class="tab">
-		<ul class="login">
-			<li class="left">&nbsp;</li>
-			<li>Hello Guest!</li>
-			<li class="sep">|</li>
-			<li id="toggle">
-				<a id="open" class="open" href="#">Log In | Register</a>
-				<a id="close" style="display: none;" class="close" href="#">Close Panel</a>			
-			</li>
-			<li class="right">&nbsp;</li>
-		</ul> 
-	</div> <!-- / top -->
-	
-</div> <!--panel -->
+            <!-- The tab on top -->	
+            <div class="tab">
+                <ul class="login">
+                    <li class="left">&nbsp;</li>
+                    <?php if (isset($is_logged_in) && $is_logged_in == 'true') {
+                        ?>
+                        <li>Hello <?php echo $name; ?>!</li>
+                    <?php } else { ?>
+                        <li>Hello Guest!</li>
+                    <?php } ?>
+                    <li class="sep">|</li>
+                    <li id="toggle">
+                        <?php if (isset($is_logged_in) && $is_logged_in == 'true') { ?>
+                            <a id="open" class="open" href="#">View Your Profile</a>
+                        <?php } else { ?>
+                            <a id="open" class="open" href="#">Log In | Register</a>
+                        <?php } ?>
+                        <a id="close" style="display: none;" class="close" href="#">Close Panel</a>			
+                    </li>
+                    <li class="right">&nbsp;</li>
+                </ul> 
+            </div> <!-- / top -->
+
+        </div> <!--panel -->
         <div id="wrapper">
             <div id="header">
                 <div id="menu">

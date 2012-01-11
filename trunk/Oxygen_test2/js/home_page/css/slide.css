@@ -138,6 +138,14 @@ Version: 1.0
 	color: white;
 }
 
+#panel #userinfo table{
+        font-size: 14px;
+}
+
+#panel #userinfo table tr{
+        margin-top: 15px;
+}
+
 #panel p {
 	margin: 5px 0;
 	padding: 0;
