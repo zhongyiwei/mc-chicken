@@ -197,7 +197,7 @@ function ChgText_crest(imgvalue)
 ?>
 
 
-
+</div>
  <?php //$this->load->view('portfolio/portfolio_translate');?>
 
 
