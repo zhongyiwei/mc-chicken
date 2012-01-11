@@ -36,7 +36,7 @@ class Login extends CI_Controller {
             $this->session->set_userdata($data);
 
             if($query[0]->role=='member'){
-                redirect('color_mood');
+                redirect('home/color_mood');
                 }
             else if($query[0]->role=='admin'){
                 redirect('cms/index');
