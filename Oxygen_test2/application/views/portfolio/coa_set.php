@@ -144,7 +144,7 @@ function ChgText_crest(imgvalue)
      
 ?>
 
-<!--<div align=center class="coa" id="coa">-->
+<div align=center class="coa" id="coa">
 	<div align=center class="image" id="image">
   <img alt="" src="<?php echo base_url();$this->load->model('link_db_model');
                 $data = $this->link_db_model->get_coa2();
