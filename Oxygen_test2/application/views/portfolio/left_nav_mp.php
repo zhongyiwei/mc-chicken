@@ -54,5 +54,5 @@
     <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png" alt="Home"/></a>
 </div>
 <div id="footer" align="center">
-    <div id="image"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
-    <div id="image"><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS"><img src="<?php echo base_url();?>CSS/images/background/do_u_know.png" alt="" /></a></div>
+    <div id="image_footer"><a href="#"><img src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></a></div>
+    <div id="image_footer"><a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS"><img src="<?php echo base_url();?>CSS/images/background/do_u_know.png" alt="" /></a></div>

@@ -120,7 +120,11 @@ $("ul.thumb li").hover(function() {
 
 function ChgText(imgvalue)
 {
+   //var element = document.createElement("input");  
+    //element.id = 'MyTextBox_coa'; 
     var MyElement = document.getElementById("MyTextBox_coa");
+    //var MyElement = document.getElementsByName("shield_coa");
+    //var MyElement=function(s){return document.getElementById("MyTextBox_coa")};
     MyElement.value = imgvalue;
 
     return true;
@@ -141,8 +145,6 @@ function ChgText_crest(imgvalue)
 
     return true;
 }
-
-
 </script>
  <?php //$this->load->view('portfolio/portfolio_translate');?>
 

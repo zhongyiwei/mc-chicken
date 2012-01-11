@@ -32,42 +32,6 @@
 
 </ul>
 
-<!--
-<h2>Select the banner here:</h2>
-
-<ul class="thumb2">
-	<li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner1.png"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner1.png" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner1.png"/></a>
-	</li>
-	<li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner4.png"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner4.png" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner4.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/banner/banner2.png"><img src="<?php echo base_url();?>web_images/coa_image/banner/banner2.png" alt="Click Me!" onclick="ChgText_banner(this.value)" id="img_input" value="web_images/coa_image/banner/banner2.png" /></a>
-	</li>
-</ul>
-
-
-<h2>Select the crown here:</h2>
-
-<ul class="thumb3">
-	<li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest5.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest5.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest5.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest6.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest6.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest6.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest1.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest1.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest1.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest3.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest3.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest3.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest7.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest7.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest7.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest8.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest8.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest8.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest9.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest9.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest9.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest4.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest4.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest4.png" /></a>
-	</li>
-        <li><a href="<?php echo base_url();?>web_images/coa_image/crest/crest2.png"><img src="<?php echo base_url();?>web_images/coa_image/crest/crest2.png" alt="Click Me!" onclick="ChgText_crest(this.value)" id="img_input" value="web_images/coa_image/crest/crest2.png" /></a>
-	</li>
-
-</ul>-->
 <br><br><br><br><br>
 <?php $this->load->view('portfolio/coa_form');?>
             </div>
@@ -77,7 +41,6 @@
             <h2 class="title" id="COA">Your Coat of Arms</h2>
             <div class="entry">
                 <?php $this->load->view('portfolio/coa_design');?>
-                <?php //$this->load->view('portfolio/portfolio_translate');?>
             <h4 align="center" style="color:purple;">The symbols in the center of the Coat of Arms represent your values: </h4>
                 <br/><table align="center" border="5">
                         <th width="150px" align="center">Value 1: Top Left</th>
