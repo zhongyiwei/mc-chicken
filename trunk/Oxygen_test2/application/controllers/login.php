@@ -26,7 +26,11 @@ class Login extends CI_Controller {
                 'role'=> $query[0]->role,
                 'is_logged_in' => true,
                 'seeker_id'=>$query[0]->seeker_id,
-                'name'=>$query[0]->name
+                'name'=>$query[0]->name,
+                'gender'=>$query[0]->gender,
+                'nation'=>$query[0]->nationality,
+                'dob'=>$query[0]->date_of_birth,
+                'mobile'=>$query[0]->mobile_number
             );
 
             $this->session->set_userdata($data);

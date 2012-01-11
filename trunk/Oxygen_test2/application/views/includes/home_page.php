@@ -42,13 +42,39 @@ and open the template in the editor.
 				<p class="grey">To download this script go back to <a href="http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery" title="Download">article &raquo;</a></p>
 			</div>
 			<div class="left">
+                            <?php 
+                            $is_logged_in = $this->session->userdata('is_logged_in');
+                            $name = $this->session->userdata('name');
+                            if(isset($is_logged_in)&& $is_logged_in=='true'){
+                                ?>
+                            <h1>Welcome back, <strong><?php echo $name;?></strong>!</h1>
+                            <table>
+                                <tr>
+                                    <td><strong>Email:</strong></td>
+                                    <td><?php echo $this->session->userdata('email');?></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Gender:</strong><?php echo $this->session->userdata('gender');?></td>
+                                    <td><strong>Birthday:</strong><?php echo $this->session->userdata('dob');?></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nationality:</strong><?php echo $this->session->userdata('nation');?></td>
+                                    <td><strong>Mobile:</strong><?php echo $this->session->userdata('mobile');?></td>
+                                </tr>
+                            </table>
+                            <p class="grey"><a href="<?php echo base_url();?>index.php/login/log_out/">Log out!</a></p>
+                            <p class="grey"><a href="<?php echo base_url();?>index.php/home/personal_info/">Update Your Information!</a></p>
+                            <p class="grey"><a href="<?php echo base_url();?>index.php/home/change_password/">Change Your Password!</a></p>
+                            <?php
+                            }else{
+                                ?>
 				<!-- Login Form -->
-                                <form class="clearfix" action="<?php echo base_url()?>index.php/login/validation/" method="post">
+                                <form class="clearfix" action="<?php echo base_url()?>index.php/login/validate/" method="post">
 					<h1>Member Login</h1>
-					<label class="grey" for="log">Username:</label>
-					<input class="field" type="text" name="log" id="log" value="" size="23" />
+					<label class="grey" for="log">Email:</label>
+					<input class="field" type="text" name="email" id="log" value="" size="23" />
 					<label class="grey" for="pwd">Password:</label>
-					<input class="field" type="password" name="pwd" id="pwd" size="23" />
+					<input class="field" type="password" name="password" id="pwd" size="23" />
 	            	<label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Remember me</label>
         			<div class="clear"></div>
 					<input type="submit" name="submit" value="Login" class="bt_login" />
@@ -58,6 +84,7 @@ and open the template in the editor.
                                 <input type="submit" name="submit" value="Register" class="bt_register" />
                                 <?php echo form_close();?>
                                 <!-- Login Form End-->
+                                <?php }?>
 			</div>
 		</div>
 </div> <!-- /login -->	
