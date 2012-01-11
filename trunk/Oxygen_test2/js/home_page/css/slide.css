@@ -106,7 +106,7 @@ Version: 1.0
     position: absolute;   /*Panel will overlap  content */
     /*position: relative;*/   /*Panel will "push" the content down */
     top: 0;
-    width: 76%;
+    width: 1024px;
     z-index: 999;
     text-align: center;
     margin-left: auto;

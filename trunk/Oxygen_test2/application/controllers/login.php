@@ -49,7 +49,7 @@ class Login extends CI_Controller {
     function register() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if ($is_logged_in == 'true') {//if user have logged in, they are not able to register
-            $this->load->view('includes/template');
+            $this->load->view('includes/home_page');
         } else {
             $this->load->view('register/register');
         }
@@ -75,7 +75,7 @@ class Login extends CI_Controller {
             $this->load->model('membership_model');
             if ($query = $this->membership_model->create_member()) {
                 $this->load->view('register/register_done_successful');
-                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/login/index/');
+                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/index/');
             } else {
                 $this->load->view('register/register_done_wrong');
                 $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/login/register/');
