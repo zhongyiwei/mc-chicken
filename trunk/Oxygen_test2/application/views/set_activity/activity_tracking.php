@@ -15,11 +15,12 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
          </div>
     <div id="content_sub">
         <div class="post">
-            <div id="popup">
+          
             <h2 class="title">Activity Tracking</h2>
 
             <div class="entry">
 <!--Dropdown list to select goal category                -->
+  <div id="popup">
                 <h3>Goal Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <select name="goal_type" class="goal_type">
                         <option value="">-Select a goal type-</option>
