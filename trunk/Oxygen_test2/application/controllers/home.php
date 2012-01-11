@@ -14,6 +14,10 @@ class Home extends CI_Controller {
     function resilience_test() {
         $this->load->view('resilience_test/subpage_resilience_test');
     }
+    //Arian - Color Mood Setting
+    function color_mood() {
+        $this->load->view('color_mood/color_mood');
+    }
 
     function session() {
         $this->load->view('resilience_test/subpage_session');
