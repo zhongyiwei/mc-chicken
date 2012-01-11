@@ -29,7 +29,8 @@ and open the template in the editor.
     </head>
 
     <body>
-        <!-- Panel -->
+        <div id="wrapper">
+            <!-- Panel -->
         <div id="toppanel">
             <div id="panel">
                 <div class="content clearfix">
@@ -112,7 +113,6 @@ and open the template in the editor.
             </div> <!-- / top -->
 
         </div> <!--panel -->
-        <div id="wrapper">
             <div id="header">
                 <div id="menu">
                     <ul>
