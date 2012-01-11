@@ -13,9 +13,10 @@ and open the template in the editor.
         <!--load main css-->
         <link href="<?php echo base_url();?>CSS/reset.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url();?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
-
         <link href="<?php echo base_url();?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
         <link type="text/css" href="<?php echo base_url();?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
+          <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+      
         <script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.5.1.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url();?>js/jquery-ui-1.8.12.custom.min.js"></script>
          <script type="text/javascript" src="<?php echo base_url();?>js/jquery.dropdown.easing.1.3.js"></script>

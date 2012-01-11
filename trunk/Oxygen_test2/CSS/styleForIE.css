@@ -1,0 +1,35 @@
+/* 
+    Document   : styleForIE
+    Created on : Jan 11, 2012, 11:17:03 AM
+    Author     : Julian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+body{
+margin:0px;
+text-align: center;
+}
+
+#wrapper{
+    width:1024px;
+    margin:0px auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    float:none;
+    height:800px;
+    text-align: left;
+}
+
+.fb-like{
+    float:left;
+    margin-top: -60px;
+}
+.twitter-share-button{
+    float:left;
+    margin-top: -50px;
+}
+#footer{
+    margin-top: 0px;
+}
