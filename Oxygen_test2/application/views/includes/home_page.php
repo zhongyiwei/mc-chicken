@@ -7,6 +7,9 @@ and open the template in the editor.
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Oxygen</title>
+
+  
+
         <link rel="shortcut icon" href="<?php echo base_url(); ?>CSS/images/favicon.ico"/>
 
         <!--load main css-->
@@ -27,6 +30,71 @@ and open the template in the editor.
         <script src="<?php echo base_url(); ?>js/home_page/js/jquery-1.3.2.min.js" type="text/javascript"></script>
         <!-- Sliding effect -->
         <script src="<?php echo base_url(); ?>js/home_page/js/slide.js" type="text/javascript"></script>
+		
+		
+		
+		
+		
+		      <link type="text/css" href="<?php echo base_url();?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
+      
+        <script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>js/jquery-ui-1.8.12.custom.min.js"></script>
+   
+		<script> //Dialog box for what's nex
+	// increase the default animation speed to exaggerate the effect
+	$.fx.speeds._default = 1000;
+	$(function() {
+
+		$( "#dialog" ).dialog({
+		 width:950,
+			autoOpen: false,
+			show: "blind",
+			hide: "explode"
+		});
+
+		$( "#opener" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+			return false;
+		});
+	});
+	</script>
+	
+		    <script language="JavaScript" type="text/javascript">//WenJie function for what's next
+	
+            function loadFlow(){
+			var loggedin='no';  
+<?php
+$is_logged_in=$is_logged_in = $this->session->userdata('is_logged_in');
+if (isset($is_logged_in) && ($is_logged_in == 'true')) { ?>
+loggedin='yes';
+<?php } else {?>
+loggedin='no'; <?php } ?>
+
+    
+
+                // Create our XMLHttpRequest object
+                var hr = new XMLHttpRequest();
+                // Create some variables we need to send to our PHP file
+                var url = '<?php echo base_url()."index.php/home/";?>'+"getflow";
+
+                var vars = "logged="+loggedin;
+                hr.open("POST", url, true);
+                // Set content type header information for sending url encoded variables in the request
+                hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                // Access the onreadystatechange event for the XMLHttpRequest object
+                hr.onreadystatechange = function() {
+                    if(hr.readyState == 4 && hr.status == 200) {
+                        var return_data = hr.responseText;
+			
+                        document.getElementById("dialog").innerHTML = return_data;
+                    }
+                }
+                // Send the data to PHP now... and wait for response to update the status div
+                hr.send(vars); // Actually execute the request
+                document.getElementById("dialog").innerHTML = "processing...";
+                }
+
+        </script>
     </head>
 
     <body>
@@ -151,8 +219,8 @@ and open the template in the editor.
             <!-- end #page -->
             <div id="dialog" title="Your Flow Chart">
             </div>
-            <div id="footer" align="center">
-                <div id="image_footer"><a href="#"><img id="opener" onclick="loadFlow()" src="<?php echo base_url(); ?>CSS/images/background/what_is_now.png" alt="" /></img></a></div>
+<div id="footer" align="center">
+    <div id="image_footer"><img id="opener" onclick="loadFlow()" src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></img></div>
                 <div id="image_footer"><a href="#"><img src="<?php echo base_url(); ?>CSS/images/background/do_u_know.png" alt="" /></a></div>
                 <div id="sitemap" >
                     <ul>
