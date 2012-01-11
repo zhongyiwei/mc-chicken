@@ -1,5 +1,3 @@
-
-
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery-latest.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -40,6 +38,12 @@ $("ul.thumb li").hover(function() {
 		$("#image img").attr({ src: mainImage });
 		return false;
 	});
+
+
+
+
+
+
 
         //for thumb2
         $("ul.thumb2 li").hover(function() {
@@ -118,17 +122,43 @@ $("ul.thumb li").hover(function() {
 
 
 
+
+   //var element = document.createElement("input");  
+    //element.id = 'MyTextBox_coa'; $('#mobileno').focus()
+  /* window.setTimeout(function ()
+    {
+        document.getElementById("MyTextBox_coa").getAttribute(value)=imgvalue;
+        //document.getElementById('mobileno').focus();
+    }, 0);*/
+    //var MyElement = $('#MyTextBox_coa').focus();//document.getElementById("MyTextBox_coa");
+    //var MyElement = getElementsByAttribute( attribute, id )
+    
+    //var MyElement = document.getElementById("MyTextBox_coa").style;
+    //window.open(filename, "windowname", "settings"); 
+    //imgvalue = document.getElementById("img_input").value;
+  /*  if (imgvalue.style.display == "none") 
+{ 
+imgvalue.style.display="";
+}else{ 
+imgvalue.style.display="none";
+} */
+        //document.getElementById("MyTextBox_coa").value = imgvalue;
+    //document.getElementsByAttribute(id, "MyTextBox_coa").value = imgvalue;
+    //$('#MyTextBox_coa').value = imgvalue;
+    //alert(MyElement.value);
+    
+    //document.getElementById("MyTextBox_coa").style.value=imgvalue;
+            //var MyElement=function(s){return document.getElementById("MyTextBox_coa")};
+    //alert(imgvalue);
 function ChgText(imgvalue)
 {
-   //var element = document.createElement("input");  
-    //element.id = 'MyTextBox_coa'; 
     var MyElement = document.getElementById("MyTextBox_coa");
-    //var MyElement = document.getElementsByName("shield_coa");
-    //var MyElement=function(s){return document.getElementById("MyTextBox_coa")};
     MyElement.value = imgvalue;
 
     return true;
 }
+
+
 
 function ChgText_banner(imgvalue)
 {
@@ -151,7 +181,7 @@ function ChgText_crest(imgvalue)
 <?php //$this->load->view('portfolio/value_image');?>
 <div align=center class="coa" id="coa">
 	<div align=center class="image" id="image">
-  <img alt="" src="<?php echo base_url();?>web_images/coa_image/shield/coa2.png" /></div>
+  <img alt="Your Coat of Arms" src="<?php echo base_url();?>web_images/coa_image/shield/coa2.png" /></div>
 
  <?php
   $this->load->model('link_db_model');
