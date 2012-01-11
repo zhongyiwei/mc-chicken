@@ -10,7 +10,8 @@ and open the template in the editor.
         <title>Oxygen</title>
         <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url(); ?>CSS/ui-lightness/jquery-ui-1.8.13.custom.css" rel="Stylesheet"/>
-
+   <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+  
     </head>
     <body>
             <div id="header">

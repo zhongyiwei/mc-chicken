@@ -15,7 +15,8 @@ and open the template in the editor.
         <!--load sliding login file-->
         <!-- stylesheets -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>js/home_page/css/slide.css" type="text/css" media="screen" />
-
+        <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+  
         <!-- PNG FIX for IE6 -->
         <!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
         <!--[if lte IE 6]>
