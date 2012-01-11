@@ -8,8 +8,8 @@
 
 
 body{
-margin:0px;
-text-align: center;
+    margin:0px;
+    text-align: center;
 }
 
 #wrapper{
@@ -24,14 +24,14 @@ text-align: center;
 
 .fb-like{
     float:left;
-    margin-top: -60px;
+    margin-top: -80px;
 }
 .twitter-share-button{
     float:left;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 #footer{
-    margin-top: 0px;
+    margin-top: -10px;
 }
 
 #toppanel{
@@ -41,4 +41,27 @@ text-align: center;
 
 .tab A.open{
     width:120px;
+}
+
+#sitemap ul li{
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font: 16px Georgia, "Times New Roman", Times, serif;
+    color: #FFF;
+    text-align: left;
+    width: 120px;      
+}
+
+#copu{
+    width:1500px;
+}
+
+#home{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: -1000px;
 }
