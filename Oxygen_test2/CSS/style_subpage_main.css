@@ -579,13 +579,13 @@ padding-top: 160px; }
     float:left;
 }
 
-#footer #image {
+#footer #image_footer {
         float: left;
         width: 200px;
         height:60px;
 }
 
-#footer #image :hover{
+#footer #image_footer :hover{
         padding-top: 5px;
 }
 
