@@ -276,13 +276,15 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 }
 // -->
 </script>
-<div id="register">
+<div id="register" >
     <h1>Color Mood Setting</h1>
+    <h2>Please choose the color that best represents your mood today!</h2>
+    <div align="center">
 <script language="JavaScript" type="text/javascript">
 	AC_FL_RunContent(
 		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
-		'width', '514',
-		'height', '250',
+		'width', '642',
+		'height', '325',
 		'src', 'http://localhost:9081/new_color',
 		'quality', 'high',
 		'pluginspage', 'http://www.adobe.com/go/getflashplayer',
@@ -293,6 +295,7 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 		'wmode', 'transparent',
 		'devicefont', 'false',
 		'id', 'new_color',
+		'bgcolor', '#d6d6d6',
 		'name', 'new_color',
 		'menu', 'true',
 		'allowFullScreen', 'false',
@@ -302,14 +305,14 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 		); //end AC code
 </script>
 <noscript>
-	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="514" height="250" id="new_color" align="middle">
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="642" height="325" id="new_color" align="middle">
 	<param name="allowScriptAccess" value="sameDomain" />
 	<param name="allowFullScreen" value="false" />
-	<param name="movie" value="new_color.swf" /><param name="quality" value="high" />	<param name="wmode" value="transparent" /><embed src="new_color.swf" quality="high" width="514" height="250" name="new_color" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	<param name="movie" value="new_color.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#d6d6d6" />	<embed src="new_color.swf" quality="high" wmode="transparent" bgcolor="#d6d6d6" width="642" height="325" name="new_color" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
 	</object>
 </noscript>
    
-
+    </div>
 </div>
 
 <div id="home">
