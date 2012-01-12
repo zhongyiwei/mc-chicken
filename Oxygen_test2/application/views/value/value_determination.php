@@ -11,7 +11,7 @@
             <h2 class="title">Set Your Values</h2>
 			
  <div class="entry">
- <div id="popup">
+ <!--<div id="popup">-->
             <script type="text/javascript">
                 function addToList(boxvalue,boxname){
                     var i=1;
@@ -190,7 +190,7 @@ else {
 </div>
         </div>
 </div>
-    </div>
+  
 	
 	
     <!-- end #content -->
