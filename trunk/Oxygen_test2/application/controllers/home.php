@@ -183,15 +183,17 @@ class Home extends CI_Controller {
             $member_info = $this->membership_model->select_info();
 
             if (!$member_info == null) {
-                $old_info['id'] = $member_info[0]->seeker_id;
-                $old_info['email'] = $member_info[0]->email;
-                $old_info['name'] = $member_info[0]->name;
-                $old_info['gender'] = $member_info[0]->gender;
-                $old_info['dob'] = $member_info[0]->date_of_birth;
-                $old_info['nationality'] = $member_info[0]->nationality;
-                $old_info['hp'] = $member_info[0]->mobile_number;
+                $old_info=array(
+                    'email'=> $member_info[0]->email,
+                    'name'=>$member_info[0]->name,
+                    'gender'=>$member_info[0]->gender,
+                    'dob'=>$member_info[0]->date_of_birth,
+                    'nationality'=>$member_info[0]->nationality,
+                    'hp'=>$member_info[0]->mobile_number
+                );
+                $this->session->set_userdata($old_info);
             }
-            $this->load->view('register/update', $old_info);
+            $this->load->view('register/update');
         }
     }
 

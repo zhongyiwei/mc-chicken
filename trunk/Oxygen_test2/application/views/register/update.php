@@ -2,13 +2,20 @@
 <?php $this->load->view('register/register_header'); ?>
 
 <?php $this->load->view('includes/banner_general'); ?>
-<div>
 
-
+<div id="register">
     <h1>Update User Info</h1>
 
     <table cellpadding="5" cellspace="5" style="text-align: left;">
-        <?php echo form_open('update_info/info'); ?>
+        <?php 
+        
+        $name=$this->session->userdata('name');
+        $email=$this->session->userdata('email');
+        $gender=$this->session->userdata('gender');
+        $dob=$this->session->userdata('dob');
+        $nationality=$this->session->userdata('nationality');
+        $hp=$this->session->userdata('hp');
+        echo form_open('update_info/info'); ?>
 
         <tr>
             <th>Name:</th>
@@ -18,23 +25,14 @@
 
         <tr>
             <th>Gender:</th>
-            <td><?php
-        $options = array(
-            'Male' => 'Male',
-            'Female' => 'Female',
-        );
-        echo form_dropdown('gender', $options, set_value('gender', $gender));
-        ?></td>
-            <td><?php echo form_error('gender'); ?></td>
+            <td><?php echo $gender;?></td>
         </tr>
 
         <tr>
             <th>Date Of Birth:</th>
-            <td><?php echo form_input('date_of_birth', set_value('date_of_birth', $dob), 'id="datepicker123"'); ?></td>
-            <td><?php echo form_error('date_of_birth'); ?></td>
+            <td><?php echo $dob ;?></td>
         </tr>
-
-
+        
         <tr>
             <th>Nationality:</th>
             <td><?php
@@ -67,7 +65,7 @@
         </tr>
 
         <tr>
-            <td><?php echo form_submit('submit', 'Submit'); ?></td>
+            <td><?php echo form_submit('submit', 'Submit', 'id=submit_login'); ?></td>
         </tr>
         <?php echo form_close(); ?>
     </table>
