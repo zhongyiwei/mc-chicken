@@ -5,18 +5,27 @@ class Update_info extends CI_Controller {
     function info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+            
+            $new=array(
+                'name'=>  $this->input->post('name'),
+                'nationality'=>  $this->input->post('nationality'),
+                'hp'=>  $this->input->post('hp'),
+                'email'=>  $this->input->post('email')
+            );
+            
+            $this->session->set_userdata($new);
+            
             $this->load->library('form_validation');
-
-            $this->form_validation->set_rules('name', 'Name', 'trim|required');
-            $this->form_validation->set_rules('gender', 'Gender', 'trim|required');
-            $this->form_validation->set_rules('date_of_birth', 'Date Of Birth', 'trim|required|');
+            
+            $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
             $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required|alpha');
             $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric');
-            $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+            $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|unique[seeker.email]');
 
             if ($this->form_validation->run() == FALSE) {
-                $this->load->view('register/error');
-                $this->output->set_header('refresh:3;url=' . base_url() . 'index.php/home/personal_info/');
+//                $this->load->view('register/error');
+//                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/personal_info/');
+                  $this->load->view('register/update');
             } else {
                 $this->load->model('membership_model');
                 $new_record = $this->membership_model->update_member();
