@@ -27,7 +27,6 @@
             </div>
 <h2 class="title" id="VALUE">Your Coat of Arms</h2>
             <div class="entry">
-                <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms1.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
                 <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms2.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
                 <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms4.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
                 <h2>The Coat of Arms: </h2>
