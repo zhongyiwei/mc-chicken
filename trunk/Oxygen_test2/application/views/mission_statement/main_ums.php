@@ -10,8 +10,7 @@
     <div id="content_sub">
         <div class="post">
             <h2 class="title">Update your Mission Statement</h2>
-            <div class="entry">
-        
+            <div class="entry">        
         <?php
         echo form_open('db_control/validate_mission_update');
               $data = array('name'=> 'mission_update','id'=> 'mission','value'=> $mission_set,'rows'=> '3','cols'=> '65',);
