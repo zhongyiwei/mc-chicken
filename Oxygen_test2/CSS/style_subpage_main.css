@@ -233,6 +233,10 @@ padding-top: 160px; }
 
 .post .entry {
 	padding: 25px 20px 0px 20px;
+	    margin-left: 5%;
+    background: url(images/background/registerpopup.png) no-repeat 0 0;
+    width: 600px;
+    height: 100%;
 }
 
 .post .accordionButton{
@@ -322,6 +326,10 @@ padding-top: 160px; }
 .post .entry {
 	padding: 25px 20px 0px 20px;
         font-size: 12px;
+		    margin-left: 5%;
+    background: url(images/background/registerpopup.png) no-repeat 0 0;
+    width: 600px;
+    height: 100%;
 }
 
 .post .accordionButton{
