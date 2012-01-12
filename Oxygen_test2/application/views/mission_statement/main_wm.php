@@ -9,24 +9,10 @@
     </div>
     <div id="content_sub">
         <div class="post">
-
-                <!--     <div class="post">
-            <h2 class="title" id="MSV">Mission First</h2>
-            <div class="entry">
-                 <?php //$this->load->view('mission_statement/mission_slider');?>
-            </div>
-
-        </div>-->
-
-
-
             <h2 class="title" id="WMS">Why Mission Statement?</h2>
             <div class="entry">
 
              <iframe width="560" height="349" src="http://www.youtube.com/embed/VWLf6IVDjSs" frameborder="0" allowfullscreen></iframe>
-
-               
-
                 <p>Goal Setting motivates a person to reach their specific goals by defining it clearly and achieving it as “our values create within us a desire to behave in a way that is consistent with our goals”</p>
 
                 <p><strong><u>For Students:</u></strong></p>
