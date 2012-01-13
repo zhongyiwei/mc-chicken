@@ -447,3 +447,53 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
 
 
         <!--end #header -->
+
+        <!--        <div id="flashBackground">
+                    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="690" height="550" id="Starting Snow" align="middle">
+                        <param name="movie" value="../../flash/BackgroundPainting.swf" wmode="Transparent"/>
+                        <param name="quality" value="high" />
+                        <param name="bgcolor" value="#ffffff" />
+                        <param name="play" value="true" />
+                        <param name="loop" value="true" />
+                        <param name="wmode" value="gpu" />
+                        <param name="scale" value="showall" />
+                        <param name="menu" value="true" />
+                        <param name="devicefont" value="false" />
+                        <param name="salign" value="" />
+                        <param name="allowScriptAccess" value="sameDomain" />
+                        [if !IE]>
+                        <object type="application/x-shockwave-flash" data="../../flash/BackgroundPainting.swf" width="690" height="550">
+                            <param name="movie" value="../../flash/BackgroundPainting.swf" />
+                            <param name="quality" value="high" />
+                            <param name="bgcolor" value="#ffffff" />
+                            <param name="play" value="true" />
+                            <param name="loop" value="true" />
+                            <param name="wmode" value="gpu" />
+                            <param name="scale" value="showall" />
+                            <param name="menu" value="true" />
+                            <param name="devicefont" value="false" />
+                            <param name="salign" value="" />
+                            <param name="allowScriptAccess" value="sameDomain" />
+                            <param name="wmode" value="Transparent" />
+                            <![endif]
+                            <a href="http://www.adobe.com/go/getflash">
+                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                            </a>
+                            [if !IE]>
+                        </object>
+                        <![endif]
+                    </object>
+                </div>-->
+<div id="flashBackground">
+        <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+                codebase="http://download.macromedia.com/pub/shockwave/cabs/flash 
+                /swflash.cab#version=5,0,0,0" 
+                WIDTH=690 HEIGHT=550>
+            <PARAM NAME=movie VALUE="../../flash/BackgroundPainting.swf">
+            <PARAM NAME=quality VALUE=high> 
+            <PARAM NAME=wmode VALUE=transparent> 
+            <PARAM NAME=bgcolor VALUE=#FFFFFF>  
+            <EMBED src="../../flash/BackgroundPainting.swf" quality=high wmode=transparent bgcolor=#FFFFFF WIDTH=690 HEIGHT=550 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version 
+                   =ShockwaveFlash"></EMBED> 
+        </OBJECT>
+        </div>

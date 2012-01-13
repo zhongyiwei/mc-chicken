@@ -259,7 +259,7 @@ hr { display: none; }
 /* Post */
 
 .post {
-    background: url(images/background/brush.png) no-repeat;
+/*    background: url(images/background/brush.png) no-repeat;*/
     width: 700px; height:550px;
 
     margin-bottom: 25px;
@@ -751,3 +751,8 @@ div.row1 span.right1 {
 }
 
 
+#flashBackground{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 80px
+}
