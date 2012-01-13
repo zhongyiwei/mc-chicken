@@ -123,12 +123,20 @@ loggedin='no'; <?php } ?>
                                     <td><?php echo $this->session->userdata('email'); ?></td>
                                 </tr>
                                 <tr>
-                                    <td><strong><u>Gender:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('gender'); ?></td>
-                                    <td><strong><u>Birthday:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('dob'); ?></td>
+                                    <td><strong><u>Gender:</u></strong></td>
+                                    <td><?php echo $this->session->userdata('gender');?></td>
                                 </tr>
                                 <tr>
-                                    <td><strong><u>Nationality:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('nation'); ?></td>
-                                    <td><strong><u>Mobile:</u></strong>&nbsp;&nbsp;&nbsp;<?php echo $this->session->userdata('mobile'); ?></td>
+                                    <td><strong><u>Birthday:</u></strong></td>
+                                    <td><?php echo $this->session->userdata('dob'); ?></td>
+                                </tr>
+                                <tr>
+                                    <td><strong><u>Nationality:</u></strong></td>
+                                    <td><?php echo $this->session->userdata('nation'); ?></td>
+                                </tr>
+                                <tr>
+                                    <td><strong><u>Mobile:</u></strong></td>
+                                    <td><?php echo $this->session->userdata('mobile'); ?></td>
                                 </tr>
                             </table>
                             <p class="grey"><a href="<?php echo base_url(); ?>index.php/login/log_out/">Log out!</a></p>

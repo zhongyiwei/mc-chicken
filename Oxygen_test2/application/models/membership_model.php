@@ -44,19 +44,19 @@ class Membership_model extends CI_Model {
     function update_member() {
         $this->db->select('email');
         $this->db->from('seeker');
-        $this->db->where('email', $this->input->post('email'));
+        $this->db->where('email', $this->session->userdata('email'));
         $this->db->where_not_in('seeker_id',$this->session->userdata('seeker_id'));
         
         $query = $this->db->get();
 
         if ($query->num_rows == 0) {
             $data = array(
-                'name' => $this->input->post('name'),
-                'gender' => $this->input->post('gender'),
-                'date_of_birth' => $this->input->post('date_of_birth'),
-                'nationality' => $this->input->post('nationality'),
-                'mobile_number' => $this->input->post('mobile_number'),
-                'email' => $this->input->post('email'),
+                'name' => $this->session->userdata('name'),
+                'gender' => $this->session->userdata('gender'),
+                'date_of_birth' => $this->session->userdata('dob'),
+                'nationality' => $this->session->userdata('nation'),
+                'mobile_number' => $this->session->userdata('mobile'),
+                'email' => $this->session->userdata('email')
             );
             $this->db->where('seeker_id', $this->session->userdata('seeker_id'));
             $update_info = $this->db->update('seeker', $data);

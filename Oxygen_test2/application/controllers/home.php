@@ -179,20 +179,7 @@ class Home extends CI_Controller {
     function personal_info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            $this->load->model('membership_model');
-            $member_info = $this->membership_model->select_info();
-
-            if (!$member_info == null) {
-                $old_info=array(
-                    'email'=> $member_info[0]->email,
-                    'name'=>$member_info[0]->name,
-                    'gender'=>$member_info[0]->gender,
-                    'dob'=>$member_info[0]->date_of_birth,
-                    'nationality'=>$member_info[0]->nationality,
-                    'hp'=>$member_info[0]->mobile_number
-                );
-                $this->session->set_userdata($old_info);
-            }
+            
             $this->load->view('register/update');
         }
     }

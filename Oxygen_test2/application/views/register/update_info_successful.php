@@ -1,7 +1,14 @@
-<?php $this->load->view('includes/header_general');?>
-<?php $this->load->view('includes/banner_general');?>
+<?php $this->load->view('register/register_header'); ?>
 
-<h1>Successful!</h1>
+<div id="register">
+    <h1 style="padding-top: 20px;">Successful</h1>
+    <p style="padding-left: 20px; color: black; font-size: 16px;">Your request has been updated successfully!</p>
+    <p style="padding-left: 20px; color: black; font-size: 16px;">System is directing you to the Home Page, please wait for a while!</p>
+</div>
 
-<p>You have updated your information successfully, go <a href="<?php echo base_url();?>index.php/home/index/">back to home</a></p>
-<?php $this->load->view('includes/footer_general'); ?>
+
+<div id="home">
+    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
+</div>
+
+<?php $this->load->view('register/register_footer'); ?>
