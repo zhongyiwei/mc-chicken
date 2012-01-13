@@ -13,14 +13,13 @@
         $email=$this->session->userdata('email');
         $gender=$this->session->userdata('gender');
         $dob=$this->session->userdata('dob');
-        $nationality=$this->session->userdata('nationality');
-        $hp=$this->session->userdata('hp');
+        $nationality=$this->session->userdata('nation');
+        $hp=$this->session->userdata('mobile');
         echo form_open('update_info/info'); ?>
 
         <tr>
             <th>Name:</th>
-            <td><?php echo form_input('name', set_value('name', $name), 'id="name"'); ?></td>
-            <td><?php echo form_error('name'); ?></td>
+            <td><?php echo form_input('name', $name, 'id="name"'); ?></td>
         </tr>
 
         <tr>
@@ -47,21 +46,20 @@
                     'Vietnam' => 'Vietnam',
                     'Others' => 'Others'
                 );
-                echo form_dropdown('nationality', $options, set_value('nationality', $nationality));
+                echo form_dropdown('nationality', $options, $nationality);
         ?></td>
             <td><?php echo form_error('nationality'); ?></td>
         </tr>
 
         <tr>
             <th>Mobile Number:</th>
-            <td><?php echo form_input('mobile_number', set_value('mobile_number', $hp)); ?></td>
+            <td><?php echo form_input('mobile_number',$hp); ?></td>
             <td><?php echo form_error('mobile_number'); ?></td>
         </tr>
 
         <tr>
             <th>Email:</th>
-            <td><?php echo form_input('email', set_value('email', $email)); ?></td>
-            <td><?php echo form_error('email'); ?></td>
+            <td><?php echo $email; ?></td>
         </tr>
 
         <tr>
