@@ -768,6 +768,10 @@ class Home extends CI_Controller {
         }
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
     }
+    
+    function QAGamePortol(){
+        $this ->load->view('resilience_Game/QAGame.php');
+    }
 
     function get_session() {
         parse_str($_SERVER['QUERY_STRING'], $_GET);
@@ -784,6 +788,8 @@ class Home extends CI_Controller {
 
         $this->load->view('email_reminder/email_reminder');
     }
+    
+    
 
 }
 
