@@ -14,7 +14,7 @@ and open the template in the editor.
         <link href="<?php echo base_url(); ?>CSS/reset.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url(); ?>CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="<?php echo base_url(); ?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="<?php echo base_url(); ?>CSS/lionbars.css" rel="stylesheet" type="text/css" media="screen" />
+        <![if !IE]><link href="<?php echo base_url(); ?>CSS/lionbars.css" rel="stylesheet" type="text/css" media="screen" /><![endif]>
         <link type="text/css" href="<?php echo base_url(); ?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
           <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
       <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -24,7 +24,7 @@ and open the template in the editor.
         <script type="text/javascript" src="<?php echo base_url(); ?>js/script.sidebar_dropdown.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/script.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.lionbars.0.3.min.js"></script>
+        <![if !IE]><script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.lionbars.0.3.min.js"></script><![endif]>
         <!--start of css and js for TRANSLATION-->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/translation.css" />
         <script type="text/javascript" src="<?php echo base_url(); ?>js/google_ajax_translation.js"></script>
@@ -114,7 +114,7 @@ and open the template in the editor.
 $is_logged_in = $is_logged_in = $this->session->userdata('is_logged_in');
 if (isset($is_logged_in) && ($is_logged_in == 'true')) {
     ?>
-            loggedin='yes';
+                loggedin='yes';
 <?php } else { ?>
             loggedin='no'; <?php } ?>
 
