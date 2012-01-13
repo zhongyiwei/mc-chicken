@@ -17,7 +17,7 @@
     <div id="content_sub" style="height:auto">
         <div class="post" >
             <h2 class="title">Resilience Game</h2>
-            <div class="entry" style="margin-top:50px; margin-left:32x; padding:0px">
+            <div class="entry" style="margin-top:50px; margin-left:32px; padding:0px">
                 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="630" height="315" id="Starting Snow" align="middle">
                     <param name="movie" value="../../flash/StartingSnow.swf" />
                     <param name="quality" value="high" />
