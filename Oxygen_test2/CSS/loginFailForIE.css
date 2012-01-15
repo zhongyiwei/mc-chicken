@@ -1,0 +1,16 @@
+/* 
+    Document   : loginFailForIE
+    Created on : Jan 15, 2012, 4:45:55 PM
+    Author     : Julian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#home{
+    position: relative;
+    margin:0px;
+    margin-top: 40px;
+}
+#footer{
+    margin:0px;
+}

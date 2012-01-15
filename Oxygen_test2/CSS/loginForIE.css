@@ -15,5 +15,8 @@ img{
 #home{
     margin:0px;
     position: relative;
-    margin-top: 80px;;
+    margin-top: -20px;;
+}
+#login{
+    height: 450px;
 }
