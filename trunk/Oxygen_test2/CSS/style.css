@@ -8,22 +8,19 @@
 
 
 body {
-    font-family: BPreplay,Arial,Helvetica,sans-serif;
     font-size: 13px;
     color: #837669;
     text-align: left;
     display: block;
     width: 1024px;
     margin: 0 auto;
-
-
 }
 
 h1, h2, h3 {
     margin-left: 10px;
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: normal;
     color: #649632;
+    font-family: "Impact";
 }
 
 h1 { font-size: 44px; }
@@ -36,7 +33,6 @@ p, ul, ol {
     margin-top: 0;
     line-height: 240%;
     text-align: justify;
-    font-family: BPreplay,Arial,Helvetica,sans-serif;
     font-size: 14px;
 }
 
@@ -127,7 +123,6 @@ hr { display: none; }
 #menu a {
     display: block;
     text-decoration: none;
-    font: 16px Georgia, "Times New Roman", Times, serif;
     color: #FFFFFF;
 }
 
@@ -178,7 +173,6 @@ hr { display: none; }
 
 #logo p {
     padding: 200px 0 0 170px;
-    font: italic 13px Georgia, "Times New Roman", Times, serif;
     color: #FFFFFF;
 }
 
@@ -222,7 +216,7 @@ hr { display: none; }
 .post .meta {
     margin: -30px  0 3px 25px;
     padding: 2px 30px 2px 0px;
-    font-family: BPreplay,Arial,Helvetica,sans-serif;
+/*    font-family: BPreplay,Arial,Helvetica,sans-serif;*/
     font-weight: normal;
     font-size: 10px;
     color: #B6ACA2;
@@ -308,7 +302,7 @@ hr { display: none; }
 .post .meta {
     margin: -30px  0 3px 25px;
     padding: 2px 30px 2px 0px;
-    font-family: BPreplay,Arial,Helvetica,sans-serif;
+/*    font-family: BPreplay,Arial,Helvetica,sans-serif;*/
     font-weight: normal;
     font-size: 18px;
     color: #B6ACA2;
@@ -451,7 +445,6 @@ hr { display: none; }
 #xxx li.button a{
     /* The section titles */
     display:block;
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-size:21px;
     height:34px;
     overflow:hidden;
@@ -591,7 +584,6 @@ hr { display: none; }
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font: 16px Georgia, "Times New Roman", Times, serif;
     color: #FFF;
     text-align: left;
     width: 120px;
@@ -727,4 +719,5 @@ div.row1 span.right1 {
 
 
 /*        End*/
+
 
