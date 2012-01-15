@@ -1,8 +1,12 @@
-<?php $this->load->view('includes/header_general');?>
-<?php $this->load->view('includes/banner_general');?>
+<?php $this->load->view('register/register_header'); ?>
 
-<h1>&otimes;Error&otimes;</h1>
+<div id="register">
+    <h1 style="padding-top: 20px;">&otimes;Error&otimes;</h1>
+    <p><?php echo $info;?></p>
+</div>
 
-<p>Your Old Password is not correct, Please try <a href="<?php echo base_url();?>index.php/home/change_password/">again</a></p>
+<div id="home">
+    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
+</div>
 
-<?php $this->load->view('includes/footer_general'); ?>
+<?php $this->load->view('register/register_footer'); ?>

@@ -41,27 +41,31 @@ class Update_info extends CI_Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $record12=$this->db->select('*')
-                    ->from(seeker)
+                    ->from('seeker')
                     ->where('seeker_id',$this->session->userdata('seeker_id'))
                     ->where('password', sha1($this->input->post('password')))
                     ->get();        
             
-            if($record12->num_rows==1)
-            $this->load->library('form_validation');
-            $this->form_validation->set_rules('password_new', 'Password', 'trim|required|min_length[8]|max_length[32]');
-            $this->form_validation->set_rules('password_new123', 'Confirm Password', 'trim|required|matches[password_new]');
+            if ($record12->num_rows == 1) {
+                $this->load->library('form_validation');
+                $this->form_validation->set_rules('password_new', 'Password', 'trim|required|min_length[8]|max_length[32]');
+                $this->form_validation->set_rules('password_new123', 'Confirm Password', 'trim|required|matches[password_new]');
 
-            if ($this->form_validation->run() == FALSE) {
-                $this->load->view('register/error');
-                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/change_password/');
-            } else {
-                $this->load->model('membership_model');
-                $pass = $this->membership_model->update_password();
-                if ($pass) {
-                    $this->load->view('register/change_password_successful');
+                if ($this->form_validation->run() == FALSE) {
+                    $info_detail['info']='<p style="padding-left: 20px; color: black; font-size: 16px;">The New Password you have typed does not match, please try again.</p><p style="padding-left: 20px; color: black; font-size: 16px;">System will link you to that page, please hold on!</p>';
+                    $this->load->view('register/error_password',$info_detail);
+                    $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/change_password/');
                 } else {
-                    $this->load->view('register/error_password');
+                    $this->load->model('membership_model');
+                    $pass = $this->membership_model->update_password();
+                    if ($pass) {
+                        $this->load->view('register/change_password_successful');
+                    }
                 }
+            }else{
+                $info_detail['info']='<p style="padding-left: 20px; color: black; font-size: 16px;">The Old Password you have typed is not correct, please try again.</p><p style="padding-left: 20px; color: black; font-size: 16px;">System will link you to that page, please hold on!</p>';
+                $this->load->view('register/error_password',$info_detail);
+                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/change_password/');
             }
         }
     }
