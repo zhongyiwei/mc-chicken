@@ -103,12 +103,11 @@ loggedin='no'; <?php } ?>
         <div id="toppanel">
             <div id="panel">
                 <div class="content clearfix">
-                    <div class="left">
+                    <div class="left" id="info">
                         <h1>Welcome to Oxygen</h1>
                         <h2></h2>		
                         <p class="grey">You can put anything you want in this sliding panel: videos, audio, images, forms... The only limit is your imagination!</p>
-                        <h2>Download</h2>
-                        <p class="grey">To download this script go back to <a href="http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery" title="Download">article &raquo;</a></p>
+                        
                     </div>
                     <div class="left" id="userinfo">
                         <?php
