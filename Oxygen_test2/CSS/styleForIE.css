@@ -10,7 +10,15 @@
 body{
     margin:0px;
     text-align: center;
+    font-family: "Arial";
 }
+*{
+    font-family: "Arial";
+}
+h1, h2,h3{
+    font-family: "Impact";
+}
+
 
 #wrapper{
     width:1024px;
