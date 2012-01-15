@@ -42,6 +42,7 @@ $id=$this->session->userdata('seeker_id');
 
                   <tbody>
                        <?php
+                      
                     foreach ($all_activity_query->result_array() as $row)
                     {
                   ?>
