@@ -9,13 +9,15 @@ and open the template in the editor.
         <title>Login Page</title>
         <link rel="shortcut icon" href="<?php echo base_url(); ?>CSS/images/favicon.ico"/>
         <link href="<?php echo base_url(); ?>CSS/login.css" rel="stylesheet" type="text/css" media="screen" />
+        <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <!--[if IE]><link href="<?php echo base_url(); ?>CSS/loginForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
     </head>
     <body>
         <div id="wrapper">
             <div id="login">
                 <h1>&CircleTimes;User Login Failed&CircleTimes;</h1>
                 <div>
-                    <p>Your information is not correct, please try <a href="<?php echo base_url();?>index.php/login/index/">again</a>!</p>
+                    <p>Your information is not correct, please try <a href="<?php echo base_url(); ?>index.php/login/index/">again</a>!</p>
                 </div>
             </div>
 

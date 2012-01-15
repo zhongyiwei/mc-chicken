@@ -1,0 +1,19 @@
+/* 
+    Document   : loginForIE
+    Created on : Jan 15, 2012, 4:08:13 PM
+    Author     : Julian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#footer{
+    margin-top: 20px;
+}
+img{
+    border:none;
+}
+#home{
+    margin:0px;
+    position: relative;
+    margin-top: 80px;;
+}
