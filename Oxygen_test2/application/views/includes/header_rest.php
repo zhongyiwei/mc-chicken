@@ -11,9 +11,11 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/translation.css" />
 <script type="text/javascript" src="<?php echo base_url(); ?>js/google_ajax_translation.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.translation.js"></script>
+
+<!--Start change the scrolldown bar format,but it does not suit for IE-->
 <![if !IE]><script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.lionbars.0.3.min.js"></script><![endif]>
 <![if !IE]><link href="<?php echo base_url(); ?>CSS/lionbars.css" rel="stylesheet" type="text/css" media="screen" /><![endif]>
-
+<!--End change the scrolldown bar format,but it does not suit for IE-->
 
 
 <!--end of css and js for gallery slider in mission_slider page-->
