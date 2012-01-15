@@ -27,7 +27,9 @@ h1 { font-size: 44px; }
 
 h2 { font-size: 20px; }
 
-h3 { }
+h3 { 
+font-family: "Arial";
+}
 
 p, ul, ol {
     margin-top: 0;
