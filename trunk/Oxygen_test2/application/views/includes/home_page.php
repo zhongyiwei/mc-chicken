@@ -100,7 +100,7 @@ loggedin='no'; <?php } ?>
     <body>
         <div id="wrapper">
             <!-- Panel -->
-        <div id="toppanel">
+        <div id="toppanel" style="font-family: Arial">
             <div id="panel">
                 <div class="content clearfix">
                     <div class="left" id="info">
