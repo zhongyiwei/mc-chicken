@@ -15,10 +15,13 @@
             <div class="entry">
                 <p style="font-size:150%; color:black;" > Notice: Do submit one goal at a time before proceeding to the next: </p>
                 <table cellpadding="5" cellspace="5" style="text-align: left;">
-                    <div id="accordion">
+                    <div id="activity_accordion">
                         <h3><a href="#">Family</a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_family_goal'); ?>
+                            <?php 
+                            $is_logged_in = $this->session->userdata('is_logged_in');
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_family_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                     $data = array(
@@ -38,12 +41,16 @@
                             echo form_textarea($data); ?><br><br>
 
                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else { ?>
+                           <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
 
                         <h3><a href="#">Career</a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_career_goal'); ?>
+                            <?php 
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_career_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                             $data = array(
@@ -63,12 +70,16 @@
                             echo form_textarea($data); ?>
                             <br><br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else{ ?>
+                             <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
 
                         <h3><a href="#">Education</a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_education_goal'); ?>
+                            <?php 
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_education_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                             $data = array(
@@ -89,12 +100,16 @@
 
                             <br><br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else{ ?>
+                            <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
 
                         <h3><a href="#">Spiritual </a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_spiritual_goal'); ?>
+                            <?php 
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_spiritual_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                             $data = array(
@@ -115,12 +130,16 @@
 
                             <br><br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else{?>
+                            <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
 
                         <h3><a href="#">Financial </a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_financial_goal'); ?>
+                            <?php 
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_financial_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                             $data = array(
@@ -141,12 +160,16 @@
 
                             <br><br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else{?>
+                            <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
 
                         <h3><a href="#">Social</a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_social_goal'); ?>
+                            <?php 
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_social_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                             $data = array(
@@ -167,12 +190,16 @@
 
                             <br><br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else{?>
+                            <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
 
                         <h3><a href="#">Physical</a></h3>
                         <div>
-                            <?php echo form_open('set_goal/create_physical_goal'); ?>
+                            <?php 
+                            if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+                            echo form_open('set_goal/create_physical_goal'); ?>
                             <p>Goal:</p>
                             <p><?php
                             $data = array(
@@ -193,7 +220,9 @@
 
                             <br><br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); }else{?>
+                            <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+            <?php } ?>
                         </div>
                     </div>
                 </table>
