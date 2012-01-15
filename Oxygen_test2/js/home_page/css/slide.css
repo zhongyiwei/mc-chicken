@@ -138,6 +138,10 @@ Version: 1.0
 	color: white;
 }
 
+#panel #info{
+    width: 600px;
+}
+
 #panel #userinfo table{
         font-size: 14px;
 }
