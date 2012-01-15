@@ -3,9 +3,9 @@
 <?php $this->load->view('includes/banner_general'); ?>
 
 <div id="register">
-    <h1>Update User Password</h1>
+    <h1 style="padding-top: 20px;">Update User Password</h1>
 
-    <table cellpadding="5" cellspace="5" style="text-align: left;">
+    <table cellpadding="5" cellspace="5" style="text-align: left; padding-top: 20px;padding-left: 20px;">
         <?php echo form_open('update_info/change_pass'); ?>
         <tr>
             <th>Please Enter Your Old Password:</th>
