@@ -52,11 +52,8 @@ class Membership_model extends CI_Model {
         if ($query->num_rows == 0) {
             $data = array(
                 'name' => $this->session->userdata('name'),
-                'gender' => $this->session->userdata('gender'),
-                'date_of_birth' => $this->session->userdata('dob'),
                 'nationality' => $this->session->userdata('nation'),
-                'mobile_number' => $this->session->userdata('mobile'),
-                'email' => $this->session->userdata('email')
+                'mobile_number' => $this->session->userdata('mobile')
             );
             $this->db->where('seeker_id', $this->session->userdata('seeker_id'));
             $update_info = $this->db->update('seeker', $data);
