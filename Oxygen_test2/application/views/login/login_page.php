@@ -9,6 +9,8 @@ and open the template in the editor.
         <title>Login Page</title>
         <link rel="shortcut icon" href="<?php echo base_url(); ?>CSS/images/favicon.ico"/>
         <link href="<?php echo base_url(); ?>CSS/login.css" rel="stylesheet" type="text/css" media="screen" />
+        <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <!--[if IE]><link href="<?php echo base_url(); ?>CSS/loginForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
     </head>
     <body>
         <div id="wrapper">
@@ -18,15 +20,15 @@ and open the template in the editor.
                     <?php echo form_open('login/validate'); ?>
                     <tr>
                         <th>Email:</th>
-                        <td><?php echo form_input('email','');?></td>
+                        <td><?php echo form_input('email', ''); ?></td>
                     </tr>
 
                     <tr>
                         <th>Password:</th>
-                        <td><?php echo form_password('password','');?></td>
+                        <td><?php echo form_password('password', ''); ?></td>
                     </tr>
                 </table>
-                
+
                 <table>
                     <tr>
                         <td class="link_page"><?php echo anchor('login/register', 'Register'); ?></td>
