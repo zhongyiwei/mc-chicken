@@ -3,11 +3,17 @@
         <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 <div id="page">
+         <div id="sub-nav">
+        <ul>
+            <li><a href="<?php echo base_url(); ?>index.php/home/holistic/" >Set Goals</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/see_goal/" >View Goals</a></li>
+        </ul>
+         </div>
     <div id="content_sub">
         <div class="post">
             <h2 class="title">Please Set Your Goal</h2>
             <div class="entry">
-                <p style="font-size:150%; color:white;" > Notice: Do submit one goal at a time before proceeding to the next: </p>
+                <p style="font-size:150%; color:black;" > Notice: Do submit one goal at a time before proceeding to the next: </p>
                 <table cellpadding="5" cellspace="5" style="text-align: left;">
                     
                     <div id="accordion">
