@@ -12,12 +12,10 @@ and open the template in the editor.
         <meta name="description" content="" />
         <link href="<?php echo base_url(); ?>CSS/register.css" rel="stylesheet" type="text/css" media="screen" />
 
-        <link href="<?php echo base_url(); ?>CSS/dropdown_sidebar.css" rel="stylesheet" type="text/css" media="screen" />
         <link type="text/css" href="<?php echo base_url(); ?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
         <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.5.1.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.8.12.custom.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.dropdown.easing.1.3.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/script.sidebar_dropdown.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/script.js"></script>
 
