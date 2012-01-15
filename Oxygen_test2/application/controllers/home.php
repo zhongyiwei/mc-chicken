@@ -123,7 +123,7 @@ class Home extends CI_Controller {
             $data['nav_goal'] = 'includes/left_nav_goal';
             $this->load->view('set_activity/template_sc', $data);
         } else {
-            $this->load->view('portfolio/page_visitor');
+            $this->load->view('set_activity/error_track_activity');
         }
     }
 
@@ -282,7 +282,7 @@ class Home extends CI_Controller {
             $data['nav_goal'] = 'includes/left_nav_goal';
             $this->load->view('set_activity/template_sc', $data);
         } else {
-            $this->load->view('portfolio/page_visitor');
+            $this->load->view('set_activity/error_view_activity');
         }
     }
 
