@@ -1,11 +1,17 @@
-<?php $this->load->view('includes/header_general');?>
-<?php $this->load->view('includes/banner_general');?>
+<?php $this->load->view('register/register_header'); ?>
 
-<h1>Password Reset</h1>
+<div id="register">
+    <h1>Password Reset</h1>
 
 <?php
 
     echo $msg;
 
 ?>
-<?php $this->load->view('includes/footer_general'); ?>
+</div>
+
+<div id="home">
+    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
+</div>
+
+<?php $this->load->view('register/register_footer'); ?>

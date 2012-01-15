@@ -35,7 +35,7 @@ and open the template in the editor.
 		
 		
 		
-		      <link type="text/css" href="<?php echo base_url();?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
+	<link type="text/css" href="<?php echo base_url();?>CSS/themename/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />
       
         <script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.5.1.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url();?>js/jquery-ui-1.8.12.custom.min.js"></script>
@@ -154,7 +154,7 @@ loggedin='no'; <?php } ?>
                                 <label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Remember me</label>
                                 <div class="clear"></div>
                                 <input type="submit" name="submit" value="Login" class="bt_login" />
-                                <a class="lost-pwd" href="#">Lost your password?</a>
+                                <a class="lost-pwd" href="<?php echo base_url();?>index.php/update_info/forgot_password/">Lost your password?</a>
                             </form>
                             <?php echo form_open('login/register'); ?>
                             <input type="submit" name="submit" value="Register" class="bt_register" />
