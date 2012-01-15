@@ -23,7 +23,7 @@ and open the template in the editor.
         <script type="text/javascript" src="<?php echo base_url(); ?>password/mocha.js"></script>
         <link type="text/css" href="<?php echo base_url(); ?>password/style.css" rel="stylesheet" />
         <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
-
+        <!--[if IE]><link href="<?php echo base_url();?>CSS/loginFailForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
 
         <script>
             $(function() {
