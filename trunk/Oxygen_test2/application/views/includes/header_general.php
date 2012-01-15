@@ -404,4 +404,3 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
                 </div>
             </div>
             <!--end #header -->
-            
