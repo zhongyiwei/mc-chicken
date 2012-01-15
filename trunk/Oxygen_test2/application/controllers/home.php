@@ -19,6 +19,10 @@ class Home extends CI_Controller {
         $this->load->view('color_mood/color_mood');
     }
 
+    function color_catch() {
+        $this->load->view('color_mood/session');
+    }
+
     function session() {
         $this->load->view('resilience_test/subpage_session');
     }
