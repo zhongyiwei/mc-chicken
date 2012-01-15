@@ -13,7 +13,7 @@
             <div class="entry">        
         <?php
         echo form_open('db_control/validate_mission_update');
-              $data = array('name'=> 'mission_update','id'=> 'mission','value'=> $mission_set,'rows'=> '3','cols'=> '65',);
+              $data = array('name'=> 'mission_update','id'=> 'mission','value'=> $mission_set,'rows'=> '3','cols'=> '70',);
               echo form_textarea($data);
               echo form_error('mission_update');
 
@@ -21,7 +21,7 @@
         ?>
 <br>
         <?php
-        echo "<div style='padding-left:460px;'>";
+        echo "<div style='padding-left:520px;'>";
         echo form_submit('submit','Update','id="form_submit"');
         echo "</div>"?>
         <?php echo form_close(); ?>
