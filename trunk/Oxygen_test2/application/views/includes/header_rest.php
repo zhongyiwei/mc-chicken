@@ -437,7 +437,7 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
                     <li><a href="<?php echo base_url(); ?>index.php/home/determineValue/"><img src="<?php echo base_url(); ?>CSS/images/background/values.png"></a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/home/goal/"><img src="<?php echo base_url(); ?>CSS/images/background/goals.png"></a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/"><img src="<?php echo base_url(); ?>CSS/images/background/activity.png"></a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/home/test_resilience/"><img src="<?php echo base_url(); ?>CSS/images/background/resilience.png"></a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/home/resilience/"><img src="<?php echo base_url(); ?>CSS/images/background/resilience.png"></a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS"><img src="<?php echo base_url(); ?>CSS/images/background/coat_of_arm.png"></a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS"><img src="<?php echo base_url(); ?>CSS/images/background/portfolio.png"></a></li>
                     <!--<li><a href="http://sit.rp.edu.sg/91234/assignment2/images/StartingSnow.swf"><img>Game</a></li>-->
