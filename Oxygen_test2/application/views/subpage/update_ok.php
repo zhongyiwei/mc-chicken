@@ -1,4 +1,5 @@
 <?php $this->load->view('register/register_header'); ?>
+
 <div id="register">
     <h1>Update Successful</h1>
     <div styel="margin-left:50px; margin-top:50px;color:black;">
@@ -11,4 +12,4 @@
     <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
 </div>
 
-<?php $this->load->view('includes/footer_general'); ?>
+<?php $this->load->view('register/register_footer'); ?>
