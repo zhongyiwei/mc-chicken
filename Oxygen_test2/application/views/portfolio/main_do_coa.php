@@ -21,10 +21,10 @@
                            <div class="entry">
                 <h4 align="center" style="color:purple;">The symbols in the center of the Coat of Arms represent your values: </h4>
                 <table border="1" align="center">
-                        <th width="150px">Value 1: Top Left</th>
-                        <th width="150px">Value 2: Top Right</th>
-                        <th width="150px">Value 3: Bottom Left</th>
-                        <th width="150px">Value 4: Bottom Right</th>
+                        <th width="150px">Value 1: Top Left ↖</th>
+                        <th width="150px">Value 2: Top Right ↗</th>
+                        <th width="150px">Value 3: Bottom Left ↙</th>
+                        <th width="150px">Value 4: Bottom Right ↘</th>
                         <tbody><tr>                           
                                 <td width="150px" align="center"><?php echo $value1; ?></td>
                                 <td width="150px" align="center"><?php echo $value2; ?></td>

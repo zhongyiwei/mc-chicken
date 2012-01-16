@@ -131,7 +131,7 @@
 }else{
 ?>
             <br><center>
-            <font color="green" size="5"> You have never completed resilience test yet.  </font></center>
+            <p> You have never completed resilience test yet.  </p></center>
   <?php
 }
         }
