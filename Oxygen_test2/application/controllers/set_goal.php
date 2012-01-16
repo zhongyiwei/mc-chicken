@@ -6,9 +6,9 @@ class Set_goal extends CI_Controller {
         parent::__construct();
     }
 
-    function update() {
+    function update($id) {
         $this->load->model('goal_setting');
-        $query = $this->goal_setting->display_goal();
+        $query = $this->goal_setting->display_goal($id);
 
         if (!$query == null) {
             $data['id']=$query[0]->seeker_goal_id;
