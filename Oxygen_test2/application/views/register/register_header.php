@@ -25,11 +25,7 @@ and open the template in the editor.
         <!--[if IE]><link href="<?php echo base_url();?>CSS/loginFailForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
 
         <script>
-            $(function() {
-                $( "#register" ).datepicker({
-                    dateFormat:"yy-mm-dd"
-                });
-            });
+
 
             $(function() {
                 $( "#datepicker123" ).datepicker({
