@@ -74,7 +74,9 @@
 
             </div>
 
-
+<div id="home" style="position: absolute; margin-left: -300px; margin-top: -70px;">
+    <a href="<?php echo base_url(); ?>index.php/home/index/"><img src="<?php echo base_url(); ?>CSS/images/background/home_button.png"/></a>
+</div>
 
         </div><!-- End of div class entry -->
     </div><!-- End of div class post -->
