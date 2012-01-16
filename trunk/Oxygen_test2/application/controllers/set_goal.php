@@ -40,7 +40,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_family_goal()) {
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -49,7 +50,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -70,7 +71,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_career_goal()) {
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -79,7 +81,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -102,7 +104,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_education_goal()) {//connect to model
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -111,7 +114,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -132,7 +135,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_spiritual_goal()) {
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -141,7 +145,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -162,7 +166,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_financial_goal()) {
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -171,7 +176,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -192,7 +197,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_social_goal()) {
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -201,7 +207,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -222,7 +228,8 @@ class Set_goal extends CI_Controller {
                 if ($record->num_rows() == 0) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_physical_goal()) {
-                        redirect('home/holistic');
+                        $this->load->view('subpage/goal_ok');
+                        $this->output->set_header('refresh:2; url='.base_url().'index.php/home/see_goal/');
                     } else {
                         $this->load->view('subpage/wrong');
                     }
@@ -231,7 +238,7 @@ class Set_goal extends CI_Controller {
                 }
             }
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 }
