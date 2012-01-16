@@ -13,7 +13,7 @@ class Register extends CI_Controller{
                 $this->load->view('includes/template');
             }else{
                 $this->load->view('register/error_email');
-                $this->output->set_header('refresh:3; url='.base_url().'index.php/login/register/');
+                $this->output->set_header('refresh:2; url='.base_url().'index.php/login/register/');
             }
             
         }else{
