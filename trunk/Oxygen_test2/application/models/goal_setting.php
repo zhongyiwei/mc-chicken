@@ -2,10 +2,10 @@
 
 class Goal_setting extends CI_Model {
 
-    function display_goal() {
+    function display_goal($id) {
         $this->db->select('*');
         $this->db->from('goal');
-        $this->db->where('seeker_goal_id', $this->input->post('goal_id'));
+        $this->db->where('seeker_goal_id', $id);
         $this->db->join('goal_category', 'goal_category.goal_cat_id=goal.goal_cat_id');
         $query = $this->db->get();
 

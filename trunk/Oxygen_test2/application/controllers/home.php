@@ -158,7 +158,7 @@ class Home extends CI_Controller {
             $data['nav'] = 'includes/left_nav_goal';
             $this->load->view('subpage/subpage_goal', $data);
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 
@@ -169,7 +169,7 @@ class Home extends CI_Controller {
             $data['nav'] = 'includes/left_nav_goal';
             $this->load->view('subpage/update_goal_setting', $data);
         } else {
-            $this->load->view('subpage/login');
+            $this->load->view('login/login_page');
         }
     }
 

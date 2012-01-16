@@ -3,20 +3,30 @@
      <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
    
 <div id="page">
+    <div id="sub-nav">
+        <ul>
+           <li><a href="<?php echo base_url(); ?>index.php/home/holistic/" >Set Goals</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/see_goal/" >View Goals</a></li>
+        </ul>
+   </div>
     <div id="content_sub">
         <div class="post">
             <h2 class="title">See your goals</h2>
             <div class="entry">
-                <table cellpadding="5" cellspace="5" frame="rhs" style="text-align: left;">
+                <div id="popup">
+                <p style="font-family:arial;color:green;font-size:16px">Please click the Goal name to update it</p>
+                <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
+                    <thead>
                     <tr>
-                        <th width="10%">Type Of Goal</th>
-                        <th width="25%">Goal Description</th>
-                        <th width="35%">Achievement Criteria</th>
-                        <th width="10%">Goal Set Date</th>
-                        <th width="10%">Progress</th>
-                        <th width="10%"></th>
+                        <th width="55px">Type Of Goal</th>
+                        <th width="90px">Goal Description</th>
+                        <th width="100px">Achievement Criteria</th>
+                        <th width="60px">Goal Set Date</th>
+                        <th width="60px">Progress</th>
                     </tr>
+                    </thead>
 
+                    <tbody>
                     <?php
                     //$query="SELECT * FROM goal WHERE seeker_id= ?";
                     
@@ -33,15 +43,11 @@
                   
                     ?>
                             <tr>
-                                <?php echo form_open('set_goal/update');?>
-                                <?php echo form_hidden('goal_id',$row->seeker_goal_id);?>
                                 <td><?php echo $row->goal_category; ?></td>
-                                <td><?php echo $row->goal_desc; ?></td>
+                                <td><a href="<?php echo base_url();?>index.php/set_goal/update/<?php echo $row->seeker_goal_id;?>/"><?php echo $row->goal_desc; ?></a></td>
                                 <td><?php echo $row->achievement_criteria; ?></td>
                                 <td><?php echo $row->goal_set_date; ?></td>
                                 <td><?php echo $row->goal_completion_status; ?></td>
-                                <td><?php echo form_submit('submit','Update');?></td>
-                                <?php echo form_close();?>
                             </tr>
                     <?php
                     //$goal_id= array('seeker_goal_id'=>$row->seeker_goal_id);
@@ -51,7 +57,9 @@
                         $record = null;
                     }
                     ?>
+                            </tbody>
                 </table>
+                </div>
             </div>
         </div>
     </div>
