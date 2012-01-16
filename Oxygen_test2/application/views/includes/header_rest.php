@@ -486,7 +486,7 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
                         <![endif]
                     </object>
                 </div>-->
-<div id="flashBackground">
+<!--<div id="flashBackground">
         <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
                 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash 
                 /swflash.cab#version=5,0,0,0" 
@@ -498,4 +498,4 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             <EMBED src="../../flash/BackgroundPainting.swf" quality=high wmode=transparent bgcolor=#FFFFFF WIDTH=690 HEIGHT=550 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version 
                    =ShockwaveFlash"></EMBED> 
         </OBJECT>
-        </div>
+        </div>-->

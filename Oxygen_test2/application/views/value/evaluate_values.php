@@ -1,3 +1,6 @@
+<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
 <div id="page">
     <div id="content_sub">
         <div class="post">
@@ -26,9 +29,11 @@
   }
  
   if($errFound==true){
-     ?><center>
+     ?>
+ <div class="entry">
+     <center>
 
-         <b><font size="5"> Your Values are  <font color="red">not saved!</font></font> </b></center>
+         <b><font size="5"> Your Values are  <font color="red">not saved!</font></font> </b></center></div>
 <?php  }
 else{
     $query=$this->db->query('SELECT * FROM seeker_value WHERE seeker_id="'.$seeker_id.'"');
@@ -52,10 +57,10 @@ else{
 
   }
 ?>
-
+<div class="entry">
  <center>
 
- <b><font size="5"> Your Values are  <font color="green">saved!</font></font> </b></center>
+ <b><font size="5"> Your Values are  <font color="green">saved!</font></font> </b></center></div>
 <?php   }
 
    
