@@ -10,7 +10,6 @@ class Update_goal extends CI_Controller{
         if($query){
             $this->load->view('subpage/update_ok');
             $this->output->set_header('refresh:2; url='.base_url().'index.php/home/holistic/');
-            redirect('home/holistic');
         }elseif($query==NULL){
             $this->load->view('subpage/update_goal_error');
         }else{
