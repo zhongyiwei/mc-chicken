@@ -14,7 +14,6 @@
     <div id="copy">
         <p>Copyright (c) 2011 SIT-Sem1-2011-1074 All rights reserved.</p>
     </div>
-    
 </div>
 <!-- end #footer -->
 </div>
