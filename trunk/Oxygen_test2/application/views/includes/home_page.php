@@ -115,7 +115,7 @@ loggedin='no'; <?php } ?>
                         $name = $this->session->userdata('name');
                         if (isset($is_logged_in) && $is_logged_in == 'true') {
                             ?>
-                            <h1>Welcome back, <strong><?php echo $name; ?></strong>!</h1>
+                            <h1>Welcome back,<?php echo $name; ?>!</h1>
                             <table>
                                 <tr>
                                     <td><strong><u>Email:</u></strong></td>
