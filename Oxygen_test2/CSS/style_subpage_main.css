@@ -671,3 +671,13 @@ div.row1 span.right1 {
     margin-left: 290px;
     margin-top: 80px
 }
+
+table tr th{
+    padding:10px;
+    font-size:16px;
+}
+
+table tr td{
+    padding:10px;
+    font-size:14px;
+}
