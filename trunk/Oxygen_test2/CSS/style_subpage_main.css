@@ -200,6 +200,7 @@ hr { display: none; }
     margin: 0px;
     height:500px;
     float: left;
+    padding: 30px 0px 0px 0px;
 }
 
 /** LOGO */
@@ -509,11 +510,13 @@ hr { display: none; }
     padding-right: 10px;
     text-align: center;
     text-decoration: none;
+    color:white;
 }
 
 #sub-nav ul li a:hover{
-    background:aqua no-repeat 0 0;
+    background:#36a8ff no-repeat 0 0;
     opacity:0.8;
+    color:black;
 }
 
 /* home button */
