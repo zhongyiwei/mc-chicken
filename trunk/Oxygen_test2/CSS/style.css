@@ -723,4 +723,12 @@ div.row1 span.right1 {
 
 /*        End*/
 
+table tr th{
+    padding:10px;
+    font-size:16px;
+}
 
+table tr td{
+    padding:10px;
+    font-size:14px;
+}
