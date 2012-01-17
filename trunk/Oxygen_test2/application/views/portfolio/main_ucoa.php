@@ -35,7 +35,7 @@
             <div class="entry">
                 <?php $this->load->view('portfolio/coa_set');?>
                 <?php //$this->load->view('portfolio/portfolio_translate');?>
-                <h4 align="center" style="color:purple;">The symbols in the center of the Coat of Arms represent your values: </h4>
+<!--                <h4 align="center" style="color:purple;">The symbols in the center of the Coat of Arms represent your values: </h4>
                 <table border="1" align="center">
                         <th width="150px" align="center">Value 1: Top Left</th>
                         <th width="150px" align="center">Value 2: Top Right</th>
@@ -48,7 +48,7 @@
                                 <td width="150px" align="center"><?php echo $value4; ?></td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table>-->
             </div>
 </div>
     </div>
