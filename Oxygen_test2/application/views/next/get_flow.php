@@ -90,7 +90,10 @@ else if($checkResilience->num_rows()>0){ ?>
 <a href="<?php echo base_url();?>index.php/home/portfolio_coa_motto/#MS"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Coat of Arms-Red(PNG).png"></a>
 <?php } ?>
 
-
+<br/>
+<b>Legend:</b> Red - Not Completed<br/>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;Blue - To Be Done Next<br/>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;Green - Completed<br/>
 		<!--		<img width="80px" height="80px" src="<?php echo base_url();?>web_images/flowchart/Mission - Red (PNG).png"></img></a>		
 <img width="60px" height="60px" src="<?php echo base_url();?>web_images/flowchart/arrow.png"></img>
 <a href="<?php echo base_url();?>index.php/home/determineValue/"><img width="80px" height="80px" src="<?php echo base_url();?>web_images/flowchart/Value-Red(PNG).png"></a>
