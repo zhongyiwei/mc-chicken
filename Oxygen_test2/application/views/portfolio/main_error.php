@@ -11,7 +11,7 @@
 
             <h2 class="title" id="COA">Your Coat of Arms</h2>
             <div class="entry">
-                <h2>You cannot set your coat of arms because you have not set your values yet </h2>
+                <h3>You cannot set your coat of arms because you have not set your values yet </h3>
 
             </div>
 
