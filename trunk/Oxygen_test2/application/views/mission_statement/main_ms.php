@@ -19,7 +19,7 @@
         <?php echo form_open('db_control/validate_mission_input');?>
         <?php //echo form_input('mission', '','id="mission"','size=50'); ?>
         <?php
-              $data = array('name'=> 'mission','id'=> 'mission','value'=> '','rows'=> '3','cols'=> '70',);
+              $data = array('name'=> 'mission','id'=> 'mission','value'=> '','rows'=> '3','cols'=> '93',);
               echo form_textarea($data);
               echo form_error('mission');
               echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));

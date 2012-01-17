@@ -13,7 +13,7 @@
             <div class="entry">        
         <?php
         echo form_open('db_control/validate_mission_update');
-              $data = array('name'=> 'mission_update','id'=> 'mission','value'=> $mission_set,'rows'=> '3','cols'=> '70',);
+              $data = array('name'=> 'mission_update','id'=> 'mission','value'=> $mission_set,'rows'=> '3','cols'=> '93',);
               echo form_textarea($data);
               echo form_error('mission_update');
 
