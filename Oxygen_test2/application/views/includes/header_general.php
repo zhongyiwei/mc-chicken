@@ -405,7 +405,10 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
                     <div class="left" id="info">
                         <h1>Welcome to Oxygen</h1>
                         <h2></h2>		
-                        <p class="grey">You can put anything you want in this sliding panel: videos, audio, images, forms... The only limit is your imagination!</p>
+                        <p class="grey">We will guide you to lead a meaningful and successful life with happiness and resilience. </> 
+                        <p class="grey">You will be setting personal statement, guiding values, goals for your life.  </p>
+                        <p class="grey">You will be building resilience skills through playing games. </p>
+                        <p class="grey">You will get personalized Coat of Arms to represent yourself.</p>
                         
                     </div>
                     <div class="left" id="userinfo">

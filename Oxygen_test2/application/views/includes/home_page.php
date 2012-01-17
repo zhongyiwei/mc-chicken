@@ -141,9 +141,11 @@ loggedin='no'; <?php } ?>
                                     <td><?php echo $this->session->userdata('mobile'); ?></td>
                                 </tr>
                             </table>
-                            <p class="grey"><a href="<?php echo base_url(); ?>index.php/login/log_out/">Log out!</a></p>
-                            <p class="grey"><a href="<?php echo base_url(); ?>index.php/home/personal_info/">Update Your Information!</a></p>
-                            <p class="grey"><a href="<?php echo base_url(); ?>index.php/home/change_password/">Change Your Password!</a></p>
+                                    <p class="grey"><a href="<?php echo base_url(); ?>index.php/login/log_out/">Log out!</a></p>
+                                   <p class="grey"><a href="<?php echo base_url(); ?>index.php/home/personal_info/">Update Your Information!</a></p>
+                                    <p class="grey"><a href="<?php echo base_url(); ?>index.php/home/change_password/">Change Your Password!</a></p>
+                      
+                            
                             <?php
                         } else {
                             ?>
