@@ -652,7 +652,7 @@ class Home extends CI_Controller {
             $data['AchievementStatus'] = '';
 
             $achieveData = array();
-            $data['numberRowsForAchievement'] = $this->link_db_model->get_portfolio_goal_activity();
+            $data['numberRowsForAchievement'] = $this->link_db_model->get_num_portfolio_goal_activity();
 
             for ($i = 0; $i < $data['numberRowsForAchievement']; $i++) {
                 $achieveData[$i][1][1] = 'Goal Type: ';
