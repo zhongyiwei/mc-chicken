@@ -63,7 +63,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                             }
                             else {
                                 echo "<h3>Goal Description:";
-
+                                
                             $row=$goal_query->result();
                             echo $row[0]->goal_desc;
                             echo "</h3>";
