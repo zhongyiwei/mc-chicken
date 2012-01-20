@@ -1,14 +1,14 @@
 
-                     <div class="row">                         
+
+                     <div class="row">                          <!--<form name="set_activity_form" class="form" id="form">-->
         <!--start_date selection begin-->
-        <h4>Activity Name: </h4>
-       
-        <div class="right">
+        <div><h4>Enter your Activity Name: </h4></div>
+
+        <div class="">
                  <?php
                  $data = array(
-              'name' => 'activity_name','id'=> 'activity_name','value'=> '','maxlength'=> '100','size'=> '88',);
+              'name' => 'activity_name','id'=> 'activity_name','value'=> '','maxlength'=> '100','size'=> '91',);
                  echo form_input($data);
-                 echo form_error('activity_name');
                  ?></div>
 
         <div class="clear"></div>
@@ -16,48 +16,39 @@
 
         <!--start_date selection begin-->
         <div class="row">
-         <h4>Description:</h4>
-        <div class="">
-
+         <div><h4>Enter your Description:</h4></div>
+    <div class="">
      <?php
       $data = array(
-              'name'=> 'activity_desc','id'=> 'activity_desc','value'=> '','rows'=> '5','cols'=> '88',
+              'name'=> 'activity_desc','id'=> 'activity_desc','value'=> '','rows'=> '5','cols'=> '70',
             );
                  echo form_textarea($data);
-                 echo form_error('activity_desc');
-     ?><br></div>
+     ?><br></div><div class="clear"></div>
         </div>
 
         <!--start_date selection begin-->
-
-        <!--start_date selection begin-->
         <div class="row">
-         <!--<div class="left_time">-->
-             <h4>Start Date:
-                 
+         <div><h4>Enter your Start Date:
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <?php
-             $js = 'onchange="ValidateDate(this)"';
-                 $data = array('name' => 'start_date','class'=> 'start_date','value'=> '','size'=> '35',  'onchange'=>'ValidateDate(this)');
-                 echo form_input($data,$js);
-                 echo form_error('start_date');
+                 $data = array('name' => 'start_date','id'=> 'start_date8','value'=> '','size'=> '50','onchange'=>'ValidateDate(this)');
+                 echo form_input($data);
                  ?>
-             </h4></div>
-
-
-   
-
+             </h4></div></div>
+        
         <!--end_date selection begin-->
         <div class="row">
-        <!--<div class="left_time">-->
-            <h4>End Date:&nbsp&nbsp
+        <div><h4>Enter your End Date:
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <?php
-             $js = 'onchange="ValidateDate(this)"';
-                 $data = array('name' => 'end_date','class'=> 'end_date','value'=> '','size'=> '35','onchange'=>'ValidateDate(this)');
-                 echo form_input($data,$js);
-                 echo form_error('end_date');
+                 $data = array('name' => 'end_date','id'=> 'end_date8','value'=> '','size'=> '50','onchange'=>'ValidateDate(this)');
+                 echo form_input($data);
                  ?>
              </h4></div>
+   </div>
+
 
         
         <!-- end_date selection ends-->
-
+        <br>
+      
