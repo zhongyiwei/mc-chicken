@@ -38,7 +38,6 @@
                         <th width="60px">Goal Set Date</th>
                     </tr>
                     </thead>
-
                     <tbody>
                     <?php
                     //$query="SELECT * FROM goal WHERE seeker_id= ?";

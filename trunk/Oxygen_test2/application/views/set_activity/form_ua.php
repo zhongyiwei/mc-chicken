@@ -7,7 +7,7 @@
         <div class="">
                  <?php
                  $data = array(
-              'name' => 'activity_name','id'=> 'activity_name','value'=> $rows[0]->activity_name,'maxlength'=> '100','size'=> '103',);
+              'name' => 'activity_name','id'=> 'activity_name','value'=> $rows[0]->activity_name,'maxlength'=> '100','size'=> '91',);
                  echo form_input($data);
                  ?></div>
 
@@ -20,7 +20,7 @@
     <div class="">
      <?php
       $data = array(
-              'name'=> 'activity_desc','id'=> 'activity_desc','value'=> $rows[0]->activity_desc,'rows'=> '5','cols'=> '79',
+              'name'=> 'activity_desc','id'=> 'activity_desc','value'=> $rows[0]->activity_desc,'rows'=> '5','cols'=> '70',
             );
                  echo form_textarea($data);
      ?><br></div><div class="clear"></div>
