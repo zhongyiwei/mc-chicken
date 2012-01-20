@@ -24,19 +24,20 @@ $id=$this->session->userdata('seeker_id');
     <div id="content_sub">
         <div class="post">
           
-            <h2 class="title">View all your records below</h2>
+            
             <div class="entry" width="">  <div id="popup">
+                    <p style="font-size:150%; color:black;" >View all your records below</p>
                 <p style="font-family:arial;color:green;font-size:16px">Please click the activity name to update it</p>
                 
                 <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
                    <thead>
                     <tr>
-                      <th width="55px">Goal Type</th>
-                      <th width="90px">Activity Name</th>
-                      <th width="100px">Activity Description</th>
-                      <th width="60px">Start Date</th>
-                      <th width="60px">End Date</th>
-                      <th width="60px">Status</th>
+                      <th width="55px" style="font-size:130%">Goal Type</th>
+                      <th width="100px" style="font-size:130%">Goal Description</th>
+                      <th width="90px" style="font-size:130%">Activity Name</th>
+                      <th width="60px" style="font-size:130%">Start Date</th>
+                      <th width="60px" style="font-size:130%">End Date</th>
+                      <th width="60px"style="font-size:130%">Status</th>
                     </tr>
                   </thead>
 
@@ -48,8 +49,8 @@ $id=$this->session->userdata('seeker_id');
                   ?>
                         <tr>
                           <td><?php echo $row['goal_category']; ?></td>
+                           <td><?php echo $row['goal_desc']; ?></td>
                           <td><a href="<?php echo base_url();?>index.php/home/update_activity/?activity_id=<?php echo $row['activity_id']; ?>"><?php echo $row['activity_name']; ?></a></td>
-                          <td><?php echo $row['activity_desc']; ?></td>
                           <td><?php echo $row['start_date']; ?></td>
                           <td><?php echo $row['end_date']; ?></td>
                           <td><?php echo $row['activity_status']; ?></td>
