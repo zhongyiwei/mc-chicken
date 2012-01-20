@@ -21,7 +21,7 @@
 <script language="javascript" type="text/javascript">
 $(function() {
 		//$( "#checkbox_preference" ).button();
-		$( "#checkbox_preference" ).buttonset();
+		$( "#radio_preference" ).buttonset();
                 $( "#radio_frequency" ).buttonset();
 	});
 </script>
@@ -54,17 +54,17 @@ $(function() {
 
 
 
-         <div class="left"><h4>How to remind you?</h4></div>
+         <div class="left"><h4>Do you want receive reminder?</h4></div>
 <br><br><br><br>
-            <div id="checkbox_preference">
-            <label for="email_reminder">&nbspEmail&nbsp</label> <?php
+            <div id="radio_preference">
+            <label for="email_reminder">&nbsp&nbsp&nbsp  On  &nbsp&nbsp&nbsp</label> <?php
                     $data = array('name' => 'email','id'=> 'email_reminder','value'=> 1,'checked'=> TRUE);
-                    echo form_checkbox($data);
+                    echo form_radio($data);
                     ?>
 
-            <label for="SMS_reminder">&nbsp&nbspSMS&nbsp&nbsp</label> <?php
+            <label for="SMS_reminder">&nbsp&nbsp&nbsp Off &nbsp&nbsp&nbsp</label> <?php
                   $data2 = array('name' => 'SMS','id'=> 'SMS_reminder','value'=> 1);
-                  echo form_checkbox($data2);
+                  echo form_radio($data2);
                  ?>
         </div>
 
