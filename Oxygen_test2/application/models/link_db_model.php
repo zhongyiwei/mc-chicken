@@ -21,10 +21,9 @@ function input_activity(){
         'activity_status'=>$this->input->post('activity_status'),
         //'goal_cat_id'=>$this->input->post('goal_type_id'),
         //'seeker_id'=>$this->input->post('id_seeker'),
-        'seeker_goal_id'=>$this->input->post('seeker_goal_id')
-        
+        'seeker_goal_id'=>$this->input->post('seeker_goal_id'),       
     );
-    $this->db->where('seeker_goal_id', $this->input->post('goal_type_id'));
+    //$this->db->where('seeker_goal_id', $this->input->post('goal_type_id'));
     $insert = $this->db->insert('activity',$new_activity);
     return $insert;
 

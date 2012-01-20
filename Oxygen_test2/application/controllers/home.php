@@ -204,6 +204,21 @@ class Home extends CI_Controller {
         $this->load->view('set_activity/template_sc', $data);
         //$this->load->view('set_activity/main_sc',$data2);
     }
+    
+    function input_activity() {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+            parse_str($_SERVER['QUERY_STRING'], $_GET); //converts query string into global GET 
+            $this->load->model('link_db_model');
+            $data['rows'] = $this->link_db_model->get_goal();
+
+            $data['main_activity'] = 'set_activity/main_sa';
+            $data['nav_goal'] = 'includes/left_nav_goal';
+            $this->load->view('set_activity/template_sc', $data);
+        } else {
+            $this->load->view('portfolio/page_visitor');
+        }
+    }
 
     function activity_page() {
         $data['main_activity'] = 'set_activity/main_sc';

@@ -29,80 +29,50 @@
             $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
              $query = $this->db->query('SELECT seeker_goal_id FROM goal WHERE goal_cat_id = '.$i.' AND goal_completion_status = "Active" AND seeker_id ='.$this->session->userdata('seeker_id').'');
-             if($query->num_rows() > 0){
-             $row=$query->result();
-            $seeker_id_goal = $row[0]->seeker_goal_id;
+             if($query->num_rows() > 0){?>
+             <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
+                    <thead>
+                    <tr>
+                        <th width="90px">Goal Description</th>
+                        <th width="100px">Achievement Criteria</th>
+                        <th width="60px">Goal Set Date</th>
+                    </tr>
+                    </thead>
 
-                            
-            //echo $seeker_id_goal;
-             $attributes = array('class' => 'form', 'id' => 'form', 'name' => 'set_activity_family');
-                 echo form_open('db_control/validate_activity_input',$attributes);
-                 echo form_hidden('seeker_goal_id',$seeker_id_goal);
-                echo form_hidden('goal_type_id', $i);
-                 echo form_hidden('activity_status', 'New');
-                 echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));
-                 
+                    <tbody>
+                    <?php
+                    //$query="SELECT * FROM goal WHERE seeker_id= ?";
+                    
+                    //$record = $this->db->query($query,array($this->session->userdata('seeker_id')));
+                  /*  $seeker_id=$this->session->userdata('seeker_id');
+                    $this->db->select('*');
+                    $this->db->from('goal');
+                    $this->db->where('seeker_id',$seeker_id);
+                    $this->db->join('goal_category','goal_category.goal_cat_id=goal.goal_cat_id');*/
 
-                 //$this->load->view('set_activity/activity_form');
-                 ?>
+                    //$record=$this->db->get();
+                    $query2 = $this->db->query('SELECT * FROM goal WHERE goal_cat_id = '.$i.' AND goal_completion_status = "Active" AND seeker_id ='.$this->session->userdata('seeker_id').'');
+                     //$row=$query2->result();
+                        
+                            foreach ($query2->result_array() as $row){
+                  
+                    ?>
+                            <tr>
+                                <td><a href="<?php echo base_url();?>index.php/home/input_activity/?seeker_goal_id=<?php echo $row['seeker_goal_id'];?>"><?php echo $row['goal_desc']; ?></a></td>
+                                <td><?php echo $row['achievement_criteria']; ?></td>
+                                <td><?php echo $row['goal_set_date']; ?></td>
+                            </tr>
+                    <?php
+                    //$goal_id= array('seeker_goal_id'=>$row->seeker_goal_id);
+                    //$this->session->set_userdata($goal_id);
+                        }
 
-
-                     <div class="row">
-        <h4>Activity Name: </h4>
-
-        <div class="right">
-                 <?php
-                 $data = array(
-              'name' => 'activity_name','id'=> 'activity_name','value'=> '','maxlength'=> '100','size'=> '88',);
-                 echo form_input($data);
-                 echo form_error('activity_name');
-                 ?></div>
-
-        <div class="clear"></div>
-        </div>
-
-        <!--start_date selection begin-->
-        <div class="row">
-         <h4>Description:</h4>
-        <div class="">
-
-     <?php
-      $data = array(
-              'name'=> 'activity_desc','id'=> 'activity_desc','value'=> '','rows'=> '5','cols'=> '88',
-            );
-                 echo form_textarea($data);
-                 echo form_error('activity_desc');
-     ?><br></div>
-        </div>
-
-        <div class="row">
-             <h4>Start Date:
-
-             <?php
-             //$js = 'onchange="ValidateDate(this)"';
-                 $data = array('name' => 'start_date','class'=> 'start_date','value'=> '','id'=> 'start_date'.$i.'','size'=> '35',  'onchange'=>'ValidateDate(this)');
-                 echo form_input($data);
-                 echo form_error('start_date');
-                 ?>
-             </h4></div>
-
-        <div class="row">
-            <h4>End Date:&nbsp&nbsp
-             <?php
-             //$js = 'onchange="ValidateDate(this)"';
-                 $data = array('name' => 'end_date','class'=> 'end_date','id'=> 'end_date'.$i.'','value'=> '','size'=> '35','onchange'=>'ValidateDate(this)');
-                 echo form_input($data);
-                 echo form_error('end_date');
-                 ?>
-             </h4></div>
-
+                    ?>
+                            </tbody>
+                </table>
 
                  <?php
                  //$js = 'onchange="ValidateDate(this)"';
-                 echo "<div align='right'>";
-                 echo form_submit('submit','Submit','id="form_submit"');
-                 echo "</div>";
-                 echo form_close();
         }            else{
                 ?>
                                  <h3>You do not have any goal of this type yet. Please set the its goal before you setting any of its activity </h3>
