@@ -56,17 +56,27 @@ class Goal_setting extends CI_Model {
                 $update_data=null;
                 return $update_data;
             }
-        }else{
-        $data = array(
-            'goal_desc' => $this->input->post('goal_des'),
-            'goal_set_date' => $date,
-            'achievement_criteria' => $this->input->post('achievement'),
-            'goal_completion_status' => $this->input->post('process')
-        );
+        }  else {
+            $this->db->select('*');
+            $this->db->from('goal');
+            $this->db->where('seeker_id', $this->session->userdata('seeker_id'));
+            $this->db->where('goal_cat_id', $this->input->post('goal_cat_id'));
+            $this->db->where('goal_completion_status', 'Active');
+            $query3 = $this->db->get();
 
-        $this->db->where('seeker_goal_id', $this->input->post('goal_id'));
-        $update_data = $this->db->update('goal', $data);
-        return $update_data;
+            if ($query3->num_rows() <= 2) {
+                $data = array(
+                    'goal_desc' => $this->input->post('goal_des'),
+                    'goal_set_date' => $date,
+                    'achievement_criteria' => $this->input->post('achievement'),
+                    'goal_completion_status' => $this->input->post('process')
+                );
+                $this->db->where('seeker_goal_id', $this->input->post('goal_id'));
+                $update_data = $this->db->update('goal', $data);
+                return $update_data;
+            }else{
+                $this->load->view('subpage/add_goal_error');
+            }
         }
     }
 
