@@ -37,7 +37,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 1,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_family_goal()) {
                         $this->load->view('subpage/goal_ok');
@@ -68,7 +68,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 2,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_career_goal()) {
                         $this->load->view('subpage/goal_ok');
@@ -101,7 +101,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 3,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_education_goal()) {//connect to model
                         $this->load->view('subpage/goal_ok');
@@ -132,7 +132,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 4,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_spiritual_goal()) {
                         $this->load->view('subpage/goal_ok');
@@ -163,7 +163,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 5,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_financial_goal()) {
                         $this->load->view('subpage/goal_ok');
@@ -194,7 +194,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 6,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_social_goal()) {
                         $this->load->view('subpage/goal_ok');
@@ -225,7 +225,7 @@ class Set_goal extends CI_Controller {
                 $seek_id = $this->session->userdata('seeker_id');
                 $query = "SELECT * FROM goal WHERE seeker_id= ? and goal_cat_id=? and goal_completion_status=?";
                 $record = $this->db->query($query, array($this->session->userdata('seeker_id'), 7,'Active'));
-                if ($record->num_rows() == 0) {
+                if ($record->num_rows() <= 2) {
                     $this->load->model('goal_setting');
                     if ($query = $this->goal_setting->create_physical_goal()) {
                         $this->load->view('subpage/goal_ok');
