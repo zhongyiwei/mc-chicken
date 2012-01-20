@@ -1,3 +1,4 @@
+
 <?php
 $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
 
@@ -19,12 +20,13 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
     <div id="content_sub">
         <div class="post">
           
-            <h2 class="title">Activity Tracking</h2>
+           
 
             <div class="entry">
+                 <p style="font-size:150%; color:black;" >Activity Tracking</p>
 <!--Dropdown list to select goal category                -->
   <div id="popup">
-                <h3>Goal Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p style="font-size:150%; color:black;" >Goal Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <select name="goal_type" class="goal_type">
                         <option value="">-Select a goal type-</option>
                         <?php
@@ -36,19 +38,13 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                         ?>
 
                     </select>
-                </h3>
+                </p>
 <!--End dropdown list to select goal category                -->
                 
                 <?php
                     foreach ($goal_cat_query->result() as $row) {
                         $goal_cat = $row->goal_category;
-                        $activity_query = $this->db->query('SELECT * FROM activity a, goal g, goal_category gc
-                                WHERE a.seeker_goal_id = g.seeker_goal_id
-                                AND g.goal_cat_id = gc.goal_cat_id
-                                AND gc.goal_category = "'.$goal_cat.'"
-                                AND g.goal_completion_status <> "Completed"
-                                AND g.seeker_id = '.$this->session->userdata('seeker_id').'
-                                ORDER BY a.activity_status DESC');
+                        
                         $goal_query = $this->db->query('SELECT goal_desc FROM goal g, goal_category gc
                                 WHERE g.goal_cat_id = gc.goal_cat_id
                                 AND g.seeker_id = '.$this->session->userdata('seeker_id').'
@@ -59,24 +55,38 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                 <div class="<?php echo $goal_cat; ?>">
                 <?php
                         if($goal_query->num_rows()===0) {
-                                echo "";
-                            }
-                            else {
-                                echo "<h3>Goal Description:";
-                                
-                            $row=$goal_query->result();
-                            echo $row[0]->goal_desc;
-                            echo "</h3>";
-                            }
+                                echo "No Goal Set for this category";
+                        }
+                        else {
+                            $num_goal = $goal_query->num_rows();
+                            for ($k=0; $k<$num_goal; $k++) {
+                                echo "<h3 style='font-size:130%; '>Goal Description: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                                $row=$goal_query->result();
+                                $goal_desc = $row[$k]->goal_desc;
+                                echo $goal_desc;
+                                echo "</h3>";
 
-                ?>
+                                $activity_query = $this->db->query('SELECT * FROM activity a, goal g, goal_category gc
+                                WHERE a.seeker_goal_id = g.seeker_goal_id
+                                AND g.goal_cat_id = gc.goal_cat_id
+                                AND gc.goal_category = "'.$goal_cat.'"
+                                AND g.goal_completion_status <> "Completed"
+                                AND g.goal_desc = "'.$goal_desc.'"
+                                AND g.seeker_id = '.$this->session->userdata('seeker_id').'
+                                ORDER BY a.activity_status DESC');
+                                ?>
+
+
+
+
+                                  <!--Start Activity-->
                     <div class="accordion_<?php echo $goal_cat; ?>">
                         <?php
-                            if($goal_query->num_rows()===0) {
-                                echo $goal_cat . " goal has not been set!";
+                            if($activity_query->num_rows()===0) {
+                                echo "No activity has been set for this goal!";
                             }
                             else {
-                       
+
                             $i = 1;
                             //checking if activity for this goal has been set
                             if($activity_query->num_rows()===0) {
@@ -84,7 +94,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                             }
                             else {
                             foreach ($activity_query->result_array() as $row) {
-                            
+
                             $activity_id = $row['activity_id'];
                             $status = "status" . $i;
                             $i = $i + 1;
@@ -117,7 +127,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                                         <td width="400px"><?php echo $row['end_date'] ?></td>
                                     </tr>
                                             <tr>
-                                                
+
                                                 <td align="right" colspan="2">
                                                     <div class="fg-buttonset fg-buttonset-single">
                                                         <input type="button" value="New" class="fg-button ui-state-default ui-priority-primary ui-corner-left" ONCLICK="window.location.href='<?php echo base_url();?>index.php/home/activity_tracking/?activity_id=<?php echo $row['activity_id']; ?>&status=1'">
@@ -137,15 +147,44 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
 
                             <?php
                                 } // else for if($goal_query->num_rows()===0)
+
                             ?>
 
 
 
                     </div> <!--Activity_accordion-->
+                    <!--End Activity-->
+
+
+
+
+
+
+
+                    <br/><br/>
+
+
+                                <?php
+                                
+                            }
+
+
+                        }
+
+           
+                    ?>
+
+
+
+
+
+
+
 
                 </div><!--End Activity for Each Goal Type-->
 
                 <?php
+
                     } //end loop for all the goal types
                 ?>
                 
