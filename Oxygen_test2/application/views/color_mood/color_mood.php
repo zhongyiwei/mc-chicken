@@ -275,11 +275,19 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
   return ret;
 }
 // -->
+
 </script>
+<style type="text/css">
+#marginTop
+{
+margin-top : -40px;
+margin-bottom:-20px;
+}
+</style>
 <div id="register" >
     <h1>Color Mood Setting</h1>
     <h2>Please choose the color that best represents your mood today!</h2>
-    <div align="center">
+    <div align="center" id="marginTop">
 <script language="JavaScript" type="text/javascript">
 	AC_FL_RunContent(
 		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
@@ -311,8 +319,9 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 	<param name="movie" value="new_color.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#d6d6d6" />	<embed src="new_color.swf" quality="high" wmode="transparent" bgcolor="#d6d6d6" width="642" height="325" name="new_color" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
 	</object>
 </noscript>
-   
+  
     </div>
+    
 </div>
 
 <div id="home">
