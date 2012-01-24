@@ -44,11 +44,18 @@ h1, h2{
 
 #toppanel{
     width:100%;
-    margin-left: -1000px;
+    margin-left: -1020px;
+}
+
+#adjusttoppanel{
+    margin-right:20px;
 }
 
 .tab A.open{
     width:120px;
+}
+.ui-widget input{
+    width:auto;
 }
 
 #sitemap ul li{
