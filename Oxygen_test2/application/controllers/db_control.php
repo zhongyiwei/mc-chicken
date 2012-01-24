@@ -181,7 +181,7 @@ class Db_control extends CI_Controller{
         }
     }
 
-        function update_reminder_control(){
+    function update_reminder_control(){
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
                 $this->load->library('form_validation');

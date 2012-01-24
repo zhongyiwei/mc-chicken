@@ -107,8 +107,8 @@ function get_mission(){
 function input_reminder(){
     $new=array(
             'reminder_frequency'=>$this->input->post('radio_frequency'),
-            'reminder_email'=>$this->input->post('email'),
-            'reminder_sms'=>$this->input->post('SMS'),
+            'reminder_email'=>$this->input->post('email_reminder'),
+            //'reminder_sms'=>$this->input->post('email_off'),
             'seeker_id'=>$this->input->post('id_seeker'),
         );
         $insert = $this->db->insert('reminder',$new);
@@ -118,8 +118,8 @@ function input_reminder(){
 function update_reminder(){
     $new=array(
             'reminder_frequency'=>$this->input->post('radio_frequency'),
-            'reminder_email'=>$this->input->post('email'),
-            'reminder_sms'=>$this->input->post('SMS'),
+            'reminder_email'=>$this->input->post('email_reminder'),
+           // 'reminder_sms'=>$this->input->post('email_off'),
            // 'seeker_id'=>$this->input->post('id_seeker'),
         );
         $this->db->where('seeker_id', $this->input->post('id_seeker'));
