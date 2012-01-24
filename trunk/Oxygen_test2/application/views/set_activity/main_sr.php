@@ -17,29 +17,56 @@
             <div class="entry">
                
         <!--reminder preference selection begin-->
-
+   <!--css & JS for radio reminder setting -->
+<link href="<?php echo base_url(); ?>CSS/reminder_radio.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript" src="<?php echo base_url(); ?>js/radio_reminder.js"></script>
+ 
 <script language="javascript" type="text/javascript">
+$(function(){ 
+    $(".cb-enable").click(function(){
+        var parent = $(this).parents('.switch');
+        $('.cb-disable',parent).removeClass('selected');
+        $(this).addClass('selected');
+        $('.checkbox',parent).attr('checked', true);
+    });
+    $(".cb-disable").click(function(){
+        var parent = $(this).parents('.switch');
+        $('.cb-enable',parent).removeClass('selected');
+        $(this).addClass('selected');
+        $('.checkbox',parent).attr('checked', false);
+    });
+});
+    
 $(function() {
-		//$( "#checkbox_preference" ).button();
-		$( "#radio_preference" ).buttonset();
                 $( "#radio_frequency" ).buttonset();
 	});
+        
+
 </script>
+
+
 	<style>
 	#format { margin-top: 2em; }
 	</style>
-
-
-
-         <div class="left"><h4>How frequently you want the reminder to be sent to you? </h4></div>
-         <br><br><br><br>
-            <div id="radio_frequency">
-                 <?php
+        
+                             
+        <div class="left"><h4>Do you want to receive reminders?</h4></div>
+<br><br><br><br>
+ <?php
      $attributes = array('class' => 'form', 'id' => 'form', 'name' => 'set_reminder_form');
      echo form_open('db_control/input_reminder_control',$attributes);
      echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));
  ?>
-        <?php $data = array('name' => 'radio_frequency','id'=> 'daily_reminder','value'=> 'daily','checked'=> TRUE);
+<p class="field switch">
+    <input type="radio" id="radio1" name="email_reminder" value="1" checked />
+    <input type="radio" id="radio2" name="email_reminder" value="0" />
+    <label for="radio1" class="cb-enable selected"><span>Enable</span></label>
+    <label for="radio2" class="cb-disable"><span>Disable</span></label>
+</p>
+<br><br><br><br><br><br>
+<div class="left"><h4>How frequently you want the reminder to be sent to you? </h4></div>
+         <br><br><br><br>   
+<?php $data = array('name' => 'radio_frequency','id'=> 'daily_reminder','value'=> 'daily','checked'=> TRUE);
         echo form_radio($data);?><label for="daily_reminder">Daily</label>
         <?php $data = array('name' => 'radio_frequency','id'=> 'weekly_reminder','value'=> 'weekly');
         echo form_radio($data);?><label for="weekly_reminder">Weekly</label>
@@ -47,26 +74,6 @@ $(function() {
         echo form_radio($data);?><label for="monthly_reminder">Monthly</label>
         <?php $data = array('name' => 'radio_frequency','id'=> 'None_reminder','value'=> 'none');
         echo form_radio($data);?><label for="None_reminder">None</label>
-            </div>
-<br><br>
- 
- 
-
-
-
-         <div class="left"><h4>Do you want receive reminder?</h4></div>
-<br><br><br><br>
-            <div id="radio_preference">
-            <label for="email_reminder">&nbsp&nbsp&nbsp  On  &nbsp&nbsp&nbsp</label> <?php
-                    $data = array('name' => 'email','id'=> 'email_reminder','value'=> 1,'checked'=> TRUE);
-                    echo form_radio($data);
-                    ?>
-
-            <label for="SMS_reminder">&nbsp&nbsp&nbsp Off &nbsp&nbsp&nbsp</label> <?php
-                  $data2 = array('name' => 'SMS','id'=> 'SMS_reminder','value'=> 1);
-                  echo form_radio($data2);
-                 ?>
-        </div>
 
    <br>
 <?php 

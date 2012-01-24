@@ -17,29 +17,69 @@
             <div class="entry">
              
         <!--reminder preference selection begin-->
-
+        <!--css & JS for radio reminder setting -->
+        <link href="<?php echo base_url(); ?>CSS/reminder_radio.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript" src="<?php echo base_url(); ?>js/radio_reminder.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/radio.css" media="screen"/>
+        <script type="text/javascript" src="<?php echo base_url(); ?>js/radio.js"></script>
+        
 <script language="javascript" type="text/javascript">
+
+        
+            $(function(){ 
+    $(".cb-enable").click(function(){
+        var parent = $(this).parents('.switch');
+        $('.cb-disable',parent).removeClass('selected');
+        $(this).addClass('selected');
+        $('.checkbox',parent).attr('checked', true);
+    });
+    $(".cb-disable").click(function(){
+        var parent = $(this).parents('.switch');
+        $('.cb-enable',parent).removeClass('selected');
+        $(this).addClass('selected');
+        $('.checkbox',parent).attr('checked', false);
+    });
+});
+
 $(function() {
-		//$( "#checkbox_preference" ).button();
-		$( "#checkbox_preference" ).buttonset();
                 $( "#radio_frequency" ).buttonset();
 	});
 </script>
+
 	<style>
 	#format { margin-top: 2em; }
 	</style>
 
-
-
-         <div class="left"><h4>How frequently you want the reminder to be sent to you?</h4></div>
-<br><br><br><br>
-            <div id="radio_frequency">
+         <div class="left"><h4>How to remind you?</h4></div>                    
                  <?php
      $attributes = array('class' => 'form', 'id' => 'form', 'name' => 'set_reminder_form');
      echo form_open('db_control/update_reminder_control',$attributes);
      echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));
  ?>
+<br><br><br><br>
+                <p class="field switch">
+ <?php
+            if($email==1){
+                    ?>
+                    <input type="radio" id="radio1" name="email_reminder" value="1" checked />
+                    <input type="radio" id="radio2" name="email_reminder" value="0" />
+                    <label for="radio1" class="cb-enable selected"><span>Enable</span></label>
+                    <label for="radio2" class="cb-disable"><span>Disable</span></label>
+                    <?php
+                    }
+            else{?>
+                     <input type="radio" id="radio1" name="email_reminder" value="1" />
+                    <input type="radio" id="radio2" name="email_reminder" value="0" checked/>
+                    <label for="radio1" class="cb-enable"><span>Enable</span></label>
+                    <label for="radio2" class="cb-disable selected"><span>Disable</span></label>
+                    <?php }?>    
+</p>
+<br><br><br><br>
+         <div class="left"><h4>How frequently you want the reminder to be sent to you?</h4></div>
+<br><br><br><br>
 
+<div id="radio_frequency">
         <?php if($frequency=="daily"){
         $data = array('name' => 'radio_frequency','id'=> 'daily_reminder','value'=> 'daily','checked'=> TRUE);
         }else{
@@ -65,33 +105,7 @@ $(function() {
         }
         echo form_radio($data);?><label for="None_reminder">None</label>
             </div>
-<br><br>
-
-         <div class="left"><h4>How to remind you?</h4></div>
-<br><br><br><br>
-            <div id="checkbox_preference">
-            <label for="email_reminder">&nbspEmail&nbsp</label> <?php
-            if($email==1){
-                    $data = array('name' => 'email','id'=> 'email_reminder','value'=> 1, 'checked'=> TRUE);}
-                    else{
-                         $data = array('name' => 'email','id'=> 'email_reminder','value'=> 1, );
-                    }
-                    echo form_checkbox($data);
-                    ?>
-
-            <label for="SMS_reminder">&nbsp&nbspSMS&nbsp&nbsp</label> <?php
-             if($sms==1){
-                  $data2 = array('name' => 'SMS','id'=> 'SMS_reminder','value'=> 1, 'checked'=> TRUE);}
-                  else{
-                      $data2 = array('name' => 'SMS','id'=> 'SMS_reminder','value'=> 1);
-                  }
-                 
-                  echo form_checkbox($data2);
-                           
-                 ?>
-        </div>
-
-   <br>
+       
 <?php 
 echo "<div style='padding-left:495px;'>";
        echo  form_submit('submit','Submit','id="form_submit"');

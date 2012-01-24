@@ -47,8 +47,7 @@ and open the template in the editor.
 
 
         <!-- Start of Reference: http://www.jankoatwarpspeed.com/post/2008/06/09/Building-a-better-web-forms-Context-highlighting-using-jQuery.aspx -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/radio.css" media="screen"/>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/radio.js"></script>
+
 
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/highlight.css" media="screen"/>
         <!-- End of Reference: http://www.jankoatwarpspeed.com/post/2008/06/09/Building-a-better-web-forms-Context-highlighting-using-jQuery.aspx -->
@@ -199,10 +198,6 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
                 //ta
                 $("#myTable")
                 .tablesorter({widthFixed: true, widgets: ['zebra']});
-
-                //
-
-
             }); // ends (document).ready(function()
 
             $(function() {

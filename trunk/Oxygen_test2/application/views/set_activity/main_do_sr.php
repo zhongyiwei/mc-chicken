@@ -17,7 +17,7 @@
 
             <h2 class="title">My Reminder Setting</h2>
             <div class="entry">
-            <h3>My reminder preference Setting is</h3>
+            <p>My reminder setting is</p>
             <ul>
             <?php
             $this->load->model('link_db_model');
@@ -29,16 +29,16 @@
                 $frequency=$r[0]->reminder_frequency;
                         if($mode_email==1){?>
 		<li><p style="font-size:150%">
-                    Email
+                    On
                 </p></li>
 		<?php  }
-                if($mode_sms==1){ ?>
+                else{ ?>
                     <li><p style="font-size:150%">
-                    SMS
+                    Off
                 </p></li>
                <?php } ?>
                 </ul>
-            <h3>My reminder frequency </h3>
+            <p>My reminder frequency </p>
             <ul>
             <li><p style="font-size:150%">
                     <?php echo $frequency; ?>
@@ -53,9 +53,10 @@
 
             
 
-            </div><!-- End of div class entry -->
+            
 
 <h5 align="right">Update and Change your Reminder Setting <a href="<?php echo base_url();?>index.php/home/reminder_update/">HERE</a></h5>
-    </div></div>
+    </div><!-- End of div class entry -->
+            </div></div>
 <!-- end #content -->
 
