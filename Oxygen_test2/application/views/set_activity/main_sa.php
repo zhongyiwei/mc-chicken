@@ -46,7 +46,7 @@
          </div>
     <div id="content_sub">
         <div class="post">
-            <h2 class="title">Set your activity here</h2>
+            <h2 class="title">Set your activity for your goal here</h2>
             <div class="entry">
                 <!--reminder preference selection begin-->
 

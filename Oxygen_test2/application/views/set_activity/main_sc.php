@@ -15,7 +15,6 @@
         <div class="post">
             <h2 class="title">Set the Activity for Your Goals Here</h2>
             <div class="entry">
-                <p style="font-size:150%; color:black;" > Notice: Do submit one goal at a time before proceeding to the next: </p>
 <div class="goal_for_activity">
 <div id="activity_accordion">
         <?php
@@ -30,7 +29,7 @@
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
              $query = $this->db->query('SELECT seeker_goal_id FROM goal WHERE goal_cat_id = '.$i.' AND goal_completion_status = "Active" AND seeker_id ='.$this->session->userdata('seeker_id').'');
              if($query->num_rows() > 0){?>
-             <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
+             <table id="myTable" style="table-layout:fixed; width: 500px" class="tablesorter">
                     <thead>
                     <tr>
                         <th width="90px">Goal Description</th>
@@ -40,21 +39,8 @@
                     </thead>
                     <tbody>
                     <?php
-                    //$query="SELECT * FROM goal WHERE seeker_id= ?";
-                    
-                    //$record = $this->db->query($query,array($this->session->userdata('seeker_id')));
-                  /*  $seeker_id=$this->session->userdata('seeker_id');
-                    $this->db->select('*');
-                    $this->db->from('goal');
-                    $this->db->where('seeker_id',$seeker_id);
-                    $this->db->join('goal_category','goal_category.goal_cat_id=goal.goal_cat_id');*/
-
-                    //$record=$this->db->get();
-                    $query2 = $this->db->query('SELECT * FROM goal WHERE goal_cat_id = '.$i.' AND goal_completion_status = "Active" AND seeker_id ='.$this->session->userdata('seeker_id').'');
-                     //$row=$query2->result();
-                        
-                            foreach ($query2->result_array() as $row){
-                  
+                    $query2 = $this->db->query('SELECT * FROM goal WHERE goal_cat_id = '.$i.' AND goal_completion_status = "Active" AND seeker_id ='.$this->session->userdata('seeker_id').'');                        
+                            foreach ($query2->result_array() as $row){                  
                     ?>
                             <tr>
                                 <td><a href="<?php echo base_url();?>index.php/home/input_activity/?seeker_goal_id=<?php echo $row['seeker_goal_id'];?>"><?php echo $row['goal_desc']; ?></a></td>
