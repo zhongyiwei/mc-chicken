@@ -16,6 +16,8 @@
             <div class="entry">
 
                 <!-- <h3 style="font-size:22px; margin:0px;">What is resilience?</h3> -->
+				<center>
+				<img src='http://harivarasanam.files.wordpress.com/2011/10/resilience17.jpg'></img></center>
                 <p>
                     Resilience is the process of adapting well in the face of adversity, trauma, tragedy, threats, or even significant sources of stress -- such as family and relationship problems, serious health problems, or workplace and financial stressors. It means "bouncing back" from difficult experiences.
                     Research has shown that resilience is ordinary, not extraordinary. 
@@ -47,6 +49,13 @@ Research  findings suggest that nonresilient people are 1. associating the threa
 </p>
 			</div>
 			</div>
+					<div class="post">
+            <h2 class="title">Testimonial</h2>
+            <div class="entry">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/B5qlAJzhxX0" frameborder="0" allowfullscreen></iframe>
+<br/><br/>
+</div>
+</div>
     <!-- end #content -->
 
 </div><!-- End of div class post -->
