@@ -5,10 +5,16 @@ class Home extends CI_Controller {
     function __construct() {
         parent::__construct();
     }
+        
+    function all_about(){
+        $data['main'] = 'includes/main_all_about';
+        $data['nav_home'] = 'includes/left_nav_all_about';
+        $this->load->view('includes/template_all_about', $data);
+    }
 
     function index() {
         $this->load->view('includes/home_page');
-    }
+    }   
 
     //Wenjie-----Value & Resilience
     function resilience_test() {
@@ -54,11 +60,8 @@ class Home extends CI_Controller {
     }
 
     function valueDesc() {
-
         $value = $this->input->post('value');
-
         $data['main'] = 'value_description';
-
         if ($this->input->post('ajax')) {
             $this->load->view($data['main']);
         } else {
@@ -368,8 +371,9 @@ class Home extends CI_Controller {
     function why_ms() {
         $data['main'] = 'mission_statement/main_wm';
         $data['nav_value'] = 'mission_statement/left_nav_value';
-        $this->load->view('mission_statement/template_ms', $data);
+        $this->load->view('mission_statement/template_ms', $data);        
     }
+
 
     function mission_statement() {
         $is_logged_in = $this->session->userdata('is_logged_in');
