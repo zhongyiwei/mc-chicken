@@ -87,9 +87,10 @@ else {
 
                 }
 
-				function changeHTML(value) {
-				var text='<?php echo "Meaning for ";?>'+value+'<?php echo ": the quality of being just; righteousness, equitableness, ormoral rightness: to uphold the justice of a cause"; ?>';
-			document.getElementById('dialog2').innerHTML=text;
+				function changeHTML(value,meaning) {
+	
+				var text='<?php echo "Meaning for ";?>'+value+'<?php echo ":"; ?>'+meaning;
+	document.getElementById('dialog2').innerHTML=text;
 				}
 
             </script>
@@ -104,8 +105,8 @@ else {
                             ?>
                 <div align="right">
 
-                <a href="<?php echo base_url();?>index.php/home/insert_values/">Add More Values</a>
-                <a href="<?php echo base_url();?>index.php/home/delete_values/">Delete Values</a>
+             <!--   <a href="<?php echo base_url();?>index.php/home/insert_values/">Add More Values</a>
+                <a href="<?php echo base_url();?>index.php/home/delete_values/">Delete Values</a> -->
 
                 
                 </div>
@@ -131,7 +132,8 @@ else {
                         foreach($query->result()as $r):
                             ?>
 							
-                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label  oncontextmenu="event.preventDefault();changeHTML('<?php echo $r->value_name;?>');$( '#dialog2' ).dialog( 'open' );"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
+                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label  oncontextmenu="event.preventDefault();changeHTML('<?php echo $r->value_name;?>','<?php echo $r->value_definition;?>');$( '#dialog2' ).dialog( 'open' );"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
+
                             <?php        if($separator%5==0) {
                                 echo "<br/>";
                             }
