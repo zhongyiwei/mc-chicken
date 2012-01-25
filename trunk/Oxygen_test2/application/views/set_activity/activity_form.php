@@ -28,8 +28,7 @@
 
         <!--start_date selection begin-->
         <div class="row">
-         <div><h4>Enter your Start Date:
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div><h4>Enter your Start Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <?php
                  $data = array('name' => 'start_date','id'=> 'start_date8','value'=> '','size'=> '50','onchange'=>'ValidateDate(this)');
                  echo form_input($data);
@@ -38,8 +37,7 @@
         
         <!--end_date selection begin-->
         <div class="row">
-        <div><h4>Enter your End Date:
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div><h4>Enter your End Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <?php
                  $data = array('name' => 'end_date','id'=> 'end_date8','value'=> '','size'=> '50','onchange'=>'ValidateDate(this)');
                  echo form_input($data);

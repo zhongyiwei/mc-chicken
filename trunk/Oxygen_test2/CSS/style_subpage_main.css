@@ -6,7 +6,11 @@
         Purpose of the stylesheet follows.
 */
 
-
+textarea{
+    font-family: inherit;
+   font-size: inherit;
+   width:580px;
+}
 body {
 /*    font-family: BPreplay,Arial,Helvetica,sans-serif;*/
     font-size: 13px;
@@ -659,10 +663,13 @@ div.row1 span.right1 {
 /*        End*/
 /* popup box  added by WenJie*/ 
 #popup{
-    margin-left: 5%;
+/*    margin-left: 5%;*/
     background: url(images/background/registerpopup.png) no-repeat 0 0;
     width: 600px;
     height: 100%;
+}
+input[type=button]{
+    width:100px;
 }
 
 
@@ -680,4 +687,8 @@ table tr th{
 table tr td{
     padding:10px;
     font-size:14px;
+}
+
+.row,h4{
+    padding-bottom: 10px;
 }
