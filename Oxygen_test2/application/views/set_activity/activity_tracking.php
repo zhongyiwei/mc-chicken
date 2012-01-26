@@ -60,7 +60,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                 <div class="<?php echo $goal_cat; ?>">
                 <?php
                         if($goal_query->num_rows()===0) {
-                                echo "No Goal Set for this category";
+                                echo "<p style='font-family:arial;color:green;font-size:16px'>No Goal Set for this category</p>";
                         }
                         else {
                             $num_goal = $goal_query->num_rows();
@@ -88,7 +88,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                     <div class="accordion_<?php echo $goal_cat; ?>">
                         <?php
                             if($activity_query->num_rows()===0) {
-                                echo "No activity has been set for this goal!";
+                                echo "<p style='font-family:arial;color:green;font-size:16px'>No activity set for this goal!</p>";
                             }
                             else {
 
