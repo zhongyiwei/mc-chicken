@@ -793,10 +793,14 @@ class Home extends CI_Controller {
     }
 
     function QAGamePortol() {
-//        $score = $this -> link_db_model-> get_game_scroe();
-////        $row = $score -> result();
-////        $scoreData['score1'] = 
-//        $this->load->view('resilience_Game/QAGame.php');
+        $this->load->model('link_db_model');
+        $score = $this->link_db_model->get_game_scroe();
+        $row = $score->result();
+        
+        $scoreData['row'] = $row;
+        $scoreData['num_count'] = $score -> num_rows();
+
+        $this->load->view('resilience_Game/QAGame.php', $scoreData);
     }
 
     function resilienceGameResult() {
