@@ -101,7 +101,7 @@ document.getElementById("dialog").innerHTML = "processing...";
     <body>
         <div id="wrapper">
             <!-- Panel -->
-            <div id="toppanel adjusttoppanel" style="font-family: Arial">
+            <div id="toppanel" class="adjusttoppanel" style="font-family: Arial">
                 <div id="panel">
                     <div class="content clearfix">
                         <div class="left" id="info">
