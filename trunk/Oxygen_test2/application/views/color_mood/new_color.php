@@ -279,7 +279,7 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 // -->
 </script>
 </head>
-<body bgcolor="#ffffff">
+<body bgcolor="#d6d6d6">
 <!--url's used in the movie-->
 <!--text used in the movie-->
 <!-- saved from url=(0013)about:internet -->
