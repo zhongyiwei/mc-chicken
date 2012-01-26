@@ -188,7 +188,7 @@ else {
             }
             else { ?>
             <script type="text/javascript">
-                input='input[type=submit]';
+                input='input[id=submit]';
                 $(input).attr('disabled', 'disabled');
             </script>
                 <?php    }
