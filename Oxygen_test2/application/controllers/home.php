@@ -5,8 +5,8 @@ class Home extends CI_Controller {
     function __construct() {
         parent::__construct();
     }
-        
-    function all_about(){
+
+    function all_about() {
         $data['main'] = 'includes/main_all_about';
         $data['nav_home'] = 'includes/left_nav_all_about';
         $this->load->view('includes/template_all_about', $data);
@@ -14,12 +14,13 @@ class Home extends CI_Controller {
 
     function index() {
         $this->load->view('includes/home_page');
-    }   
+    }
 
     //Wenjie-----Value & Resilience
     function resilience_test() {
         $this->load->view('resilience_test/subpage_resilience_test');
     }
+
     //Arian - Color Mood Setting
     function color_mood() {
         $this->load->view('color_mood/color_mood');
@@ -114,11 +115,12 @@ class Home extends CI_Controller {
     }
 
     //End of Wenjie----Value & Resilience
-	//WenJie Flow
-	   function getflow() {
+    //WenJie Flow
+    function getflow() {
         $this->load->view('next/subpage_flow');
     }
-	//End of flow
+
+    //End of flow
     //Arian ---- activity Tracking
     function activity_tracking() {
         $is_logged_in = $this->session->userdata('is_logged_in');
@@ -186,7 +188,7 @@ class Home extends CI_Controller {
     function personal_info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            
+
             $this->load->view('register/update');
         }
     }
@@ -207,7 +209,7 @@ class Home extends CI_Controller {
         $this->load->view('set_activity/template_sc', $data);
         //$this->load->view('set_activity/main_sc',$data2);
     }
-    
+
     function input_activity() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -339,14 +341,14 @@ class Home extends CI_Controller {
             } else {
                 
             }
-			$query2 = $this->link_db_model->get_value();
+            $query2 = $this->link_db_model->get_value();
             if ($query2->num_rows() > 0) {
                 $row_value = $query2->result();
                 $data['value1'] = $row_value[0]->value_name;
                 $data['value2'] = $row_value[1]->value_name;
                 $data['value3'] = $row_value[2]->value_name;
                 $data['value4'] = $row_value[3]->value_name;
-				//print_r($query2->result());
+                //print_r($query2->result());
                 //$this->load->view('mission_statement/template_ms', $data);
             } else {
                 $data['value1'] = "No value";
@@ -371,9 +373,8 @@ class Home extends CI_Controller {
     function why_ms() {
         $data['main'] = 'mission_statement/main_wm';
         $data['nav_value'] = 'mission_statement/left_nav_value';
-        $this->load->view('mission_statement/template_ms', $data);        
+        $this->load->view('mission_statement/template_ms', $data);
     }
-
 
     function mission_statement() {
         $is_logged_in = $this->session->userdata('is_logged_in');
@@ -431,21 +432,20 @@ class Home extends CI_Controller {
                 $data['nav_portfolio'] = 'portfolio/left_nav_mp';
                 $this->load->view('portfolio/template_mp', $data);
             } else {
-        $query2 = $this->link_db_model->get_value();
-        if ($query2->num_rows() > 0) {
-            $row2=$query2->result();
-            $data['value1']=$row2[0]->value_name;
-            $data['value2']=$row2[1]->value_name;
-            $data['value3']=$row2[2]->value_name;
-            $data['value4']=$row2[3]->value_name;
-            //$this->load->view('mission_statement/template_ms', $data);
-        }
-        else{
-            $data['value1']="No value";
-            $data['value2']="No value";
-            $data['value3']="No value";
-            $data['value4']="No value";
-        }
+                $query2 = $this->link_db_model->get_value();
+                if ($query2->num_rows() > 0) {
+                    $row2 = $query2->result();
+                    $data['value1'] = $row2[0]->value_name;
+                    $data['value2'] = $row2[1]->value_name;
+                    $data['value3'] = $row2[2]->value_name;
+                    $data['value4'] = $row2[3]->value_name;
+                    //$this->load->view('mission_statement/template_ms', $data);
+                } else {
+                    $data['value1'] = "No value";
+                    $data['value2'] = "No value";
+                    $data['value3'] = "No value";
+                    $data['value4'] = "No value";
+                }
                 $data['rows2'] = $this->link_db_model->get_coa(); //change to get_goal in future
                 if ($data['rows2'] == null) {
                     $data['rows'] = $this->link_db_model->get_motto();
@@ -473,7 +473,7 @@ class Home extends CI_Controller {
             $data['main_portfolio'] = 'portfolio/main_coa_info';
             $data['nav_portfolio'] = 'portfolio/left_nav_mp';
             $this->load->view('portfolio/template_mp', $data);
-      } else {
+        } else {
             $this->load->view('portfolio/page_visitor');
         }
     }
@@ -523,14 +523,14 @@ class Home extends CI_Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $this->load->model('link_db_model');
- /*           $query = $this->link_db_model->get_motto();
-            if ($query->num_rows() > 0) {
-                $row = $query->result();
-                $data['motto_set'] = $row[0]->motto;
-                //$this->load->view('mission_statement/template_ms', $data);
-            } else {
-                $data['motto_set'] = "You have not set any motto yet";
-            }*/
+            /*           $query = $this->link_db_model->get_motto();
+              if ($query->num_rows() > 0) {
+              $row = $query->result();
+              $data['motto_set'] = $row[0]->motto;
+              //$this->load->view('mission_statement/template_ms', $data);
+              } else {
+              $data['motto_set'] = "You have not set any motto yet";
+              } */
 
             $query1 = $this->link_db_model->get_mission();
             if ($query1->num_rows() > 0) {
@@ -615,22 +615,35 @@ class Home extends CI_Controller {
 
     function portfolio_export_COA() {
         $this->load->model('link_db_model');
-
         $data = $this->link_db_model->get_value_symbol();
+        $row = $data->result();
         if ($data != NULL) {
-            $row = $data->result();
-            $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
-            $valueSymbol['Symbol2'] = base_url() . $row[1]->value_symbol;
-            $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol;
-            $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol;
+            $valueSymbol = "";
+            if ($this->session->userdata('category') != 'child') {
+                $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
+                $valueSymbol['Symbol2'] = base_url() . $row[1]->value_symbol;
+                $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol;
+                $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol;
 
-            $data2 = $this->link_db_model->get_coa2();
-            $row2 = $data2->result();
-            $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
+                $data2 = $this->link_db_model->get_coa2();
+                $row2 = $data2->result();
+                $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
 
-            $valueSymbol['COAStatus'] = '';
+                $valueSymbol['COAStatus'] = '';
+            } else {
+                $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol_kids;
+                $valueSymbol['Symbol2'] = base_url() . $row[1]->value_symbol_kids;
+                $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol_kids;
+                $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol_kids;
+
+                $data2 = $this->link_db_model->get_coa2();
+                $row2 = $data2->result();
+                $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
+
+                $valueSymbol['COAStatus'] = '';
+            }
         } else {
-            $valueSymbol['COAStatus'] = 'Please choose your value first.<br/><a href="'.  base_url().'index.php/home/determineValue/">Go to Set Value Page</a>';
+            $valueSymbol['COAStatus'] = 'Please choose your value first.<br/><a href="' . base_url() . 'index.php/home/determineValue/">Go to Set Value Page</a>';
         }
         //echo    $valueSymbol['Shield1'];
 
@@ -778,12 +791,12 @@ class Home extends CI_Controller {
         }
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
     }
-    
-    function QAGamePortol(){
-        $this ->load->view('resilience_Game/QAGame.php');
+
+    function QAGamePortol() {
+        $this->load->view('resilience_Game/QAGame.php');
     }
-    
-    function resilienceGameResult(){
+
+    function resilienceGameResult() {
         $this->load->view("resilience_Game/QAGameResult.php");
     }
 
@@ -802,8 +815,6 @@ class Home extends CI_Controller {
 
         $this->load->view('email_reminder/email_reminder');
     }
-    
-    
 
 }
 
