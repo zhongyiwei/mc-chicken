@@ -47,8 +47,9 @@ h1, h2{
     margin-left: -1020px;
 }
 
-#adjusttoppanel{
-    margin-right:20px;
+.adjusttoppanel .tab{
+    width:1024px;
+    margin-right:-40px;
 }
 
 .tab A.open{
