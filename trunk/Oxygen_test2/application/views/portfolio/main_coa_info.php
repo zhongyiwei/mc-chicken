@@ -15,21 +15,6 @@
          <div class="post">
 
 
-            <h2 class="title" id="MS">Your Personal motto</h2>
-            <div class="entry">
-
-
-
-                <p style="font-family:arial;color:black;font-size:14px">
-                   A motto (Italian for pledge, sentence; plural: mottos or mottoes) is a phrase meant to formally describe the general motivation or intention of a social group or organization.
-                   <br>Your Personal motto is a <b><u>short phrase</u></b> which defines the rule or slogan you should always follow, or live your life by.
-                   You should come out with your personal motto based on your personal mission statement of your life and the values you carry in your life. It has to
-                   reflect your personal mission and values.
-                   This short phrase, your personal motto, will become your slogan that you will always remember. It will guide you in your life.
-                   Whenever you make a decision or behave in your life, your personal motto will always be the guiding star for you.
-                    </p>
-
-            </div>
 <h2 class="title" id="VALUE">Your Coat of Arms</h2>
             <div class="entry">
                 <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms2.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
