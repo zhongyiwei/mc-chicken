@@ -782,6 +782,10 @@ class Home extends CI_Controller {
     function QAGamePortol(){
         $this ->load->view('resilience_Game/QAGame.php');
     }
+    
+    function resilienceGameResult(){
+        $this->load->view("resilience_Game/QAGameResult.php");
+    }
 
     function get_session() {
         parse_str($_SERVER['QUERY_STRING'], $_GET);
