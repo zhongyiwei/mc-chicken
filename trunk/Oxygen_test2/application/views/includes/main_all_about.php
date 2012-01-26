@@ -11,6 +11,13 @@
             <div class="post">
             <h2 class="title" id="WMS">Positive Psychology</h2>
             <div class="entry">
+                According to the Positive Psychology, Setting Goals is an essential part of a meaningful and happy.  On the other hand, 
+                through building persistence and resilience, negative thinking and limiting belief can be reduced.
+                In our daily lives, it seems that many people are setting goals, but does that mean what they do is effective?
+                However, except for a lucky few, life is unlikely to be smooth sailing for many youths. 
+                What then is the difference between those who achieved their goals and those who don’t? We believe it is their resilience level.
+        We found the theory of positive psychology which espouses that how you explain events in your life will impact your resilience level.
+Hence, we conclude that any exercise in goal setting must be accompanied by resilience development for youths to achieve their goals and build a positive and happy life. 
                 </div>
             </div>
         
