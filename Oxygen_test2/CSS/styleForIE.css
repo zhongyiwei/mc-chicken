@@ -49,7 +49,6 @@ h1, h2{
 
 .adjusttoppanel .tab,#panel{
     width:1024px;
-    margin-right:-40px;
 }
 
 .tab A.open{
@@ -94,3 +93,13 @@ h1, h2{
     margin-left: -710px;
     margin-top: 80px
 }
+#instruction{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    zoom: 1;
+}
+#instruction table tbody tr td{
+    color: white;
+}
+

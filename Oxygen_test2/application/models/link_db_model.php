@@ -329,6 +329,12 @@ function get_num_portfolio_goal_activity(){
     //return $q;
 }
 
+function get_game_scroe(){
+    //$query="SELECT motto FROM motto WHERE seeker_id=?";
+    $query="SELECT score FROM resilience_game_result WHERE seeker_id=? ORDER BY score DESC LIMIT 3 ";
+    $record=  $this->db->query($query,array($this->session->userdata('seeker_id')));
+    return $record;
+}
 
 }
 ?>
