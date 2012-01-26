@@ -9,12 +9,8 @@
 
 <div id="page">
     <div id="content_sub">
-        <div class="post">
-
 
          <div class="post">
-
-
 <h2 class="title" id="VALUE">Your Coat of Arms</h2>
             <div class="entry">
                 <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms2.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
@@ -26,15 +22,9 @@
                 <br>
                 Your personal coat of arms will be a design which can reflect your values and motto of your life. The 4 symbols on the shield represent each of your values.
                 Your personal motto will be on the manner. Your personal Coat of Arms as a whole will be a unique symbol of you. It represents what a person you are.
-
                 </p>
-
-
             </div>
-
          </div>
-        </div>
-
     </div>
     <!-- end #content -->
 
