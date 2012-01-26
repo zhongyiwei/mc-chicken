@@ -142,16 +142,16 @@ Research  findings suggest that nonresilient people are 1. associating the threa
 </div>
 </div>
             <div class="post">
-            <h2 class="title" id="WMS">Color Psychology</h2>
+            <h2 class="title" id="WMS">Mood Setting Through Color Psychology</h2>
             <div class="entry">
+            <p>
+                Research done by University of Manchester, UK, shows that color does affect people's mood. Hence, we implement this Mood Setting to help the users to feel more positive while using the application.
+                After successfully logging into the system, users are to choose a color that best represents his/her mood. The application will then display a background image which corresponds to the users' mood.
+            </p>
+
                 </div>
             </div>
-        
-        <div class="post">
-            <h2 class="title" id="WMS">Color Psychology</h2>
-            <div class="entry">
-                </div>
-            </div>
+  
         
         <div class="post">
             <h2 class="title" id="WMS">Coat of Arms</h2>

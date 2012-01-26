@@ -293,7 +293,7 @@ margin-bottom:-20px;
 		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
 		'width', '642',
 		'height', '325',
-		'src', 'http://localhost:9081/new_color',
+		'src', 'http://sit.rp.edu.sg/91150/oxygen2.2/new_color',
 		'quality', 'high',
 		'pluginspage', 'http://www.adobe.com/go/getflashplayer',
 		'align', 'middle',
@@ -308,7 +308,7 @@ margin-bottom:-20px;
 		'menu', 'true',
 		'allowFullScreen', 'false',
 		'allowScriptAccess','sameDomain',
-		'movie', 'http://localhost:9081/new_color',
+		'movie', 'http://sit.rp.edu.sg/91150/oxygen2.2/new_color',
 		'salign', ''
 		); //end AC code
 </script>
