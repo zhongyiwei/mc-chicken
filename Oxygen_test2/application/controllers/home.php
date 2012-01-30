@@ -728,7 +728,7 @@ class Home extends CI_Controller {
                     $h_descriptor2 = "This is a very good sign that you can survive challenging times. You do not give up easily";
                     $h_descriptor3 = "We believe in your potential";
                 } else if ($Hope <= 6) {
-                    $h_descriptor1 = " moderately hopeful  about life";
+                    $h_descriptor1 = " moderately hopeful about life";
                     $h_descriptor2 = "This is a good sign that you can survive challenging times. You do not give up easily";
                     $h_descriptor3 = "We believe in your potential";
                 } else if ($Hope <= 8) {
@@ -745,13 +745,13 @@ class Home extends CI_Controller {
                     $h_descriptor3 = "We want YOU to have these special abilities";
                 }
                 if ($Optimism < 0) {
-                    $op_descriptor = " very pessimistic in general.";
+                    $op_descriptor = "very pessimistic in general.";
                 } else if ($Optimism <= 2) {
-                    $op_descriptor = " quite pessimistic in general.";
+                    $op_descriptor = "quite pessimistic in general.";
                 } else if ($Optimism <= 5) {
-                    $op_descriptor = " average in being optimistic in general.";
+                    $op_descriptor = "average in being optimistic in general.";
                 } else if ($Optimism <= 8) {
-                    $op_descriptor = " moderately optimistic in general.";
+                    $op_descriptor = "moderately optimistic in general.";
                 } else {
                     $op_descriptor = " very optimistic in general.";
                 }
