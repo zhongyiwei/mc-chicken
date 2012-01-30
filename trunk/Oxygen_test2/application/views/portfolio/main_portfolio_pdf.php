@@ -128,7 +128,7 @@ class PDF extends FPDF {
         // Arial italic 8
         $this->SetFont('Arial', 'I', 8);
         // Page number
-        $this->Cell(0, 10, '~Page ' . $this->PageNo().'~', 0, 0, 'C');
+        $this->Cell(0, 10, '~Page ' . $this->PageNo() . '~', 0, 0, 'C');
     }
 
     // Page header
@@ -224,10 +224,18 @@ if ($resillentScaleStatus == '') {
     $pdf->SetFont('Arial', '', 12);
     $pdf->Cell(40, 8, 'Indicators', 1, 0, 'C');
     $pdf->Cell(140, 8, 'Explanation', 1, 1);
-    $pdf->Cell(40, 72, 'Hope', 1, 0, 'C');
+    if ($h_descriptor3 = "We believe in your potential" ||  $h_descriptor2 = " This is a sign that you can survive challenging times. You do not give up so easily") {
+        $pdf->Cell(40, 64, 'Hope', 1, 0, 'C');
+    } else {
+        $pdf->Cell(40, 72, 'Hope', 1, 0, 'C');
+    }
     $hopeExplanation = "Your Hope score shows that you are $h_descriptor1. $h_descriptor2.\n\nOptimistic people do have special eyes that can help them look out for chances, they have super arms to gather resources and they have mighty legs that will keep running until they reach their goals. $h_descriptor3!";
     $pdf->MultiCell(140, 8, $hopeExplanation, 1, 1);
-    $pdf->Cell(40, 8, 'Optimism', 1, 0, 'C');
+    if ($op_descriptor == "average in being optimistic in general.") {
+        $pdf->Cell(40, 16, 'Optimism', 1, 0, 'C');
+    } else {
+        $pdf->Cell(40, 8, 'Optimism', 1, 0, 'C');
+    }
     $OptimismExplanation = "Your optimism level indicates that you are $op_descriptor";
     $pdf->MultiCell(140, 8, $OptimismExplanation, 1, 1);
     $pdf->Cell(40, 8, 'Good Events', 1, 0, 'C');
