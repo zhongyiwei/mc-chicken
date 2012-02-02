@@ -1,10 +1,14 @@
 <?php
-$seeker_name = $this->session->userdata('seeker_name');
+date_default_timezone_set('Asia/Singapore');
 
-$to="91234@myrp.edu.sg";
+$seeker_name = $this->session->userdata('name');
+$seeker_id = $this->session->userdata('seeker_id');
+
+$to = $this->session->userdata('referee_email');
+$referee_name = $this->session->userdata('referee_name');
 
 $headers = "From: no-reply@rp.edu.sg \r\n";
-$headers .= "Reply-To: " .$seeker_name. "\r\n";
+$headers .= "Reply-To: " . $seeker_name . "\r\n";
 //$headers .= "CC: susan@example.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -13,21 +17,28 @@ $subject = "Inventation to monitor your friend:$seeker_name's Achievement";
 
 $backButton = "&nbsp;&nbsp;<a href='javascript:history.go(-1)'><input name='back' value='Back' type='button'/></a>";
 
-$link = base_url() . "index.php/home/portfolio_export_pdf?id=<?php echo $this->session->userdata('seeker_id')";
+$link = base_url() . "index.php/home/portfolio_export_pdf?id=$seeker_id";
 
-$message = "Dear <br/> Your have received your friend:$seeker_name's portofoilo about his achivement, here is link:  <br/>$link<br/>";
-$status = $mail_sent ? "Mail sent <b style='color: #060'>Successfully!</b>" : "Mail failed to send, Please go back to Previous Page. <br/>$backButton";
+$message = "<p style='font-family:Arial;color:#065270'>Dear $referee_name<br/><br/><br/> Your have received your friend: $seeker_name's request for monitoring the portofoilo about the achivement, here is link:  <br/><br/><br/>$link<br/><br/><br/>";
+$message .= "Thank you for your kind help in monitoring.<br/><br/>";
+$message .= "Best Regards<br/></p>";
+$message .= "<p style='font-family:Segoe UI;color:#065270;margin-top:-10px;'>Oxygen Team</p>";
 
 $mail_sent = mail($to, $subject, $message, $headers);
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Send Email Status</title>
-    </head>
 
-    <body>
-        <?php echo $status; ?>
-    </body>
-</html>
+$status = $mail_sent ? "Mail sent <b style='color: #060'>Successfully!</b>" : "Mail failed to send, Please go back to Previous Page. <br/>$backButton";
+?>
+
+
+<?php $this->load->view('register/register_header'); ?>
+
+<div id="register">
+    <h1 style="padding-top: 20px; font-size:22px;">Congratulations! You have successfully sent to your friend email.</h1>
+    <p style="padding-left: 20px; color: black; font-size: 16px;"><?php echo $status; ?>, go <a href="<?php echo base_url();?>index.php/home/index/">back to home</a></p>
+</div>
+
+<div id="home">
+    <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
+</div>
+
+<?php $this->load->view('register/register_footer'); ?>
