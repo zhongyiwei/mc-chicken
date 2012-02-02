@@ -201,7 +201,7 @@ if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             }); // ends (document).ready(function()
 
             $(function() {
-                $( "#datepicker" ).datepicker({
+                $( ".datepicker" ).datepicker({
                     dateFormat:"yy-mm-dd"
                 });   
             });

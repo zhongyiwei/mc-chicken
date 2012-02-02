@@ -45,7 +45,8 @@ class Goal_setting extends CI_Model {
                     'goal_desc' => $this->input->post('goal_des'),
                     'achievement_criteria' => $this->input->post('achievement'),
                     'goal_completion_status' => $this->input->post('process'),
-                    'actual_end_date'=>$date
+                    'actual_end_date'=>$date,
+                    'target_end_date'=>  $this->input->post('target_end_date')
                 );
 
                 $this->db->where('seeker_goal_id', $this->input->post('goal_id'));
@@ -69,6 +70,7 @@ class Goal_setting extends CI_Model {
                     'goal_desc' => $this->input->post('goal_des'),
                     'goal_set_date' => $date,
                     'achievement_criteria' => $this->input->post('achievement'),
+                    'target_end_date'=>  $this->input->post('target_end_date'),
                     'goal_completion_status' => $this->input->post('process')
                 );
                 $this->db->where('seeker_goal_id', $this->input->post('goal_id'));
@@ -91,6 +93,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('family'),
             'achievement_criteria' => $this->input->post('family_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date1'),
             'goal_completion_status' => 'Active'
         );
 
@@ -109,6 +112,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('career'),
             'achievement_criteria' => $this->input->post('career_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date2'),
             'goal_completion_status' => 'Active'
         );
 
@@ -127,6 +131,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('education'),
             'achievement_criteria' => $this->input->post('education_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date3'),
             'goal_completion_status' => 'Active'
         );
 
@@ -145,6 +150,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('spiritual'),
             'achievement_criteria' => $this->input->post('spiritual_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date4'),
             'goal_completion_status' => 'Active'
         );
 
@@ -163,6 +169,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('financial'),
             'achievement_criteria' => $this->input->post('financial_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date5'),
             'goal_completion_status' => 'Active'
         );
 
@@ -181,6 +188,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('social'),
             'achievement_criteria' => $this->input->post('social_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date6'),
             'goal_completion_status' => 'Active'
         );
 
@@ -199,6 +207,7 @@ class Goal_setting extends CI_Model {
             'goal_desc' => $this->input->post('physical'),
             'achievement_criteria' => $this->input->post('physical_criteria'),
             'goal_set_date' => $date,
+            'target_end_date'=>  $this->input->post('target_date7'),
             'goal_completion_status' => 'Active'
         );
 

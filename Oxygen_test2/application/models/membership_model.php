@@ -31,7 +31,9 @@ class Membership_model extends CI_Model {
                 'nationality' => $this->input->post('nationality'),
                 'password' => sha1($this->input->post('password')),
                 'mobile_number' => $this->input->post('mobile_number'),
-                'role' => 'member'
+                'role' => 'member',
+                'referee_name'=>  $this->input->post('referee_name'),
+                'referee_email'=>  $this->input->post('referee_email')
             );
 
             $insert = $this->db->insert('seeker', $new);
@@ -53,7 +55,9 @@ class Membership_model extends CI_Model {
             $data = array(
                 'name' => $this->session->userdata('name'),
                 'nationality' => $this->session->userdata('nation'),
-                'mobile_number' => $this->session->userdata('mobile')
+                'mobile_number' => $this->session->userdata('mobile'),
+                'referee_name'=>$this->session->userdata('referee_name'),
+                'referee_email'=>$this->session->userdata('referee_email')
             );
             $this->db->where('seeker_id', $this->session->userdata('seeker_id'));
             $update_info = $this->db->update('seeker', $data);

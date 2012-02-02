@@ -15,6 +15,7 @@ class Set_goal extends CI_Controller {
             $data['goal'] = $query[0]->goal_category;
             $data['goal_cat_id']=$query[0]->goal_cat_id;
             $data['goal_des'] = $query[0]->goal_desc;
+            $data['target_end_date']=$query[0]->target_end_date;
             $data['achievement'] = $query[0]->achievement_criteria;
             $data['Progress'] = $query[0]->goal_completion_status;
 
@@ -30,6 +31,7 @@ class Set_goal extends CI_Controller {
             //validation rules
             $this->form_validation->set_rules('family', 'Family Goal', 'trim|required');
             $this->form_validation->set_rules('family_criteria', 'Family Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date1', 'Target Completion Date','trim|required');
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('subpage/wrong');
@@ -61,6 +63,7 @@ class Set_goal extends CI_Controller {
 
             $this->form_validation->set_rules('career', 'Career Goal', 'trim|required');
             $this->form_validation->set_rules('career_criteria', 'Career Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date2', 'Target Completion Date','trim|required');
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('subpage/wrong');
@@ -93,6 +96,7 @@ class Set_goal extends CI_Controller {
             //validation rules
             $this->form_validation->set_rules('education', 'Education Goal', 'trim|required');
             $this->form_validation->set_rules('education_criteria', 'Education Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date3', 'Target Completion Date','trim|required');
 
             //check the rules
             if ($this->form_validation->run() == FALSE) {
@@ -125,6 +129,7 @@ class Set_goal extends CI_Controller {
 
             $this->form_validation->set_rules('spiritual', 'Spiritual Goal', 'trim|required');
             $this->form_validation->set_rules('spiritual_criteria', 'Spiritual Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date4', 'Target Completion Date','trim|required');
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('subpage/wrong');
@@ -156,6 +161,7 @@ class Set_goal extends CI_Controller {
 
             $this->form_validation->set_rules('financial', 'Financial Goal', 'trim|required');
             $this->form_validation->set_rules('financial_criteria', 'Financial Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date5', 'Target Completion Date','trim|required');
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('subpage/wrong');
@@ -187,6 +193,7 @@ class Set_goal extends CI_Controller {
 
             $this->form_validation->set_rules('social', 'Social Goal', 'trim|required');
             $this->form_validation->set_rules('social_criteria', 'Social Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date6', 'Target Completion Date','trim|required');
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('subpage/wrong');
@@ -218,6 +225,7 @@ class Set_goal extends CI_Controller {
 
             $this->form_validation->set_rules('physical', 'Physical Goal', 'trim|required');
             $this->form_validation->set_rules('physical_criteria', 'Physical Criteria', 'trim|required');
+            $this->form_validation->set_rules('target_date7', 'Target Completion Date','trim|required');
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('subpage/wrong');

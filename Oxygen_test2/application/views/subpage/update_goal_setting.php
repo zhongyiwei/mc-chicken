@@ -56,6 +56,18 @@
                 </div>
                 
                 <div class="row">
+                    <div><h4>Target End Date:</h4></div>
+                    <div class="">
+     <?php
+      $data = array(
+              'name'=> 'target_end_date','class'=> 'datepicker','value'=> $target_end_date,
+            );
+                 echo form_input($data);
+     ?><br></div>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="row">
                     <div><h4>Progress:</h4></div>
                     <div class="">
      <?php
