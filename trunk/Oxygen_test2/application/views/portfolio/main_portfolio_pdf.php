@@ -255,7 +255,6 @@ if ($resillentScaleStatus == '') {
 $pdf->SetFont('Arial', 'B', 16);
 $myCOA = 'My Coat of Arm';
 $pdf->Cell(70, 10, $myCOA, 0, 1);
-$seeker_id = $this->session->userdata('seeker_id');
 $imageAddress = base_url() . "index.php/home/portfolio_export_COA?id=$seeker_id";
 $pdf->Ln(5);
 $pdf->SetFont('Arial', '', 12);

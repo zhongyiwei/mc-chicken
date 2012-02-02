@@ -620,9 +620,10 @@ class Home extends CI_Controller {
 
         $data = $this->link_db_model->get_value_symbol_image($seeker_id);
 
-        $row = $data->result();
+        if ($data != NULL) {
 
-        if ($seeker_id != NULL) {
+            $row = $data->result();
+            
             $valueSymbol = "";
             if ($this->session->userdata('category') != 'child') {
                 $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
@@ -659,6 +660,8 @@ class Home extends CI_Controller {
         $this->load->model('link_db_model');
 
         $seeker_id = $_GET['id'];
+
+        $data['seeker_id'] = $seeker_id;
 
         $query = $this->link_db_model->get_mission_pdf($seeker_id);
         if ($query->num_rows() > 0) {
@@ -705,93 +708,90 @@ class Home extends CI_Controller {
             $data['AchievementRows'] = $achieveData;
         }
 
-        $is_logged_in = $this->session->userdata('is_logged_in');
-        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            $errFound = false;
-            $query3 = $this->db->query('SELECT * FROM test_result WHERE seeker_id=' . $seeker_id . ' ORDER BY result_id DESC LIMIT 0, 1');
-            $rows3 = $query3->num_rows();
-            if ($rows3 > 0) {
-                $data3 = $query3->result();
+        $errFound = false;
+        $query3 = $this->db->query('SELECT * FROM test_result WHERE seeker_id=' . $seeker_id . ' ORDER BY result_id DESC LIMIT 0, 1');
+        $rows3 = $query3->num_rows();
+        if ($rows3 > 0) {
+            $data3 = $query3->result();
 
-                $PvBscore = $data3[0]->PvB_score;
-                $PmBscore = $data3[0]->PmB_score;
-                $PsBscore = $data3[0]->PsB_score;
-                $PmGscore = $data3[0]->PmG_score;
-                $PvGscore = $data3[0]->PvG_score;
-                $PsGscore = $data3[0]->PsG_score;
+            $PvBscore = $data3[0]->PvB_score;
+            $PmBscore = $data3[0]->PmB_score;
+            $PsBscore = $data3[0]->PsB_score;
+            $PmGscore = $data3[0]->PmG_score;
+            $PvGscore = $data3[0]->PvG_score;
+            $PsGscore = $data3[0]->PsG_score;
 
-                $Hope = $PvBscore + $PmBscore;
-                $BadEvents = $PmBscore + $PvBscore + $PsBscore;
-                $GoodEvents = $PmGscore + $PvGscore + $PsGscore;
-                $Optimism = $GoodEvents - $BadEvents;
+            $Hope = $PvBscore + $PmBscore;
+            $BadEvents = $PmBscore + $PvBscore + $PsBscore;
+            $GoodEvents = $PmGscore + $PvGscore + $PsGscore;
+            $Optimism = $GoodEvents - $BadEvents;
 
 
 
-                if ($Hope <= 2) {
-                    $h_descriptor1 = " extraordinarily hopeful about life";
-                    $h_descriptor2 = "This is a very good sign that you can survive challenging times. You do not give up easily";
-                    $h_descriptor3 = "We believe in your potential";
-                } else if ($Hope <= 6) {
-                    $h_descriptor1 = " moderately hopeful about life";
-                    $h_descriptor2 = "This is a good sign that you can survive challenging times. You do not give up easily";
-                    $h_descriptor3 = "We believe in your potential";
-                } else if ($Hope <= 8) {
-                    $h_descriptor1 = " average in being hopeful about life";
-                    $h_descriptor2 = " This is a sign that you can survive challenging times. You do not give up so easily";
-                    $h_descriptor3 = "We want YOU to have these special abilities";
-                } else if ($Hope <= 11) {
-                    $h_descriptor1 = " not so hopeful about life";
-                    $h_descriptor2 = "These are signs that you may feel more vulnerable than hopeful people around you when you are dealing with challenging issues. You tend to give up more readily. This is quite worrying";
-                    $h_descriptor3 = "We want YOU to have these special abilities";
-                } else if ($Hope <= 16) {
-                    $h_descriptor1 = " really not hopeful";
-                    $h_descriptor2 = "These are signs that you may feel a lot more vulnerable than hopeful people around you when you are dealing with challenging issues. You tend to give up readily. This is really worrying";
-                    $h_descriptor3 = "We want YOU to have these special abilities";
-                }
-                if ($Optimism < 0) {
-                    $op_descriptor = "very pessimistic in general.";
-                } else if ($Optimism <= 2) {
-                    $op_descriptor = "quite pessimistic in general.";
-                } else if ($Optimism <= 5) {
-                    $op_descriptor = "average in being optimistic in general.";
-                } else if ($Optimism <= 8) {
-                    $op_descriptor = "moderately optimistic in general.";
-                } else {
-                    $op_descriptor = " very optimistic in general.";
-                }
-                if ($GoodEvents <= 10) {
-                    $g_descriptor = " is very optimistic";
-                } else if ($GoodEvents <= 13) {
-                    $g_descriptor = " is moderately optimistic";
-                } else if ($GoodEvents <= 16) {
-                    $g_descriptor = " average in optimism";
-                } else if ($GoodEvents <= 19) {
-                    $g_descriptor = " is quite pessimistic";
-                } else {
-                    $g_descriptor = " is very pessimistic";
-                }
-                if ($BadEvents <= 6) {
-                    $b_descriptor = " marvellously optimistic";
-                } else if ($BadEvents <= 9) {
-                    $b_descriptor = " is moderately optimistic";
-                } else if ($BadEvents <= 11) {
-                    $b_descriptor = " is average in optimism";
-                } else if ($BadEvents <= 14) {
-                    $b_descriptor = " is quite pessimistic";
-                } else {
-                    $b_descriptor = " is very pessimistic";
-                }
-
-                $data['h_descriptor1'] = $h_descriptor1;
-                $data['h_descriptor2'] = $h_descriptor2;
-                $data['h_descriptor3'] = $h_descriptor3;
-                $data['op_descriptor'] = $op_descriptor;
-                $data['g_descriptor'] = $g_descriptor;
-                $data['b_descriptor'] = $b_descriptor;
-                $data['resillentScaleStatus'] = '';
-            } else {
-                $data['resillentScaleStatus'] = 'You have never completed resilience test yet.';
+            if ($Hope <= 2) {
+                $h_descriptor1 = " extraordinarily hopeful about life";
+                $h_descriptor2 = "This is a very good sign that you can survive challenging times. You do not give up easily";
+                $h_descriptor3 = "We believe in your potential";
+            } else if ($Hope <= 6) {
+                $h_descriptor1 = " moderately hopeful about life";
+                $h_descriptor2 = "This is a good sign that you can survive challenging times. You do not give up easily";
+                $h_descriptor3 = "We believe in your potential";
+            } else if ($Hope <= 8) {
+                $h_descriptor1 = " average in being hopeful about life";
+                $h_descriptor2 = " This is a sign that you can survive challenging times. You do not give up so easily";
+                $h_descriptor3 = "We want YOU to have these special abilities";
+            } else if ($Hope <= 11) {
+                $h_descriptor1 = " not so hopeful about life";
+                $h_descriptor2 = "These are signs that you may feel more vulnerable than hopeful people around you when you are dealing with challenging issues. You tend to give up more readily. This is quite worrying";
+                $h_descriptor3 = "We want YOU to have these special abilities";
+            } else if ($Hope <= 16) {
+                $h_descriptor1 = " really not hopeful";
+                $h_descriptor2 = "These are signs that you may feel a lot more vulnerable than hopeful people around you when you are dealing with challenging issues. You tend to give up readily. This is really worrying";
+                $h_descriptor3 = "We want YOU to have these special abilities";
             }
+            if ($Optimism < 0) {
+                $op_descriptor = "very pessimistic in general.";
+            } else if ($Optimism <= 2) {
+                $op_descriptor = "quite pessimistic in general.";
+            } else if ($Optimism <= 5) {
+                $op_descriptor = "average in being optimistic in general.";
+            } else if ($Optimism <= 8) {
+                $op_descriptor = "moderately optimistic in general.";
+            } else {
+                $op_descriptor = " very optimistic in general.";
+            }
+            if ($GoodEvents <= 10) {
+                $g_descriptor = " is very optimistic";
+            } else if ($GoodEvents <= 13) {
+                $g_descriptor = " is moderately optimistic";
+            } else if ($GoodEvents <= 16) {
+                $g_descriptor = " average in optimism";
+            } else if ($GoodEvents <= 19) {
+                $g_descriptor = " is quite pessimistic";
+            } else {
+                $g_descriptor = " is very pessimistic";
+            }
+            if ($BadEvents <= 6) {
+                $b_descriptor = " marvellously optimistic";
+            } else if ($BadEvents <= 9) {
+                $b_descriptor = " is moderately optimistic";
+            } else if ($BadEvents <= 11) {
+                $b_descriptor = " is average in optimism";
+            } else if ($BadEvents <= 14) {
+                $b_descriptor = " is quite pessimistic";
+            } else {
+                $b_descriptor = " is very pessimistic";
+            }
+
+            $data['h_descriptor1'] = $h_descriptor1;
+            $data['h_descriptor2'] = $h_descriptor2;
+            $data['h_descriptor3'] = $h_descriptor3;
+            $data['op_descriptor'] = $op_descriptor;
+            $data['g_descriptor'] = $g_descriptor;
+            $data['b_descriptor'] = $b_descriptor;
+            $data['resillentScaleStatus'] = '';
+        } else {
+            $data['resillentScaleStatus'] = 'You have never completed resilience test yet.';
         }
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
     }
@@ -825,8 +825,8 @@ class Home extends CI_Controller {
     function email() {
         $this->load->view('email_reminder/email_reminder');
     }
-    
-    function email_pdf(){
+
+    function email_pdf() {
         $this->load->view('portfolio/email_portfolio.php');
     }
 
