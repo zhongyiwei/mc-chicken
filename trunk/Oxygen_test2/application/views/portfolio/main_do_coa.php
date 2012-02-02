@@ -21,7 +21,7 @@
             <?php //$this->load->view('portfolio/coa_set');?>
             <?php //$this->load->view('portfolio/portfolio_translate');?>
                 <!--<p style="font-family:arial;color:green;font-size:16px">You can double-click your Motto engraved in your Coat of Arms to display it in another language </p> -->
-            <img align:left alt="Generation of COA" src="<?php echo base_url(); ?>index.php/home/portfolio_export_COA"/>
+            <img align:left alt="Generation of COA" src="<?php echo base_url(); ?>index.php/home/portfolio_export_COA?id=<?php echo $this->session->userdata('seeker_id')?>"/>
 
             <div class="entry">
                 <h4 align="center" style="color:purple;">The symbols in the center of the Coat of Arms represent your values: </h4>
