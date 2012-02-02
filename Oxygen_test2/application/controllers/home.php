@@ -615,9 +615,14 @@ class Home extends CI_Controller {
 
     function portfolio_export_COA() {
         $this->load->model('link_db_model');
-        $data = $this->link_db_model->get_value_symbol();
+
+        $seeker_id = $_GET['id'];
+
+        $data = $this->link_db_model->get_value_symbol_image($seeker_id);
+
         $row = $data->result();
-        if ($data != NULL) {
+
+        if ($seeker_id != NULL) {
             $valueSymbol = "";
             if ($this->session->userdata('category') != 'child') {
                 $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
@@ -625,7 +630,7 @@ class Home extends CI_Controller {
                 $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol;
                 $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol;
 
-                $data2 = $this->link_db_model->get_coa2();
+                $data2 = $this->link_db_model->get_coa2_image($seeker_id);
                 $row2 = $data2->result();
                 $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
 
@@ -636,7 +641,7 @@ class Home extends CI_Controller {
                 $valueSymbol['Symbol3'] = base_url() . $row[2]->value_symbol_kids;
                 $valueSymbol['Symbol4'] = base_url() . $row[3]->value_symbol_kids;
 
-                $data2 = $this->link_db_model->get_coa2();
+                $data2 = $this->link_db_model->get_coa2_image($seeker_id);
                 $row2 = $data2->result();
                 $valueSymbol['Shield1'] = base_url() . $row2[0]->shield;
 
@@ -653,7 +658,9 @@ class Home extends CI_Controller {
     function portfolio_export_pdf() {
         $this->load->model('link_db_model');
 
-        $query = $this->link_db_model->get_mission();
+        $seeker_id = $_GET['id'];
+
+        $query = $this->link_db_model->get_mission_pdf($seeker_id);
         if ($query->num_rows() > 0) {
             $row = $query->result();
             $data['mission_set'] = $row[0]->mission_statement;
@@ -661,9 +668,7 @@ class Home extends CI_Controller {
             $data['mission_set'] = "You have not set any mission yet";
         }
 
-
-
-        $query2 = $this->link_db_model->get_value();
+        $query2 = $this->link_db_model->get_value_pdf($seeker_id);
         if ($query2->num_rows() > 0) {
             $row2 = $query2->result();
             $data['value1'] = $row2[0]->value_name;
@@ -677,14 +682,14 @@ class Home extends CI_Controller {
             $data['value4'] = "No value";
         }
 
-        $achievementData = $this->link_db_model->get_portfolio_goal_activity();
+        $achievementData = $this->link_db_model->get_portfolio_goal_activity_pdf($seeker_id);
         if ($achievementData == null) {
             $data['AchievementStatus'] = "No goal has been accomplished at this moment";
         } else {
             $data['AchievementStatus'] = '';
 
             $achieveData = array();
-            $data['numberRowsForAchievement'] = $this->link_db_model->get_num_portfolio_goal_activity();
+            $data['numberRowsForAchievement'] = $this->link_db_model->get_num_portfolio_goal_activity($seeker_id);
 
             for ($i = 0; $i < $data['numberRowsForAchievement']; $i++) {
                 $achieveData[$i][1][1] = 'Goal Type: ';
@@ -702,7 +707,6 @@ class Home extends CI_Controller {
 
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            $seeker_id = $this->session->userdata('seeker_id');
             $errFound = false;
             $query3 = $this->db->query('SELECT * FROM test_result WHERE seeker_id=' . $seeker_id . ' ORDER BY result_id DESC LIMIT 0, 1');
             $rows3 = $query3->num_rows();
@@ -796,9 +800,9 @@ class Home extends CI_Controller {
         $this->load->model('link_db_model');
         $score = $this->link_db_model->get_game_scroe();
         $row = $score->result();
-        
+
         $scoreData['row'] = $row;
-        $scoreData['num_count'] = $score -> num_rows();
+        $scoreData['num_count'] = $score->num_rows();
 
         $this->load->view('resilience_Game/QAGame.php', $scoreData);
     }
@@ -819,8 +823,11 @@ class Home extends CI_Controller {
     }
 
     function email() {
-
         $this->load->view('email_reminder/email_reminder');
+    }
+    
+    function email_pdf(){
+        $this->load->view('portfolio/email_portfolio.php');
     }
 
 }

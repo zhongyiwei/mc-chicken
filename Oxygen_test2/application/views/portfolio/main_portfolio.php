@@ -1,18 +1,32 @@
-<?php if($this->session->userdata('type')=='negative'){ ?>
-<link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
-<?php }else{?>
-<link href="<?php echo base_url();?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
-<?php }?>
+<?php if ($this->session->userdata('type') == 'negative') { ?>
+    <link href="<?php echo base_url(); ?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
+<?php } else { ?>
+    <link href="<?php echo base_url(); ?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php echo base_url(); ?>CSS/popUp.css" rel="stylesheet" type="text/css" media="screen" />
+<?php } ?>
 
 <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="<?php echo base_url(); ?>js/popUp.js"></script>
+
+<div id = "bodycolor"></div>
+<div id="popupContent" >
+    <div onclick="disablePopup()" style="cursor:pointer; margin-left:670px;font-size:24px;border-width: 3px;border-color:#999;border-style: solid;text-align: center;padding-bottom: 2px;width:25px;">x</div>
+    <p class="askforsendemail">According to the research by the Dominican University of California, those who commit their goals by sharing them with his friends are more likely to achieve their goals. Do you want to send your achievement to the friends you refer to when you register?</p>
+    <a href="<?php echo base_url(); ?>index.php/home/email_pdf" class="yesButton">Yes</a>
+    <a class="noButton" href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf?id=<?php echo $this->session->userdata('seeker_id') ?>">No</a>
+    <p id="ContentArea"> </p>
+</div>
+
 
 <div id="page">
     <div id="sub-nav">
         <ul>
-            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf/" >Generate report</a></li>
+<!--            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf?id=<?php echo $this->session->userdata('seeker_id') ?>" onclick="loadPopup()">Generate report</a></li>-->
+            <li><a href="#" onclick="loadPopup()">Generate report</a></li>
         </ul>
     </div>
+
     <div id="content_sub">
         <div class="post">
 
@@ -21,7 +35,7 @@
                 <!--<h2 class="title" id="MOTTO">My Motto</h2>
                 <div class="entry">
                 
-            <p style="font-family:arial;color:black;font-size:14px"><?php //echo $motto_set;  ?></p>
+            <p style="font-family:arial;color:black;font-size:14px"><?php //echo $motto_set;      ?></p>
                 </div>-->
 
                 <h2 class="title" id="MS">My Mission Statement</h2>
@@ -54,14 +68,14 @@
                             border-bottom-color: #837669;padding:5px;">Value 4</th>
                         <tbody><tr>                           
                                 <td width="120px" align="center" style="padding:5px;border-right-width: thin;
-                            border-right-style: dotted;
-                            border-right-color: #837669;"><?php echo $value1; ?></td>
+                                    border-right-style: dotted;
+                                    border-right-color: #837669;"><?php echo $value1; ?></td>
                                 <td width="120px" align="center" style="padding:5px;border-right-width: thin;
-                            border-right-style: dotted;
-                            border-right-color: #837669;"><?php echo $value2; ?></td>
+                                    border-right-style: dotted;
+                                    border-right-color: #837669;"><?php echo $value2; ?></td>
                                 <td width="120px" align="center" style="padding:5px;border-right-width: thin;
-                            border-right-style: dotted;
-                            border-right-color: #837669;"><?php echo $value3; ?></td>
+                                    border-right-style: dotted;
+                                    border-right-color: #837669;"><?php echo $value3; ?></td>
                                 <td width="120px" align="center" style="padding:5px;"><?php echo $value4; ?></td>
                             </tr></tbody>
                     </table>
@@ -93,7 +107,8 @@
                                         <tr><td><b>Completed Activity:</b></td><td><p style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row['activity_name']; ?></p></td></tr>
                                     <?php endforeach; ?>
                                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                <?php endforeach;
+                                    <?php
+                                endforeach;
                             }
                             ?>
                         </tbody></table>
@@ -103,7 +118,7 @@
 
                 <h2 class="title" id="RESILIENCE">My Resilience Scale</h2>
                 <div class="entry">
-<?php $this->load->view('portfolio/resilience_section'); ?>
+                    <?php $this->load->view('portfolio/resilience_section'); ?>
                 </div>
                 <br/>
                 <!--<h2 class="title" id="VALUE">Your Values</h2>-->
