@@ -72,6 +72,18 @@
             <td><?php echo form_password('password2', ''); ?></td>
             <td><?php echo form_error('password2'); ?></td>
         </tr>
+        
+        <tr>
+            <th title="Your goals will send to this person for commitment">Referee's Name:</th>
+            <td><?php echo form_input('referee_name', set_value('referee_name')); ?></td>
+            <td><?php echo form_error('referee_name'); ?></td>
+        </tr>
+        
+        <tr>
+            <th>Referee's Email:</th>
+            <td><?php echo form_input('referee_email', set_value('referee_email')); ?></td>
+            <td><?php echo form_error('referee_email'); ?></td>
+        </tr>
 
         <tr>
             <td><?php echo form_submit('submit', 'Register', 'id=submit_login'); ?></td>

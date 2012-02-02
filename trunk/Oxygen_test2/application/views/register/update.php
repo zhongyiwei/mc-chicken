@@ -15,6 +15,8 @@
         $dob=$this->session->userdata('dob');
         $nationality=$this->session->userdata('nation');
         $hp=$this->session->userdata('mobile');
+        $referee_name=$this->session->userdata('referee_name');
+        $referee_email=$this->session->userdata('referee_email');
         echo form_open('update_info/info'); ?>
 
         <tr>
@@ -60,6 +62,18 @@
         <tr>
             <th>Email:</th>
             <td><?php echo $email; ?></td>
+        </tr>
+        
+        <tr>
+            <th title="Your goals will send to this person for commitment">Referee's Name:</th>
+            <td><?php echo form_input('referee_name', $referee_name); ?></td>
+            <td><?php echo form_error('referee_name'); ?></td>
+        </tr>
+        
+        <tr>
+            <th>Referee's Email:</th>
+            <td><?php echo form_input('referee_email', $referee_email); ?></td>
+            <td><?php echo form_error('referee_email'); ?></td>
         </tr>
 
         <tr>

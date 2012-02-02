@@ -31,18 +31,28 @@
                     $data = array(
                         'name' => 'family',
                         'id' => 'family',
-                        'size' => '90',
+                        'size' => '90'
                     );
                     echo form_input($data); ?></p>
  
                             <p>Achievement criteria: </p>
-                            <?php
+                            <p><?php
                             $data = array(
                                 'name' => 'family_criteria',
                                 'rows' => '5',
                                 'clos' => '10',
                             );
-                            echo form_textarea($data); ?><br><br>
+                            echo form_textarea($data); ?></p>
+                            
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date1',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
 
                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else { ?>
@@ -72,7 +82,16 @@
                                 'clos' => '10',
                             );
                             echo form_textarea($data); ?>
-                            <br><br>
+                            
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date2',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{ ?>
                              <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
@@ -102,7 +121,16 @@
                             );
                             echo form_textarea($data); ?>
 
-                            <br><br>
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date3',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
+                            
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{ ?>
                             <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
@@ -132,7 +160,16 @@
                             );
                             echo form_textarea($data); ?>
 
-                            <br><br>
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date4',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
+                            
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{?>
                             <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
@@ -162,7 +199,16 @@
                             );
                             echo form_textarea($data); ?>
 
-                            <br><br>
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date5',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
+                            
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{?>
                             <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
@@ -192,7 +238,16 @@
                             );
                             echo form_textarea($data); ?>
 
-                            <br><br>
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date6',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
+                            
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{?>
                             <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
@@ -222,7 +277,16 @@
                             );
                             echo form_textarea($data); ?>
 
-                            <br><br>
+                            <p>Target Completion Date:</p>
+                            <?php 
+                            $target_date=array(
+                                'name'=>'target_date7',
+                                'class'=>'datepicker',
+                                'size'=>'30'
+                            );
+                            echo form_input($target_date); 
+                            ?><br></br>
+                            
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{?>
                             <h3>You have not login yet. Please Log in first to set relevant activities. </h3>

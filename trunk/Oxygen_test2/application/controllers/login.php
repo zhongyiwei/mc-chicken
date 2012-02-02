@@ -30,7 +30,9 @@ class Login extends CI_Controller {
                 'gender'=>$query[0]->gender,
                 'nation'=>$query[0]->nationality,
                 'dob'=>$query[0]->date_of_birth,
-                'mobile'=>$query[0]->mobile_number
+                'mobile'=>$query[0]->mobile_number,
+                'referee_name'=>$query[0]->referee_name,
+                'referee_email'=>$query[0]->referee_email
             );
 
             $this->session->set_userdata($data);
@@ -67,6 +69,9 @@ class Login extends CI_Controller {
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|unique[seeker.email]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]|max_length[32]');
         $this->form_validation->set_rules('password2', 'Confirm Password', 'trim|required|matches[password]');
+        $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|required|alpha');
+        $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|required|valid_email');
+        
 
 
         if ($this->form_validation->run() == FALSE) {
