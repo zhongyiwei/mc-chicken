@@ -49,7 +49,7 @@
                             <tr>
                                 <td><?php echo $row->goal_category; ?></td>
                                 <td><a href="<?php echo base_url();?>index.php/set_goal/update/<?php echo $row->seeker_goal_id;?>/"><?php echo $row->goal_desc; ?></a></td>
-                                <td><?php echo $row->achievement_criteria; ?></td>
+                                <td><?php echo substr($row->achievement_criteria,0,70); ?></td>
                                 <td><?php echo $row->goal_set_date; ?></td>
                                 <td><?php echo $row->goal_completion_status; ?></td>
                             </tr>

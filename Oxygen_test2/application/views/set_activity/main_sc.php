@@ -37,7 +37,7 @@
              <table id="myTable" style="table-layout:fixed; width: 500px" class="tablesorter">
                     <thead>
                     <tr>
-                        <th width="90px">Goal Description</th>
+                        <th width="90px">Goal Name</th>
                         <th width="100px">Achievement Criteria</th>
                         <th width="60px">Goal Set Date</th>
                     </tr>
@@ -49,7 +49,7 @@
                     ?>
                             <tr>
                                 <td><a href="<?php echo base_url();?>index.php/home/input_activity/?seeker_goal_id=<?php echo $row['seeker_goal_id'];?>"><?php echo $row['goal_desc']; ?></a></td>
-                                <td><?php echo $row['achievement_criteria']; ?></td>
+                                <td><?php echo substr($row['achievement_criteria'],0,70); ?></td>
                                 <td><?php echo $row['goal_set_date']; ?></td>
                             </tr>
                     <?php
