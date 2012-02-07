@@ -309,24 +309,6 @@ function get_portfolio_goal_activity(){
     //return $q;
 }
 
-function get_portfolio_goal_activity_active(){
-        $sql='SELECT * FROM goal g, goal_category gc
-        WHERE g.goal_cat_id = gc.goal_cat_id
-        AND g.goal_completion_status = "Active"
-        AND g.seeker_id = ?';
-        $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
-
-    if($q->num_rows() > 0) {
-            foreach ($q->result() as $row2) {
-                    $data[] = $row2;
-            }
-            return $data;
-    }
-    //return $q;
-}
-
-
-
 function get_value(){
     //$query="SELECT motto FROM motto WHERE seeker_id=?";
     $query="SELECT v.value_name FROM seeker_value sv,value v WHERE sv.value_id=v.value_id AND seeker_id=?";
@@ -338,6 +320,18 @@ function get_num_portfolio_goal_activity($seeker_id){
         $sql='SELECT * FROM goal g, goal_category gc
         WHERE g.goal_cat_id = gc.goal_cat_id
         AND g.goal_completion_status = "Completed"
+        AND g.seeker_id = ?';
+        $q = $this->db->query($sql, $seeker_id);
+
+    $data = $q->num_rows();
+    return $data;   
+    //return $q;
+}
+
+function get_num_portfolio_active_goal_activity($seeker_id){
+        $sql='SELECT * FROM goal g, goal_category gc
+        WHERE g.goal_cat_id = gc.goal_cat_id
+        AND g.goal_completion_status != "Completed"
         AND g.seeker_id = ?';
         $q = $this->db->query($sql, $seeker_id);
 
@@ -381,6 +375,76 @@ function get_portfolio_goal_activity_pdf($seeker_id){
     }
     //return $q;
 }
+
+function get_portfolio_active_activity_base_on_goal_pdf($seeker_goal_id){
+        $sql = "SELECT * FROM activity WHERE activity_status != 'completed' AND seeker_goal_id = ? ";
+        $q = $this->db->query($sql,$seeker_goal_id);
+
+    if($q->num_rows() > 0) {
+            foreach ($q->result() as $row) {
+                    $data[] = $row;
+            }
+            return $data;
+    }
+    //return $q;
+}
+
+function get_num_portfolio_active_activity_base_on_goal_pdf($seeker_goal_id){
+        $sql = "SELECT * FROM activity WHERE activity_status != 'completed' AND seeker_goal_id = ?";
+        $q = $this->db->query($sql,$seeker_goal_id);
+
+    if($q->num_rows() > 0) {
+            foreach ($q->result() as $row) {
+                $data = $q->num_rows();
+            }
+            return $data;
+    }
+    //return $q;
+}
+
+function get_portfolio_completed_activity_base_on_goal_pdf($seeker_goal_id){
+        $sql = "SELECT * FROM activity WHERE activity_status = 'completed' AND seeker_goal_id = ? ";
+        $q = $this->db->query($sql,$seeker_goal_id);
+
+    if($q->num_rows() > 0) {
+            foreach ($q->result() as $row) {
+                    $data[] = $row;
+            }
+            return $data;
+    }
+    //return $q;
+}
+
+function get_num_portfolio_active_completed_base_on_goal_pdf($seeker_goal_id){
+        $sql = "SELECT * FROM activity WHERE activity_status = 'completed' AND seeker_goal_id = ?";
+        $q = $this->db->query($sql,$seeker_goal_id);
+
+    if($q->num_rows() > 0) {
+            foreach ($q->result() as $row) {
+                $data = $q->num_rows();
+            }
+            return $data;
+    }
+    //return $q;
+}
+
+
+function get_portfolio_active_goal_activity_pdf($seeker_id){
+        $sql='SELECT * FROM goal g, goal_category gc
+        WHERE g.goal_cat_id = gc.goal_cat_id
+        AND g.goal_completion_status != "Completed"
+        AND g.seeker_id = ?';
+        $q = $this->db->query($sql,$seeker_id);
+
+    if($q->num_rows() > 0) {
+            foreach ($q->result() as $row) {
+                    $data[] = $row;
+            }
+            return $data;
+    }
+    //return $q;
+}
+
 function get_coa2_image($seeker_id){
     $sql = "SELECT * FROM coat_of_arm WHERE seeker_id=?";
     $q = $this->db->query($sql,$seeker_id);
@@ -432,6 +496,21 @@ function get_value_symbol_image($seeker_id){
     return $q;
     }
     }
+}
+function get_portfolio_goal_activity_active(){
+        $sql='SELECT * FROM goal g, goal_category gc
+        WHERE g.goal_cat_id = gc.goal_cat_id
+        AND g.goal_completion_status = "Active"
+        AND g.seeker_id = ?';
+        $q = $this->db->query($sql, array($this->session->userdata('seeker_id')));
+
+    if($q->num_rows() > 0) {
+            foreach ($q->result() as $row2) {
+                    $data[] = $row2;
+            }
+            return $data;
+    }
+    //return $q;
 }
 }
 ?>
