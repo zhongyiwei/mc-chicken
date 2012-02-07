@@ -571,6 +571,13 @@ class Home extends CI_Controller {
             } else {
                 $data['rows'] = $this->link_db_model->get_portfolio_goal_activity();
             }
+            
+            $num_rows_active = $this->link_db_model->get_portfolio_goal_activity_active();
+            if ($num_rows_active == null) {
+                $data['rows_active'] = "";
+            } else {
+                $data['rows_active'] = $this->link_db_model->get_portfolio_goal_activity_active();
+            }
 
             $data['main_portfolio'] = 'portfolio/main_portfolio';
             $data['nav_portfolio'] = 'portfolio/left_nav_mp';

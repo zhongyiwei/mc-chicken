@@ -121,17 +121,17 @@
                         ?>
                         <table border="1">
                             <tbody>
-                                <?php foreach ($rows as $r) : ?>                   
-                                    <tr><td><b>Goal Type:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->goal_category; ?></b></td></tr>
-                                    <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r->goal_desc; ?></b></td></tr>
-                                    <tr><td><b>Achievement Criteria:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->achievement_criteria; ?></b></td></tr>
-                                    <tr><td><b>Goal Completion Date:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->actual_end_date; ?></b></td></tr>
+                                <?php foreach ($rows_active as $r_active) : ?>                   
+                                    <tr><td><b>Goal Type:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->goal_category; ?></b></td></tr>
+                                    <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r_active->goal_desc; ?></b></td></tr>
+                                    <tr><td><b>Achievement Criteria:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->achievement_criteria; ?></b></td></tr>
+                                    <tr><td><b>Target Completion Date:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->target_end_date; ?></b></td></tr>
                                     <?php
-                                    $seeker_goal_id = $r->seeker_goal_id;
-                                    $activity_query = $this->db->query('SELECT * FROM activity WHERE activity_status!="Completed" AND seeker_goal_id = ' . $seeker_goal_id . '');
+                                    $seeker_goal_id_active = $r_active->seeker_goal_id;
+                                    $activity_query = $this->db->query('SELECT * FROM activity WHERE activity_status="Completed" AND seeker_goal_id = ' . $seeker_goal_id_active . '');
                                     ?>
                                     <?php foreach ($activity_query->result_array() as $row) : ?>
-                                        <tr><td><b>Completed Activity:</b></td><td><p style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row['activity_name']; ?></p></td></tr>
+                                        <tr><td><b>Completed Activity:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row['activity_name']; ?></b></td></tr>
                                     <?php endforeach; ?>
                                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                            <?php
