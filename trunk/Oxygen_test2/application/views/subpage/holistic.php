@@ -10,26 +10,34 @@
 <div id="page">
     <div id="content_sub">
         <div class="post">
-            <h2 class="title" id="H0">Benefits of Goal-Setting</h2>
+            <h2 class="title" id="H0">Goal-Setting</h2>
             <div class="entry">
-                <p>Goal Setting motivates a person to reach their specific goals by defining it clearly and achieving it as “our values create within us a desire to behave in a way that is consistent with our goals”</p>
-
-                <p><strong><u>For Students:</u></strong></p>
-                <p>Goals which measure academic success might include:</p>
-                <ul>
-                    <li>an increase in grade point average</li>
-                    <li>improvement in note taking effectiveness</li>
-                    <li>increased usage of an effective study system</li>
-                </ul>
-                <br>
-                <p><strong><u>For Generic:</u></strong></p>
-                <p>Setting a specific goal leads to better performance compared to setting an abstract goal (e.g., “I’m going to get a 95% on my next exam” vs. “I’m going to do my best on my next exam”).</p>
-                <p>We found that specific, difficult goals consistently led to higher performance than urging people to do their best. The effect sizes in meta-analyses ranged from .42 to .80 (Locke & Latham, 1990). In short, when people are asked to do their best, they do not do so. This is because do-your-best goals have no external referent and thus are defined idiosyncratically. This allows for a wide range of acceptable performance levels, which is not the case when a goal level is specified. Goal specificity in itself does not necessarily lead to high performance because specific goals vary in difficulty. However, insofar as performance is fully controllable, goal specificity does reduce variation in performance by reducing the ambiguity about what is to be attained (Locke, Chah, Harrison, & Lustgarten, 1989)</p>
-                <p>That said, when people are confronted with a task that is complex for them, encouragement (e.g., urging to do their best) sometimes leads to better solving strategies than setting a specific difficult performance goal.</p>
-
+                <p>Many people feel as if they're adrift in the world. They work hard, but they don't seem to get anywhere worthwhile. </p>
+                <p>A key reason that they feel this way is that they haven't spent enough time thinking about what they want from life, and haven't set themselves formal goals. After all, would you set out on a major journey with no real idea of your destination? Probably not!</p>
+                <p>Goal setting is a powerful process for thinking about your ideal future, and for motivating yourself to turn your vision of this future into reality.</p>
+                <p>The process of setting goals helps you choose where you want to go in life. By knowing precisely what you want to achieve, you know where you have to concentrate your efforts. You'll also quickly spot the distractions that can, so easily, lead you astray.</p>
             </div>
         </div>
-
+        
+        <div class="post">
+            <h2 class="title" id="H1">Why Set Goals</h2>
+            <div class="entry">
+                <p>Goal setting is used by top-level athletes, successful business-people and achievers in all fields. Setting goals gives you long-term vision and short-term motivation. It focuses your acquisition of knowledge, and helps you to organize your time and your resources so that you can make the very most of your life.</p>
+                <p>By setting sharp, clearly defined goals, you can measure and take pride in the achievement of those goals, and you'll see forward progress in what might previously have seemed a long pointless grind. You will also raise your self-confidence, as you recognize your own ability and competence in achieving the goals that you've set.</p>
+            </div>
+        </div>
+        
+        <div class="post">
+            <h2 class="title" id="H1">Benefits of Holistic Goal-Setting</h2>
+            <div class="entry">
+                <p>In a nutshell, holistic goal setting means to set goals with consideration of the whole. For example, let’s say at a restaurant someone is served a meal that is twice as much as they can comfortably eat, for instance, a 24-ounce T-bone steak. For whatever reason, this person makes it a goal to eat the whole thing. But once it achieve this goal, it will violate the Physical goal since it is not healthy for us. </p>
+                
+                <p>Secondly, holistic Goal Setting also helps Self-Confidence.By setting holistic goals, and measuring their achievement, you are able to see what you have done and what you are capable of. You become more than the sum of your parts. You become a synergistic system that operates out of awareness and inspiration.The process of achieving goals and seeing their achievement gives you the confidence and a belief in yourself that you need to be able to achieve higher and more difficult goals.Providing that you have the self-discipline to carry it through, goal setting is also relatively easy.</p>
+            
+                <p>Source: http://holistic-personal-development.com/2008/02/12/holistic-goal-setting-part-1/</p>
+            </div>
+        </div>
+        
         <div class="post">
             <h2 class="title" id="H1">Successful example</h2>
             <div class="entry">
