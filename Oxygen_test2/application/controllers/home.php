@@ -309,7 +309,7 @@ class Home extends CI_Controller {
         }
     }
 
-        function archived_activity() {
+    function archived_activity() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $data['main_activity'] = 'set_activity/archived_activity';
@@ -571,7 +571,7 @@ class Home extends CI_Controller {
             } else {
                 $data['rows'] = $this->link_db_model->get_portfolio_goal_activity();
             }
-            
+
             $num_rows_active = $this->link_db_model->get_portfolio_goal_activity_active();
             if ($num_rows_active == null) {
                 $data['rows_active'] = "";
@@ -640,7 +640,7 @@ class Home extends CI_Controller {
         if ($data != NULL) {
 
             $row = $data->result();
-            
+
             $valueSymbol = "";
             if ($this->session->userdata('category') != 'child') {
                 $valueSymbol['Symbol1'] = base_url() . $row[0]->value_symbol;
@@ -720,10 +720,88 @@ class Home extends CI_Controller {
                 $achieveData[$i][3][2] = $achievementData[$i]->achievement_criteria;
                 $achieveData[$i][4][1] = 'Goal Completion Date: ';
                 $achieveData[$i][4][2] = $achievementData[$i]->actual_end_date;
+
+                $seeker_goal_id = $achievementData[$i]->seeker_goal_id;
+//                $activeActivityData = $this->link_db_model->get_portfolio_active_activity_base_on_goal_pdf($seeker_goal_id);
+//                $data['numberRowsForActiveActivityFromAchievement'] = $this->link_db_model->get_num_portfolio_active_activity_base_on_goal_pdf($seeker_goal_id);
+//                for ($j = 0; $j < $data['numberRowsForActiveActivityFromAchievement']; $j++) {
+//                    $p=$j+1;
+//                    $achieveData[$i][4 + $j][1] = "Active Activity $p: ";
+//                    $achieveData[$i][4 + $j][2] = $activeActivityData[$j]->activity_name;
+//                }
+
+                $completedActivityData = $this->link_db_model->get_portfolio_completed_activity_base_on_goal_pdf($seeker_goal_id);
+                $data['numberRowsForCompletedActivityFromAchievement'] = $this->link_db_model->get_num_portfolio_active_completed_base_on_goal_pdf($seeker_goal_id);
+
+                if ($data['numberRowsForCompletedActivityFromAchievement'] != 0) {
+                     $achieveData[$i][5 + $l][1] = "Completed Activities: ";
+                }
+
+
+                for ($l = 0; $l < $data['numberRowsForCompletedActivityFromAchievement']; $l++) {
+                    $p = $l + 1;
+//                    $achieveData[$i][4 + $l + $data['numberRowsForCompletedActivityFromAchievement']][1] = "Completed Activity $p: ";
+//                    $achieveData[$i][4 + $l + $data['numberRowsForCompletedActivityFromAchievement']][2] = $completedActivityData[$l]->activity_name;
+                    $achieveData[$i][6 + $l][1] = "Activity $p: ";
+                    $achieveData[$i][6 + $l][2] = $completedActivityData[$l]->activity_name;
+                }
             }
 
             $data['AchievementRows'] = $achieveData;
         }
+
+        $activeAchievementData = $this->link_db_model->get_portfolio_active_goal_activity_pdf($seeker_id);
+        if ($activeAchievementData == null) {
+            $data['ActiveAchievementStatus'] = "No active goals has been set at this moment";
+        } else {
+            $data['ActiveAchievementStatus'] = '';
+
+            $ActiveAchieveData = array();
+            $data['numberRowsForActiveAchievement'] = $this->link_db_model->get_num_portfolio_active_goal_activity($seeker_id);
+
+            for ($i = 0; $i < $data['numberRowsForActiveAchievement']; $i++) {
+                $ActiveAchieveData[$i][1][1] = 'Goal Type: ';
+                $ActiveAchieveData[$i][1][2] = $activeAchievementData[$i]->goal_category;
+                $ActiveAchieveData[$i][2][1] = 'Goal Description: ';
+                $ActiveAchieveData[$i][2][2] = $activeAchievementData[$i]->goal_desc;
+                $ActiveAchieveData[$i][3][1] = 'Achievement Criteria: ';
+                $ActiveAchieveData[$i][3][2] = $activeAchievementData[$i]->achievement_criteria;
+                $ActiveAchieveData[$i][4][1] = 'Target Completion Date: ';
+                $ActiveAchieveData[$i][4][2] = $activeAchievementData[$i]->target_end_date;
+
+                $seeker_goal_id_activity = $activeAchievementData[$i]->seeker_goal_id;
+//                echo $seeker_goal_id_activity;
+                $activeActivityData2 = $this->link_db_model->get_portfolio_active_activity_base_on_goal_pdf($seeker_goal_id_activity);
+//                print_r($activeActivityData2);
+                $data['numberRowsForActiveActivityFromAchievement2'] = $this->link_db_model->get_num_portfolio_active_activity_base_on_goal_pdf($seeker_goal_id_activity);
+
+                if ($data['numberRowsForActiveActivityFromAchievement2'] != 0) {
+                    $ActiveAchieveData[$i][5][1] = "In-Completed Activities: ";
+                }
+
+                for ($t = 0; $t < $data['numberRowsForActiveActivityFromAchievement2']; $t++) {
+                    $p = $t + 1;
+                    $ActiveAchieveData[$i][6 + $t][1] = "Activity $p: ";
+                    $ActiveAchieveData[$i][6 + $t][2] = $activeActivityData2[$t]->activity_name;
+                }
+
+                $completedActivityData2 = $this->link_db_model->get_portfolio_completed_activity_base_on_goal_pdf($seeker_goal_id_activity);
+                $data['numberRowsForCompletedActivityFromAchievement3'] = $this->link_db_model->get_num_portfolio_active_completed_base_on_goal_pdf($seeker_goal_id_activity);
+
+                if ($data['numberRowsForCompletedActivityFromAchievement3'] != 0) {
+                    $ActiveAchieveData[$i][6 + $r + $data['numberRowsForActiveActivityFromAchievement2']][1] = "Completed Activities: ";
+                }
+
+                for ($r = 0; $r < $data['numberRowsForCompletedActivityFromAchievement3']; $r++) {
+                    $p = $r + 1;
+                    $ActiveAchieveData[$i][7 + $r + $data['numberRowsForActiveActivityFromAchievement2']][1] = "Activity $p: ";
+                    $ActiveAchieveData[$i][7 + $r + $data['numberRowsForCompletedActivityFromAchievement2']][2] = $completedActivityData2[$r]->activity_name;
+                }
+            }
+
+            $data['ActiveAchievementRows'] = $ActiveAchieveData;
+        }
+
 
         $errFound = false;
         $query3 = $this->db->query('SELECT * FROM test_result WHERE seeker_id=' . $seeker_id . ' ORDER BY result_id DESC LIMIT 0, 1');

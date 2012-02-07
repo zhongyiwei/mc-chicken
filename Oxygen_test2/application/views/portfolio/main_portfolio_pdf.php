@@ -193,6 +193,26 @@ $pdf->BasicTable($PDFValueHeader, $PDFValueData);
 $pdf->Ln(10);
 
 $pdf->SetFont('Arial', 'B', 16);
+$myAchievement = 'My Active Goals';
+$pdf->Cell(70, 10, $myAchievement, 0, 1);
+$pdf->Ln(2);
+
+if ($ActiveAchievementStatus == '') {
+    $pdf->Ln(5);
+    $pdf->Cell(180, 0.1, '', 0.1, 0, 'L', true);
+    $pdf->Ln(5);
+    for ($i = 0; $i < $numberRowsForActiveAchievement; $i++) {
+        $pdf->BasicTableForAchievement($ActiveAchievementRows, $i);
+        $pdf->Ln(5);
+    }
+//print_r($AchievementRows);
+    $pdf->Ln(10);
+} else {
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Cell(70, 10, $ActiveAchievementStatus, 0, 1);
+}
+
+$pdf->SetFont('Arial', 'B', 16);
 $myAchievement = 'My Achievement';
 $pdf->Cell(70, 10, $myAchievement, 0, 1);
 $pdf->Ln(2);
@@ -224,12 +244,12 @@ if ($resillentScaleStatus == '') {
     $pdf->SetFont('Arial', '', 12);
     $pdf->Cell(40, 8, 'Indicators', 1, 0, 'C');
     $pdf->Cell(140, 8, 'Explanation', 1, 1);
-    if ($h_descriptor3 == "We believe in your potential" ||  $h_descriptor2 == " This is a sign that you can survive challenging times. You do not give up so easily") {
+    if ($h_descriptor3 == "We believe in your potential" || $h_descriptor2 == " This is a sign that you can survive challenging times. You do not give up so easily") {
         $pdf->Cell(40, 64, 'Hope', 1, 0, 'C');
     } else {
         $pdf->Cell(40, 72, 'Hope', 1, 0, 'C');
     }
-   
+
     $hopeExplanation = "Your Hope score shows that you are $h_descriptor1. $h_descriptor2.\n\nOptimistic people do have special eyes that can help them look out for chances, they have super arms to gather resources and they have mighty legs that will keep running until they reach their goals. $h_descriptor3!";
     $pdf->MultiCell(140, 8, $hopeExplanation, 1, 1);
     if ($op_descriptor == "average in being optimistic in general.") {
