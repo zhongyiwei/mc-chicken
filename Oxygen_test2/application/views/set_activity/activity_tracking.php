@@ -76,6 +76,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                                 AND g.goal_cat_id = gc.goal_cat_id
                                 AND gc.goal_category = "'.$goal_cat.'"
                                 AND g.goal_completion_status <> "Completed"
+                                AND a.activity_status <> "Completed"
                                 AND g.goal_desc = "'.$goal_desc.'"
                                 AND g.seeker_id = '.$this->session->userdata('seeker_id').'
                                 ORDER BY a.activity_status DESC');

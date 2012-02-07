@@ -275,7 +275,6 @@ class Home extends CI_Controller {
             $row = $query->result();
             $data['frequency'] = $row[0]->reminder_frequency;
             $data['email'] = $row[0]->reminder_email;
-            $data['sms'] = $row[0]->reminder_sms;
         } else {
             
         }
@@ -303,6 +302,17 @@ class Home extends CI_Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $data['main_activity'] = 'set_activity/main_al';
+            $data['nav_goal'] = 'includes/left_nav_goal';
+            $this->load->view('set_activity/template_sc', $data);
+        } else {
+            $this->load->view('set_activity/error_view_activity');
+        }
+    }
+
+        function archived_activity() {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+            $data['main_activity'] = 'set_activity/archived_activity';
             $data['nav_goal'] = 'includes/left_nav_goal';
             $this->load->view('set_activity/template_sc', $data);
         } else {
