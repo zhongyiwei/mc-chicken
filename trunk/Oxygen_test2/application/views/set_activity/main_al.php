@@ -31,7 +31,8 @@ $id=$this->session->userdata('seeker_id');
           
             
             <div class="entry" width="">  <div id="popup">
-                    <p style="font-size:150%; color:black;" >View all your records below</p> 
+                    <a href="<?php echo base_url(); ?>index.php/home/archived_activity/"><p style="font-size:150%; color:blue; text-align:right" >Archived Activities</p></a>
+                    <p style="font-size:150%; color:black;" >View all your active activities below</p>
                 <p style="font-family:arial;color:green;font-size:16px">Please click the activity name to update it</p>
                 
                 <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
