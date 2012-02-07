@@ -129,10 +129,15 @@
                                     <?php
                                     $seeker_goal_id_active = $r_active->seeker_goal_id;
                                     $activity_query = $this->db->query('SELECT * FROM activity WHERE activity_status="Completed" AND seeker_goal_id = ' . $seeker_goal_id_active . '');
+                                    $active_activity_query = $this->db->query('SELECT * FROM activity WHERE activity_status!="Completed" AND seeker_goal_id = ' . $seeker_goal_id_active . '');
                                     ?>
+                                    <?php foreach ($active_activity_query->result_array() as $row_active) : ?>
+                                        <tr><td><b>Active Activity:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row_active['activity_name']; ?></b></td></tr>
+                                    <?php endforeach; ?>
                                     <?php foreach ($activity_query->result_array() as $row) : ?>
                                         <tr><td><b>Completed Activity:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row['activity_name']; ?></b></td></tr>
                                     <?php endforeach; ?>
+                                        
                                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                            <?php
                                 endforeach;
