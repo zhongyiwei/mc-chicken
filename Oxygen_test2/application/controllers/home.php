@@ -734,7 +734,7 @@ class Home extends CI_Controller {
                 $data['numberRowsForCompletedActivityFromAchievement'] = $this->link_db_model->get_num_portfolio_active_completed_base_on_goal_pdf($seeker_goal_id);
 
                 if ($data['numberRowsForCompletedActivityFromAchievement'] != 0) {
-                     $achieveData[$i][5 + $l][1] = "Completed Activities: ";
+                     $achieveData[$i][5][1] = "Completed Activities: ";
                 }
 
 
@@ -888,6 +888,41 @@ class Home extends CI_Controller {
         } else {
             $data['resillentScaleStatus'] = 'You have never completed resilience test yet.';
         }
+        
+        $valueSymbolData = $this->link_db_model->get_value_symbol_image($seeker_id);
+
+        if ($valueSymbolData != NULL) {
+
+            $valueSymbolRow = $valueSymbolData->result();
+
+          
+            if ($this->session->userdata('category') != 'child') {
+                $data['Symbol1'] = base_url() . $valueSymbolRow[0]->value_symbol;
+                $data['Symbol2'] = base_url() . $valueSymbolRow[1]->value_symbol;
+                $data['Symbol3'] = base_url() . $valueSymbolRow[2]->value_symbol;
+                $data['Symbol4'] = base_url() . $valueSymbolRow[3]->value_symbol;
+
+                $dataShield = $this->link_db_model->get_coa2_image($seeker_id);
+                $rowShield = $dataShield->result();
+                $data['Shield1'] = base_url() . $rowShield[0]->shield;
+
+                $data['COAStatus'] = '';
+            } else {
+                $data['Symbol1'] = base_url() . $valueSymbolRow[0]->value_symbol_kids;
+                $data['Symbol2'] = base_url() . $valueSymbolRow[1]->value_symbol_kids;
+                $data['Symbol3'] = base_url() . $valueSymbolRow[2]->value_symbol_kids;
+                $data['Symbol4'] = base_url() . $valueSymbolRow[3]->value_symbol_kids;
+
+                $dataShield = $this->link_db_model->get_coa2_image($seeker_id);
+                $rowShield = $dataShield->result();
+                $data['Shield1'] = base_url() . $rowShield[0]->shield;
+
+                $data['COAStatus'] = '';
+            }
+        } else {
+            $data['COAStatus'] = '<a href="' . base_url() . 'index.php/home/determineValue/">Go to Set Value Page</a>';
+        }
+        
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
     }
 

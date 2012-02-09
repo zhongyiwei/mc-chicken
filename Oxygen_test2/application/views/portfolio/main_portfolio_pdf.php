@@ -252,11 +252,12 @@ if ($resillentScaleStatus == '') {
 
     $hopeExplanation = "Your Hope score shows that you are $h_descriptor1. $h_descriptor2.\n\nOptimistic people do have special eyes that can help them look out for chances, they have super arms to gather resources and they have mighty legs that will keep running until they reach their goals. $h_descriptor3!";
     $pdf->MultiCell(140, 8, $hopeExplanation, 1, 1);
-    if ($op_descriptor == "average in being optimistic in general.") {
+    if ($op_descriptor == "average in being optimistic in general." || $op_descriptor == "moderately optimistic in general.") {
         $pdf->Cell(40, 16, 'Optimism', 1, 0, 'C');
     } else {
         $pdf->Cell(40, 8, 'Optimism', 1, 0, 'C');
     }
+ 
     $OptimismExplanation = "Your optimism level indicates that you are $op_descriptor";
     $pdf->MultiCell(140, 8, $OptimismExplanation, 1, 1);
     $pdf->Cell(40, 8, 'Good Events', 1, 0, 'C');
@@ -273,13 +274,32 @@ if ($resillentScaleStatus == '') {
 }
 
 $pdf->SetFont('Arial', 'B', 16);
-$myCOA = 'My Coat of Arm';
+$myCOA = 'My Coat of Arm (COA)';
 $pdf->Cell(70, 10, $myCOA, 0, 1);
 $imageAddress = base_url() . "index.php/home/portfolio_export_COA?id=$seeker_id";
 $pdf->Ln(5);
-$pdf->SetFont('Arial', '', 12);
-$html = "Click link to download your COA: <a href='$imageAddress'>$imageAddress</a>";
-$pdf->WriteHTML($html);
+
+if ($COAStatus == '') {
+    $pdf->SetFont('Arial', '', 12);
+    $html = "Click link to download your COA: <a href='$imageAddress'>Click Me</a>";
+    $pdf->WriteHTML($html);
+
+    $pdf->Ln(3);
+    $notice = "You can also look at your COA at the bottom of the document.";
+    $pdf->Cell(0, 20, $notice, 0, 1);
+    $pdf->AddPage();
+    $pdf->Image($Shield1, 5, 30, 200, 260);
+    $pdf->Image($Symbol1, 78, 125, 25, 25);
+    $pdf->Image($Symbol2, 108, 125, 25, 25);
+    $pdf->Image($Symbol3, 78, 155, 25, 25);
+    $pdf->Image($Symbol4, 108, 155, 25, 25);
+} else {
+    $pdf->Ln(3);
+    $pdf->SetFont('Arial', '', 12);
+    $noValue = "Please choose your value first.";
+    $pdf->Cell(0, 10, $noValue, 0, 1);
+    $pdf->WriteHTML($COAStatus);
+}
 
 
 $pdf->SetCreator('Oxygen Team');
