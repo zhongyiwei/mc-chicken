@@ -24,7 +24,7 @@
                 <p>
                    According to the research by the Dominican University of California, those who commit their goals by sharing them with his friends are 
                    more likely to achieve their goals. Before generating the report, we provide you the option to send your goal achievement to the tutor/friend 
-                   you refer to when you register your Oxygen account. You can do so by clicking "Yes".
+                   you refer to when you register your Oxygen account. You can do so by simply clicking "Yes".
                  </p>
             </div>
          </div>
