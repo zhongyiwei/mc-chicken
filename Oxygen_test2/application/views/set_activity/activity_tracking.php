@@ -26,7 +26,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
         <div class="post">
           
            
-
+ <h2 class="title" id="AC">Track your activities</h2>
             <div class="entry">
                  <p style="font-size:150%; color:black;" >Activity Tracking</p>
 <!--Dropdown list to select goal category                -->

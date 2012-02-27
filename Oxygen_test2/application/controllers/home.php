@@ -487,6 +487,20 @@ class Home extends CI_Controller {
             $this->load->view('portfolio/page_visitor');
         }
     }
+    
+        function portfolio_do_you_know() {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+            $this->load->model('link_db_model');
+            $data['rows'] = $this->link_db_model->get_mission();
+
+            $data['main_portfolio'] = 'portfolio/main_portfolio_info';
+            $data['nav_portfolio'] = 'portfolio/bottom_nav_portfolio';
+            $this->load->view('portfolio/template_mp', $data);
+        } else {
+            $this->load->view('portfolio/page_visitor');
+        }
+    }
 
     function portfolio_motto() {
         $is_logged_in = $this->session->userdata('is_logged_in');
@@ -580,7 +594,7 @@ class Home extends CI_Controller {
             }
 
             $data['main_portfolio'] = 'portfolio/main_portfolio';
-            $data['nav_portfolio'] = 'portfolio/left_nav_mp';
+            $data['nav_portfolio'] = 'portfolio/bottom_nav_portfolio';
             $this->load->view('portfolio/template_mp', $data);
         } else {
             $this->load->view('portfolio/page_visitor');

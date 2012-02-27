@@ -31,9 +31,8 @@ $id=$this->session->userdata('seeker_id');
           
             
             <div class="entry" width="">  <div id="popup">
-                    <a href="<?php echo base_url(); ?>index.php/home/archived_activity/"><p style="font-size:150%; color:blue; text-align:right" >Archived Activities</p></a>
-                    <p style="font-size:150%; color:black;" >View all your active activities below</p>
-                <p style="font-family:arial;color:green;font-size:16px">Please click the activity name to update it</p>
+                    <h2 class="title" id="AC">View all your active activities below</h2>
+                    <p style="font-family:arial;color:green;font-size:16px">To view and update activity details, please click the activity name</p>
                 
                 <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
                    <thead>
@@ -68,8 +67,12 @@ $id=$this->session->userdata('seeker_id');
 
                   </tbody>
                </table>
-
-            </div><!-- End of div class entry -->
+                    <h2 class="title" id="AC">View all your completed activities</h2>
+                    <div class="entry" width=""> 
+                    <p style="font-family:arial;color:green;font-size:16px">To view all the completed activities, please click the "Archived Activities"</p>    
+                    <a href="<?php echo base_url(); ?>index.php/home/archived_activity/"><p style="font-size:150%; color:blue; text-align:right" >Archived Activities</p></a>
+                    </div>
+        </div><!-- End of div class entry -->
         </div><!-- End of div class post -->
         </div>
     </div>
