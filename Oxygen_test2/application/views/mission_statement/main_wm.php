@@ -24,8 +24,7 @@ because your mission of life, or life objective, is define your life values and 
             </p>            
               </div>
         </div>
-        
-            <div id="content_sub">
+
         <div class="post">
             <h2 class="title" id="WMS">Set Mission Statement on Oxygen</h2>
             <div class="entry">
