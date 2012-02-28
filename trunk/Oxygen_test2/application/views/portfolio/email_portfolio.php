@@ -6,6 +6,17 @@ $seeker_id = $this->session->userdata('seeker_id');
 
 $to = $this->session->userdata('referee_email');
 $referee_name = $this->session->userdata('referee_name');
+$gender = $this->session->userdata('gender');
+
+if ($gender == "male"){
+    $it = "He";
+    $its = "His";
+}else if ($gender == "female"){
+    $it = "She";
+    $its = "Her";
+}
+
+$email = $this->session->userdata('email');
 
 $headers = "From: no-reply@rp.edu.sg \r\n";
 $headers .= "Reply-To: " . $seeker_name . "\r\n";
@@ -19,10 +30,10 @@ $backButton = "&nbsp;&nbsp;<a href='javascript:history.go(-1)'><input name='back
 
 $link = base_url() . "index.php/home/portfolio_export_pdf?id=$seeker_id";
 
-$message = "<p style='font-family:Arial;color:#065270'>Dear $referee_name<br/><br/><br/> Your have received your friend: $seeker_name's request for monitoring the portofoilo about the achivement, here is link:  <br/><br/><br/>$link<br/><br/><br/>";
-$message .= "Thank you for your kind help in monitoring.<br/><br/>";
+$message = "<p style='font-family:Arial;color:#065270'>Hi $referee_name<br/><br/><br/> $seeker_name is using Oxygen-The Life Coaching Interactive Application to set his goals, track his progress and build resilience.<br/><br/>$it would like to share with you $its current goals and achievements. $it has also designed his own Coat of Arms which represents his values in life. Here is link:  <br/><br/><br/>$link<br/><br/><br/>";
+$message .= "Do drop him a mail ($email) to encourage him to continue to strive towards his objectives.<br/><br/>";
 $message .= "Best Regards<br/></p>";
-$message .= "<p style='font-family:Segoe UI;color:#065270;margin-top:-10px;'>Oxygen Team</p>";
+$message .= "<p style='font-family:Segoe UI;color:#065270;margin-top:-10px;'>Team Oxygen</p>";
 
 $mail_sent = mail($to, $subject, $message, $headers);
 
