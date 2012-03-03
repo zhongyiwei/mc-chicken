@@ -24,13 +24,11 @@
 				<center>
 				<img src='http://harivarasanam.files.wordpress.com/2011/10/resilience17.jpg'></img></center>
                 <p>
-                    Resilience is the process of adapting well in the face of adversity, trauma, tragedy, threats, or even significant sources of stress -- such as family and relationship problems, serious health problems, or workplace and financial stressors. It means "bouncing back" from difficult experiences.
-                    Research has shown that resilience is ordinary, not extraordinary. 
+                    Resilience is the process of adapting well in the face of a unexpected situation, be it adversity, trauma, tragedy, threats, or even significant sources of stress -- such as family,relationship,health problems or even financial stressors. It means "bouncing back" from difficult experiences.
+                    Research has shown that resilience is a common thing and it is not something special.
+<br/>
+					People commonly demonstrate resilience. One example is the how many of the Americans managed to bounce back from the September 2011 attack even though it was something that has created a huge impact to their lives.
 
-                </p>
-							<p>People commonly demonstrate resilience. One example is the response of many Americans to the September 11, 2001 terrorist attacks and individuals' efforts to rebuild their lives.
-                    Being resilient does not mean that a person doesn't experience difficulty or distress. Emotional pain and sadness are common in people who have suffered major adversity or trauma in their lives. In fact, the road to resilience is likely to involve considerable emotional distress.
-                    Resilience is not a trait that people either have or do not have. It involves behaviors, thoughts, and actions that can be learned and developed in anyone.
                 </p>
                 <br/>
                 
@@ -48,9 +46,10 @@
             <h2 class="title" id="PMS">Why emphasize on resilience?</h2>
             <div class="entry">
 <p>
-Resilience is an extremely important psychological trait to study because of its wide implications for mental health.
-Research  findings suggest that nonresilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. 
+Resilience is an extremely important psychological trait to study because of its wide implications for mental health.<br/>
+Research  findings suggest that nonresilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. <br/>
 
+Thus, resilience is an important aspect of a person's life when faced with difficulties and challenges.
 </p>
 			</div>
 			</div>
@@ -58,6 +57,20 @@ Research  findings suggest that nonresilient people are 1. associating the threa
             <h2 class="title">Testimonial</h2>
             <div class="entry">
 <iframe width="420" height="315" src="http://www.youtube.com/embed/B5qlAJzhxX0" frameborder="0" allowfullscreen></iframe>
+<br/><br/>
+</div>
+</div>
+
+
+		<div class="post">
+            <h2 class="title">Page Credits</h2>
+            <div class="entry">
+<p>Resilience Image Adapted From: <br/>http://oilygulf.wordpress.com/2010/10/11/resilience/
+<br/>
+Resilience Meaning Adapted From:<br/> http://www.apa.org/helpcenter/road-resilience.aspx<br/>
+Resilience Test: Adapted From:<br/> Learned Helpnessness by Martin Seligman [University Of Pennsylvenia - Positive Psychology Centre]<br/>
+
+</p>
 <br/><br/>
 </div>
 </div>
