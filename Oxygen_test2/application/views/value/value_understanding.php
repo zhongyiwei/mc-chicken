@@ -19,14 +19,10 @@
             <div class="entry">
 			<!--<div id="popup">-->
 			<center>
-			  <img src="<?php echo base_url();?>web_images/value/Book_image.jpg" alt="Image" title="Image"></img><br/></center><br/>
-<p>A personal and/or cultural value is an absolute or relative ethical value, the assumption of which can be the basis for ethical action.
- A value system is a set of consistent values and measures. 
- A principle value is a foundation upon which other values and measures of integrity are based. 
- Those values which are not physiologically determined and normally considered objective, such as a desire to avoid physical pain, seek pleasure, etc., are considered subjective, vary across individuals and cultures and are in many ways aligned with belief and belief systems.
- Types of values include ethical/moral values, doctrinal/ideological (religious, political) values, social values, and aesthetic values.
- It is debated whether some values which are not clearly physiologically determined are intrinsic such as altruism and whether some such as acquisitiveness should be valued as vices or virtues.
- Values have typically been studied in sociology; anthropology; social psychology; moral philosophy and business ethics.  </p>
+			  <img src="<?php echo base_url();?>web_images/value/Book_image.jpg" alt="Values" width="500px" height="300px"title="Values"></img><br/></center><br/>
+	<p>		  
+A personal and/or cultural value is an absolute or relative ethical value, the assumption of which can be the basis for ethical action.<br/>
+ A value system is a set of consistent values and measures. <br/> </p>
 <br/><br/> 
 	</div>
             </div><!-- End of div class entry -->
@@ -34,11 +30,13 @@
 		<div class="post">
             <h2 class="title">Why Values?</h2>
             <div class="entry">
-<p>Your values are made up of everything that has happened to you in your life and include influences from: your parents and family, your religious affiliation, your friends and peers, your education, your reading, and more. Effective people recognize these environmental influences and identify and develop a clear, concise, and meaningful set of values/beliefs, and priorities.<br/><br/>
-Once defined, values impact every aspect of your life.<br/><br/>
+<p>Values are what is a combination of what has happened in your life and the different areas of influences from namely, your family, religion,friends,education and etc.<br/><br/>
+Once defined, values impact every aspect of your life.<br/>
 -You demonstrate and model your values in action in your personal and work behaviors, decision making, contribution, and interpersonal interaction.<br/>
 -You use your values to make decisions about priorities in your daily work and home life.<br/>
--Your goals and life purpose are grounded in your values.</p>
+-Your goals and life purpose are grounded in your values.<br/><br/>
+
+Thus, it is important to identify and develop a clear, concise, and meaningful set of values/beliefs, and priorities.</p>
 <br/><br/>
 </div>
 </div>
@@ -49,5 +47,19 @@ Once defined, values impact every aspect of your life.<br/><br/>
 <br/><br/>
 </div>
 </div>
+
+		<div class="post">
+            <h2 class="title">Page Credits</h2>
+            <div class="entry">
+<p>Value Image Adapted From: <br/>http://1.bp.blogspot.com/_Td5jRCrqdFk/TDOb_0ugshI/AAAAAAAAADI/mlyTIyJcTlM/s1600/bigstockphoto_Values_Road_Sign_3471393.jpg
+<br/>
+Value Meaning Adapted From:<br/> http://en.wikipedia.org/wiki/Value_(personal_and_cultural)<br/>
+Why Values Adapted From:<br/>http://humanresources.about.com/od/success/qt/values_s7.htm<br/>
+
+</p>
+<br/><br/>
+</div>
+</div>
+
 <!-- end #content -->
 </div>
