@@ -59,7 +59,7 @@ It should guide your actions of the individual, spell out your overall life obje
             <div class="entry">
 			<!--<div id="popup">-->
 			<center>
-			  <img src="<?php echo base_url();?>web_images/value/Book_image.jpg" alt="Image" title="Image"></img><br/></center><br/>
+			  <img width="400" length="300" src="<?php echo base_url();?>web_images/value/Book_image.jpg" alt="Image" title="Image"></img><br/></center><br/>
 <p>A personal and/or cultural value is an absolute or relative ethical value, the assumption of which can be the basis for ethical action.
  A value system is a set of consistent values and measures. 
  A principle value is a foundation upon which other values and measures of integrity are based. 
@@ -160,7 +160,7 @@ Research  findings suggest that nonresilient people are 1. associating the threa
                 <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms2.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
                 <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms4.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
                 <h2>The Coat of Arms: </h2>
-                <p style="font-family:arial;color:black;font-size:14px">A coat of arms is a distinctive heraldic design on a tunic used to cover and protect armor, but the term is more broadly applied to mean a full heraldic
+                <!--<p style="font-family:arial;color:black;font-size:14px">--><p>A coat of arms is a distinctive heraldic design on a tunic used to cover and protect armor, but the term is more broadly applied to mean a full heraldic
                     achievement which consists of a shield and certain accessories. In either sense, the design is a symbol unique to a person, family, corporation, or state.
                     Such displays are also commonly called armorial bearings, armorial devices, heraldic devices, or arms.
                 <br>
