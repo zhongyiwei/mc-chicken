@@ -34,7 +34,7 @@
                 
                 <p>Secondly, holistic Goal Setting also helps Self-Confidence.By setting holistic goals, and measuring their achievement, you are able to see what you have done and what you are capable of. You become more than the sum of your parts. You become a synergistic system that operates out of awareness and inspiration.The process of achieving goals and seeing their achievement gives you the confidence and a belief in yourself that you need to be able to achieve higher and more difficult goals.Providing that you have the self-discipline to carry it through, goal setting is also relatively easy.</p>
             
-                <p>Source: http://holistic-personal-development.com/2008/02/12/holistic-goal-setting-part-1/</p>
+                <p>Thirdly, the holistic goal setting includes 7 key areas; there are family, career, education, spiritual, financial, social and physical. These 7 key areas cover all the aspects of your whole life. It will help you to achieve a meaningful life and ensure that all the goals are set properly.</p>
             </div>
         </div>
         
@@ -43,7 +43,6 @@
             <div class="entry">
                 <p>Yale  researchers surveyed  the  graduating class of 1953 to determine how many of them have specific, written goals  for their  future. 3%  of  them  had. Twenty  years  later, the researchers followed up with the surviving members of the class and discovered that the 3% with written goals had accumulated  more  personal wealth than the  remaining  97%  combined!</p>
                 <br><br>
-                <p>Source:  http://www.scribd.com/doc/32232790/Smartening-Up-Your-Goals-Gain-Your-Goal-Setting-Advantage</p>
             </div>
         </div>
 

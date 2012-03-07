@@ -93,6 +93,10 @@ Once defined, values impact every aspect of your life.<br/><br/>
             <div class="post">
             <h2 class="title" id="WMS">Goals in Life</h2>
             <div class="entry">
+                <p>Many people feel as if they're adrift in the world. They work hard, but they don't seem to get anywhere worthwhile. </p>
+                <p>A key reason that they feel this way is that they haven't spent enough time thinking about what they want from life, and haven't set themselves formal goals. After all, would you set out on a major journey with no real idea of your destination? Probably not!</p>
+                <p>Goal setting is a powerful process for thinking about your ideal future, and for motivating yourself to turn your vision of this future into reality.</p>
+                <p>The process of setting goals helps you choose where you want to go in life. By knowing precisely what you want to achieve, you know where you have to concentrate your efforts. You'll also quickly spot the distractions that can, so easily, lead you astray.</p>
                 </div>
             </div>
         
