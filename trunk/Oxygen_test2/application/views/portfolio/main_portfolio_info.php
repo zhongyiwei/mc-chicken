@@ -22,7 +22,7 @@
 <h2 class="title" id="VALUE">Send report to a friend</h2>
             <div class="entry">
                 <p>
-                   According to the research by the Dominican University of California, those who commit their goals by sharing them with his friends are 
+                   According to the research by the Dominican University of California, those who commit their goals by sharing them with friends are 
                    more likely to achieve their goals. Before generating the report, we provide you the option to send your goal achievement to the tutor/friend 
                    you refer to when you register your Oxygen account. You can do so by simply clicking "Yes".
                  </p>
