@@ -92,7 +92,7 @@ h3 { font-family: "Arial"; }
 p, ul, ol {
     margin-top: 0;
     line-height: 240%;
-    text-align: justify;
+    text-align: left;
 /*    font-family: BPreplay,Arial,Helvetica,sans-serif;*/
     font-size: 14px;
 }
