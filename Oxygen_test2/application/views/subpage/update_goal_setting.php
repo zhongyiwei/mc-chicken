@@ -1,6 +1,7 @@
 <?php $this->load->view('includes/header_general'); ?>
 
 <?php $this->load->view('includes/banner_general'); ?>
+
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
 <?php }else{?>
@@ -93,7 +94,9 @@
         
         </div>
     </div>
+    <div style="clear: both;">&nbsp;</div>
 </div>
+<!-- end #page -->
 <br><br>
 <div id="home">
     <a href="<?php echo base_url();?>index.php/home/index/"><img src="<?php echo base_url();?>CSS/images/background/home_button.png"/></a>
