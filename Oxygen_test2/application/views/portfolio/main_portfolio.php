@@ -17,7 +17,7 @@
 </p>
     <a href="<?php echo base_url(); ?>index.php/home/email_pdf" class="yesButton">Yes</a>
     <a class="noButton" href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf?id=<?php echo $this->session->userdata('seeker_id') ?>">No</a>
-    <p id="ContentArea"> </p>
+    <p id="ContentArea"></p>
 </div>
 
 
@@ -113,7 +113,7 @@
                         </tbody></table>
                 </div>
                 
-                 <h2 class="title" id="ONGOINGGOALS">My Active Goals</h2>
+                <h2 class="title" id="ONGOINGGOALS">My Active Goals</h2>
                 <div class="entry">
                     <?php
                     //echo "here".$rows;
