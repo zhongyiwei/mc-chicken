@@ -32,8 +32,9 @@ $id=$this->session->userdata('seeker_id');
             
             <div class="entry" width="">  <div id="popup">
                     <h2 class="title" id="AC">View all your active activities below</h2>
+                    <div class="entry" width=""> 
                     <p style="font-family:arial;color:green;font-size:16px">To view and update activity details, please click the activity name</p>
-                
+                </div>
                 <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
                    <thead>
                     <tr>
