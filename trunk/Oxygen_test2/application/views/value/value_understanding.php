@@ -40,6 +40,14 @@ Thus, it is important to identify and develop a clear, concise, and meaningful s
 <br/><br/>
 </div>
 </div>
+				<div class="post">
+            <h2 class="title">How to use the application?</h2>
+            <div class="entry">
+<p>Choose 4 values that you hold most importance to you.</p>
+
+<br/><br/>
+</div>
+</div>
 		<div class="post">
             <h2 class="title">Testimonial</h2>
             <div class="entry">
@@ -48,17 +56,26 @@ Thus, it is important to identify and develop a clear, concise, and meaningful s
 </div>
 </div>
 
-		<div class="post">
+<div class="post">
             <h2 class="title">Page Credits</h2>
             <div class="entry">
-<p>Value Image Adapted From: <br/>http://1.bp.blogspot.com/_Td5jRCrqdFk/TDOb_0ugshI/AAAAAAAAADI/mlyTIyJcTlM/s1600/bigstockphoto_Values_Road_Sign_3471393.jpg
-<br/>
-Value Meaning Adapted From:<br/> http://en.wikipedia.org/wiki/Value_(personal_and_cultural)<br/>
-Why Values Adapted From:<br/>http://humanresources.about.com/od/success/qt/values_s7.htm<br/>
+			
+			<p>
+Value (personal and cultural)
+Retrieved on Jan 5, 2012 
+From: Wikipedia
+Website: http://en.wikipedia.org/wiki/Value_(personal_and_cultural)<br/><br/>
 
-</p>
+Identify and Live Your Personal Values By Susan M. Heathfield
+Retrieved on Jan 17, 2012 From: About.com
+Website: http://humanresources.about.com/od/success/qt/values_s7.htm
+<br/><br/>
+
+ </p>
 <br/><br/>
 </div>
+
+		
 </div>
 
 <!-- end #content -->
