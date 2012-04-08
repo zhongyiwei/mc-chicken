@@ -47,12 +47,21 @@
             <div class="entry">
 <p>
 Resilience is an extremely important psychological trait to study because of its wide implications for mental health.<br/>
-Research  findings suggest that nonresilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. <br/>
+Research  findings suggest that non-resilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. <br/>
 
 Thus, resilience is an important aspect of a person's life when faced with difficulties and challenges.
 </p>
 			</div>
 			</div>
+				<div class="post">
+            <h2 class="title">How to use the application?</h2>
+            <div class="entry">
+<p>Resilience consists of Resilience Test in which User would have to catch flying musical notes and questions would appear for User to answer and the test results would be shown when it is complete.</p>
+
+<br/><br/>
+</div>
+</div>
+
 					<div class="post">
             <h2 class="title">Testimonial</h2>
             <div class="entry">
@@ -65,12 +74,22 @@ Thus, resilience is an important aspect of a person's life when faced with diffi
 		<div class="post">
             <h2 class="title">Page Credits</h2>
             <div class="entry">
-<p>Resilience Image Adapted From: <br/>http://oilygulf.wordpress.com/2010/10/11/resilience/
-<br/>
-Resilience Meaning Adapted From:<br/> http://www.apa.org/helpcenter/road-resilience.aspx<br/>
-Resilience Test: Adapted From:<br/> Learned Helpnessness by Martin Seligman [University Of Pennsylvenia - Positive Psychology Centre]<br/>
+			
+			<p>
+Real Gulf Coast Recovery Requires Resilient People, Communities and Ecology.
+Retrieved on Feb 12, 2012 
+From: Dr Tom Hoban Blog
+Website: http://oilygulf.wordpress.com/2010/10/11/resilience/<br/><br/>
 
-</p>
+The Road to Resilience
+Retrieved on Jan 22, 2012 
+From: American Psychological Association
+Website: http://www.apa.org/helpcenter/road-resilience.aspx
+<br/><br/>
+
+		
+ Martin E. P. Seligman(1995). Learned Helplessness: A Theory for the Age of Personal Control
+ </p>
 <br/><br/>
 </div>
 </div>
