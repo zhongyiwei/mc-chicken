@@ -56,7 +56,7 @@ $(function() {
 	#format { margin-top: 2em; }
 	</style>
 
-         <div class="left"><h4>How to remind you?</h4></div>                    
+         <div class="left"><h4>Do you want to be reminded to complete your activities?</h4></div>                    
                  <?php
      $attributes = array('class' => 'form', 'id' => 'form', 'name' => 'set_reminder_form');
      echo form_open('db_control/update_reminder_control',$attributes);

@@ -29,7 +29,6 @@
             if($data->num_rows() > 0) {
                 $r=$data->result();
                 $mode_email=$r[0]->reminder_email;
-                $mode_sms=$r[0]->reminder_sms;
                 $frequency=$r[0]->reminder_frequency;
                         if($mode_email==1){?>
 		<li><p style="font-size:150%">
