@@ -25,10 +25,7 @@ and open the template in the editor.
         <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/script.js"></script>
         <![if !IE]><script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.lionbars.0.3.min.js"></script><![endif]>
-        <!--start of css and js for TRANSLATION-->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/translation.css" />
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/google_ajax_translation.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.translation.js"></script>
+        
 
 <!--load sliding login file-->
         <!-- stylesheets -->

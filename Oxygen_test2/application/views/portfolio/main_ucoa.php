@@ -5,6 +5,8 @@
 <?php }?>
 
 <link href="<?php echo base_url();?>CSS/coa_design.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE]><link href="<?php echo base_url();?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
 <div id="page">
     <div id="content_sub">
         <div class="post">
@@ -33,7 +35,6 @@
         <li><a onclick="ChgText('web_images/coa_image/shield/coa10.png');" href="<?php echo base_url();?>web_images/coa_image/shield/coa10.png"><img src="<?php echo base_url();?>web_images/coa_image/shield/coa10.png" alt="Click Me!" id="img_input" value="web_images/coa_image/shield/coa10.png"/></a>
 	</li>
 </ul>
-<br><br><br><br><br>
 <?php $this->load->view('portfolio/ucoa_form');?>
           </div>
             <h2 class="title" id="COA">Your Coat of Arms</h2>

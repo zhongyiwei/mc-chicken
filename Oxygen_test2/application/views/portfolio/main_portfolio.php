@@ -80,7 +80,7 @@
                     <br><br><br><br>
                 </div>
 
-                <h2 class="title" id="ACHIEVEMENT">My Achievement</h2>
+                <h2 class="title" id="ACHIEVEMENT">My Accomplished Goals</h2>
                 <div class="entry">
                     <?php
                     //echo "here".$rows;
@@ -110,7 +110,7 @@
                         </tbody></table>
                 </div>
 
-                <h2 class="title" id="ONGOINGGOALS">My Active Goals</h2>
+                <h2 class="title" id="ONGOINGGOALS">My Current Goals</h2>
                 <div class="entry">
                     <?php
                     //echo "here".$rows;
@@ -122,8 +122,7 @@
                             <tbody>
     <?php foreach ($rows_active as $r_active) : ?>                   
                                     <tr><td><b>Goal Type:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->goal_category; ?></b></td></tr>
-                                    <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r_active->goal_desc; ?></b></td></tr>
-                                    <tr><td><b>Achievement Criteria:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->achievement_criteria; ?></b></td></tr>
+                                    <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r_active->goal_desc; ?></b></td></tr>                                   
                                     <tr><td><b>Target Completion Date:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->target_end_date; ?></b></td></tr>
                                     <?php
                                     $seeker_goal_id_active = $r_active->seeker_goal_id;
