@@ -3,29 +3,25 @@
 <?php } else { ?>
     <link href="<?php echo base_url(); ?>CSS/style_subpage_main.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php echo base_url(); ?>CSS/popUp.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if IE]><link href="<?php echo base_url(); ?>CSS/popUpForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
 <?php } ?>
 
 <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIE.css" rel="stylesheet" type="text/css" /><![endif]-->
 <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForIEfooter.css" rel="stylesheet" type="text/css" /><![endif]-->
+    
+    
 <script type="text/javascript" src="<?php echo base_url(); ?>js/popUp.js"></script>
-
-<div id = "bodycolor"></div>
-<div id="popupContent" >
-    <div onclick="disablePopup()" style="cursor:pointer; margin-left:670px;font-size:24px;border-width: 3px;border-color:#999;border-style: solid;text-align: center;padding-bottom: 2px;width:25px;">x</div>
-    <p class="askforsendemail">According to the research by the Dominican University of California, those who commit their goals by sharing them with friends are more likely to achieve their goals. Do you want to notify your friend whom you nominated as your mentor?</p><p>No mentor? <a href="<?php echo base_url(); ?>index.php/home/personal_info/">Click here</a></p>
-    <p>Matthews,D.G.<i style="font-style: italic; text-align:left; ">Summary of Recent Goals Research.</i>San Rafael,Carlifornia,Retrieved from: <a href="http://www.dominican.edu/academics/ahss/psych/faculty/fulltime/gail-matthews">http://www.dominican.edu/academics/ahss/psych/faculty/fulltime/gail-matthews.</a>
-</p>
-    <a href="<?php echo base_url(); ?>index.php/home/email_pdf" class="yesButton">Yes</a>
-    <a class="noButton" href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf?id=<?php echo $this->session->userdata('seeker_id') ?>">No</a>
-    <p id="ContentArea"></p>
-</div>
+<style type="text/css">  
+    html { height: 100%}   
+    body {height:100%;}     
+</style>  
 
 
 <div id="page">
     <div id="sub-nav">
         <ul>
 <!--            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_export_pdf?id=<?php echo $this->session->userdata('seeker_id') ?>" onclick="loadPopup()">Generate report</a></li>-->
-            <li><a href="#" onclick="loadPopup()">Generate report</a></li>
+            <li><a href="#" style="cursor:pointer;"onclick="loadPopup()">Generate report</a></li>
         </ul>
     </div>
 
@@ -37,7 +33,7 @@
                 <!--<h2 class="title" id="MOTTO">My Motto</h2>
                 <div class="entry">
                 
-            <p style="font-family:arial;color:black;font-size:14px"><?php //echo $motto_set;      ?></p>
+            <p style="font-family:arial;color:black;font-size:14px"><?php //echo $motto_set;       ?></p>
                 </div>-->
 
                 <h2 class="title" id="MS">My Mission Statement</h2>
@@ -107,12 +103,13 @@
                                         <tr><td><b>Completed Activity:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row['activity_name']; ?></b></td></tr>
                                     <?php endforeach; ?>
                                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-                           <?php
+                                    <?php
                                 endforeach;
-                            }?>
+                            }
+                            ?>
                         </tbody></table>
                 </div>
-                
+
                 <h2 class="title" id="ONGOINGGOALS">My Active Goals</h2>
                 <div class="entry">
                     <?php
@@ -123,7 +120,7 @@
                         ?>
                         <table border="1">
                             <tbody>
-                                <?php foreach ($rows_active as $r_active) : ?>                   
+    <?php foreach ($rows_active as $r_active) : ?>                   
                                     <tr><td><b>Goal Type:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->goal_category; ?></b></td></tr>
                                     <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r_active->goal_desc; ?></b></td></tr>
                                     <tr><td><b>Achievement Criteria:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->achievement_criteria; ?></b></td></tr>
@@ -138,12 +135,13 @@
                                     <?php endforeach; ?>
                                     <?php foreach ($activity_query->result_array() as $row) : ?>
                                         <tr><td><b>Completed Activity:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $row['activity_name']; ?></b></td></tr>
-                                    <?php endforeach; ?>
-                                        
+        <?php endforeach; ?>
+
                                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-                           <?php
+                                    <?php
                                 endforeach;
-                            }?>
+                            }
+                            ?>
                         </tbody></table>
                 </div>
                 <br>
@@ -151,7 +149,7 @@
 
                 <h2 class="title" id="RESILIENCE">My Resilience Scale</h2>
                 <div class="entry">
-                    <?php $this->load->view('portfolio/resilience_section'); ?>
+<?php $this->load->view('portfolio/resilience_section'); ?>
                 </div>
                 <br/>
                 <!--<h2 class="title" id="VALUE">Your Values</h2>-->
