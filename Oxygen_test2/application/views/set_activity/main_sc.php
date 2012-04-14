@@ -18,7 +18,7 @@
          </div>
     <div id="content_sub">
         <div class="post">
-            <h2 class="title">Set the Activity for Your Goals Here</h2>
+            <h2 class="title">Set Activities For Your Goals Here</h2>
             <div class="entry">
 <div class="goal_for_activity">
 <div id="activity_accordion">
