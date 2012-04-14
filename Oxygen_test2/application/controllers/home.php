@@ -458,7 +458,7 @@ class Home extends CI_Controller {
                 }
                 $data['rows2'] = $this->link_db_model->get_coa(); //change to get_goal in future
                 if ($data['rows2'] == null) {
-                    $data['rows'] = $this->link_db_model->get_motto();
+                    
                     $this->load->model('link_db_model');
                     $data['main_portfolio'] = 'portfolio/main_mp';
                     $data['nav_portfolio'] = 'portfolio/left_nav_mp';
@@ -473,7 +473,7 @@ class Home extends CI_Controller {
             $this->load->view('portfolio/page_visitor');
         }
     }
-
+/*
     function portfolio_coa_motto() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -487,6 +487,8 @@ class Home extends CI_Controller {
             $this->load->view('portfolio/page_visitor');
         }
     }
+ 
+ */
     
         function portfolio_do_you_know() {
         $is_logged_in = $this->session->userdata('is_logged_in');
@@ -502,46 +504,6 @@ class Home extends CI_Controller {
         }
     }
 
-    function portfolio_motto() {
-        $is_logged_in = $this->session->userdata('is_logged_in');
-        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            $this->load->model('link_db_model');
-            $data['rows'] = $this->link_db_model->get_motto();
-            if ($data['rows']->num_rows() == 0) {
-                $data['main_portfolio'] = 'portfolio/main_motto';
-                $data['nav_portfolio'] = 'portfolio/left_nav_mp';
-                $this->load->view('portfolio/template_mp', $data);
-            } else {
-                $this->load->model('link_db_model');
-                $query = $this->link_db_model->get_motto();
-                if ($query->num_rows() > 0) {
-                    $row = $query->result();
-                    $data['motto'] = $row[0]->motto;
-                }
-                $data['main_portfolio'] = 'portfolio/main_motto_set';
-                $data['nav_portfolio'] = 'portfolio/left_nav_mp';
-                $this->load->view('portfolio/template_mp', $data);
-            }
-        } else {
-            $data['main_portfolio'] = 'portfolio/main_motto';
-            $data['nav_portfolio'] = 'portfolio/left_nav_mp';
-            $this->load->view('portfolio/template_mp', $data);
-        }
-    }
-
-    function update_motto() {
-        $this->load->model('link_db_model');
-        $query = $this->link_db_model->get_motto();
-        if ($query->num_rows() > 0) {
-            $row = $query->result();
-            $data['motto_set'] = $row[0]->motto;
-            //$this->load->view('mission_statement/template_ms', $data);
-        }
-
-        $data['main_portfolio'] = 'portfolio/main_umotto';
-        $data['nav_portfolio'] = 'portfolio/left_nav_mp';
-        $this->load->view('portfolio/template_mp', $data);
-    }
 
     function portfolio_mission() {
         $is_logged_in = $this->session->userdata('is_logged_in');
@@ -587,10 +549,12 @@ class Home extends CI_Controller {
             }
 
             $num_rows_active = $this->link_db_model->get_portfolio_goal_activity_active();
+            
+            
             if ($num_rows_active == null) {
                 $data['rows_active'] = "";
             } else {
-                $data['rows_active'] = $this->link_db_model->get_portfolio_goal_activity_active();
+                $data['rows_active'] = $this->link_db_model->get_portfolio_goal_activity_active();                
             }
 
             $data['main_portfolio'] = 'portfolio/main_portfolio';
