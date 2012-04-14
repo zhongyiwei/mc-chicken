@@ -114,8 +114,8 @@
                 <div class="entry">
                     <?php
                     //echo "here".$rows;
-                    if ($rows == null) {
-                        echo "<p>You have no active goal at this moment</p>";
+                    if ($rows_active == null) {
+                        echo "<p>You do not have any unaccomplished goal at this moment</p>";
                     } else {
                         ?>
                         <table border="1">
