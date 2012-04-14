@@ -287,10 +287,6 @@ function get_goal(){
             }
             return $data;
     }
-    /*
-    else{
-        echo 'no results';
-    }*/
 }
 
 function get_portfolio_goal_activity(){
@@ -510,7 +506,6 @@ function get_portfolio_goal_activity_active(){
             }
             return $data;
     }
-    //return $q;
 }
 }
 ?>
