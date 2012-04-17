@@ -62,8 +62,8 @@ if ($COAStatus == '') {
 
     imagecopyresampled($target_img, $source_img, $x, $y, 0, 0, $valueWidth, $valueHeight, $size[0], $size[1]);
     imagecopyresampled($target_img, $source_img1, $valueWidth + $x + 15, $y, 0, 0, $valueWidth, $valueHeight, $size1[0], $size1[1]);
-    imagecopyresampled($target_img, $source_img2, $x, $valueHeight + $y, 0, 0, $valueWidth, $valueHeight, $size2[0], $size2[1]);
-    imagecopyresampled($target_img, $source_img3, $valueWidth + $x + 15, $valueHeight + $y, 0, 0, $valueWidth, $valueHeight, $size3[0], $size3[1]);
+    imagecopyresampled($target_img, $source_img2, $x, $valueHeight + $y+15, 0, 0, $valueWidth, $valueHeight, $size2[0], $size2[1]);
+    imagecopyresampled($target_img, $source_img3, $valueWidth + $x + 15, $valueHeight + $y+15, 0, 0, $valueWidth, $valueHeight, $size3[0], $size3[1]);
 
 
 
