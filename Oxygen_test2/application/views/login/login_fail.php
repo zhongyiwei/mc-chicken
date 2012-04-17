@@ -15,7 +15,7 @@ and open the template in the editor.
     <body>
         <div id="wrapper">
             <div id="login">
-                <h1>&CircleTimes;User Login Failed&CircleTimes;</h1>
+                <h1>&otimes; User Login Failed &otimes;</h1>
                 <div id="p_font">
                     <h2>Your information is not correct, please try <a href="<?php echo base_url(); ?>index.php/login/index/">again</a>!</h2>
                 </div>
