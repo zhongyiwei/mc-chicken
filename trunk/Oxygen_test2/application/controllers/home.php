@@ -5,6 +5,17 @@ class Home extends CI_Controller {
     function __construct() {
         parent::__construct();
     }
+    //Facebook
+    function value_status() {
+        parse_str($_SERVER['QUERY_STRING'], $_GET);
+        $this->load->view('facebook/value_status');
+    }
+
+    function goal_status() {
+        parse_str($_SERVER['QUERY_STRING'], $_GET);
+        $this->load->view('facebook/goal_status');
+    }
+    //End Facebook
 
     function all_about() {
         $data['main'] = 'includes/main_all_about';
