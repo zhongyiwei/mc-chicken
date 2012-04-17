@@ -137,7 +137,7 @@ else {
                         foreach($query->result()as $r):
                             ?>
 							
-                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label  oncontextmenu="event.preventDefault();changeHTML('<?php echo $r->value_name;?>','<?php echo $r->value_definition;?>');$( '#dialog2' ).dialog( 'open' );"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
+                       <input type="checkbox"   name="check<?php echo $valuesCount; ?>" id="check<?php echo $valuesCount; ?>" value="<?php echo $r->value_name;?>" onclick="addToList(this.value,this.name);"  /><label  oncontextmenu="event.returnValue = false;changeHTML('<?php echo $r->value_name;?>','<?php echo $r->value_definition;?>');$( '#dialog2' ).dialog( 'open' );"for="check<?php echo $valuesCount; ?>"><?php echo $r->value_name;?></label>
 
                             <?php        if($separator%5==0) {
                                 echo "<br/>";
