@@ -3,9 +3,9 @@
 
 <div id="register">
     <h1>Registration Successful</h1>
-    <div styel="margin-left:50px; margin-top:50px;color:black;">
-        <p>The system is directing you to the <strong>Login Page</strong>!</p>
-        <p>Please wait for a while...</p>
+    <div style="margin-left:50px; margin-top:50px;" id="p_font">
+        <h2 style="color:grey;">The system is directing you to the <strong>Login Page</strong>!</h2>
+        <h2>Please wait for a while...</p>
     </div>
 </div>
 
