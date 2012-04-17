@@ -160,7 +160,7 @@ document.getElementById("dialog").innerHTML = "processing...";
                                     <label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Remember me</label>
                                     <div class="clear"></div>
                                     <input type="submit" name="submit" value="Login" class="bt_login" />
-                                    <a class="lost-pwd" href="<?php echo base_url(); ?>index.php/update_info/forgot_password/">Lost your password?</a>
+                                    <a class="lost-pwd" href="<?php echo base_url(); ?>index.php/update_info/forgot_password/">Forgot your password?</a>
                                 </form>
                                 <?php echo form_open('login/register'); ?>
                                 <input type="submit" name="submit" value="Register" class="bt_register" />
