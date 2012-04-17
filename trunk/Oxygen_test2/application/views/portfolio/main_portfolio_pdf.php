@@ -295,10 +295,10 @@ if ($COAStatus == '') {
     $pdf->Cell(0, 20, $notice, 0, 1);
     $pdf->AddPage();
     $pdf->Image($Shield1, 5, 30, 200, 260);
-    $pdf->Image($Symbol1, 78, 125, 25, 25);
-    $pdf->Image($Symbol2, 108, 125, 25, 25);
-    $pdf->Image($Symbol3, 78, 155, 25, 25);
-    $pdf->Image($Symbol4, 108, 155, 25, 25);
+    $pdf->Image($Symbol1, 78, 130, 25, 25);
+    $pdf->Image($Symbol2, 108, 130, 25, 25);
+    $pdf->Image($Symbol3, 78, 160, 25, 25);
+    $pdf->Image($Symbol4, 108, 160, 25, 25);
 } else {
     $pdf->Ln(3);
     $pdf->SetFont('Arial', '', 12);
