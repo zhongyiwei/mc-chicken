@@ -1,4 +1,11 @@
 <?php
+/* 
+    Document   : email_portfolio
+    Created on : Apr 12, 2012, 1:29:24 PM
+    Author     : ZHONG YIWEI
+    Description:
+        Used for sending email with portfolio link to portfolio
+*/
 date_default_timezone_set('Asia/Singapore');
 
 $seeker_name = $this->session->userdata('name');

@@ -1,4 +1,11 @@
 <?php
+/* 
+    Document   : coa_drawCOA
+    Created on : Apr 12, 2012, 1:29:24 PM
+    Author     : ZHONG YIWEI
+    Description:
+        Used for creating Coat of Arm (COA) images using PHP 
+*/
 if ($COAStatus == '') {
     $source = $Symbol1;
     $source1 = $Symbol2;
