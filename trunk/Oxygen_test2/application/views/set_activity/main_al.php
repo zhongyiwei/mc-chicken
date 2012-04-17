@@ -30,15 +30,16 @@ $id=$this->session->userdata('seeker_id');
         <div class="post">
           
             
-            <div class="entry" width="">  <div id="popup">
+            <!--<div class="entry" width="">  <div id="popup"> -->
                     <h2 class="title" id="AC">View all your active activities below</h2>
-                    <div class="entry" width=""> 
+                    <div class="entry" width="">
+                    
                     <p style="font-family:arial;color:green;font-size:16px">To view and update activity details, please click the activity name</p>
-                </div>
+                
                 <table id="myTable" style="table-layout:fixed; width: 600px" class="tablesorter">
                    <thead>
                     <tr>
-                      <th width="55px" style="font-size:130%">Goal Type</th>
+                      <th width="60px" style="font-size:130%">Goal Type</th>
                       <th width="100px" style="font-size:130%">Goal Description</th>
                       <th width="90px" style="font-size:130%">Activity Name</th>
                       <th width="60px" style="font-size:130%">Start Date</th>
@@ -68,6 +69,9 @@ $id=$this->session->userdata('seeker_id');
 
                   </tbody>
                </table>
+                    <br/>
+                    <br/>
+                    </div>
                     <h2 class="title" id="AC">View all your completed activities</h2>
                     <div class="entry" width=""> 
                     <p style="font-family:arial;color:green;font-size:16px">To view all the completed activities, please click the "Archived Activities"</p>    
@@ -75,6 +79,6 @@ $id=$this->session->userdata('seeker_id');
                     </div>
         </div><!-- End of div class entry -->
         </div><!-- End of div class post -->
-        </div>
-    </div>
+        
+
 <!-- end #content -->
