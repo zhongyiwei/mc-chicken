@@ -19,6 +19,47 @@
         </ul>
     </div>
     <div id="content_sub">
+        <?php if($Progress=='Completed'){ ?>
+        <div class="post">
+            <h2 class="title">View Your Completed Goal</h2>
+            <div class="entry">
+                <div class="row">
+                    <div><h4>Type of Goal:</h4></div>
+                    <div style="color: black;margin-top: 5px;margin-bottom: 5px;font-size: 16px;font-weight: bold;"><?php echo $goal;?></div>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="row">
+                    <div><h4>Goal Description:</h4></div>
+                    <div style="color: black;margin-top: 5px;margin-bottom: 5px;font-size: 16px;font-weight: bold;">
+                    <?php echo $goal_des; ?><br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div><h4>Achievement Criteria:</h4></div>
+                    <div style="color: black;margin-top: 5px;margin-bottom: 5px;font-size: 12px;font-weight: bold;">
+                    <?php echo $achievement;?><br></div>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="row">
+                    <div><h4>Target End Date:</h4></div>
+                    <div style="color: black;margin-top: 5px;margin-bottom: 5px;font-size: 16px;font-weight: bold;">
+                    <?php echo $target_end_date;?><br></div>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="row">
+                    <div><h4>Progress:</h4></div>
+                    <div style="color: black;margin-top: 5px;margin-bottom: 5px;font-size: 16px;font-weight: bold;">Completed<br></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+<?php            
+        }else{
+?>
         <div class="post">
 
             <h2 class="title">Update Your Goal</h2>
@@ -61,7 +102,12 @@
                     <div class="">
      <?php
       $data = array(
-              'name'=> 'target_end_date','class'=> 'datepicker','value'=> $target_end_date,
+              'name'=> 'target_end_date',
+              'class'=> 'datepicker',
+              'id'=> 'start_date8',
+              'value'=> $target_end_date,
+              'size'=> '30',
+              'onchange'=>'ValidateDate(this)'
             );
                  echo form_input($data);
      ?><br></div>
@@ -79,7 +125,7 @@
                     if ($Progress == 'Active') {
                         echo form_dropdown('process', $choice, 'Active');
                     } else if ($Progress == 'Completed') {
-                        echo form_dropdown('process', $choice, 'Completed');
+                        echo $Progress;
                     }
                     ?><br></div>
                     <div class="clear"></div>
@@ -90,9 +136,8 @@
                           echo "</div>";?>
                 <?php echo form_close(); ?>
             </div>
-            
-        
         </div>
+        <?php } ?>
     </div>
     <div style="clear: both;">&nbsp;</div>
 </div>

@@ -46,12 +46,16 @@
                             
                             <p>Target Completion Date:</p>
                             <?php 
-                            $target_date=array(
-                                'name'=>'target_date1',
+                            $data = array(
+                                'name' => 'target_date1',
                                 'class'=>'datepicker',
-                                'size'=>'30'
-                            );
-                            echo form_input($target_date); 
+                                'id'=> 'start_date1',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
+                                );
+                            
+                            echo form_input($data); 
                             ?><br></br>
 
                            <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
@@ -85,12 +89,16 @@
                             
                             <p>Target Completion Date:</p>
                             <?php 
-                            $target_date=array(
-                                'name'=>'target_date2',
+                            $data = array(
+                                'name' => 'target_date2',
                                 'class'=>'datepicker',
-                                'size'=>'30'
-                            );
-                            echo form_input($target_date); 
+                                'id'=> 'start_date2',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
+                                );
+                            
+                            echo form_input($data);
                             ?><br></br>
                             <div align="right"><?php echo form_submit('submit', 'Submit');?></div>
                             <?php echo form_close(); }else{ ?>
@@ -124,9 +132,12 @@
                             <p>Target Completion Date:</p>
                             <?php 
                             $target_date=array(
-                                'name'=>'target_date3',
+                                'name' => 'target_date3',
                                 'class'=>'datepicker',
-                                'size'=>'30'
+                                'id'=> 'start_date3',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
                             );
                             echo form_input($target_date); 
                             ?><br></br>
@@ -163,9 +174,12 @@
                             <p>Target Completion Date:</p>
                             <?php 
                             $target_date=array(
-                                'name'=>'target_date4',
+                                'name' => 'target_date4',
                                 'class'=>'datepicker',
-                                'size'=>'30'
+                                'id'=> 'start_date4',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
                             );
                             echo form_input($target_date); 
                             ?><br></br>
@@ -202,9 +216,12 @@
                             <p>Target Completion Date:</p>
                             <?php 
                             $target_date=array(
-                                'name'=>'target_date5',
+                                'name' => 'target_date5',
                                 'class'=>'datepicker',
-                                'size'=>'30'
+                                'id'=> 'start_date5',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
                             );
                             echo form_input($target_date); 
                             ?><br></br>
@@ -241,9 +258,12 @@
                             <p>Target Completion Date:</p>
                             <?php 
                             $target_date=array(
-                                'name'=>'target_date6',
+                                'name' => 'target_date6',
                                 'class'=>'datepicker',
-                                'size'=>'30'
+                                'id'=> 'start_date6',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
                             );
                             echo form_input($target_date); 
                             ?><br></br>
@@ -280,9 +300,12 @@
                             <p>Target Completion Date:</p>
                             <?php 
                             $target_date=array(
-                                'name'=>'target_date7',
+                                'name' => 'target_date7',
                                 'class'=>'datepicker',
-                                'size'=>'30'
+                                'id'=> 'start_date7',
+                                'value'=> '',
+                                'size'=> '30',
+                                'onchange'=>'ValidateDate(this)'
                             );
                             echo form_input($target_date); 
                             ?><br></br>
