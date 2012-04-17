@@ -9,6 +9,7 @@ class Update_info extends CI_Controller {
             $new=array(
                 'name'=>  $this->input->post('name'),
                 'nation'=>  $this->input->post('nationality'),
+                'dob'=>  $this->input->post('dob'),
                 'mobile'=>  $this->input->post('mobile_number'),
                 'referee_name'=>  $this->input->post('referee_name'),
                 'referee_email'=>  $this->input->post('referee_email')
@@ -20,9 +21,10 @@ class Update_info extends CI_Controller {
             
             $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
             $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required|alpha');
+            $this->form_validation->set_rules('date_of_birth', 'Date of Birth', 'trim|required');
             $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric');
-            $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|required|alpha');
-            $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|required|valid_email');
+            $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|alpha');
+            $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|valid_email');
 
             if ($this->form_validation->run() == FALSE) {
 //                $this->load->view('register/error');

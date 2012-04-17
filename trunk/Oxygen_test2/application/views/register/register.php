@@ -4,7 +4,7 @@
 <div id="register">
     <h1>Create An Account</h1>
 
-    <table cellpadding="5" cellspace="5" style="text-align: left;">
+    <table cellpadding="5" cellspace="5" style="text-align: left;" id="t1">
         <?php echo form_open('login/create_member'); ?>
         <tr>
             <th>Name:</th>
