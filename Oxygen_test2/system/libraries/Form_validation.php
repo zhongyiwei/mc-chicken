@@ -799,6 +799,7 @@ class CI_Form_validation {
     function isnt($str, $field) {
         
         $this->CI->form_validation->set_message('isnt', "%s contains an invalid response");
+        $field = $_POST[$field];
         return $str !== $field;
     }
 
