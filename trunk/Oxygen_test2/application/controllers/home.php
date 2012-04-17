@@ -48,37 +48,23 @@ class Home extends CI_Controller {
         $this->load->view('value/subpage_value', $data);
     }
 
-    function whyValue() {
-        $data['main'] = 'value/value_needs';
-        $data['nav'] = 'includes/left_nav_value';
-        $this->load->view('value/subpage_value', $data);
-    }
 
-    function determineValue() {
+
+    function determine_values() {
         $data['main'] = 'value/value_determination';
-        $data['nav'] = 'includes/left_nav_value';
+		$data['nav'] = 'includes/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
 
-    function valueDesc() {
-        $value = $this->input->post('value');
-        $data['main'] = 'value_description';
-        if ($this->input->post('ajax')) {
-            $this->load->view($data['main']);
-        } else {
-            $data['main'] = 'value/value_determination';
-            $data['nav'] = 'mission_statement/left_nav_value';
-            $this->load->view('value/subpage_valuedetermination', $data);
-        }
-    }
+
 
     function evaluate_values() {
         $data['main'] = 'value/evaluate_values';
-        $data['nav'] = 'mission_statement/left_nav_value';
+        $data['nav'] = 'includes/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
 
-    function insert_values() {
+ /*   function insert_values() {
         $data['main'] = 'value/insert_values';
         $data['nav'] = 'mission_statement/left_nav_value';
         $this->load->view('value/subpage_value', $data);
@@ -101,7 +87,7 @@ class Home extends CI_Controller {
         $data['nav'] = 'mission_statement/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
-
+*/
     function resilience() {
         $data['main'] = 'resilience/resilience';
         $data['nav'] = 'includes/left_nav_resilience';
@@ -898,7 +884,7 @@ class Home extends CI_Controller {
                 $data['COAStatus'] = '';
             }
         } else {
-            $data['COAStatus'] = '<a href="' . base_url() . 'index.php/home/determineValue/">Go to Set Value Page</a>';
+            $data['COAStatus'] = '<a href="' . base_url() . 'index.php/home/determine_values/">Go to Set Value Page</a>';
         }
         
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);

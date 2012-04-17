@@ -9,7 +9,7 @@
 <div id="page">
          <div id="sub-nav">
         <ul>
-            <li><a href="<?php echo base_url(); ?>index.php/home/determineValue/" >Set Values</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/determine_values/" >Set Values</a></li>
 
         </ul>
          </div>
@@ -23,6 +23,11 @@
 	<p>		  
 A personal and/or cultural value is an absolute or relative ethical value, the assumption of which can be the basis for ethical action.<br/>
  A value system is a set of consistent values and measures. <br/> </p>
+ <br/><br/>
+ Value (personal and cultural)
+Retrieved on Jan 5, 2012 <br/>
+From: Wikipedia
+Website: http://en.wikipedia.org/wiki/Value_(personal_and_cultural)<br/><br/>
 <br/><br/> 
 	</div>
             </div><!-- End of div class entry -->
@@ -36,7 +41,12 @@ Once defined, values impact every aspect of your life.<br/>
 -You use your values to make decisions about priorities in your daily work and home life.<br/>
 -Your goals and life purpose are grounded in your values.<br/><br/>
 
-Thus, it is important to identify and develop a clear, concise, and meaningful set of values/beliefs, and priorities.</p>
+Thus, it is important to identify and develop a clear, concise, and meaningful set of values/beliefs, and priorities.
+<br/><br/>
+</p>
+Identify and Live Your Personal Values By Susan M. Heathfield<br/>
+Retrieved on Jan 17, 2012 <br/>From: About.com
+Website: http://humanresources.about.com/od/success/qt/values_s7.htm
 <br/><br/>
 </div>
 </div>
@@ -56,27 +66,7 @@ Thus, it is important to identify and develop a clear, concise, and meaningful s
 </div>
 </div>
 
-<div class="post">
-            <h2 class="title">Page Credits</h2>
-            <div class="entry">
-			
-			<p>
-Value (personal and cultural)
-Retrieved on Jan 5, 2012 
-From: Wikipedia
-Website: http://en.wikipedia.org/wiki/Value_(personal_and_cultural)<br/><br/>
 
-Identify and Live Your Personal Values By Susan M. Heathfield
-Retrieved on Jan 17, 2012 From: About.com
-Website: http://humanresources.about.com/od/success/qt/values_s7.htm
-<br/><br/>
-
- </p>
-<br/><br/>
-</div>
-
-		
-</div>
 
 <!-- end #content -->
 </div>

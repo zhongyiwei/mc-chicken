@@ -31,12 +31,12 @@ $checkCOA = $this->db->query("SELECT * FROM coat_of_arm WHERE seeker_id='$sessio
 <?php } ?>
 <img width="50px" height="50px" src="<?php echo base_url();?>web_images/flowchart/arrow.png"></img>
 <?php if($checkValue->num_rows() >0){ ?>
-<a href="<?php echo base_url();?>index.php/home/determineValue/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Value-Green(PNG).png"></a>
+<a href="<?php echo base_url();?>index.php/home/determine_values/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Value-Green(PNG).png"></a>
 <?php } 
 else if($checkMission->num_rows() >0){ ?>
-<a href="<?php echo base_url();?>index.php/home/determineValue/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Value-Blue (PNG).png"></a> <?php
+<a href="<?php echo base_url();?>index.php/home/determine_values/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Value-Blue (PNG).png"></a> <?php
 } else { ?>
-<a href="<?php echo base_url();?>index.php/home/determineValue/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Value-Red(PNG).png"></a>
+<a href="<?php echo base_url();?>index.php/home/determine_values/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Value-Red(PNG).png"></a>
 <?php } ?>
 
 <img width="50px" height="50px" src="<?php echo base_url();?>web_images/flowchart/arrow.png"></img>

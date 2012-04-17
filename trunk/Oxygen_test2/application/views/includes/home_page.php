@@ -199,7 +199,7 @@ document.getElementById("dialog").innerHTML = "processing...";
                 <div id="menu">
                     <ul>
                         <li class="current_page_item"><a href="<?php echo base_url(); ?>index.php/home/mission_statement"><img src="<?php echo base_url(); ?>CSS/images/background/mission.png"></a></li>
-                        <li><a href="<?php echo base_url(); ?>index.php/home/determineValue/"><img src="<?php echo base_url(); ?>CSS/images/background/values.png"></a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/home/determine_values/"><img src="<?php echo base_url(); ?>CSS/images/background/values.png"></a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/home/holistic/"><img src="<?php echo base_url(); ?>CSS/images/background/goals.png"></a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/"><img src="<?php echo base_url(); ?>CSS/images/background/activity.png"></a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/home/resilience/"><img src="<?php echo base_url(); ?>CSS/images/background/resilience.png"></a></li>
