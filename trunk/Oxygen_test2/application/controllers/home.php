@@ -634,7 +634,7 @@ class Home extends CI_Controller {
                 $valueSymbol['COAStatus'] = '';
             }
         } else {
-            $valueSymbol['COAStatus'] = 'Please choose your value first.<br/><a href="' . base_url() . 'index.php/home/determineValue/">Go to Set Value Page</a>';
+            $valueSymbol['COAStatus'] = 'Please choose your value first.<br/><a href="' . base_url() . 'index.php/home/determine_values/">Go to Set Value Page</a>';
         }
         //echo    $valueSymbol['Shield1'];
 
