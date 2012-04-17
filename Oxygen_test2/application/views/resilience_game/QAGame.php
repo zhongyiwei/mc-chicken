@@ -1,4 +1,12 @@
-
+<?php
+/* 
+    Document   : QAGame
+    Created on : Apr 12, 2012, 1:29:24 PM
+    Author     : ZHONG YIWEI
+    Description:
+        Show resilience Game
+*/
+?>
 
 
 <?php $this->load->view('includes/header_general'); ?>
