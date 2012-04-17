@@ -92,7 +92,8 @@
                         <table border="1">
                             <tbody>
                                 <?php foreach ($rows as $r) : ?>
-                                    <div align="right"><a href="<?php echo base_url(); ?>facebook/goal_check.php?type=1&id=<?php echo $r->seeker_goal_id; ?>"><img src="<?php echo base_url(); ?>web_images/facebook/facebook-share-button.png" height="14.5%" width="14.5%"/></a></div>
+                                    
+                                    <tr><td></td><td>&nbsp;&nbsp;<div align="right"><a href="<?php echo base_url(); ?>facebook/goal_check.php?type=1&id=<?php echo $r->seeker_goal_id; ?>"><img src="<?php echo base_url(); ?>web_images/facebook/facebook-share-button.png" height="20%" width="20%"/></a></div></td></tr>
                                     <tr><td><b>Goal Type:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->goal_category; ?></b></td></tr>
                                     <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r->goal_desc; ?></b></td></tr>
                                     <tr><td><b>Achievement Criteria:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r->achievement_criteria; ?></b></td></tr>
