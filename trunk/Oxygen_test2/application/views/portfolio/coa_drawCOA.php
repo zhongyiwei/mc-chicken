@@ -51,8 +51,8 @@ if ($COAStatus == '') {
     $valueWidth = 75;
     $valueHeight = 75;
 
-    $x = 240;
-    $y = 350;
+    $x = 250;
+    $y = 340;
 
     imageantialias($target_img, true);
 
