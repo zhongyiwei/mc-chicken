@@ -38,20 +38,20 @@ try{
 
 	//echo $e->getMessage();
 		if ($e->getMessage() == "(#506) Duplicate status message") {
-			Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/goal_status?status=1");
+			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=1");
 			//echo "Duplicate";
 			exit;
 		}
 
 		else {
 			$msg = $e->getMessage();
-			Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/goal_status?status=3");
+			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=3");
 			//echo "Error";
 		}
 
 		//echo "Good";
     }
-	Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/goal_status?status=2");
+	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=2");
 
 
 ?>

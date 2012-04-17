@@ -7,7 +7,7 @@ $type = $_GET['type'];
 $goal = executeSelectQuery("SELECT * FROM goal WHERE seeker_goal_id = $id");
 
 
-$redirect = "http://sit.rp.edu.sg/oxygen/oxygen2.2/facebook/goal_post.php?type=". $type. "&id" . $id;
+$redirect = base_url() . "facebook/goal_post.php?type=". $type. "&id" . $id;
 $appId = '200284213420495';
 $appSecret = 'f1c1ab83d794584fb2079a2de9614e27';
 
@@ -76,20 +76,20 @@ if ($user)
 
 	//echo $e->getMessage();
 		if ($e->getMessage() == "(#506) Duplicate status message") {
-			Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/goal_status?status=1");
+			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=1");
 			//echo "Duplicate";
 			exit;
 		}
 
 		else {
 			$msg = $e->getMessage();
-			Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/goal_status?status=3");
+			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=3");
 			//echo "Error";
 		}
 
 		//echo "Good";
     }
-	Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/goal_status?status=2");
+	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=2");
 
 }
 

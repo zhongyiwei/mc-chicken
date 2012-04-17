@@ -19,7 +19,7 @@ $facebook = new Facebook(
 // add a status message
 	$message = "My values in life are " . $v1 . ", " . $v2 . ", " . $v3 . ", " . $v4 . ".";
 	$facebook->api('/me/feed', 'POST', array('message' => $message));
-	Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/portfolio_mission");
+	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/portfolio_mission");
 
 
 ?>
