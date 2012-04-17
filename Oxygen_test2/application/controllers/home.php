@@ -115,7 +115,7 @@ class Home extends CI_Controller {
             $this->load->model('activity_tracking_model');
             $this->activity_tracking_model->update_activity_status();
             $data['main_activity'] = 'set_activity/activity_tracking';
-            $data['nav_goal'] = 'includes/left_nav_goal';
+            $data['nav_goal'] = 'set_activity/left_nav_ac';
             $this->load->view('set_activity/template_sc', $data);
         } else {
             $this->load->view('set_activity/error_track_activity');
@@ -190,7 +190,7 @@ class Home extends CI_Controller {
     function activity() {
         $data['main_activity'] = 'set_activity/main_sc';
         //$data['main_activity_task']='set_activity/main_sc_task';
-        $data['nav_goal'] = 'includes/left_nav_goal';
+        $data['nav_goal'] = 'set_activity/left_nav_ac';
         //$data2['activity_form']='set_activity/activity_form';
         $this->load->view('set_activity/template_sc', $data);
         //$this->load->view('set_activity/main_sc',$data2);
@@ -211,12 +211,6 @@ class Home extends CI_Controller {
         }
     }
 
-    function activity_page() {
-        $data['main_activity'] = 'set_activity/main_sc';
-        $data['nav_goal'] = 'set_activity/left_nav_ac';
-        $this->load->view('set_activity/template_sc', $data);
-    }
-
     function activity_info() {
         $data['main_activity'] = 'set_activity/main_info';
         $data['nav_goal'] = 'set_activity/left_nav_ac';
@@ -232,12 +226,12 @@ class Home extends CI_Controller {
             if ($query->num_rows() == 0) {
                 //echo "here1";
                 $data['main_activity'] = 'set_activity/main_sr';
-                $data['nav_goal'] = 'includes/left_nav_goal';
+                $data['nav_goal'] = 'set_activity/left_nav_ac';
                 $this->load->view('set_activity/template_sc', $data);
             } else {
                 //echo "here";
                 $data['main_activity'] = 'set_activity/main_do_sr';
-                $data['nav_goal'] = 'includes/left_nav_goal';
+                $data['nav_goal'] = 'set_activity/left_nav_ac';
                 $this->load->view('set_activity/template_sc', $data);
             }
         } else {
@@ -288,7 +282,7 @@ class Home extends CI_Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $data['main_activity'] = 'set_activity/main_al';
-            $data['nav_goal'] = 'includes/left_nav_goal';
+            $data['nav_goal'] = 'set_activity/left_nav_ac';
             $this->load->view('set_activity/template_sc', $data);
         } else {
             $this->load->view('set_activity/error_view_activity');
