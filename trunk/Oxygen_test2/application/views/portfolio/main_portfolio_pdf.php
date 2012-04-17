@@ -1,5 +1,11 @@
 <?php
-
+/* 
+    Document   : main_portfolio_pdf
+    Created on : Apr 12, 2012, 1:29:24 PM
+    Author     : ZHONG YIWEI
+    Description:
+        Used for generating the PDF report
+*/
 require('PDFGenerator/fpdf.php');
 
 class PDF extends FPDF {
