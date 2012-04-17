@@ -30,7 +30,7 @@
                     <ul>
                         <!--<li><a href="<?php echo base_url();?>index.php/home/coat_of_arm/">Set Coat of Arm</a></li>-->
                         <li><a href="<?php echo base_url();?>index.php/home/mission_statement/">Set Mission</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/home/determineValue/">Set Value</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/home/determine_values/">Set Value</a></li>
                         <!--<li><a href="<?php echo base_url();?>index.php/home/mission_statement/">Confirm Value</a></li>-->
                     </ul>
                 </li>
