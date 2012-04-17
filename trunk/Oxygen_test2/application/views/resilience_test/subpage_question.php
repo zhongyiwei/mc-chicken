@@ -1,1 +1,1 @@
-<?php $this->load->view('resilience_test/getQuestion');?>
+<?php $this->load->view('resilience_test/get_question');?>

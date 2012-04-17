@@ -87,19 +87,19 @@ class Home extends CI_Controller {
         $data['nav'] = 'mission_statement/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
-*/
-    function resilience() {
-        $data['main'] = 'resilience/resilience';
-        $data['nav'] = 'includes/left_nav_resilience';
-        $this->load->view('resilience/subpage_resilience', $data);
-    }
+
+
 
     function test_result() {
         $data['main'] = 'resilience/test_result';
         $data['nav'] = 'includes/left_nav_resilience';
         $this->load->view('resilience/subpage_resilience', $data);
+    }*/
+    function resilience() {
+        $data['main'] = 'resilience/resilience';
+        $data['nav'] = 'includes/left_nav_resilience';
+        $this->load->view('resilience/subpage_resilience', $data);
     }
-
     //End of Wenjie----Value & Resilience
     //WenJie Flow
     function getflow() {
