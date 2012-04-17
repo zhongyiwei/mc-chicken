@@ -35,6 +35,15 @@ and open the template in the editor.
                     yearRange: '-100y:-10y'
                 });
             });
+            
+            $(function() {
+                $( "#datepicker" ).datepicker({
+                    dateFormat:"yy-mm-dd",
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '-100y:-10y'
+                });   
+            });
         </script>
 
         <style>

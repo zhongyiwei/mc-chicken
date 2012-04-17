@@ -185,7 +185,6 @@ class Home extends CI_Controller {
     function personal_info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-
             $this->load->view('register/update');
         }
     }
