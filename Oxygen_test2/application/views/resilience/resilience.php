@@ -22,7 +22,11 @@
 
                 <!-- <h3 style="font-size:22px; margin:0px;">What is resilience?</h3> -->
 				<center>
-				<img src='http://harivarasanam.files.wordpress.com/2011/10/resilience17.jpg'></img></center>
+				<img src='<?php echo base_url();?>web_images/resilience.jpg'></img></center><br/>
+				Real Gulf Coast Recovery Requires Resilient People, Communities and Ecology.<br/>
+Retrieved on Feb 12, 2012 
+From: Dr Tom Hoban Blog<br/>
+Website: http://oilygulf.wordpress.com/2010/10/11/resilience/
                 <p>
                     Resilience is the process of adapting well in the face of a unexpected situation, be it adversity, trauma, tragedy, threats, or even significant sources of stress -- such as family,relationship,health problems or even financial stressors. It means "bouncing back" from difficult experiences.
                     Research has shown that resilience is a common thing and it is not something special.
@@ -30,6 +34,8 @@
 					People commonly demonstrate resilience. One example is the how many of the Americans managed to bounce back from the September 2011 attack even though it was something that has created a huge impact to their lives.
 
                 </p>
+
+
                 <br/>
                 
 
@@ -50,7 +56,8 @@ Resilience is an extremely important psychological trait to study because of its
 Research  findings suggest that non-resilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. <br/>
 
 Thus, resilience is an important aspect of a person's life when faced with difficulties and challenges.
-</p>
+</p><br/>
+				The Road to Resilience Retrieved on Jan 22, 2012 From: American Psychological Association Website: http://www.apa.org/helpcenter/road-resilience.aspx 
 			</div>
 			</div>
 				<div class="post">
@@ -76,21 +83,8 @@ Thus, resilience is an important aspect of a person's life when faced with diffi
             <div class="entry">
 			
 			<p>
-Real Gulf Coast Recovery Requires Resilient People, Communities and Ecology.
-Retrieved on Feb 12, 2012 
-From: Dr Tom Hoban Blog
-Website: http://oilygulf.wordpress.com/2010/10/11/resilience/<br/><br/>
+Resilience Test Song :http://www.youtube.com/watch?v=wioCe8elAsA
 
-The Road to Resilience
-Retrieved on Jan 22, 2012 
-From: American Psychological Association
-Website: http://www.apa.org/helpcenter/road-resilience.aspx
-<br/><br/>
-
-Song :http://www.youtube.com/watch?v=wioCe8elAsA
-
-		
- Martin E. P. Seligman(1995). Learned Helplessness: A Theory for the Age of Personal Control
  </p>
 <br/><br/>
 </div>
