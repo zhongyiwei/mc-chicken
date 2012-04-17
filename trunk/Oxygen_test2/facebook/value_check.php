@@ -6,7 +6,7 @@ $v2 = $_GET['v2'];
 $v3 = $_GET['v3'];
 $v4 = $_GET['v4'];
 
-$redirect = "http://sit.rp.edu.sg/oxygen/oxygen2.2/facebook/value_post.php?" . "v1=" . $v1 . "&v2=" . $v2 . "&v3=" . $v3 . "&v4=" . $v4;
+$redirect = base_url() . "facebook/value_post.php?" . "v1=" . $v1 . "&v2=" . $v2 . "&v3=" . $v3 . "&v4=" . $v4;
 $appId = '200284213420495';
 $appSecret = 'f1c1ab83d794584fb2079a2de9614e27';
 
@@ -62,20 +62,20 @@ if ($user)
     
 	//echo $e->getMessage();
 		if ($e->getMessage() == "(#506) Duplicate status message") {
-			Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/value_status?status=1");
+			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/value_status?status=1");
 			//echo "Duplicate";
 			exit;
 		}
 		
 		else {
 			$msg = $e->getMessage();
-			Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/value_status?status=3");
+			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/value_status?status=3");
 			//echo "Error";
 		}
 		
 		//echo "Good";
     }
-	Header("Location: http://sit.rp.edu.sg/oxygen/oxygen2.2/index.php/home/value_status?status=2");
+	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/value_status?status=2");
 	
 }
 	
