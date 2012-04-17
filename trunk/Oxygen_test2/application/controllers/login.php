@@ -40,9 +40,6 @@ class Login extends CI_Controller {
             if($query[0]->role=='member'){
                 redirect('home/color_mood');
                 }
-            else if($query[0]->role=='admin'){
-                redirect('cms/index');
-            }
         } else {
             $this->load->view('login/login_fail');
         }
