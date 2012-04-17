@@ -45,7 +45,7 @@
 
                 <h2 class="title" id="VALUE">My Value</h2>
                 <div class="entry">
-                    <div align="right"><a href="<?php echo base_url(); ?>facebook/value_check.php?<?php echo "v1=".$value1 . "&v2=".$value2 . "&v3=".$value3 . "&v4=".$value4;?>"><img src="<?php echo base_url(); ?>web_images/facebook/facebook-share-button.png" height="20%" width="20%"/></a></div>
+                    <div align="right"><a href="<?php echo base_url(); ?>facebook/value_check.php?<?php echo "v1=".$value1 . "&v2=".$value2 . "&v3=".$value3 . "&v4=".$value4;?>"><img src="<?php echo base_url(); ?>web_images/facebook/facebook-share-button.png" height="14%" width="14%"/></a></div>
                     <table border="1" style="font-size:16px;">
                         <th width="120px" align="center" style="border-bottom-width: thin;
                             border-bottom-style: dotted;
@@ -123,7 +123,7 @@
                         <table border="1">
                             <tbody>
                                     <?php foreach ($rows_active as $r_active) : ?>
-                                    <tr><td></td><td>&nbsp;&nbsp;<div align="right"><a href="<?php echo base_url(); ?>facebook/goal_check.php?type=2&id=<?php echo $r_active->seeker_goal_id; ?>"><img src="<?php echo base_url(); ?>web_images/facebook/facebook-share-button.png" height="30%" width="30%"/></a></div></td></tr>
+                                    <tr><td></td><td>&nbsp;&nbsp;<div align="right"><a href="<?php echo base_url(); ?>facebook/goal_check.php?type=2&id=<?php echo $r_active->seeker_goal_id; ?>"><img src="<?php echo base_url(); ?>web_images/facebook/facebook-share-button.png" height="20%" width="20%"/></a></div></td></tr>
                                     <tr><td><b>Goal Type:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->goal_category; ?></b></td></tr>
                                     <tr><td><b>Goal Description:</b></td><td><b style="font-family:arial;color:black;font-size:14px; text-align:center;"><?php echo $r_active->goal_desc; ?></b></td></tr>                                   
                                     <tr><td><b>Target Completion Date:</b></td><td><b style="font-family:arial;color:black;font-size:14px;text-align:center;"><?php echo $r_active->target_end_date; ?></b></td></tr>
