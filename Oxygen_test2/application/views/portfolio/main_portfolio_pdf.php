@@ -199,7 +199,7 @@ $pdf->BasicTable($PDFValueHeader, $PDFValueData);
 $pdf->Ln(10);
 
 $pdf->SetFont('Arial', 'B', 16);
-$myAchievement = 'My Active Goals';
+$myAchievement = 'My Current Goals';
 $pdf->Cell(70, 10, $myAchievement, 0, 1);
 $pdf->Ln(2);
 
@@ -219,7 +219,7 @@ if ($ActiveAchievementStatus == '') {
 }
 
 $pdf->SetFont('Arial', 'B', 16);
-$myAchievement = 'My Achievement';
+$myAchievement = 'My Accomplished Goals';
 $pdf->Cell(70, 10, $myAchievement, 0, 1);
 $pdf->Ln(2);
 

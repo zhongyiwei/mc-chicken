@@ -5,6 +5,7 @@ class Home extends CI_Controller {
     function __construct() {
         parent::__construct();
     }
+
     //Facebook
     function value_status() {
         parse_str($_SERVER['QUERY_STRING'], $_GET);
@@ -15,6 +16,7 @@ class Home extends CI_Controller {
         parse_str($_SERVER['QUERY_STRING'], $_GET);
         $this->load->view('facebook/goal_status');
     }
+
     //End Facebook
 
     function all_about() {
@@ -59,15 +61,11 @@ class Home extends CI_Controller {
         $this->load->view('value/subpage_value', $data);
     }
 
-
-
     function determine_values() {
         $data['main'] = 'value/value_determination';
-		$data['nav'] = 'includes/left_nav_value';
+        $data['nav'] = 'includes/left_nav_value';
         $this->load->view('value/subpage_value', $data);
     }
-
-
 
     function evaluate_values() {
         $data['main'] = 'value/evaluate_values';
@@ -75,42 +73,44 @@ class Home extends CI_Controller {
         $this->load->view('value/subpage_value', $data);
     }
 
- /*   function insert_values() {
-        $data['main'] = 'value/insert_values';
-        $data['nav'] = 'mission_statement/left_nav_value';
-        $this->load->view('value/subpage_value', $data);
-    }
+    /*   function insert_values() {
+      $data['main'] = 'value/insert_values';
+      $data['nav'] = 'mission_statement/left_nav_value';
+      $this->load->view('value/subpage_value', $data);
+      }
 
-    function do_insert_values() {
-        $data['main'] = 'value/do_insert_values';
-        $data['nav'] = 'mission_statement/left_nav_value';
-        $this->load->view('value/subpage_value', $data);
-    }
+      function do_insert_values() {
+      $data['main'] = 'value/do_insert_values';
+      $data['nav'] = 'mission_statement/left_nav_value';
+      $this->load->view('value/subpage_value', $data);
+      }
 
-    function delete_values() {
-        $data['main'] = 'value/delete_values';
-        $data['nav'] = 'mission_statement/left_nav_value';
-        $this->load->view('value/subpage_value', $data);
-    }
+      function delete_values() {
+      $data['main'] = 'value/delete_values';
+      $data['nav'] = 'mission_statement/left_nav_value';
+      $this->load->view('value/subpage_value', $data);
+      }
 
-    function do_delete_values() {
-        $data['main'] = 'value/do_delete_values';
-        $data['nav'] = 'mission_statement/left_nav_value';
-        $this->load->view('value/subpage_value', $data);
-    }
+      function do_delete_values() {
+      $data['main'] = 'value/do_delete_values';
+      $data['nav'] = 'mission_statement/left_nav_value';
+      $this->load->view('value/subpage_value', $data);
+      }
 
 
 
-    function test_result() {
-        $data['main'] = 'resilience/test_result';
-        $data['nav'] = 'includes/left_nav_resilience';
-        $this->load->view('resilience/subpage_resilience', $data);
-    }*/
+      function test_result() {
+      $data['main'] = 'resilience/test_result';
+      $data['nav'] = 'includes/left_nav_resilience';
+      $this->load->view('resilience/subpage_resilience', $data);
+      } */
+
     function resilience() {
         $data['main'] = 'resilience/resilience';
         $data['nav'] = 'includes/left_nav_resilience';
         $this->load->view('resilience/subpage_resilience', $data);
     }
+
     //End of Wenjie----Value & Resilience
     //WenJie Flow
     function getflow() {
@@ -448,7 +448,7 @@ class Home extends CI_Controller {
                 }
                 $data['rows2'] = $this->link_db_model->get_coa(); //change to get_goal in future
                 if ($data['rows2'] == null) {
-                    
+
                     $this->load->model('link_db_model');
                     $data['main_portfolio'] = 'portfolio/main_mp';
                     $data['nav_portfolio'] = 'portfolio/left_nav_mp';
@@ -463,24 +463,25 @@ class Home extends CI_Controller {
             $this->load->view('portfolio/page_visitor');
         }
     }
-/*
-    function portfolio_coa_motto() {
-        $is_logged_in = $this->session->userdata('is_logged_in');
-        if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            $this->load->model('link_db_model');
-            $data['rows'] = $this->link_db_model->get_mission();
 
-            $data['main_portfolio'] = 'portfolio/main_coa_info';
-            $data['nav_portfolio'] = 'portfolio/left_nav_mp';
-            $this->load->view('portfolio/template_mp', $data);
-        } else {
-            $this->load->view('portfolio/page_visitor');
-        }
-    }
- 
- */
-    
-        function portfolio_do_you_know() {
+    /*
+      function portfolio_coa_motto() {
+      $is_logged_in = $this->session->userdata('is_logged_in');
+      if (isset($is_logged_in) && ($is_logged_in == 'true')) {
+      $this->load->model('link_db_model');
+      $data['rows'] = $this->link_db_model->get_mission();
+
+      $data['main_portfolio'] = 'portfolio/main_coa_info';
+      $data['nav_portfolio'] = 'portfolio/left_nav_mp';
+      $this->load->view('portfolio/template_mp', $data);
+      } else {
+      $this->load->view('portfolio/page_visitor');
+      }
+      }
+
+     */
+
+    function portfolio_do_you_know() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $this->load->model('link_db_model');
@@ -493,7 +494,6 @@ class Home extends CI_Controller {
             $this->load->view('portfolio/page_visitor');
         }
     }
-
 
     function portfolio_mission() {
         $is_logged_in = $this->session->userdata('is_logged_in');
@@ -539,12 +539,12 @@ class Home extends CI_Controller {
             }
 
             $num_rows_active = $this->link_db_model->get_portfolio_goal_activity_active();
-            
-            
+
+
             if ($num_rows_active == null) {
                 $data['rows_active'] = "";
             } else {
-                $data['rows_active'] = $this->link_db_model->get_portfolio_goal_activity_active();                
+                $data['rows_active'] = $this->link_db_model->get_portfolio_goal_activity_active();
             }
 
             $data['main_portfolio'] = 'portfolio/main_portfolio';
@@ -702,7 +702,7 @@ class Home extends CI_Controller {
                 $data['numberRowsForCompletedActivityFromAchievement'] = $this->link_db_model->get_num_portfolio_active_completed_base_on_goal_pdf($seeker_goal_id);
 
                 if ($data['numberRowsForCompletedActivityFromAchievement'] != 0) {
-                     $achieveData[$i][5][1] = "Completed Activities: ";
+                    $achieveData[$i][5][1] = "Completed Activities: ";
                 }
 
 
@@ -757,7 +757,7 @@ class Home extends CI_Controller {
                 $data['numberRowsForCompletedActivityFromAchievement3'] = $this->link_db_model->get_num_portfolio_active_completed_base_on_goal_pdf($seeker_goal_id_activity);
 
                 if ($data['numberRowsForCompletedActivityFromAchievement3'] != 0) {
-                    $ActiveAchieveData[$i][6 + $r + $data['numberRowsForActiveActivityFromAchievement2']][1] = "Completed Activities: ";
+                    $ActiveAchieveData[$i][6 + $t + $data['numberRowsForActiveActivityFromAchievement2']][1] = "Completed Activities: ";
                 }
 
                 for ($r = 0; $r < $data['numberRowsForCompletedActivityFromAchievement3']; $r++) {
@@ -856,14 +856,16 @@ class Home extends CI_Controller {
         } else {
             $data['resillentScaleStatus'] = 'You have never completed resilience test yet.';
         }
-        
-        $valueSymbolData = $this->link_db_model->get_value_symbol_image($seeker_id);
 
-        if ($valueSymbolData != NULL) {
+        $valueSymbolData = $this->link_db_model->get_value_symbol_image($seeker_id);
+        $dataShieldCheck = $this->link_db_model->get_coa2_image($seeker_id);
+        $rowShield = $dataShieldCheck->result();
+
+        if ($valueSymbolData != NULL && $rowShield != NULL) {
 
             $valueSymbolRow = $valueSymbolData->result();
 
-          
+
             if ($this->session->userdata('category') != 'child') {
                 $data['Symbol1'] = base_url() . $valueSymbolRow[0]->value_symbol;
                 $data['Symbol2'] = base_url() . $valueSymbolRow[1]->value_symbol;
@@ -890,7 +892,7 @@ class Home extends CI_Controller {
         } else {
             $data['COAStatus'] = '<a href="' . base_url() . 'index.php/home/determine_values/">Go to Set Value Page</a>';
         }
-        
+
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
     }
 
@@ -923,31 +925,30 @@ class Home extends CI_Controller {
     function email() {
         $this->load->view('email_reminder/email_reminder');
     }
-    
-    
+
     function email_pdf() {
         $this->load->view('portfolio/email_portfolio.php');
     }
-    
-    function userguide(){
+
+    function userguide() {
         $data['main'] = 'footer_content/main_ug';
         $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
         $this->load->view('footer_content/template_footer_content', $data);
     }
-    
-    function contact(){
+
+    function contact() {
         $data['main'] = 'footer_content/main_contact';
         $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
         $this->load->view('footer_content/template_footer_content', $data);
     }
-    
-    function about_us(){
+
+    function about_us() {
         $data['main'] = 'footer_content/main_about_us';
         $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
         $this->load->view('footer_content/template_footer_content', $data);
     }
-    
-    function term_of_use(){
+
+    function term_of_use() {
         $data['main'] = 'footer_content/main_tom';
         $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
         $this->load->view('footer_content/template_footer_content', $data);
