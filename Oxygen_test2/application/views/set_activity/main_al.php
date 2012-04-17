@@ -32,7 +32,7 @@ $id=$this->session->userdata('seeker_id');
             
             <!--<div class="entry" width="">  <div id="popup"> -->
                     <h2 class="title" id="AC">View all your active activities below</h2>
-                    <div class="entry" width="">
+                    <div class="entry" width="100%">
                     
                     <p style="font-family:arial;color:green;font-size:16px">To view and update activity details, please click the activity name</p>
                 
@@ -73,7 +73,7 @@ $id=$this->session->userdata('seeker_id');
                     <br/>
                     </div>
                     <h2 class="title" id="AC">View all your completed activities</h2>
-                    <div class="entry" width=""> 
+                    <div class="entry" width="">
                     <p style="font-family:arial;color:green;font-size:16px">To view all the completed activities, please click the "Archived Activities"</p>    
                     <a href="<?php echo base_url(); ?>index.php/home/archived_activity/"><p style="font-size:150%; color:blue; text-align:right" >Archived Activities</p></a>
                     </div>

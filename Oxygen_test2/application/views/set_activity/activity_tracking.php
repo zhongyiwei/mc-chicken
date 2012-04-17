@@ -44,6 +44,7 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
 
                     </select>
                 </p>
+                <br/><br/>
 <!--End dropdown list to select goal category                -->
                 
                 <?php
@@ -89,7 +90,19 @@ $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
                     <div class="accordion_<?php echo $goal_cat; ?>">
                         <?php
                             if($activity_query->num_rows()===0) {
-                                echo "<p style='font-family:arial;color:green;font-size:16px'>No activity set for this goal!</p>";
+                                //echo "<p style='font-family:arial;color:green;font-size:16px'>No activity set for this goal!</p>";
+                        ?>
+                                <h3>
+                                <a href="#">
+                                    <div class="row1">
+                                        <span class="left1">
+                                            <?php echo "No activity set for this goal";  ?>
+                                        </span>
+                                        
+                                    </div>
+                                </a>
+                            </h3>
+                       <?php
                             }
                             else {
 
