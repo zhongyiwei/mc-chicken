@@ -65,13 +65,13 @@
                  //$js = 'onchange="ValidateDate(this)"';
         }            else{
                 ?>
-                                 <h3>You do not have any goal of this type yet. Please set the its goal before you setting any of its activity </h3>
+                                 <h3>You have not set any goal of this type yet. Please set the goal before setting its activities. </h3>
                                  <?php
             }
         }       
         else{        
         ?>
-          <h3>You have not login yet. Please Log in first to set relevant activities. </h3>
+          <h3>You have not login yet. Please Log in first to use this function. </h3>
             <?php
         }
              ?>
