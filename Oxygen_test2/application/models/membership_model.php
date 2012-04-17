@@ -55,6 +55,7 @@ class Membership_model extends CI_Model {
             $data = array(
                 'name' => $this->session->userdata('name'),
                 'nationality' => $this->session->userdata('nation'),
+                'date_of_birth'=> $this->session->userdata('dob'),
                 'mobile_number' => $this->session->userdata('mobile'),
                 'referee_name'=>$this->session->userdata('referee_name'),
                 'referee_email'=>$this->session->userdata('referee_email')

@@ -69,8 +69,6 @@ class Login extends CI_Controller {
         $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|alpha');
         $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|valid_email|isnt[email]');
         
-
-
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('register/register');
         } else {

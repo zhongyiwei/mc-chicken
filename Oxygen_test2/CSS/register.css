@@ -98,6 +98,9 @@ hr { display: none; }
     width: 800px;
     height: 460px;
 }
+#register #t1{
+    margin-top: -30px;
+}
 
 #register table tr td{
     margin-top: 10px;
