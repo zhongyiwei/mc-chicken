@@ -913,7 +913,8 @@ class Home extends CI_Controller {
     function email() {
         $this->load->view('email_reminder/email_reminder');
     }
-
+    
+    
     function email_pdf() {
         $this->load->view('portfolio/email_portfolio.php');
     }
