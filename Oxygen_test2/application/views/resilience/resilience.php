@@ -69,13 +69,6 @@ Thus, resilience is an important aspect of a person's life when faced with diffi
 </div>
 </div>
 
-					<div class="post">
-            <h2 class="title">Testimonial</h2>
-            <div class="entry">
-<iframe width="420" height="315" src="http://www.youtube.com/embed/B5qlAJzhxX0" frameborder="0" allowfullscreen></iframe>
-<br/><br/>
-</div>
-</div>
 
 
 		<div class="post">
