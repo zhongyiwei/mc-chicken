@@ -918,6 +918,30 @@ class Home extends CI_Controller {
     function email_pdf() {
         $this->load->view('portfolio/email_portfolio.php');
     }
+    
+    function userguide(){
+        $data['main'] = 'footer_content/main_ug';
+        $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
+        $this->load->view('footer_content/template_footer_content', $data);
+    }
+    
+    function contact(){
+        $data['main'] = 'footer_content/main_contact';
+        $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
+        $this->load->view('footer_content/template_footer_content', $data);
+    }
+    
+    function about_us(){
+        $data['main'] = 'footer_content/main_about_us';
+        $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
+        $this->load->view('footer_content/template_footer_content', $data);
+    }
+    
+    function term_of_use(){
+        $data['main'] = 'footer_content/main_tom';
+        $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
+        $this->load->view('footer_content/template_footer_content', $data);
+    }
 
 }
 
