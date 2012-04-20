@@ -49,6 +49,7 @@ h1, h2{
 
 .adjusttoppanel .tab,#panel{
     width:1024px;
+    margin-left: 20px;
 }
 
 .tab A.open{
