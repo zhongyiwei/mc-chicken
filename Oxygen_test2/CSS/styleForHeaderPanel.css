@@ -1,0 +1,13 @@
+/* 
+    Document   : styleForHeaderPanel
+    Created on : Apr 20, 2012, 3:02:04 PM
+    Author     : Julian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+.adjusttoppanel .tab,#panel{
+    margin-left: 20px;
+}
