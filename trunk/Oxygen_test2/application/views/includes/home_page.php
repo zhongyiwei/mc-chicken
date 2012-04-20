@@ -96,12 +96,13 @@ document.getElementById("dialog").innerHTML = "processing...";
 }
 
         </script>
+        <!--[if IE]><link href="<?php echo base_url(); ?>CSS/styleForHeaderPanel.css" rel="stylesheet" type="text/css" /><![endif]-->
     </head>
 
     <body>
         <div id="wrapper">
             <!-- Panel -->
-            <div id="toppanel" class="adjusttoppanel" style="font-family: Arial">
+            <div id="toppanel" class="adjusttoppanel" style="font-family: Arial;">
                 <div id="panel">
                     <div class="content clearfix">
                         <div class="left" id="info">
