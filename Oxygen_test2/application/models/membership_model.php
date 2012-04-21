@@ -1,7 +1,7 @@
 <?php
 
 class Membership_model extends CI_Model {
-
+    //validate the information from database
     function validate() {
         $this->db->where('email', $this->input->post('email'));
         $this->db->where('password', sha1($this->input->post('password')));
@@ -15,7 +15,7 @@ class Membership_model extends CI_Model {
         }
         return $record;
     }
-
+    //add the new member into database
     function create_member() {
         $this->db->select('email');
         $this->db->from('seeker');
@@ -42,7 +42,7 @@ class Membership_model extends CI_Model {
         }
         return $insert;
     }
-
+    //update member information 
     function update_member() {
         $this->db->select('email');
         $this->db->from('seeker');
