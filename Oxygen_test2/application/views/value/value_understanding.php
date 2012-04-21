@@ -15,7 +15,7 @@
          </div>
     <div id="content_sub">
         <div class="post">
-            <h2 class="title">What is Values?</h2>
+            <h2 class="title">Values Video</h2>
             <div class="entry">
 			<!--<div id="popup">-->
 			<center>
