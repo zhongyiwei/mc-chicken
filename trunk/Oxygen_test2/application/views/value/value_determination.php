@@ -1,3 +1,7 @@
+<!--     
+    Author     : Teo Wen Jie
+    Description: Used to show all values in the database for user's selection.
+-->
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
 <?php }else{?>
