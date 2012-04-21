@@ -1,3 +1,7 @@
+<!--     
+    Author     : Teo Wen Jie
+    Description: Used to check user's progress and show flowchart of what to do next
+-->
 <?php $logged=$_POST['logged'];
 
 if($logged=='yes'){
