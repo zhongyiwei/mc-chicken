@@ -22,7 +22,7 @@
          <div class="post">
 
 
-            <h2 class="title" id="AC">Why set activity for your goals</h2>
+            <h2 class="title" id="AC">Set activity for your goals</h2>
             <div class="entry">
             <p>Only setting goals does not mean you will achieve them. 
                 A lot of people have goals or have had goals but Most of them fail to achieve their goals because they do not 

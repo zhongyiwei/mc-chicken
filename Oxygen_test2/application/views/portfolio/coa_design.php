@@ -1,3 +1,8 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to create and display "Coat of Arms" function.
+-->
+
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery-latest.js"></script>
 <script type="text/javascript">
 $(function(){

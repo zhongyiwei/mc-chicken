@@ -1,3 +1,5 @@
+<!-- The codes below are used to generate the page that displays the error message if users tried to access to a function that only members who logged in are able to access -->
+
 <?php $this->load->view('register/register_header'); ?>
 <div id="register">
     <h1 style="padding-top: 20px;">&otimes;Error&otimes;</h1>
@@ -9,9 +11,6 @@
     
 
 </div>
-
-
-
 
 <div id="home" >
     <a href="<?php echo base_url(); ?>index.php/home/index/"><img src="<?php echo base_url(); ?>CSS/images/background/home_button.png"/></a>
