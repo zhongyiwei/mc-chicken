@@ -1,3 +1,7 @@
+<!--     
+    Author     : Teo Wen Jie
+    Description: Algorithmn to calculate user test scores to display its test summary result in flash
+-->
 <?php
 session_start();
 
