@@ -1,7 +1,7 @@
 <?php
 
 class Goal_setting extends CI_Model {
-
+    //based on goal id, get the information from database
     function display_goal($id) {
         $this->db->select('*');
         $this->db->from('goal');
@@ -16,7 +16,7 @@ class Goal_setting extends CI_Model {
         }
         return $record;
     }
-
+    //update the goal information into database
     function update_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -37,9 +37,7 @@ class Goal_setting extends CI_Model {
             $this->db->where('goal_cat_id',$this->input->post('goal_cat_id'));
             $this->db->where('activity_status', 'Completed');
             $query2=  $this->db->get();
-            //$query1 = $this->db->get_where('activity', array('seeker_id' => $this->session->userdata('seeker_id'),'goal_cat_id'=>  $this->input->post('goal_cat_id')));
-            //$query2 = $this->db->get_where('activity', array('seeker_id' => $this->session->userdata('seeker_id'), 'activity_status' => 'Completed','goal_cat_id'=>  $this->input->post('goal_cat_id')));
-
+            
             if ($query1->num_rows() == $query2->num_rows()) {
                 $data = array(
                     'goal_desc' => $this->input->post('goal_des'),
@@ -53,7 +51,6 @@ class Goal_setting extends CI_Model {
                 $update_data = $this->db->update('goal', $data);
                 return $update_data;
             } else{
-                //$this->load->view('subpage/update_goal_error');
                 $update_data=null;
                 return $update_data;
             }
@@ -81,7 +78,7 @@ class Goal_setting extends CI_Model {
             }
         }
     }
-
+    //create fmaily goal into database
     function create_family_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -100,7 +97,7 @@ class Goal_setting extends CI_Model {
         $insert = $this->db->insert('goal', $new);
         return $insert;
     }
-
+    //create career goal into database
     function create_career_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -119,7 +116,7 @@ class Goal_setting extends CI_Model {
         $insert = $this->db->insert('goal', $new);
         return $insert;
     }
-
+    //create education goal into database
     function create_education_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -138,7 +135,7 @@ class Goal_setting extends CI_Model {
         $insert = $this->db->insert('goal', $new);
         return $insert;
     }
-
+    //create spiritual goal into database
     function create_spiritual_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -157,7 +154,7 @@ class Goal_setting extends CI_Model {
         $insert = $this->db->insert('goal', $new);
         return $insert;
     }
-
+    //create financial goal into database
     function create_financial_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -176,7 +173,7 @@ class Goal_setting extends CI_Model {
         $insert = $this->db->insert('goal', $new);
         return $insert;
     }
-
+    //create social goal into database
     function create_social_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');
@@ -195,7 +192,7 @@ class Goal_setting extends CI_Model {
         $insert = $this->db->insert('goal', $new);
         return $insert;
     }
-
+    //create physical goal into database
     function create_physical_goal() {
         date_default_timezone_set('Asia/Singapore');
         $this->load->helper('date');

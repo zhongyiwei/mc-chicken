@@ -6,17 +6,19 @@ class Login extends CI_Controller {
         parent::__construct();
         $this->load->library('session');
     }
-
+    
+    function index() {
+        $this->load->view('login/login_page');
+    }
+    
     function log_out() {
         $this->session->sess_destroy();
         redirect('home/index');
     }
-
-    function index() {
-        $this->load->view('login/login_page');
-    }
-
+    
+    //check the user's identify
     function validate() {
+        //load validation model
         $this->load->model('membership_model');
         $query = $this->membership_model->validate();
 
@@ -45,6 +47,7 @@ class Login extends CI_Controller {
         }
     }
 
+    //load registration page
     function register() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if ($is_logged_in == 'true') {//if user have logged in, they are not able to register
@@ -53,11 +56,11 @@ class Login extends CI_Controller {
             $this->load->view('register/register');
         }
     }
-
+    
+    //system create the member for new user
     function create_member() {
         $this->load->library('form_validation');
-
-        // field name, error message, validation rules
+        // using set_rules methods to check the data
         $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
         $this->form_validation->set_rules('gender', 'Gender', 'trim|required');
         $this->form_validation->set_rules('date_of_birth', 'Date Of Birth', 'trim|required');
@@ -69,16 +72,16 @@ class Login extends CI_Controller {
         $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|alpha');
         $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|valid_email|isnt[email]');
         
-        if ($this->form_validation->run() == FALSE) {
+        if ($this->form_validation->run() == FALSE) {//the data which enter by user is not valid
             $this->load->view('register/register');
         } else {
             $this->load->model('membership_model');
             if ($query = $this->membership_model->create_member()) {
                 $this->load->view('register/register_done_successful');
-                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/index/');
+                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/index/');//after successfully registe, direct to home page
             } else {
                 $this->load->view('register/register_done_wrong');
-                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/login/register/');
+                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/login/register/');//if there is an error, direct to registration page
             }
         }
     }
@@ -90,8 +93,6 @@ class Login extends CI_Controller {
     {
 
         $this->load->library('form_validation');
-
-        // field name, error message, validation rules
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
 
         if ($this->form_validation->run() == FALSE)
@@ -105,6 +106,7 @@ class Login extends CI_Controller {
             $sql = $result['sql'];
             if ($sql->num_rows != 0)
             {
+                //generate a email header
                 date_default_timezone_set('Asia/Singapore');
                 $to = $this->input->post('email');
                 $from = 'admin@oxygen.com';
@@ -112,7 +114,7 @@ class Login extends CI_Controller {
                 $headers = "From: $from";
 
                 
-
+                //the main content of email
                 $data['msg'] = "<h3>Your password has been reset. The new password has been sent to your account.</h3>";
                 $msg = "Hi, " . $result['name'] . " \n\n";
                 $msg .= "Here is your new account details:\n\n";

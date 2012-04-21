@@ -4,6 +4,7 @@ class Update_goal extends CI_Controller{
         parent::__construct();
     }
     
+    //update particular information of a goal
     function update(){
         $this->load->model('goal_setting');
         $query=$this->goal_setting->update_goal();

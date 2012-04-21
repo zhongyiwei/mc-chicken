@@ -1,7 +1,7 @@
 <?php
 
 class Update_info extends CI_Controller {
-
+    //update personal information
     function info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -15,8 +15,6 @@ class Update_info extends CI_Controller {
                 'referee_email'=>  $this->input->post('referee_email')
             );
             
-            $this->session->set_userdata($new);
-            
             $this->load->library('form_validation');
             
             $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
@@ -27,10 +25,9 @@ class Update_info extends CI_Controller {
             $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|valid_email');
 
             if ($this->form_validation->run() == FALSE) {
-//                $this->load->view('register/error');
-//                $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/personal_info/');
                   $this->load->view('register/error');
             } else {
+                $this->session->set_userdata($new);
                 $this->load->model('membership_model');
                 $new_record = $this->membership_model->update_member();
                 if ($new_record) {
@@ -42,7 +39,7 @@ class Update_info extends CI_Controller {
             }
         }
     }
-
+    //change the password
     function change_pass() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {

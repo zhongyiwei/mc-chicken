@@ -6,6 +6,7 @@ class Set_goal extends CI_Controller {
         parent::__construct();
     }
 
+    //according to the $id, get the detail information of particular goal
     function update($id) {
         $this->load->model('goal_setting');
         $query = $this->goal_setting->display_goal($id);
@@ -23,6 +24,7 @@ class Set_goal extends CI_Controller {
         }
     }
 
+    //create family goal
     function create_family_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -55,7 +57,7 @@ class Set_goal extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //create career goal
     function create_career_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -87,7 +89,7 @@ class Set_goal extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //create education goal
     function create_education_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -121,7 +123,7 @@ class Set_goal extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //create spiritual goal
     function create_spiritual_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -153,7 +155,7 @@ class Set_goal extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //create financial goal
     function create_financial_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -185,7 +187,7 @@ class Set_goal extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //create social goal
     function create_social_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -217,7 +219,7 @@ class Set_goal extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //create physical goal
     function create_physical_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {

@@ -1,9 +1,13 @@
 <?php
 
 class Home extends CI_Controller {
-
+    //constructor
     function __construct() {
         parent::__construct();
+    }
+    //load home page
+    function index() {
+        $this->load->view('includes/home_page');
     }
 
     //Facebook
@@ -25,9 +29,7 @@ class Home extends CI_Controller {
         $this->load->view('includes/template_all_about', $data);
     }
 
-    function index() {
-        $this->load->view('includes/home_page');
-    }
+    
 
     //Wenjie-----Value & Resilience
     function resilience_test() {
@@ -73,43 +75,11 @@ class Home extends CI_Controller {
         $this->load->view('value/subpage_value', $data);
     }
 
-    /*   function insert_values() {
-      $data['main'] = 'value/insert_values';
-      $data['nav'] = 'mission_statement/left_nav_value';
-      $this->load->view('value/subpage_value', $data);
-      }
-
-      function do_insert_values() {
-      $data['main'] = 'value/do_insert_values';
-      $data['nav'] = 'mission_statement/left_nav_value';
-      $this->load->view('value/subpage_value', $data);
-      }
-
-      function delete_values() {
-      $data['main'] = 'value/delete_values';
-      $data['nav'] = 'mission_statement/left_nav_value';
-      $this->load->view('value/subpage_value', $data);
-      }
-
-      function do_delete_values() {
-      $data['main'] = 'value/do_delete_values';
-      $data['nav'] = 'mission_statement/left_nav_value';
-      $this->load->view('value/subpage_value', $data);
-      }
-
-
-
-      function test_result() {
-      $data['main'] = 'resilience/test_result';
-      $data['nav'] = 'includes/left_nav_resilience';
-      $this->load->view('resilience/subpage_resilience', $data);
-      } */
-
-	  function references(){
-	  $data['main'] = 'references/references';
+	  function references() {
+        $data['main'] = 'references/references';
         $data['nav'] = 'includes/left_nav_references';
         $this->load->view('references/subpage_references', $data);
-	  }
+    }
     function resilience() {
         $data['main'] = 'resilience/resilience';
         $data['nav'] = 'includes/left_nav_resilience';
@@ -139,25 +109,27 @@ class Home extends CI_Controller {
     }
 
     //End of tracking --- Arian
-//Bowen ----- Goal & Smart
-    function goal() {
-        $data['main'] = 'subpage/holistic';
-        $data['nav'] = 'includes/left_nav_goal';
-        $this->load->view('subpage/subpage_goal', $data);
-    }
 
+//Bowen ----- Goal & Smart
+    //load holistic goal-setting home page
     function holistic() {
         $data['main'] = 'subpage/set_holistic';
         $data['nav'] = 'includes/left_nav_goal';
         $this->load->view('subpage/subpage_goal', $data);
     }
-
+    //introduce the what is goal-setting
+    function goal() {
+        $data['main'] = 'subpage/holistic';
+        $data['nav'] = 'includes/left_nav_goal';
+        $this->load->view('subpage/subpage_goal', $data);
+    }
+    //what is smart goals
     function smart() {
         $data['main'] = 'subpage/smart_goal';
         $data['nav'] = 'includes/left_nav_goal';
         $this->load->view('subpage/subpage_goal', $data);
     }
-
+    //view your goals
     function see_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -168,7 +140,7 @@ class Home extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    //change your goals
     function update_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -179,14 +151,14 @@ class Home extends CI_Controller {
             $this->load->view('login/login_page');
         }
     }
-
+    
     function change_password() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $this->load->view('register/update_password');
         }
     }
-
+    //view and update the personal information
     function personal_info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
