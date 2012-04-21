@@ -1,3 +1,9 @@
+<!--     
+    Author     : Zhong Yiwei
+    Description: Used to generate the window prompting a user to send portfolio report to his mentor and to display 
+    the navigation buttons on footer in "portfolio" function.
+
+-->
 <div style="clear: both;">&nbsp;</div>
 </div>
 <div id = "bodycolor"></div>

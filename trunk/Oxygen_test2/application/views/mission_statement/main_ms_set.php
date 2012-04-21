@@ -1,3 +1,8 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to generate the page and the function which display user`s mission statement after he set his own.
+-->
+
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
 <?php }else{?>
