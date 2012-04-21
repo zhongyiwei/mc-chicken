@@ -56,12 +56,12 @@ else if($checkValue->num_rows() >0){ ?>
 <img width="50px" height="50px" src="<?php echo base_url();?>web_images/flowchart/arrow.png"></img>
 
 <?php if($checkActivityStatus==true){//means there is activity for this user ?>
-<a href="<?php echo base_url();?>index.php/home/activity_page/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Activity-Green(PNG).png"></a>
+<a href="<?php echo base_url();?>index.php/home/activity/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Activity-Green(PNG).png"></a>
 <?php } 
 else if($checkGoal->num_rows() >0){ ?>
-<a href="<?php echo base_url();?>index.php/home/activity_page/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Activity-Blue(PNG).png"></a> <?php
+<a href="<?php echo base_url();?>index.php/home/activity/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Activity-Blue(PNG).png"></a> <?php
 } else { ?>
-<a href="<?php echo base_url();?>index.php/home/activity_page/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Activity-Red(PNG).png"></a>
+<a href="<?php echo base_url();?>index.php/home/activity/"><img width="100px" height="100px" src="<?php echo base_url();?>web_images/flowchart/Activity-Red(PNG).png"></a>
 <?php } ?>
 
 
