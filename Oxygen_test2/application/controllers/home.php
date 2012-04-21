@@ -105,6 +105,11 @@ class Home extends CI_Controller {
       $this->load->view('resilience/subpage_resilience', $data);
       } */
 
+	  function references(){
+	  $data['main'] = 'references/references';
+        $data['nav'] = 'includes/left_nav_references';
+        $this->load->view('references/subpage_references', $data);
+	  }
     function resilience() {
         $data['main'] = 'resilience/resilience';
         $data['nav'] = 'includes/left_nav_resilience';
