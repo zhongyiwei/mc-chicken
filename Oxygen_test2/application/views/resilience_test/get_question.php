@@ -1,3 +1,7 @@
+<!--     
+    Author     : Teo Wen Jie
+    Description: Used to retrieve resilience test question and be passed to flash for display
+-->
 <?php
 
 // Create local variables from the Flash ActionScript posted variables
