@@ -8,7 +8,7 @@
             <li><a href="<?php echo base_url(); ?>index.php/home/">User Guide</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/home/goal/">About Us</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/home/activity_page/">Terms of Use</a></li>
-            <li><a href="<?php echo base_url(); ?>index.php/home/portfolio_coa_motto/#MS">Contact Us</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/home/references">References</a></li>
         </ul>
     </div>
     <div id="copy">
