@@ -1,4 +1,27 @@
+<!--
+    Author     : Ariansah
+    Description: Used to send email reminders to users who enables the email reminder setting
+-->
 <?php
+
+$HOST = 'localhost';
+$USERNAME = 'oxygen';
+$PASSWORD = 'uWrjTtuWNAzp9NtA';
+$DB = 'oxygen';
+
+
+$link = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DB) or die(mysqli_connect_error());
+
+function executeSelectQuery($query) {
+    // remove this comment and line 12 after troubleshooting
+    //echo $query;
+
+    $result = mysqli_query($GLOBALS['link'], $query) or die(mysqli_error($GLOBALS['link']));
+    while ($row = mysqli_fetch_array($result)) {
+        $returnArray[] = $row;
+    }
+    return $returnArray;
+}
 
 date_default_timezone_set('Asia/Singapore');
 function firstOfMonth() {
@@ -9,7 +32,7 @@ function lastOfMonth() {
     return date("Y-m-d", strtotime('-1 second',strtotime('+1 month',strtotime(date('m').'/01/'.date('Y').' 00:00:00'))));
 }
 
-$user_query = $this->db->query('SELECT DISTINCT s.seeker_id, s.name, s.email, r.reminder_frequency from activity a, goal g, goal_category c, seeker s, reminder r
+$user_query = executeSelectQuery('SELECT DISTINCT s.seeker_id, s.name, s.email, r.reminder_frequency from activity a, goal g, goal_category c, seeker s, reminder r
 WHERE g.goal_cat_id = c.goal_cat_id
 AND r.seeker_id = s.seeker_id
 AND s.seeker_id = g.seeker_id
@@ -21,12 +44,12 @@ ORDER BY c.goal_category');
 
 
 $time = date('h:i A');
-foreach ($user_query->result() as $row) {
+for ($i = 0; $i < count($user_query); $i++) {
 
-    $id = $row->seeker_id;
-    $name = $row->name;
-    $to = $row->email;
-    $reminder = $row->reminder_frequency;
+    $id = $user_query[$i]['seeker_id'];
+    $name = $user_query[$i]['name'];
+    $to = $user_query[$i]['email'];
+    $reminder = $user_query[$i]['reminder_frequency'];
     $subject = "Oxygen - Reminder";
     $from = "reminder@oxygen.com";
     $headers = "From: $from";
@@ -37,7 +60,7 @@ foreach ($user_query->result() as $row) {
     if ($reminder=="daily") {
                 
             $date = date("Y-m-d");
-            $query = $this->db->query('SELECT DISTINCT s.seeker_id, g.goal_completion_status, a.activity_id, a.end_date, a.activity_name, a.activity_status
+            $query = executeSelectQuery('SELECT DISTINCT s.seeker_id, g.goal_completion_status, a.activity_id, a.end_date, a.activity_name, a.activity_status
                                        FROM goal g, goal_category c, seeker s, activity a
                                        WHERE g.goal_cat_id = c.goal_cat_id
                                        AND s.seeker_id = g.seeker_id
@@ -47,18 +70,19 @@ foreach ($user_query->result() as $row) {
                                        AND s.seeker_id = ' . $id . '
                                        ORDER BY c.goal_category');
 
-            if ($query->num_rows != 0) {
-                if ($time == "5:24 PM" OR $time == "5:25 PM" OR $time == "5:26 PM" OR $time == "5:27 PM" OR $time == "5:28 PM") {
+            if (count($query) != 0) {
+                //if ($time == "12:00 AM" OR $time == "12:01 AM" OR $time == "12:02 AM" OR $time == "12:03 AM" OR $time == "12:04 AM") {
+                if ($time == "02:00 AM" OR $time == "02:01 AM" OR $time == "02:02 AM" OR $time == "02:03 AM" OR $time == "02:04 AM") {
                     echo $time;
                     $msg = "Hi ".$name.",";
                     $msg .= "\n\nFollowing are the activities that you haven't completed yet: ";
-                    foreach ($query->result() as $arr) {
+                    for ($j = 0; $j < count($query); $j++) {
                         //$goal_set_date = $arr->goal_set_date;
-                        $msg .= "\n\nActivity Name: ".$arr->activity_name;
+                        $msg .= "\n\nActivity Name: ".$query[$j]['activity_name'];
                         $msg .= "\n";
-                        $msg .= "Status: " . $arr->activity_status;
+                        $msg .= "Status: " . $query[$j]['activity_status'];
                         $msg .= "\n";
-                        $msg .= "Target End Date: " . $arr->end_date;
+                        $msg .= "Target End Date: " . $query[$j]['end_date'];
                     }
 
                     $msg .= "\n\nTo update your progress, just click on the link below :";
@@ -83,7 +107,7 @@ foreach ($user_query->result() as $row) {
             $newdate = strtotime ( '+7 day' , strtotime ( $date ) ) ;
             $newdate = date ( 'Y-m-d' , $newdate );
 
-            $query = $this->db->query('SELECT DISTINCT s.seeker_id, g.goal_completion_status, a.activity_id, a.end_date, a.activity_name, a.activity_status
+            $query = executeSelectQuery('SELECT DISTINCT s.seeker_id, g.goal_completion_status, a.activity_id, a.end_date, a.activity_name, a.activity_status
                                        FROM goal g, goal_category c, seeker s, activity a
                                        WHERE g.goal_cat_id = c.goal_cat_id
                                        AND s.seeker_id = g.seeker_id
@@ -93,17 +117,17 @@ foreach ($user_query->result() as $row) {
                                        AND s.seeker_id = ' . $id . '
                                        ORDER BY c.goal_category');
           
-            if ($query->num_rows != 0) {
-                if ($time == "01:00 AM") {
+             if (count($query) != 0) {
+                if ($time == "12:00 AM" OR $time == "12:01 AM" OR $time == "12:02 AM" OR $time == "12:03 AM" OR $time == "12:04 AM") {
                     $msg = "Hi ".$name.",";
                     $msg .= "\n\nFollowing are the activities that you haven't completed yet:";
-                    foreach ($query->result() as $arr) {
+                    for ($j = 0; $j < count($query); $j++) {
                         //$goal_set_date = $arr->goal_set_date;
-                        $msg .= "\n\nActivity Name: ".$arr->activity_name;
+                        $msg .= "\n\nActivity Name: ".$query[$j]['activity_name'];
                         $msg .= "\n";
-                        $msg .= "Status: " . $arr->activity_status;
+                        $msg .= "Status: " . $query[$j]['activity_status'];
                         $msg .= "\n";
-                        $msg .= "Target End Date: " . $arr->end_date;
+                        $msg .= "Target End Date: " . $query[$j]['end_date'];
                     }
 
                     $msg .= "\n\nTo update your progress, just click on the link below :";
@@ -111,7 +135,7 @@ foreach ($user_query->result() as $row) {
                     $msg .= "\n\n";
                     $msg .= "Oxygen Team";
                     mail($to,$subject,$msg,$headers);
-                    echo "Success";
+                    
                 } //if ($time == "00:00") {
             } //if ($query->num_rows != 0) {
 
@@ -128,7 +152,7 @@ foreach ($user_query->result() as $row) {
             //$newdate = strtotime ( '+7 day' , strtotime ( $date ) ) ;
             $newdate = lastOfMonth();
 
-            $query = $this->db->query('SELECT DISTINCT s.seeker_id, a.activity_id, a.end_date, a.activity_name, a.activity_status
+         $query = executeSelectQuery('SELECT DISTINCT s.seeker_id, g.goal_completion_status, a.activity_id, a.end_date, a.activity_name, a.activity_status
                                        FROM goal g, goal_category c, seeker s, activity a
                                        WHERE g.goal_cat_id = c.goal_cat_id
                                        AND s.seeker_id = g.seeker_id
@@ -138,18 +162,18 @@ foreach ($user_query->result() as $row) {
                                        AND s.seeker_id = ' . $id . '
                                        ORDER BY c.goal_category');
 
-            if ($query->num_rows != 0) {
-                if ($time == "01:00 AM") {
+             if (count($query) != 0) {
+                if ($time == "12:00 AM" OR $time == "12:01 AM" OR $time == "12:02 AM" OR $time == "12:03 AM" OR $time == "12:04 AM") {
                     
                     $msg = "Hi ".$name.",";
                     $msg .= "\n\nFollowing are the activities that you haven't completed yet: ";
-                    foreach ($query->result() as $arr) {
+                    for ($j = 0; $j < count($query); $j++) {
                         //$goal_set_date = $arr->goal_set_date;
-                        $msg .= "\n\nActivity Name: ".$arr->activity_name;
+                        $msg .= "\n\nActivity Name: ".$query[$j]['activity_name'];
                         $msg .= "\n";
-                        $msg .= "Status: " . $arr->activity_status;
+                        $msg .= "Status: " . $query[$j]['activity_status'];
                         $msg .= "\n";
-                        $msg .= "Target End Date: " . $arr->end_date;
+                        $msg .= "Target End Date: " . $query[$j]['end_date'];
                     }
 
                     $msg .= "\n\nTo update your progress, just click on the link below :";
