@@ -17,10 +17,10 @@ $gender = $this->session->userdata('gender');
 
 if ($gender == "male"){
     $it = "He";
-    $its = "His";
+    $its = "his";
 }else if ($gender == "female"){
     $it = "She";
-    $its = "Her";
+    $its = "her";
 }
 
 $email = $this->session->userdata('email');
@@ -31,13 +31,13 @@ $headers .= "Reply-To: " . $seeker_name . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-$subject = "Inventation to monitor your friend:$seeker_name's Achievement";
+$subject = "Invitation to monitor your friend: &nbsp;$seeker_name's Achievement";
 
 $backButton = "&nbsp;&nbsp;<a href='javascript:history.go(-1)'><input name='back' value='Back' type='button'/></a>";
 
 $link = base_url() . "index.php/home/portfolio_export_pdf?id=$seeker_id";
 
-$message = "<p style='font-family:Arial;color:#065270'>Hi $referee_name<br/><br/><br/> $seeker_name is using Oxygen-The Life Coaching Interactive Application to set his goals, track his progress and build resilience.<br/><br/>$it would like to share with you $its current goals and achievements. $it has also designed his own Coat of Arms which represents his values in life. Here is link:  <br/><br/><br/>$link<br/><br/><br/>";
+$message = "<p style='font-family:Arial;color:#065270'>Hi $referee_name,<br/><br/><br/> $seeker_name is using Oxygen-The Life Coaching Interactive Application to set his goals, track his progress and build resilience.<br/><br/>$it would like to share with you $its current goals and achievements. $it has also designed his own Coat of Arms which represents his values in life. Here is the link:  <br/><br/><br/>$link<br/><br/><br/>";
 $message .= "Do drop him a mail ($email) to encourage him to continue to strive towards his objectives.<br/><br/>";
 $message .= "Best Regards<br/></p>";
 $message .= "<p style='font-family:Segoe UI;color:#065270;margin-top:-10px;'>Team Oxygen</p>";

@@ -1,3 +1,7 @@
+<!--
+    Source     : Ariansah
+    Description: Used to connect to Database and perform SQL query
+-->
 <?php
 
 $HOST = 'localhost';

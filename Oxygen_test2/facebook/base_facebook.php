@@ -1,3 +1,7 @@
+<!--
+    Source     : Facebook SDK
+    Description: Used for Facebook Integration
+-->
 <?php
 /**
 * Copyright 2011 Facebook, Inc.

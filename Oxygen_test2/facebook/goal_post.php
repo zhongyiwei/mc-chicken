@@ -1,3 +1,7 @@
+<!--
+    Author     : Ariansah
+    Description: Used as the landing page after user login and post his/her goals.
+-->
 <?php
 //require_once 'login.php';
 require_once 'facebook.php';
@@ -38,20 +42,20 @@ try{
 
 	//echo $e->getMessage();
 		if ($e->getMessage() == "(#506) Duplicate status message") {
-			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=1");
+			Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/goal_status?status=1");
 			//echo "Duplicate";
 			exit;
 		}
 
 		else {
 			$msg = $e->getMessage();
-			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=3");
+			Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/goal_status?status=3");
 			//echo "Error";
 		}
 
 		//echo "Good";
     }
-	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=2");
+	Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/goal_status?status=2");
 
 
 ?>

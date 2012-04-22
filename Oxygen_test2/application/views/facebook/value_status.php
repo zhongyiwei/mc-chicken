@@ -23,6 +23,10 @@ $error = $_GET['status'];
 		else if($error == "2") {
 			$msg = "You have successfully shared your Values on your Facebook Wall.";
 		}
+                else if($error == "4") {
+			$msg = "Please set your life values before posting it on Facebook";
+                        
+		}
 		else {
 			$msg = $error;
 		}

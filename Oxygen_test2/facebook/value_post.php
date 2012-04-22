@@ -1,3 +1,7 @@
+<!--
+    Author     : Ariansah
+    Description: Used as the landing page after user login and post his/her values.
+-->
 <?php
 //require_once 'login.php';
 require_once 'facebook.php';
@@ -19,7 +23,7 @@ $facebook = new Facebook(
 // add a status message
 	$message = "My values in life are " . $v1 . ", " . $v2 . ", " . $v3 . ", " . $v4 . ".";
 	$facebook->api('/me/feed', 'POST', array('message' => $message));
-	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/portfolio_mission");
+	Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/portfolio_mission");
 
 
 ?>
