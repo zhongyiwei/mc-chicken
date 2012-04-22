@@ -1,12 +1,12 @@
 /* 
     Document   : style
     Created on : May 4, 2011, 10:29:07 PM
-    Author     : 91150
+    Author     : CAI BOWEN
     Description:
         Purpose of the stylesheet follows.
 */
 
-
+/* define the body style */
 body {
     font-size: 13px;
     color: #837669;
@@ -15,7 +15,7 @@ body {
     width: 1024px;
     margin: 0 auto;
 }
-
+/* define the universal style  */
 h1, h2, h3 {
     margin-left: 10px;
     font-weight: normal;
@@ -77,7 +77,7 @@ hr { display: none; }
 .list1 li.alt img {
     margin-right: 0;
 }
-
+/* define the main content background */
 #wrapper {
     background: url(images/background/home_background.png) no-repeat;
     float:left;           
@@ -92,7 +92,7 @@ hr { display: none; }
     float:left;
 }
 
-/* Menu */
+
 #link a{
     background:#98F5FF;
     margin-left: 10px;
@@ -509,37 +509,6 @@ hr { display: none; }
     text-decoration: none;
 }
 
-/* subpage nav */
-/*
-#subpage {
-        float: left;
-        width: 280px;
-}
-
-#subpage ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-}
-
-#subpage li {
-        padding: 0 0 5px 0px;
-}
-
-
-#subpage a{
-        width: 280px;
-        height: 33px;
-        margin: 0 0 0px 0px;
-        padding: 5px 0 5px 50px;
-        background: url(images/logo_250.jpg) no-repeat ;
-        font-size: 20px;
-        text-decoration: none;
-        color: #FFFFFF;
-}
-#subpage a:hover{
-        margin-left: 20px;
-}*/
 /* Footer */
 
 #footer {

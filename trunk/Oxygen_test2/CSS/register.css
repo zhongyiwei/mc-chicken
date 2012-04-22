@@ -1,11 +1,11 @@
 /* 
     Document   : style
     Created on : May 4, 2011, 10:29:07 PM
-    Author     : 91150
+    Author     : CAI BOWEN
     Description:
         Purpose of the stylesheet follows.
 */
-
+/*defind the body style*/
 body {
 /*    font-family: BPreplay,Arial,Helvetica,sans-serif;*/
     font-size: 13px;
@@ -76,7 +76,7 @@ hr { display: none; }
 .list1 li.alt img {
 	margin-right: 0;
 }
-
+/* main content */
 #wrapper {
             background: url(images/background/home_background.png) no-repeat;
             float:left;           
