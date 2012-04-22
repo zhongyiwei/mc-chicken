@@ -15,21 +15,15 @@
          </div>
     <div id="content_sub">
      	<div class="post">
-            <h2 class="title">Values Video</h2>
+            <h2 class="title">Learn More About Values</h2>
             <div class="entry">
-<p>-insert video here </p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/axMpeZjmoAg" frameborder="0" allowfullscreen></iframe></p>
 <br/><br/>
 </div>
 </div>
        
 	
-		<div class="post">
-            <h2 class="title">Testimonial</h2>
-            <div class="entry">
-<iframe width="420" height="315" src="http://www.youtube.com/embed/wBczHe8EcWg" frameborder="0" allowfullscreen></iframe>
-<br/><br/>
-</div>
-</div>
+
 
 
 
