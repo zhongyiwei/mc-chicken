@@ -1,7 +1,3 @@
- 
-  
-                 
-
 <?php
 /*
    Author     : Wang Qianhua
@@ -266,8 +262,6 @@ class Db_control extends CI_Controller{
                 $this->load->view('portfolio/template_mp',$data);
             } else {
                 $this->load->model('link_db_model');
-                $data['rows'] = $this->link_db_model->get_motto();
-
                 $data['main_portfolio']='portfolio/main_mp';
                 $data['nav_portfolio']='portfolio/left_nav_mp';
                 $this->load->view('portfolio/template_mp',$data);
@@ -315,8 +309,6 @@ class Db_control extends CI_Controller{
                 $this->load->view('portfolio/template_mp',$data);
             } else {
                 $this->load->model('link_db_model');
-                $data['rows'] = $this->link_db_model->get_motto();
-
                 $data['main_portfolio']='portfolio/main_mp';
                 $data['nav_portfolio']='portfolio/left_nav_mp';
                 $this->load->view('portfolio/template_mp',$data);

@@ -1,6 +1,7 @@
 <!--     
     Author     : Wang Qianhua
     Description: Used for retrieve and display all the values within coat of arms and on "Coat of Arms" pages
+-->
 <?php
   $this->load->model('link_db_model');
   $data = $this->link_db_model->get_value_symbol();

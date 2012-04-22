@@ -240,15 +240,6 @@ function get_value_symbol(){
 }
 
 
-function input_motto(){
-    $new=array(
-            'motto'=>$this->input->post('motto_input'),
-            'seeker_id'=>$this->input->post('id_seeker')
-        );
-        $insert = $this->db->insert('motto',$new);
-        return $insert;
-}
-
 
 function get_goal(){
     //$sql = "SELECT activity_name, activity_desc, start_date, end_date, goal_cat_id FROM activity WHERE seeker_id = 7 AND goal_cat_id = 1";
@@ -332,7 +323,6 @@ function get_mission_pdf($seeker_id){
 }
 
 function get_value_pdf($seeker_id){
-    //$query="SELECT motto FROM motto WHERE seeker_id=?";
     $query="SELECT v.value_name FROM seeker_value sv,value v WHERE sv.value_id=v.value_id AND seeker_id=?";
     $record=  $this->db->query($query,$seeker_id);
     return $record;

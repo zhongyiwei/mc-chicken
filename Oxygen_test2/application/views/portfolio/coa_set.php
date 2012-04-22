@@ -157,52 +157,8 @@ function ChgText_crest(imgvalue)
                          echo $r->shield;
                  endforeach;?>" /></div>
         <?php $this->load->view('portfolio/value_symbol'); ?>
-  <!-- <div class="banner" id="banner" align=center>
-  <img alt="" src="<?php echo base_url();$this->load->model('link_db_model');
-                $data = $this->link_db_model->get_coa2();
-
-                 foreach($data->result() as $r) :
-                         echo $r->banner;
-                 endforeach;?>" />
-  </div>
-  <div class="supporter" align=center>
-  <img alt="" src="<?php echo base_url();?>web_images/coa_image/supporter/supporter1.jpg" />
-  </div>
-    <div class="crest" id="crest" align=center>
-          <img alt="" src="<?php echo base_url();$this->load->model('link_db_model');
-                $data = $this->link_db_model->get_coa2();
-
-                 foreach($data->result() as $r) :
-                         echo $r->crest;
-                 endforeach;?>" />
-           </div>-->
-        <?php 
-         $this->load->model('link_db_model');
-                $data = $this->link_db_model->get_motto();
-                if($data->num_rows() > 0) {
-                foreach($data->result() as $r) : ?>
-                <div id="example1" align="center" style="text-align: center;">
-
-  <p align="center" class="example" style="font-size:150%; color:black ;text-align: center">
-
-                    <?php echo $r->motto; ?>
-                </p>
-
-		<?php endforeach; ?>
-
 </div>
-  <?php
-}else{
 
-?>
-
-<p></p>
-<?php }
-?>
-
-
-</div>
- <?php //$this->load->view('portfolio/portfolio_translate');?>
 
 
 

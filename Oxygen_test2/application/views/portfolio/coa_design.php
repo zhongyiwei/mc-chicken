@@ -181,9 +181,6 @@ function ChgText_crest(imgvalue)
     return true;
 }
 </script>
- <?php //$this->load->view('portfolio/portfolio_translate');?>
-
-<?php //$this->load->view('portfolio/value_image');?>
 <div align=center class="coa" id="coa">
 	<div align=center class="image" id="image">
   <img alt="Your Coat of Arms" src="<?php echo base_url();?>web_images/coa_image/shield/coa2.png" /></div>
@@ -196,33 +193,6 @@ function ChgText_crest(imgvalue)
 $this->load->view('portfolio/value_symbol');
   }
 ?>
-        <?php
-         $this->load->model('link_db_model');
-                $data = $this->link_db_model->get_motto();
-                if($data->num_rows() > 0) {
-                foreach($data->result() as $r) : ?>
-                <div id="example1" align="center" style="text-align: center;">
-
-  <p align="center" class="example" style="font-size:150%; color:black ;text-align: center">
-
-                    <?php echo $r->motto; ?>
-                </p>
-
-		<?php endforeach; ?>
-
-</div>
-  <?php
-}else{
-
-?>
-
-<p></p>
-<?php }
-?>
-
-
-
- <?php //$this->load->view('portfolio/portfolio_translate');?>
   </div>
 
 
