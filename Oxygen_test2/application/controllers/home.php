@@ -1,9 +1,9 @@
-<!--     
+<?php
+/*  
     Author     : Wang Qianhua
     Description: Used to control the process of generating web pages for the functions such as "Value", "Resilience", "Mission", "Portfolio", "Activity" and "Coat of Arms" 
                  The codes below serve as intermediary between the Model and the View of relevant pages.
--->
-<?php
+*/
 
 class Home extends CI_Controller {
     //constructor

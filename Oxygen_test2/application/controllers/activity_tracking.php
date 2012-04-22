@@ -1,4 +1,3 @@
-
 <?php
 class Activity_tracking extends CI_Controller{
 
