@@ -446,23 +446,6 @@ class Home extends CI_Controller {
         }
     }
 
-    /*
-      function portfolio_coa_motto() {
-      $is_logged_in = $this->session->userdata('is_logged_in');
-      if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-      $this->load->model('link_db_model');
-      $data['rows'] = $this->link_db_model->get_mission();
-
-      $data['main_portfolio'] = 'portfolio/main_coa_info';
-      $data['nav_portfolio'] = 'portfolio/left_nav_mp';
-      $this->load->view('portfolio/template_mp', $data);
-      } else {
-      $this->load->view('portfolio/page_visitor');
-      }
-      }
-
-     */
-
     function portfolio_do_you_know() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
@@ -481,14 +464,7 @@ class Home extends CI_Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $this->load->model('link_db_model');
-            /*           $query = $this->link_db_model->get_motto();
-              if ($query->num_rows() > 0) {
-              $row = $query->result();
-              $data['motto_set'] = $row[0]->motto;
-              //$this->load->view('mission_statement/template_ms', $data);
-              } else {
-              $data['motto_set'] = "You have not set any motto yet";
-              } */
+
 
             $query1 = $this->link_db_model->get_mission();
             if ($query1->num_rows() > 0) {
