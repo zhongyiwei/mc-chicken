@@ -1,3 +1,8 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to display the "What`s all about" page on the home page
+-->
+
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
 <?php }else{?>
@@ -26,10 +31,7 @@ Hence, we conclude that any exercise in goal setting must be accompanied by resi
             <h2 class="title" id="WMS">Mission Statement?</h2>
             <div class="entry">
                 
-                <p>Your mission statement is a statement of your purpose. 
-It should guide your actions of the individual, spell out your overall life objective, provide a path, and guide decision-making.
- It provides "the framework or context" within which your goals are formulated and actions are taken. It will guide you in setting
- your personal life values and goals which you will subsequently do. It also 
+                <p>
             </p>            
               </div>
         </div>
@@ -38,10 +40,7 @@ It should guide your actions of the individual, spell out your overall life obje
         <div class="post">
             <h2 class="title" id="PMS">Example of a Personal Statement:</h2>
             <div class="entry">
-                <ul>
-                    <li>Live my life to the fullest</li>
-                    <li>Make a positive impact on others` lives</li>
-                </ul>
+  
             </div>
         </div>
 
@@ -57,28 +56,13 @@ It should guide your actions of the individual, spell out your overall life obje
         <div class="post">
             <h2 id="WMS" class="title">Values?</h2>
             <div class="entry">
-			<!--<div id="popup">-->
-			<center>
-			  <img width="400" length="300" src="<?php echo base_url();?>web_images/value/Book_image.jpg" alt="Image" title="Image"></img><br/></center><br/>
-<p>A personal and/or cultural value is an absolute or relative ethical value, the assumption of which can be the basis for ethical action.
- A value system is a set of consistent values and measures. 
- A principle value is a foundation upon which other values and measures of integrity are based. 
- Those values which are not physiologically determined and normally considered objective, such as a desire to avoid physical pain, seek pleasure, etc., are considered subjective, vary across individuals and cultures and are in many ways aligned with belief and belief systems.
- Types of values include ethical/moral values, doctrinal/ideological (religious, political) values, social values, and aesthetic values.
- It is debated whether some values which are not clearly physiologically determined are intrinsic such as altruism and whether some such as acquisitiveness should be valued as vices or virtues.
- Values have typically been studied in sociology; anthropology; social psychology; moral philosophy and business ethics.  </p>
-<br/><br/> 
+			
 	</div>
             </div><!-- End of div class entry -->
        
 		<div class="post">
             <h2 class="title">Why Values?</h2>
             <div class="entry">
-<p>Your values are made up of everything that has happened to you in your life and include influences from: your parents and family, your religious affiliation, your friends and peers, your education, your reading, and more. Effective people recognize these environmental influences and identify and develop a clear, concise, and meaningful set of values/beliefs, and priorities.<br/><br/>
-Once defined, values impact every aspect of your life.<br/><br/>
--You demonstrate and model your values in action in your personal and work behaviors, decision making, contribution, and interpersonal interaction.<br/>
--You use your values to make decisions about priorities in your daily work and home life.<br/>
--Your goals and life purpose are grounded in your values.</p>
 <br/><br/>
 </div>
 </div>
@@ -93,10 +77,7 @@ Once defined, values impact every aspect of your life.<br/><br/>
             <div class="post">
             <h2 class="title" id="WMS">Goals in Life</h2>
             <div class="entry">
-                <p>Many people feel as if they're adrift in the world. They work hard, but they don't seem to get anywhere worthwhile. </p>
-                <p>A key reason that they feel this way is that they haven't spent enough time thinking about what they want from life, and haven't set themselves formal goals. After all, would you set out on a major journey with no real idea of your destination? Probably not!</p>
-                <p>Goal setting is a powerful process for thinking about your ideal future, and for motivating yourself to turn your vision of this future into reality.</p>
-                <p>The process of setting goals helps you choose where you want to go in life. By knowing precisely what you want to achieve, you know where you have to concentrate your efforts. You'll also quickly spot the distractions that can, so easily, lead you astray.</p>
+                
                 </div>
             </div>
         
@@ -132,11 +113,6 @@ Once defined, values impact every aspect of your life.<br/><br/>
 <div class="post">
             <h2 class="title" id="PMS">Why emphasize on resilience?</h2>
             <div class="entry">
-<p>
-Resilience is an extremely important psychological trait to study because of its wide implications for mental health.
-Research  findings suggest that nonresilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. 
-
-</p>
 			</div>
 			</div>
 					<div class="post">
@@ -149,11 +125,6 @@ Research  findings suggest that nonresilient people are 1. associating the threa
             <div class="post">
             <h2 class="title" id="WMS">Mood Setting Through Color Psychology</h2>
             <div class="entry">
-            <p>
-                Research done by University of Manchester, UK, shows that color does affect people's mood. Hence, we implement this Mood Setting to help the users to feel more positive while using the application.
-                After successfully logging into the system, users are to choose a color that best represents his/her mood. The application will then display a background image which corresponds to the users' mood.
-            </p>
-
                 </div>
             </div>
   
@@ -161,17 +132,7 @@ Research  findings suggest that nonresilient people are 1. associating the threa
         <div class="post">
             <h2 class="title" id="WMS">Coat of Arms</h2>
             <div class="entry">
-                <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms2.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
-                <img src="<?php echo base_url();?>web_images/shield of arm/Coat_of_Arms4.png" alt="Coat of Arm"  id="Coat_of_Arms1"/>
-                <h2>The Coat of Arms: </h2>
-                <!--<p style="font-family:arial;color:black;font-size:14px">--><p>A coat of arms is a distinctive heraldic design on a tunic used to cover and protect armor, but the term is more broadly applied to mean a full heraldic
-                    achievement which consists of a shield and certain accessories. In either sense, the design is a symbol unique to a person, family, corporation, or state.
-                    Such displays are also commonly called armorial bearings, armorial devices, heraldic devices, or arms.
-                <br>
-                Your personal coat of arms will be a design which can reflect your values and motto of your life. The 4 symbols on the shield represent each of your values.
-                Your personal motto will be on the manner. Your personal Coat of Arms as a whole will be a unique symbol of you. It represents what a person you are.
 
-                </p>
                 </div>
             </div>
     </div>

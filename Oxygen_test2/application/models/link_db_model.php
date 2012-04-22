@@ -1,6 +1,7 @@
 <!--     
     Author     : Wang Qianhua
-    Description: All the database commands for all the functions done by me
+    Description: Used to construct the model classes that contain functions to retrieve, insert, and update information in your database
+    for the functions such as "Value", "Mission", "Activity", "portfolio" and "Coat of Arms" .
 -->
 <?php
 
@@ -249,27 +250,6 @@ function input_motto(){
         return $insert;
 }
 
-function update_motto(){
-
-   $update_ms = array(
-           'motto' => $this->input->post('motto_update'),
-    );
-
-    $this->db->where('seeker_id', $this->session->userdata('seeker_id'));
-    //$this->db->update('mission', $update_ms);
-    $update= $this->db->update('motto',$update_ms);
-    return $update;
-}
-
-
-function get_motto(){
-    $query="SELECT motto FROM motto WHERE seeker_id=?";
-    $record=  $this->db->query($query,array($this->session->userdata('seeker_id')));
-    return $record;
-}
-
-
-
 
 function get_goal(){
     //$sql = "SELECT activity_name, activity_desc, start_date, end_date, goal_cat_id FROM activity WHERE seeker_id = 7 AND goal_cat_id = 1";
@@ -341,7 +321,6 @@ function get_num_portfolio_active_goal_activity($seeker_id){
 }
 
 function get_game_scroe(){
-    //$query="SELECT motto FROM motto WHERE seeker_id=?";
     $query="SELECT score FROM resilience_game_result WHERE seeker_id=? ORDER BY score DESC LIMIT 3 ";
     $record=  $this->db->query($query,array($this->session->userdata('seeker_id')));
     return $record;
