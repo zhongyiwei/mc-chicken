@@ -1,10 +1,9 @@
-<!--     
-    Author     : Wang Qianhua
+<?php
+/*
+ Author     : Wang Qianhua
     Description: Used to construct the model classes that contain functions to retrieve, insert, and update information in your database
     for the functions such as "Value", "Mission", "Activity", "portfolio" and "Coat of Arms" .
--->
-<?php
-
+ */
 class Link_db_model extends CI_Model{
 
 function activity_sa(){
