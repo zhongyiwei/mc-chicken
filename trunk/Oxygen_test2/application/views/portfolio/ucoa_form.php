@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used for a user to submit his updated shield for Coat of Arms in "Coat of Arms" function
+-->
 <?php echo form_open('db_control/validate_coa_update');
 echo form_hidden('id_seeker', $this->session->userdata('seeker_id'));
 ?>

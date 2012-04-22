@@ -1,4 +1,7 @@
-
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to display the form for users to fill in and submit their activities for goals
+-->
 
                      <div class="row">                          <!--<form name="set_activity_form" class="form" id="form">-->
         <!--start_date selection begin-->

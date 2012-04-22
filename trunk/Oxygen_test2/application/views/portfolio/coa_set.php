@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to display the Coat of Arms on the page after the user select and submit his Coat of Arms.
+-->
 
  <link href="<?php echo base_url();?>CSS/coa_design.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript">

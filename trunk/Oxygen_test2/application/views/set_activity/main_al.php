@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to display the list which contain all the uncompleted activities
+-->
 <?php
 $id=$this->session->userdata('seeker_id');
     $all_activity_query = $this->db->query('SELECT * FROM activity a, goal g, goal_category gc

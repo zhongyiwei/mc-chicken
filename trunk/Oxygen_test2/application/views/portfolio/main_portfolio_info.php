@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to display the "do you know" page for "Portfolio" function
+-->
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
 <?php }else{?>

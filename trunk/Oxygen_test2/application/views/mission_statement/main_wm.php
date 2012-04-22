@@ -1,6 +1,6 @@
 <!--     
     Author     : Wang Qianhua
-    Description: Used to display the "do you know" page for mission statement function
+    Description: Used to display the "do you know" page for "Mission" function
 -->
 
 <?php if($this->session->userdata('type')=='negative'){ ?>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="post">
-            <h2 class="title" id="WMS">Set Mission Statement on Oxygen</h2>
+            <h2 class="title" id="WMS">Set Mission Statement using Oxygen</h2>
             <div class="entry">
                 <p>
             </p>            

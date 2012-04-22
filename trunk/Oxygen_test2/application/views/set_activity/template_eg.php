@@ -1,3 +1,8 @@
+<!-- 
+    Author     : Wang Qianhua
+    Description: Used to construct and generate the page that displays the error message if users tried to access to "set activity" function 
+                for a goal type before he sets any goal of this type
+-->
 <?php $this->load->view('includes/header_general');?>
 
 <?php $this->load->view('includes/banner_general');?>

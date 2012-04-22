@@ -1,3 +1,9 @@
+<!-- 
+    Author     : Wang Qianhua
+    Description: This page is used to control the navigation menu on the footer section in "set activity" function 
+-->
+
+<!-- end #sidebar -->
 <div id="xxx">
 </div>
 <!-- end #sidebar -->

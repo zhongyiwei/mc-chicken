@@ -1,4 +1,7 @@
-<!-- This page is used to control the navigation on the footer section in "set value" function -->
+<!-- 
+    Author     : Wang Qianhua
+    Description: This page is used to control the navigation menu on the footer section in "set value" function 
+-->
 
 <!-- end #sidebar -->
 <div style="clear: both;">&nbsp;</div>

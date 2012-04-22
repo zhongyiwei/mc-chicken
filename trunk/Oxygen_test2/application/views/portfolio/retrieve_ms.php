@@ -1,4 +1,7 @@
-
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to retrieve users` mission statement saved in database
+-->
                 <?php
                 $this->load->model('link_db_model');
                 $data = $this->link_db_model->get_mission();

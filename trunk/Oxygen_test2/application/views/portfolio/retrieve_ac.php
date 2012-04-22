@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to retrieve users` activities saved in database
+-->
 		<?php 
                 $data['rows'] = $this->link_db_model->get_activity();
                 if($data['rows'] == null){
