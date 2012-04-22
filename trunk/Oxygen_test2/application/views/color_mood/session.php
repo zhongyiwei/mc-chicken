@@ -1,3 +1,8 @@
+<!--
+    Author     : Ariansah
+    Description: Used to retrieve the color chosen by the user and keep it in the session
+-->
+
 <?php
 $color=$_GET['mycolor'];
 

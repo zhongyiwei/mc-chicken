@@ -1,3 +1,8 @@
+<!--
+    Author     : Ariansah
+    Description: Used to check if user has logged in to Facebook and given permission to the App to post on his/her wall. If the user has done so,
+                 the code below will post the user's goal.
+-->
 <?php
 require_once 'facebook.php';
 include "dbFunctions.php";
@@ -7,7 +12,7 @@ $type = $_GET['type'];
 $goal = executeSelectQuery("SELECT * FROM goal WHERE seeker_goal_id = $id");
 
 
-$redirect = base_url() . "facebook/goal_post.php?type=". $type. "&id" . $id;
+$redirect = "http://homes.soi.rp.edu.sg/oxygen/facebook/goal_post.php?type=". $type. "&id" . $id;
 $appId = '200284213420495';
 $appSecret = 'f1c1ab83d794584fb2079a2de9614e27';
 
@@ -76,20 +81,20 @@ if ($user)
 
 	//echo $e->getMessage();
 		if ($e->getMessage() == "(#506) Duplicate status message") {
-			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=1");
+			Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/goal_status?status=1");
 			//echo "Duplicate";
 			exit;
 		}
 
 		else {
 			$msg = $e->getMessage();
-			Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=3");
+			Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/goal_status?status=3");
 			//echo "Error";
 		}
 
 		//echo "Good";
     }
-	Header("Location: http://sit.rp.edu.sg/oxygen/index.php/home/goal_status?status=2");
+	Header("Location: http://homes.soi.rp.edu.sg/oxygen/index.php/home/goal_status?status=2");
 
 }
 

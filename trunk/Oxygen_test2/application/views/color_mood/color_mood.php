@@ -1,4 +1,7 @@
-
+<!--
+    Author     : Ariansah
+    Description: Used to display the swf format of the color mood setting input
+-->
 <?php $this->load->view('register/register_header'); ?>
 <script language="JavaScript" type="text/javascript">
 <!--
@@ -293,7 +296,7 @@ margin-bottom:-20px;
 		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
 		'width', '642',
 		'height', '325',
-		'src', 'http://sit.rp.edu.sg/oxygen/oxygen2.2/new_color',
+		'src', 'http://homes.soi.rp.edu.sg/oxygen/new_color',
 		'quality', 'high',
 		'pluginspage', 'http://www.adobe.com/go/getflashplayer',
 		'align', 'middle',
@@ -308,7 +311,7 @@ margin-bottom:-20px;
 		'menu', 'true',
 		'allowFullScreen', 'false',
 		'allowScriptAccess','sameDomain',
-		'movie', 'http://sit.rp.edu.sg/oxygen/oxygen2.2/new_color',
+		'movie', 'http://homes.soi.rp.edu.sg/oxygen/new_color',
 		'salign', ''
 		); //end AC code
 </script>

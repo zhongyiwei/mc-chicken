@@ -45,13 +45,13 @@ foreach ($user_query->result() as $row) {
                                        AND g.goal_completion_status != "Completed"
                                        AND a.activity_status != "Completed"
                                        AND s.seeker_id = ' . $id . '
-                                       AND a.end_date = "' . $date . '"
                                        ORDER BY c.goal_category');
 
             if ($query->num_rows != 0) {
-                if ($time == "01:00 AM") {
+                if ($time == "5:24 PM" OR $time == "5:25 PM" OR $time == "5:26 PM" OR $time == "5:27 PM" OR $time == "5:28 PM") {
+                    echo $time;
                     $msg = "Hi ".$name.",";
-                    $msg .= "\n\nFollowing are the activities that you have to complete today: ";
+                    $msg .= "\n\nFollowing are the activities that you haven't completed yet: ";
                     foreach ($query->result() as $arr) {
                         //$goal_set_date = $arr->goal_set_date;
                         $msg .= "\n\nActivity Name: ".$arr->activity_name;
@@ -62,9 +62,9 @@ foreach ($user_query->result() as $row) {
                     }
 
                     $msg .= "\n\nTo update your progress, just click on the link below :";
-                    $msg .= "\nhttp://sit.rp.edu.sg/91149/oxygen_1/index.php/home";
+                    $msg .= "\nhttp://homes.soi.rp.edu.sg/oxygen/index.php/home";
                     $msg .= "\n\n";
-                    $msg .= "The Oxygen Team";
+                    $msg .= "Oxygen Team";
                     mail($to,$subject,$msg,$headers);
 
                 } //if ($time == "00:00") {
@@ -91,14 +91,12 @@ foreach ($user_query->result() as $row) {
                                        AND g.goal_completion_status != "Completed"
                                        AND a.activity_status != "Completed"
                                        AND s.seeker_id = ' . $id . '
-                                       AND a.end_date >= "' . $date . '"
-                                       AND a.end_date <= "' . $newdate . '"
                                        ORDER BY c.goal_category');
           
             if ($query->num_rows != 0) {
                 if ($time == "01:00 AM") {
                     $msg = "Hi ".$name.",";
-                    $msg .= "\n\nFollowing are the activities that you have to complete in this week: ";
+                    $msg .= "\n\nFollowing are the activities that you haven't completed yet:";
                     foreach ($query->result() as $arr) {
                         //$goal_set_date = $arr->goal_set_date;
                         $msg .= "\n\nActivity Name: ".$arr->activity_name;
@@ -109,9 +107,9 @@ foreach ($user_query->result() as $row) {
                     }
 
                     $msg .= "\n\nTo update your progress, just click on the link below :";
-                    $msg .= "\nhttp://sit.rp.edu.sg/91149/oxygen_1/index.php/home";
+                    $msg .= "\nhttp://homes.soi.rp.edu.sg/oxygen/index.php/home";
                     $msg .= "\n\n";
-                    $msg .= "The Oxygen Team";
+                    $msg .= "Oxygen Team";
                     mail($to,$subject,$msg,$headers);
                     echo "Success";
                 } //if ($time == "00:00") {
@@ -138,15 +136,13 @@ foreach ($user_query->result() as $row) {
                                        AND g.goal_completion_status != "Completed"
                                        AND a.activity_status != "Completed"
                                        AND s.seeker_id = ' . $id . '
-                                       AND a.end_date >= "' . $date . '"
-                                       AND a.end_date <= "' . $newdate . '"
                                        ORDER BY c.goal_category');
 
             if ($query->num_rows != 0) {
                 if ($time == "01:00 AM") {
                     
                     $msg = "Hi ".$name.",";
-                    $msg .= "\n\nFollowing are the activities that you have to complete in this month: ";
+                    $msg .= "\n\nFollowing are the activities that you haven't completed yet: ";
                     foreach ($query->result() as $arr) {
                         //$goal_set_date = $arr->goal_set_date;
                         $msg .= "\n\nActivity Name: ".$arr->activity_name;
@@ -157,9 +153,9 @@ foreach ($user_query->result() as $row) {
                     }
 
                     $msg .= "\n\nTo update your progress, just click on the link below :";
-                    $msg .= "\nhttp://sit.rp.edu.sg/91149/oxygen_1/index.php/home";
+                    $msg .= "\nhttp://homes.soi.rp.edu.sg/oxygen/index.php/home";
                     $msg .= "\n\n";
-                    $msg .= "The Oxygen Team";
+                    $msg .= "Oxygen Team";
                     mail($to,$subject,$msg,$headers);
                     
                 } //if ($time == "00:00") {
