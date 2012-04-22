@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to generate resilience test results based on users` answered to the resilience test questions saved in database
+-->
             <?php
             $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {

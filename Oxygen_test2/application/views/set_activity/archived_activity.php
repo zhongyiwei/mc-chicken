@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to display the activities a user has completed in the past
+-->
 <?php
 $id=$this->session->userdata('seeker_id');
     $all_activity_query = $this->db->query('SELECT * FROM activity a, goal g, goal_category gc

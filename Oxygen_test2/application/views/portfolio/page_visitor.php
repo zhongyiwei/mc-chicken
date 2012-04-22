@@ -1,4 +1,8 @@
-<!-- The codes below are used to generate the page that displays the error message if users tried to access to a function that only members who logged in are able to access -->
+<!-- 
+    Author     : Wang Qianhua
+    Description: Used to generate the page that displays the error message if users tried to access to a function that only members who logged 
+                in are able to access 
+-->
 
 <?php $this->load->view('register/register_header'); ?>
 <div id="register">

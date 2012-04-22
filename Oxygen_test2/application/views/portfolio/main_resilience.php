@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to generate resilience test results based on users` answered to the resilience test questions saved in database
+-->
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />
 <?php }else{?>

@@ -1,4 +1,7 @@
-
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to generate and display the function for users to track their activities
+-->
 <?php
 $goal_cat_query = $this->db->query('SELECT * FROM goal_category');
 

@@ -1,6 +1,6 @@
 <!--     
     Author     : Wang Qianhua
-    Description: Used to create and display "Coat of Arms" function.
+    Description: Used to create and display "Coat of Arms" function where users can customize their own Coat of Arms by selecting shield.
 -->
 
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery-latest.js"></script>

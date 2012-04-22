@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: All the database commands for all the functions done by me
+-->
 <?php
 
 class Link_db_model extends CI_Model{

@@ -1,3 +1,8 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to generate the page that displays the error message if users tried to access to "Track Activity" which only members who logged 
+                in are able to access 
+-->
 <?php $this->load->view('register/register_header'); ?>
 <div id="register">
     <h1 style="padding-top: 20px;">&otimes;Error&otimes;</h1>

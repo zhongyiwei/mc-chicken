@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to generate the page and the function for users to set activities through filling in the form
+-->
 <script type="text/javascript">
 <!--
     function validate_form ()

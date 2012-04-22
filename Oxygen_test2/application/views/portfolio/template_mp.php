@@ -1,3 +1,7 @@
+<!--     
+    Author     : Wang Qianhua
+    Description: Used to construct and display the pages in "portfolio" and "coat of arms" function.
+-->
 <?php $this->load->view('includes/header_general');?>
 
 <?php $this->load->view('includes/banner_general');?>
