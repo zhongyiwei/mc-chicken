@@ -55,7 +55,7 @@
                 </div>
         
             <div class="post">
-            <h2 class="title">Her Injuries</h2>
+            <h2 class="title">Her Bounceback</h2>
             <div class="entry">
                 <p>Since coming off her wheelchair in February, Ms Koh has embarked on a training programme seven days a week. 
                     It includes swimming, weight exercises, stationary bike cycling and four days of walking. 
@@ -69,24 +69,16 @@
                  <div class="post">
             <h2 class="title">What she told us</h2>
             <div class="entry">
+			         <h2>MS KIRSTEN KOH</h2>
                 <p>'I didn't want the accident to win. If I withdraw from sports, the accident wins.'
-                  </p>  
-                  <h2>MS KIRSTEN KOH</h2>
+                  </p>  <br/>
+         
                   
-                  Team Oxygen believes postive thinking has helped Ms Koh to resilient and be able to bounce back from her traumatic accident.
+                 <p> Team Oxygen believes postive thinking has helped Ms Koh to resilient and be able to bounce back from her traumatic accident.</p>
             </div>
                 </div>
 
-		<div class="post">
-            <h2 class="title">Page Credits</h2>
-            <div class="entry">
-			
-			<p>
-Resilience Test Song :http://www.youtube.com/watch?v=wioCe8elAsA
- </p>
-<br/><br/>
-</div>
-</div>
+
     <!-- end #content -->
 
 </div><!-- End of div class post -->

@@ -27,18 +27,7 @@
 <div id="page">
 
     <div id="content_sub">
-	       <div class="post">
-            <h2 class="title">Resilience Citation</h2>
-	
-            <div class="entry">
-<p>Quiz Questions Adapted From:Martin E. P. Seligman(1995). Learned Helplessness: A Theory for the Age of Personal Control
- </p>
 
-
-            </div>
-
-
-        </div><!-- End of div class entry -->
         <div class="post">
             <h2 class="title">Values Citation</h2>
 	
@@ -52,7 +41,6 @@
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0003_Authority.png" alt="Authority" width="70px" height="70px"title="Authority"></img></td><td width="350px">[Crown Silhouette]. Retrieved: Jan 28 2012, from ArthursClipArt: http://www.arthursclipart.org/silhouettes/misc/crown.gif</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0004_Accuracy.png" alt="Accuracy" width="70px" height="70px"title="Accuracy"></img></td><td width="350px">Pekkala, R. (2008, Mar). Retrieved: Jan 2 2012, from Openclipart: http://openclipart.org/detail/15483/risto_pekkala_Alarm_clock</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0005_Creativity.png" alt="Creativity" width="70px" height="70px"title="Creativity"></img></td><td width="350px">Ocal (2007, Nov). Retrieved: Feb 2 2012, from Clker: http://www.clker.com/clipart-3292.html</td></tr>
-<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0006_Acceptance.png" alt="Acceptance" width="70px" height="70px"title="Acceptance"></img></td><td width="350px">-</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0007_Loyalty.png" alt="Loyalty" width="70px" height="70px"title="Loyalty"></img></td><td width="350px">[Dog, Silhouette]. Retrieved: Jan 1 2012, from Florida Center for Instructional Technology: http://etc.usf.edu/clipart/70400/70422/70422_262_RG-240_s.htm</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0008_Recognition.png" alt="Recognition" width="70px" height="70px"title="Recognition"></img></td><td width="350px">liftarn (2006, Oct). Retrieved: Jan 28 2012, from Openclipart: http://openclipart.org/detail/833/perseus-by-liftarn</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0009_Knowledge.png" alt="Knowledge" width="70px" height="70px"title="Knowledge"></img></td><td width="350px">dpkpm007. (2010, Dec). Retrieved: Jan 17 2012, from Openclipart: http://openclipart.org/detail/101017/eci-book.svg-by-dpkpm007</td></tr>
@@ -63,10 +51,10 @@
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0014_Aesthetics.png" alt="Aesthetics" width="70px" height="70px"title="Aesthetics"></img></td><td width="350px">[Butterfly Silhouette]. Retrieved: Jan 28 2012, from ArthursClipArt: http://www.arthursclipart.org/insects/butterbw/B-FLY1.gif</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0015_Beauty.png" alt="Beauty" width="70px" height="70px"title="Beauty"></img></td><td width="350px">[Recycling]. Retrieved: Jan 5 2012, from PublicLib: http://www.wotomoro.com/PUBLICLIB2/Modern%20Simple/slides/Recycling.html</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0016_Health.png" alt="Health" width="70px" height="70px"title="Health"></img></td><td width="350px">[Caduceus Silhouette]. Retrieved: Jan 28 2012, from ArthursClipArt: http://www.arthursclipart.org/medical/general/caduceus.gif </td></tr>
-<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0017_Competence.png" alt="Competence" width="70px" height="70px"title="Competence"></img></td><td width="350px">-</td></tr>
+<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0017_Competence.png" alt="Competence" width="70px" height="70px"title="Competence"></img></td><td width="350px">[Star]. Retrieved: Jan 17 2012, from Photobucket: http://media.photobucket.com/image/nautical%20star%20tattoos/BamMargera1821/Tattoos/startat.jpg?o=14</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0018_Wisdom.png" alt="Wisdom" width="70px" height="70px"title="Wisdom"></img></td><td width="350px">[Owl Silhouette]. Retrieved: Jan 17 2012, from Openclipart: http://openclipart.org/image/800px/svg_to_png/167605/Owl.png</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0019_Dependability.png" alt="Dependability" width="70px" height="70px"title="Dependability"></img></td><td width="350px">Ocal (2008, Mar). Retrieved: Feb 7 2012, from Clker: http://www.clker.com/clipart-wipp-aussersihl-coat-of-arms1.html.</td></tr>
-<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0020_Systematic.png" alt="Systematic" width="70px" height="70px"title="Systematic"></img></td><td width="350px">-</td></tr>
+<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0020_Systematic.png" alt="Systematic" width="70px" height="70px"title="Systematic"></img></td><td width="350px">[Recycling]. Retrieved: Jan 18 2012, from Wotomoro: http://www.wotomoro.com/PUBLICLIB2/Modern%20Simple/slides/Recycling.html</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0021_Family.png" alt="Family" width="70px" height="70px"title="Family"></img></td><td width="350px">[Couple Silhouette]. Retrieved: Jan 28 2012, from ArthursClipArt: http://www.arthursclipart.org/people/people/silhoutte%203.gif</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0022_Adventure.png" alt="Adventure" width="70px" height="70px"title="Adventure"></img></td><td width="350px">National Park Service(1982). Retrieved: Jan 1 2012, from TheNounProject: http://thenounproject.com/noun/climbing/#icon-No526</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0023_Caring.png" alt="Caring" width="70px" height="70px"title="Caring"></img></td><td width="350px">Perry, P. Retrieved: Jan 10 2012, from AcclaimImages: http://www.computerclipart.com/computer_clipart_images/persons_hands_holding_up_a_heart_0515-1108-2000-5916.html</td></tr>
@@ -87,7 +75,7 @@
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0038_Independence.png" alt="Independence" width="70px" height="70px"title="Independence"></img></td><td width="350px">Macdonald, J. (2007, Jan). Retrieved: Jan 4 2012, from Well-Tempered Web Design: http://www.adinkra.org/htmls/adinkra/fawo.htm</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0039_Peace.png" alt="Peace" width="70px" height="70px"title="Peace"></img></td><td width="350px">Ocal (2007, Nov). Retrieved: Feb 2 2012, from Clker: http://www.clker.com/clipart-3292.html</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0040_Generosity.png" alt="Generosity" width="70px" height="70px"title="Generosity"></img></td><td width="350px">Team Artist Owned</td></tr>
-<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0041_Perfection.png" alt="Perfection" width="70px" height="70px"title="Perfection"></img></td><td width="350px">-</td></tr>
+<tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0041_Perfection.png" alt="Perfection" width="70px" height="70px"title="Perfection"></img></td><td width="350px">[Orchid Image]. Retrieved: Feb 1 2012, from Freebrushes: http://free-brushes.com/2008/09/24/orchid_brush_pack.html</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0042_Farsightedness.png" alt="Farsightedness" width="70px" height="70px"title="Farsightedness"></img></td><td width="350px">Ocal (2007, Nov). Retrieved: Feb 10 2012, from Clker: http://www.clker.com/clipart-2639.html</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0043_Brave.png" alt="Brave" width="70px" height="70px"title="Brave"></img></td><td width="350px">[Lion Silhouette]. Retrieved: Jan 28 2012, from ArthursClipArt: http://www.arthursclipart.org/lions/lions/lion%2008.gif</td></tr>
 <tr><td><img src="<?php echo base_url();?>web_images/value_symbol/adult/_0044_Teamwork.png" alt="Teamwork" width="70px" height="70px"title="Teamwork"></img></td><td width="350px">[Ant Silhouette]. Retrieved: Jan 17 2012, from Openclipart: http://openclipart.org/image/800px/svg_to_png/69/rejon_Ant_Icon.png</td></tr>
@@ -108,13 +96,30 @@
 
 
                 
-</table>
+</table><br/>
+Animal Brushes credits: http://kmh425.deviantart.com/
 </div>
         
 
 
         </div><!-- End of div class entry -->
-    
+    	       <div class="post">
+            <h2 class="title">Resilience Citation</h2>
+	
+            <div class="entry">
+<p>1. Quiz Questions Adapted From:Martin E. P. Seligman(1995). Learned Helplessness: A Theory for the Age of Personal Control<br/>
+2. Dancing Man Animation Adapted From:John (2011, May). Retrieved: Feb 20 2012, from: http://freeflashanimation.blogspot.com/<br/>
+3. Test Song Adapted From: [Hip Hop Dance Mix #40]. Retrieved: Jan 22 2012, from youtube: http://www.youtube.com/watch?v=wioCe8elAsA
+ </p>
+
+
+
+
+
+            </div>
+
+
+        </div><!-- End of div class entry -->
 
 
 
