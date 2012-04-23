@@ -108,19 +108,49 @@ Animal Brushes credits: http://kmh425.deviantart.com/
 	
             <div class="entry">
 <p>1. Quiz Questions Adapted From:Martin E. P. Seligman(1995). Learned Helplessness: A Theory for the Age of Personal Control<br/>
-2. Dancing Man Animation From:John (2011, May). Retrieved: Feb 20 2012, from: http://freeflashanimation.blogspot.com/ (Royalty Free)<br/>
-3. Test Song From: [Hip Hop Dance Mix #40]. Retrieved: Jan 22 2012, from youtube: http://www.youtube.com/watch?v=wioCe8elAsA (Royalty Free)<br/> 
+2. Dancing Man Animation From:John (2011, May). Retrieved: Feb 20 2012, from: http://freeflashanimation.blogspot.com/ [Royalty Free]<br/>
+3. Test Song From: [Hip Hop Dance Mix #40]. Retrieved: Jan 22 2012, from youtube: http://www.youtube.com/watch?v=wioCe8elAsA [Royalty Free]<br/> 
 <br/><b>Resilience and Positive Psychology concept is referred from:</b><br/>
 4. R.J. Fetsch, C. C. (2008, Apr). Preventing Youth and Adult Suicide. Retrieved November 12, 2011, from Colorado State University Extention: http://www.ext.colostate.edu/pubs/consumer/10213.html<br/>
 5. Seligman, M. E. (1998). Learned Optimism. New York: Pocket Books.<br/>
 6. Tang, S. P. (2011). Singapore Youth Survey : Examining the stressors, risks and reslience of young people. Singapoe: Beyond Social Services.
-<br/><b>Goal setting concept is referred from:</b><br/>
-7. Paul H. Hersey, K. H. (2001). Management of Organizational Behavior . New Jersay, USA: Prentice Hall Inc.<br/>
-8. Matthews, G. (n.d.). Writing Down Your Goals – The Harvard Written Goal Study. Fact or Fiction? Retrieved October 5, 2011, from http://sidsavara.com/personal-productivity/fact-or-fiction-the-truth-about-the-harvard-written-goal-study
 </p>
 </div>
 </div><!-- End of div class entry -->
 	
+    	       <div class="post">
+            <h2 class="title">Goal-setting Citation</h2>	
+            <div class="entry">
+<p>
+1. Paul H. Hersey, K. H. (2001). Management of Organizational Behavior . New Jersay, USA: Prentice Hall Inc.<br/>
+2. Matthews, G. (n.d.). Writing Down Your Goals – The Harvard Written Goal Study. Fact or Fiction? Retrieved October 5, 2011, from http://sidsavara.com/personal-productivity/fact-or-fiction-the-truth-about-the-harvard-written-goal-study
+</p>
+</div>
+</div><!-- End of div class entry -->
+
+
+    	       <div class="post">
+            <h2 class="title">Goal-setting Citation</h2>	
+            <div class="entry">
+<p>
+1. Paul H. Hersey, K. H. (2001). Management of Organizational Behavior . New Jersay, USA: Prentice Hall Inc.<br/>
+2. Matthews, G. (n.d.). Writing Down Your Goals – The Harvard Written Goal Study. Fact or Fiction? Retrieved October 5, 2011, from http://sidsavara.com/personal-productivity/fact-or-fiction-the-truth-about-the-harvard-written-goal-study
+</p>
+</div>
+</div><!-- End of div class entry -->
+
+    	       <div class="post">
+            <h2 class="title">Other Citation</h2>	
+            <div class="entry">
+<p>
+1. American Psychological Association. (n.d.). The Road to Resilience - Ten Ways to Build Resilience. Retrieved October 10, 2011, from http://www.apa.org/helpcenter/road-resilience.aspx#: http://www.apa.org/helpcenter/road-resilience.aspx# <br/>
+2. Twenge JM, C. W. (2012). Generational Differences in Young Adults' Life Goals, Concern for Others, and Civic Orientation, 1966-2009. Journal of Personality and Social Psychology.
+
+</p>
+</div>
+</div><!-- End of div class entry -->
+
+
     <!-- end #content -->
 
 </div><!-- End of div class post -->
