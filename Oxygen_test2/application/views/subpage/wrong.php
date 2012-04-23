@@ -3,7 +3,7 @@
 <div id="register">
     <h1>&otimes;Error&otimes;</h1>
     
-    <p>You did not fill in all the fields. Please <a href="<?php echo base_url();?>index.php/home/holistic/">try again</a>!</p>
+    <p>You did not fill in all the fields before submitting your goal. Please <a href="<?php echo base_url();?>index.php/home/holistic/">try again</a>!</p>
 </div>
 
 
