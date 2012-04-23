@@ -13,7 +13,7 @@
         <div class="post">
             <h2 class="title">Learn More About Setting Goals</h2>
             <div class="entry">
-                <p><iframe width="560" height="450" src="http://www.youtube.com/embed/dfjyd8zNL9g" frameborder="0" allowfullscreen></iframe></p>
+                <p><iframe width="560" height="340" src="http://www.youtube.com/embed/dfjyd8zNL9g" frameborder="0" allowfullscreen></iframe></p>
                 <br/><br/>
             </div>
         </div>
