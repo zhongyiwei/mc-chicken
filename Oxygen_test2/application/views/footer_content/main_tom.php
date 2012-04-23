@@ -28,7 +28,7 @@
                 <p>
                     The use of this website is subject to the following terms of use:
                 </p>
-                <ol>
+                <ol style="list-style: disc; margin-left: 30px;">
                     <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
                     <li>This website uses cookies to monitor browsing preferences.</li>
                     <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
