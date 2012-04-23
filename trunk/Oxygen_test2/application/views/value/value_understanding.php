@@ -17,7 +17,7 @@
         <div class="post">
             <h2 class="title">Learn More About Values</h2>
             <div class="entry">
-                <p><iframe width="560" height="450" src="http://www.youtube.com/embed/axMpeZjmoAg" frameborder="0" allowfullscreen></iframe></iframe></p>
+                <p><iframe width="560" height="340" src="http://www.youtube.com/embed/axMpeZjmoAg" frameborder="0" allowfullscreen></iframe></iframe></p>
                 <br/><br/>
             </div>
         </div>
