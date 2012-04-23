@@ -58,8 +58,8 @@ $id=$this->session->userdata('seeker_id');
                   ?>
                         <tr>
                           <td><?php echo $row['goal_category']; ?></td>
-                           <td><?php echo $row['goal_desc']; ?></td>
-                          <td><?php echo $row['activity_name']; ?></td>
+                           <td><?php echo substr($row['goal_desc'],0,50); ?></td>
+                          <td><?php echo substr($row['activity_name'],0,50); ?></td>
                           <td><?php echo $row['start_date']; ?></td>
                           <td><?php echo $row['end_date']; ?></td>
                           <td><?php echo $row['activity_status']; ?></td>
