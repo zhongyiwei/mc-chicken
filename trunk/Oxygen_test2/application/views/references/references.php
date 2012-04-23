@@ -109,8 +109,13 @@ Animal Brushes credits: http://kmh425.deviantart.com/
             <div class="entry">
 <p>1. Quiz Questions Adapted From:Martin E. P. Seligman(1995). Learned Helplessness: A Theory for the Age of Personal Control<br/>
 2. Dancing Man Animation Adapted From:John (2011, May). Retrieved: Feb 20 2012, from: http://freeflashanimation.blogspot.com/<br/>
-3. Test Song Adapted From: [Hip Hop Dance Mix #40]. Retrieved: Jan 22 2012, from youtube: http://www.youtube.com/watch?v=wioCe8elAsA
- </p>
+3. Test Song Adapted From: [Hip Hop Dance Mix #40]. Retrieved: Jan 22 2012, from youtube: http://www.youtube.com/watch?v=wioCe8elAsA<br/>
+<br/><b>Resilience and Positive concept is adopted from:</b><br/>
+4. R.J. Fetsch, C. C. (2008, Apr). Preventing Youth and Adult Suicide. Retrieved November 12, 2011, from Colorado State University Extention: http://www.ext.colostate.edu/pubs/consumer/10213.html<br/>
+5. Seligman, M. E. (1998). Learned Optimism. New York: Pocket Books.<br/>
+6. Tang, S. P. (2011). Singapore Youth Survey : Examining the stressors, risks and reslience of young people. Singapoe: Beyond Social Services.
+ 
+</p>
 
 
 
