@@ -20,18 +20,10 @@
 <h2 class="title" id="VALUE">Learn More About Using Portfolio On Oxygen</h2>
             <div class="entry">
                 <p>
-                    
+                    <iframe width="560" height="450" src="http://www.youtube.com/embed/hsRsy9jZcNU" frameborder="0" allowfullscreen></iframe>
                  </p>
             </div>
          </div>
-        
-        <div class="post">
-            <h2 class="title">Learn More About Using Oxygen To View Your Portfolio</h2>
-            <div class="entry">
-                <p><iframe width="560" height="450" src="http://www.youtube.com/embed/3vde9rett4A" frameborder="0" allowfullscreen></iframe></p>
-                <br/><br/>
-            </div>
-        </div>
     </div>
     <!-- end #content -->
 
