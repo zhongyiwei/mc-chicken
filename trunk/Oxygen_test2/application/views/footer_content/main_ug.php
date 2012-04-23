@@ -18,7 +18,8 @@
             <h2 class="title" id="WMS">User Guide</h2>
             <div class="entry">                
                 <p>
-                    
+                    <iframe width="560" height="350" src="http://www.youtube.com/embed/wUsTYBfVgaw" frameborder="0" allowfullscreen></iframe>
+                    <br/><br/>
             </p>            
               </div>
         </div>
