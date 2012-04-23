@@ -3,7 +3,6 @@
    Author     : Wang Qianhua
     Description: Used to control to process the pages which involves submission of users` input for the functions such as "Value", 
  "Mission",  "Activity" and "Coat of Arms".  
- 
  */
 class Db_control extends CI_Controller{
 

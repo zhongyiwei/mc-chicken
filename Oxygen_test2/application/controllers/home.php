@@ -80,6 +80,11 @@ class Home extends CI_Controller {
         $this->load->view('value/subpage_value', $data);
     }
 
+      function references() {
+        $data['main'] = 'references/references';
+        $data['nav'] = 'includes/left_nav_references';
+        $this->load->view('references/subpage_references', $data);
+    }
     function resilience() {
         $data['main'] = 'resilience/resilience';
         $data['nav'] = 'includes/left_nav_resilience';
@@ -849,6 +854,13 @@ class Home extends CI_Controller {
         $this->load->view('portfolio/main_portfolio_pdf.php', $data);
     }
 
+    function why_coa() {
+        $data['main_portfolio'] = 'portfolio/main_coa_info';
+        $data['nav_portfolio'] = 'portfolio/left_nav_mp';
+        $this->load->view('portfolio/template_mp', $data);
+    }
+    
+    
     function QAGamePortol() {
         $this->load->model('link_db_model');
         $score = $this->link_db_model->get_game_scroe();
@@ -889,11 +901,10 @@ class Home extends CI_Controller {
         $this->load->view('footer_content/template_footer_content', $data);
     }
 
-    
-  function references() {
-        $data['main'] = 'references/references';
-        $data['nav'] = 'includes/left_nav_references';
-        $this->load->view('references/subpage_references', $data);
+    function contact() {
+        $data['main'] = 'footer_content/main_contact';
+        $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
+        $this->load->view('footer_content/template_footer_content', $data);
     }
 
     function about_us() {

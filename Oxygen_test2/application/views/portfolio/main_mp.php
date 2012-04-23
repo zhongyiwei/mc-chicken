@@ -45,9 +45,6 @@
 <br><br><br><br><br>
 <?php $this->load->view('portfolio/coa_form');?>
             </div>
-
-
-
             <h2 class="title" id="COA">Your Coat of Arms</h2>
             <div class="entry">
                 <?php $this->load->view('portfolio/coa_design');?>
