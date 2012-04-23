@@ -1,6 +1,6 @@
 <!--     
     Author     : Wang Qianhua
-    Description: Used to generate the page and the function for users to set mission statement
+    Description: Used to display the page for user guide
 -->
 
 <?php if($this->session->userdata('type')=='negative'){ ?>

@@ -888,12 +888,7 @@ class Home extends CI_Controller {
         $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
         $this->load->view('footer_content/template_footer_content', $data);
     }
-/*
-    function contact() {
-        $data['main'] = 'footer_content/main_contact';
-        $data['nav_footer_content'] = 'footer_content/left_nav_footer_content';
-        $this->load->view('footer_content/template_footer_content', $data);
-    }*/
+
     
   function references() {
         $data['main'] = 'references/references';
