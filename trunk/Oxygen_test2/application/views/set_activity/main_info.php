@@ -27,7 +27,8 @@
          <div class="post">
             <h2 class="title" id="AC">Set activity for your goals</h2>
             <div class="entry">
-
+                <p><iframe width="560" height="450" src="http://www.youtube.com/embed/tjly46sdEr0" frameborder="0" allowfullscreen></iframe></p>
+                <br/><br/>
             </div>
 
             <h2 class="title" id="AC2">Set activity on Oxygen life guidance portal:</h2>
