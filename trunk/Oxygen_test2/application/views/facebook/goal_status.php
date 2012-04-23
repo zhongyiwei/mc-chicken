@@ -1,6 +1,6 @@
 <!--
     Author     : Ariansah
-    Description: Used to display the status of posting to facebook wall for goal
+    Description: Used to display the status of posting to facebook wall for accomplished and current goal
 -->
 <?php 
 $this->load->view('register/register_header'); 
