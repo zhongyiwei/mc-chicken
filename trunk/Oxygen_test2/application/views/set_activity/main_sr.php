@@ -75,13 +75,13 @@ $(function() {
 <br><br><br><br><br><br>
 <div class="left"><h4>How frequently you want the reminder to be sent to you? </h4></div>
          <br><br><br><br>   
-<?php $data = array('name' => 'radio_frequency','id'=> 'daily_reminder','value'=> 'daily','checked'=> TRUE);
+<?php $data = array('name' => 'radio_frequency','id'=> 'daily_reminder','value'=> 'Daily','checked'=> TRUE);
         echo form_radio($data);?><label for="daily_reminder">Daily</label>
-        <?php $data = array('name' => 'radio_frequency','id'=> 'weekly_reminder','value'=> 'weekly');
+        <?php $data = array('name' => 'radio_frequency','id'=> 'weekly_reminder','value'=> 'Weekly');
         echo form_radio($data);?><label for="weekly_reminder">Weekly</label>
-        <?php $data = array('name' => 'radio_frequency','id'=> 'monthly_reminder','value'=> 'monthly');
+        <?php $data = array('name' => 'radio_frequency','id'=> 'monthly_reminder','value'=> 'Monthly');
         echo form_radio($data);?><label for="monthly_reminder">Monthly</label>
-        <?php $data = array('name' => 'radio_frequency','id'=> 'None_reminder','value'=> 'none');
+        <?php $data = array('name' => 'radio_frequency','id'=> 'None_reminder','value'=> 'None');
         echo form_radio($data);?><label for="None_reminder">None</label>
 
    <br>
