@@ -7,7 +7,7 @@
         </ul>
     </div>
     <div id="copy">
-        <p>Copyright (c) 2011 SIT-Sem1-2011-1074 All rights reserved.</p>
+        <p>All rights reserved. Republic Polytechnic, Singapore. 2012.</p>
     </div>
     
 </div>
