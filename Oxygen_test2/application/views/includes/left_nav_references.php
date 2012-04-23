@@ -1,4 +1,3 @@
-
 <!-- end #sidebar -->
 <div style="clear: both;">&nbsp;</div>
 </div>
@@ -10,5 +9,5 @@
 <div id="dialog" title="Your Flow Chart">
 </div>
 <div id="footer" align="center">
-    <div id="image_footer"><img id="opener" onclick="loadFlow()" src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></img></div>
-    <div id="image_footer"><a href="<?php echo base_url();?>index.php/home/resilience/"><img src="<?php echo base_url();?>CSS/images/background/do_u_know.png" alt="" /></a></div>
+<div id="image_footer"><img id="opener" onclick="loadFlow()" src="<?php echo base_url();?>CSS/images/background/what_is_now.png" alt="" /></img></div>
+<div id="image_footer"><a href="<?php echo base_url();?>index.php/home/all_about/"><img src="<?php echo base_url();?>CSS/images/background/what_is_all_about.png" alt="" /></a></div>
