@@ -17,68 +17,62 @@
     </div>
     <div id="content_sub">
         <div class="post">
-            <h2 class="title">A true story of resilience --- Ms Kirsten Koh</h2>
+            <h2 class="title">What is resilience</h2>
             <div class="entry">
-                <h2>Kirsten Koh's long journey back to life</h2><br><p>It is afternoon in the quiet but crowded library at Republic Polytechnic where she lectures, and Ms Kirsten Koh is weeping.
-                    </p><p>We are seated at a round table in the middle of the study area. Curious students at nearby tables nervously steal glances at us. 
-                    But Ms Koh does not flinch. Her shoulders are squared, 
-                    her posture upright, but she makes no attempt to hide her grief. Her tears fall, but she does not make a sound.
-                    </p><p>Next month, in the Sundown Marathon, the 32-year-old will attempt to walk all 42km. For a woman who once ran a marathon in 4hr 30min 
-                    and completed an Olympic-distance triathlon in 2hr 50min, this does not seem a grand feat.
-                    </p><p>Till you notice her body, which is a crude painting of scars. It is a body so traumatised that she could not run for a year.
-                  </p>  
+
+                <!-- <h3 style="font-size:22px; margin:0px;">What is resilience?</h3> -->
+				<center>
+				<img src='<?php echo base_url();?>web_images/resilience.jpg'></img></center><br/>
+				Real Gulf Coast Recovery Requires Resilient People, Communities and Ecology.<br/>
+Retrieved on Feb 12, 2012 
+From: Dr Tom Hoban Blog<br/>
+Website: http://oilygulf.wordpress.com/2010/10/11/resilience/
+                <p>
+                    Resilience is the process of adapting well in the face of a unexpected situation, be it adversity, trauma, tragedy, threats, or even significant sources of stress -- such as family,relationship,health problems or even financial stressors. It means "bouncing back" from difficult experiences.
+                    Research has shown that resilience is a common thing and it is not something special.
+<br/>
+					People commonly demonstrate resilience. One example is the how many of the Americans managed to bounce back from the September 2011 attack even though it was something that has created a huge impact to their lives.
+
+                </p>
+
+
+                <br/>
+                The Road to Resilience Retrieved on Jan 22, 2012 From: American Psychological Association Website: http://www.apa.org/helpcenter/road-resilience.aspx 
+
+       <!--         <center>
+                   <a href="<?php echo base_url(); ?>index.php/home/resilience_test/gameproto.html" > <button height="20px;" style="padding: 10px;color:#666; font-size:15px;font-weight:bold;">Start Your Resilience Test Now</button></a>
+                </center>
+                <br/> -->
             </div>
 
 
         </div><!-- End of div class entry -->
     
-            <div class="post">
-            <h2 class="title" id="PMS">Her Accident</h2>
-                <div class="entry">
-                <p>Ms Kirsten Koh and Ms Orla Gilmore were cycling along Mandai Avenue on May 19 last year when Ms Koh disappeared. 
-                    Ms Gilmore recalled: 'Suddenly, this lorry came up close to my front wheel, appearing beside me. 
-                    The next thing that came to my head was: Where is Kirsten? 
-                    Then I saw sparks coming out from the lorry's front wheel, which was probably her bike. 
-                    The lorry had dragged her underneath. I thought she was dead.'
-                  </p>  
-            </div>
+<div class="post">
+            <h2 class="title" id="PMS">Why emphasize on resilience?</h2>
+            <div class="entry">
+<p>
+Resilience is an extremely important psychological trait to study because of its wide implications for mental health.<br/>
+Research  findings suggest that non-resilient people are 1. associating the threat cue with a greater likelihood of the negative stimuli occurring; and 2. when the neutral stimuli occurs instead, nonresilient participants fail to appropriately match their emotional response to the content of the picture (neutral) and instead respond as if the picture was negative as expected. <br/>
+
+Thus, resilience is an important aspect of a person's life when faced with difficulties and challenges.
+</p><br/>
+Institute 2005 Research Summaries Retrieved on Feb 23, 2012 From: University Of Pennsylvenia - Positive Psychology Centre Website: http://www.apa.org/helpcenter/road-resilience.aspx 
+				http://www.ppc.sas.upenn.edu/institute2005summaries.htm
 			</div>
-        
-            <div class="post">
-            <h2 class="title">Her Injuries</h2>
+			</div>
+				<div class="post">
+            <h2 class="title">How to use the application?</h2>
             <div class="entry">
-                <p>Ms Koh fractured both ankles and femurs. Her pelvis was shattered. Her left shoulder, fibula and shin bones were broken. 
-                    The doctors told her parents to prepare for the worst. She went on to have 19 operations totalling more than 80 hours, 
-                    needed 5 litres of blood transfusions and 60 stitches. She was bed-ridden for 21/2 months.'
-                  </p>  
-                </div>
-                </div>
-        
-            <div class="post">
-            <h2 class="title">Her Bounceback</h2>
-            <div class="entry">
-                <p>Since coming off her wheelchair in February, Ms Koh has embarked on a training programme seven days a week. 
-                    It includes swimming, weight exercises, stationary bike cycling and four days of walking. 
-                    She used to run the 9.8km distance from her home to the polytechnic where she is a lecturer. 
-                    Now, she walks. She was knocked down doing her sport, now sport is helping her to get up again.
-                  </p>  
-            </div>
-                </div>
+<p>Resilience consists of Resilience Test in which User would have to catch flying musical notes and questions would appear for User to answer and the test results would be shown when it is complete.</p>
 
-        
-                 <div class="post">
-            <h2 class="title">What she told us</h2>
-            <div class="entry">
-			         <h2>MS KIRSTEN KOH</h2>
-                <p>'I didn't want the accident to win. If I withdraw from sports, the accident wins.'
-                  </p>  <br/>
-         
-                  
-                 <p> Team Oxygen believes postive thinking has helped Ms Koh to resilient and be able to bounce back from her traumatic accident.</p>
-            </div>
-                </div>
+<br/><br/>
+</div>
+</div>
 
 
+
+		
     <!-- end #content -->
 
 </div><!-- End of div class post -->
