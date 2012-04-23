@@ -7,8 +7,7 @@ class Update_info extends CI_Controller {
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             $this->load->library('form_validation');
             $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
-            $this->form_validation->set_rules('date_of_birth', 'Date of Birth', 'trim|required');
-            $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|numeric');
+            $this->form_validation->set_rules('dob', 'Date of Birth', 'trim|required');
             $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|alpha');
             $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|valid_email');
 
@@ -27,6 +26,7 @@ class Update_info extends CI_Controller {
                 $this->session->set_userdata($new);
                 $this->load->model('membership_model');
                 $new_record = $this->membership_model->update_member();
+                
                 if ($new_record) {
                     $this->load->view('register/update_info_successful');
                     $this->output->set_header('refresh:2;url=' . base_url() . 'index.php/home/index/');
