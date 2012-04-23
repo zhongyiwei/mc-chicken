@@ -1,6 +1,6 @@
 <!--
     Author     : Ariansah
-    Description: Used to send email reminders to users who enables the email reminder setting
+    Description: Used to display the status of posting to facebook wall for goal
 -->
 <?php 
 $this->load->view('register/register_header'); 
