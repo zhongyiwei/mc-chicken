@@ -1,3 +1,7 @@
+<!--
+    Author     : Ariansah
+    Description: Used to send email reminders to users who enables the email reminder setting
+-->
 <?php 
 $this->load->view('register/register_header'); 
 $error = $_GET['status'];
