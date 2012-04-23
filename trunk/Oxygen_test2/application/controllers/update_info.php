@@ -5,21 +5,8 @@ class Update_info extends CI_Controller {
     function info() {
         $is_logged_in = $this->session->userdata('is_logged_in');
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
-            
-            $new=array(
-                'gender'=>  $this->input->post('gender'),
-                'name'=>  $this->input->post('name'),
-                'nation'=>  $this->input->post('nationality'),
-                'dob'=>  $this->input->post('dob'),
-                'mobile'=>  $this->input->post('mobile_number'),
-                'referee_name'=>  $this->input->post('referee_name'),
-                'referee_email'=>  $this->input->post('referee_email')
-            );
-            
             $this->load->library('form_validation');
-            
             $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
-            $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required|alpha');
             $this->form_validation->set_rules('date_of_birth', 'Date of Birth', 'trim|required');
             $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|numeric');
             $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|alpha');
@@ -28,6 +15,15 @@ class Update_info extends CI_Controller {
             if ($this->form_validation->run() == FALSE) {
                   $this->load->view('register/error');
             } else {
+                $new=array(
+                'gender'=>  $this->input->post('gender'),
+                'name'=>  $this->input->post('name'),
+                'nation'=>  $this->input->post('nationality'),
+                'dob'=>  $this->input->post('dob'),
+                'mobile'=>  $this->input->post('mobile_number'),
+                'referee_name'=>  $this->input->post('referee_name'),
+                'referee_email'=>  $this->input->post('referee_email')
+            );
                 $this->session->set_userdata($new);
                 $this->load->model('membership_model');
                 $new_record = $this->membership_model->update_member();

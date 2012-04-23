@@ -44,14 +44,7 @@ class Membership_model extends CI_Model {
     }
     //update member information 
     function update_member() {
-        $this->db->select('email');
-        $this->db->from('seeker');
-        $this->db->where('email', $this->session->userdata('email'));
-        $this->db->where_not_in('seeker_id',$this->session->userdata('seeker_id'));
-        
-        $query = $this->db->get();
 
-        if ($query->num_rows == 0) {
             $data = array(
                 'name' => $this->session->userdata('name'),
                 'gender'=>  $this->session->userdata('gender'),
@@ -63,9 +56,6 @@ class Membership_model extends CI_Model {
             );
             $this->db->where('seeker_id', $this->session->userdata('seeker_id'));
             $update_info = $this->db->update('seeker', $data);
-        }else{
-            $update_info=null;
-        }
         return $update_info;
     }
 

@@ -57,6 +57,7 @@ and open the template in the editor.
         $hp = $this->session->userdata('mobile');
         $referee_name = $this->session->userdata('referee_name');
         $referee_email = $this->session->userdata('referee_email');
+        
         echo form_open('update_info/info');
         ?>
 
