@@ -67,7 +67,13 @@ and open the template in the editor.
 
         <tr>
             <th>Gender:</th>
-            <td><?php echo $gender; ?></td>
+            <td><?php 
+            $g=array(
+                'male'=>'male',
+                'female'=>'female'
+            );
+            echo form_dropdown('gender',$g,$gender); 
+            ?></td>
         </tr>
 
         <tr>

@@ -7,6 +7,7 @@ class Update_info extends CI_Controller {
         if (isset($is_logged_in) && ($is_logged_in == 'true')) {
             
             $new=array(
+                'gender'=>  $this->input->post('gender'),
                 'name'=>  $this->input->post('name'),
                 'nation'=>  $this->input->post('nationality'),
                 'dob'=>  $this->input->post('dob'),
@@ -20,7 +21,7 @@ class Update_info extends CI_Controller {
             $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha');
             $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required|alpha');
             $this->form_validation->set_rules('date_of_birth', 'Date of Birth', 'trim|required');
-            $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric');
+            $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|numeric');
             $this->form_validation->set_rules('referee_name', 'Referee Name', 'trim|alpha');
             $this->form_validation->set_rules('referee_email', 'Referee Email', 'trim|valid_email');
 

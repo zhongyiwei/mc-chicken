@@ -54,6 +54,7 @@ class Membership_model extends CI_Model {
         if ($query->num_rows == 0) {
             $data = array(
                 'name' => $this->session->userdata('name'),
+                'gender'=>  $this->session->userdata('gender'),
                 'nationality' => $this->session->userdata('nation'),
                 'date_of_birth'=> $this->session->userdata('dob'),
                 'mobile_number' => $this->session->userdata('mobile'),
