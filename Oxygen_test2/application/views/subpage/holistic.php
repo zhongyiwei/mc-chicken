@@ -11,16 +11,16 @@
 <div id="page">
     <div id="content_sub">
      	<div class="post">
-            <h2 class="title">Learn More About Values</h2>
+            <h2 class="title">Learn More About Setting Goals</h2>
             <div class="entry">
 <p></p>
 <br/><br/>
 </div>
 </div>
              	<div class="post">
-            <h2 class="title">Learn More About Using Oxygen To Set Values</h2>
+            <h2 class="title">Learn More About Using Oxygen To Set and Track Goals</h2>
             <div class="entry">
-<p><iframe width="560" height="450" src="http://www.youtube.com/embed/CtpN1VYLeyA" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe width="560" height="450" src="http://www.youtube.com/embed/0KTulYaTrkw" frameborder="0" allowfullscreen></iframe></p>
 <br/><br/>
 </div>
 </div> 

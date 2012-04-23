@@ -29,7 +29,7 @@
              	<div class="post">
             <h2 class="title">Learn More About Using Oxygen To Set Mission</h2>
             <div class="entry">
-<p><iframe width="420" height="450" src="http://www.youtube.com/embed/d3XHKI94EyY" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe width="560" height="450" src="http://www.youtube.com/embed/d3XHKI94EyY" frameborder="0" allowfullscreen></iframe></p>
 <br/><br/>
 </div>
 </div>
