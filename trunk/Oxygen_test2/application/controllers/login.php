@@ -65,7 +65,7 @@ class Login extends CI_Controller {
         $this->form_validation->set_rules('gender', 'Gender', 'trim|required');
         $this->form_validation->set_rules('date_of_birth', 'Date Of Birth', 'trim|required');
         $this->form_validation->set_rules('nationality', 'Nationality', 'trim|required');
-        $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|min_length[8]|numeric');
+        $this->form_validation->set_rules('mobile_number', 'Mobile Number', 'trim|required|numeric');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|unique[seeker.email]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]|max_length[32]');
         $this->form_validation->set_rules('password2', 'Confirm Password', 'trim|required|matches[password]');
