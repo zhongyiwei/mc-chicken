@@ -1,3 +1,7 @@
+<!--
+    Author     : Ariansah
+    Description: Used to display the status of posting to facebook wall for value
+-->
 <?php 
 $this->load->view('register/register_header'); 
 $error = $_GET['status'];
