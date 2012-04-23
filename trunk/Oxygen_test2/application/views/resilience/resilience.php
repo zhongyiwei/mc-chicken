@@ -22,9 +22,9 @@
             <div class="entry">
 
 <p>
-Life is seldom smooth and we can expect setbacks whilst we are pursuing our goals. 
+Life is seldom smooth and we can expect setbacks whilst we are pursuing our goals. <br/>
 For youth, resilience of youth has an impact on their academic achievements. The lower the resilience level, the more likely a student will under-perform academically. (Tang, 2011)<br/>
-There is also a correlation between resilience and suicide. The lower the resilience is, the more likely the person may be prone to be depressed or commit suicide.  In fact, the chief reason of suicides in youth is depression caused by the feeling of extreme helplessness.  (R.J. Fetsch, 2008)   Oxygen team believes in positive psychology pioneered by Martin Seligman’s theory of learned helplessness which began at the University of Pennsylvania where we learnt that how we explain events in your life will impact our resilience level. (Seligman, 1998)
+There is also a correlation between resilience and suicide. The lower the resilience is, the more likely the person may be prone to be depressed or commit suicide.  In fact, the chief reason of suicides in youth is depression caused by the feeling of extreme helplessness.  (R.J. Fetsch, 2008)   Oxygen team believes in positive psychology pioneered by Martin Seligman’s theory of learned helplessness which began at the University of Pennsylvania where we learnt that how we explain events in your life will impact our resilience level. (Seligman, 1998)<br/>
 As such, any exercise in goal setting for youths must be accompanied by resilience development to achieve their goals and build a positive and happy life.  
 </p>
 <br/><br/>
