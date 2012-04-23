@@ -1,7 +1,6 @@
 <!--     
     Author     : Wang Qianhua
-    Description: This page is used to control the navigation menu on the footer section in "coat of arms" function -->
-
+    Description: This page is used to control the navigation menu on the footer section in "coat of arms" function.
 -->
 
 <!-- end #sidebar -->
