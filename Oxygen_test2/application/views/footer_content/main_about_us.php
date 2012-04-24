@@ -18,7 +18,11 @@
             <h2 class="title" id="WMS">About Us</h2>
             <div class="entry">                
                 <p>
+<<<<<<< .mine
+                    <iframe width="560" height="450" src="http://www.youtube.com/embed/QNTUt5HFzV4" frameborder="0" allowfullscreen></iframe>
+=======
            <iframe width="560" height="350" src="http://www.youtube.com/embed/QNTUt5HFzV4" frameborder="0" allowfullscreen></iframe>         
+>>>>>>> .r415
             </p>            
              <br/> 
             <table>

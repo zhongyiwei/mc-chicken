@@ -114,6 +114,10 @@ Animal Brushes credits: http://kmh425.deviantart.com/
 4. R.J. Fetsch, C. C. (2008, Apr). Preventing Youth and Adult Suicide. Retrieved November 12, 2011, from Colorado State University Extention: http://www.ext.colostate.edu/pubs/consumer/10213.html<br/>
 5. Seligman, M. E. (1998). Learned Optimism. New York: Pocket Books.<br/>
 6. Tang, S. P. (2011). Singapore Youth Survey : Examining the stressors, risks and reslience of young people. Singapoe: Beyond Social Services.
+<<<<<<< .mine
+<br/><b>Resilience game photo is adopted from:</b><br/>
+7. Undersea World Background Image is From: Penshow(2011, Jan), from:http://hd.penshow.cn/27188.shtml.
+=======
 </p>
 </div>
 </div><!-- End of div class entry -->
@@ -128,6 +132,7 @@ Animal Brushes credits: http://kmh425.deviantart.com/
 </div>
 </div><!-- End of div class entry -->
 
+>>>>>>> .r415
 
     	       <div class="post">
             <h2 class="title">Goal-setting Citation</h2>	
