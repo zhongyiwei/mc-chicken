@@ -721,7 +721,7 @@ class Home extends CI_Controller {
                 for ($r = 0; $r < $data['numberRowsForCompletedActivityFromAchievement3']; $r++) {
                     $p = $r + 1;
                     $ActiveAchieveData[$i][7 + $r + $data['numberRowsForActiveActivityFromAchievement2']][1] = "Activity $p: ";
-                    $ActiveAchieveData[$i][7 + $r + $data['numberRowsForCompletedActivityFromAchievement2']][2] = $completedActivityData2[$r]->activity_name;
+                    $ActiveAchieveData[$i][7 + $r + $data['numberRowsForActiveActivityFromAchievement2']][2] = $completedActivityData2[$r]->activity_name;
                 }
             }
 
