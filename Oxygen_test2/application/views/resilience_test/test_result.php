@@ -1,8 +1,6 @@
-<!--     
-    Author     : Teo Wen Jie
-    Description: Algorithmn to calculate user test scores to display its test summary result in flash  
--->
 <?php
+//Code by:Teo Wen Jie
+//For flash to get calculate using this algorithm for user's resilience test result
 session_start();
 
 $seeker_name=$this->session->userdata('name');

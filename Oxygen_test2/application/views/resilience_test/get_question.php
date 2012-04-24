@@ -1,9 +1,6 @@
-<!--     
-    Author     : Teo Wen Jie
-    Description: Used to retrieve resilience test question and be passed to flash for display 
--->
 <?php
-
+//Code by:Teo Wen Jie
+//For flash to retrieve questions for resilience test
 // Create local variables from the Flash ActionScript posted variables
 $questionStart=$_POST['questionStart'];
 //$questionStart=1;
