@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: Used to inform the users how are they going to set goals
+-->
 <!--based on the color code to decide which css is going to use-->
 <?php if ($this->session->userdata('type') == 'negative') { ?>
     <link href="<?php echo base_url(); ?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />

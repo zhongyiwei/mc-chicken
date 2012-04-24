@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: Used to generate the page that displays goal-setting portal
+-->
 <!--based on the color code to decide which css is going to use-->
 <?php if($this->session->userdata('type')=='negative'){ ?>
 <link href="<?php echo base_url();?>CSS/style_subpage_main_neutral.css" rel="stylesheet" type="text/css" media="screen" />

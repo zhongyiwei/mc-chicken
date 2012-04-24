@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: once you update the status of a goal as completed. you must make sure all the activities under this goal have been finished. otherwise the error will occur.
+-->
 <?php $this->load->view('register/register_header'); ?>
 <div id="register">
     <h1>&otimes;Error&otimes;</h1>

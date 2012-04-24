@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: Used to reminder users before they add goals, they need to login first. 
+-->
 <?php $this->load->view('register/register_header'); ?>
 <div id="register">
     <h1 style="padding-top: 20px;">&otimes;Error&otimes;</h1>
