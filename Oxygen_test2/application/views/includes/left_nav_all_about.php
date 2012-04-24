@@ -1,5 +1,4 @@
-<div id="xxx">
-</div>
+
 <!-- end #sidebar -->
 <div style="clear: both;">&nbsp;</div>
 </div>
