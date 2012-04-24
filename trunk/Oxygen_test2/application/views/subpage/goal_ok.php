@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: Used to generate the page that displays the  message if users create the goal successfully
+-->
 <!--load header-->
 <?php $this->load->view('register/register_header'); ?>
 <!--main content-->

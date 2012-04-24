@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: when you insert a new goal, there is an error. 
+-->
 <?php $this->load->view('register/register_header'); ?>
 
 <div id="register">

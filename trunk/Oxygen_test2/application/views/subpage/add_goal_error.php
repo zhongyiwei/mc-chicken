@@ -1,3 +1,8 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: Used to generate the page that displays the error message if users tried to create more than 3 goals 
+                in are able to access 
+-->
 <!--load header-->
 <?php $this->load->view('register/register_header'); ?>
 <!--main content-->

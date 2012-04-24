@@ -128,12 +128,7 @@ class Home extends CI_Controller {
         $data['nav'] = 'includes/left_nav_goal';
         $this->load->view('subpage/subpage_goal', $data);
     }
-    //what is smart goals
-    function smart() {
-        $data['main'] = 'subpage/smart_goal';
-        $data['nav'] = 'includes/left_nav_goal';
-        $this->load->view('subpage/subpage_goal', $data);
-    }
+    
     //view your goals
     function see_goal() {
         $is_logged_in = $this->session->userdata('is_logged_in');

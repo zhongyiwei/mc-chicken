@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: error page when update the goal information
+-->
 <?php $this->load->view('register/register_header'); ?>
 <div id="register">
     <h1>&otimes;Error&otimes;</h1>

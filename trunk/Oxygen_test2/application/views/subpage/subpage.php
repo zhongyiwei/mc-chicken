@@ -1,3 +1,7 @@
+<!-- 
+    Author     : CAI BOWEN
+    Description: this is a subpage template. retrieve all the elements, and then display out
+-->
 <!--load header-->
 <?php $this->load->view('includes/header_general');?>
 <!--load banner-->

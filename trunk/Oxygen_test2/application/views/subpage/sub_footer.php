@@ -1,4 +1,8 @@
-    <div id="sitemap" >
+<!-- 
+    Author     : CAI BOWEN
+    Description: Used to generate subpage footer
+-->
+<div id="sitemap" >
         <ul>
             <li><a href="<?php echo base_url(); ?>index.php/home/userguide">User Guide</a></li>
             <li><a href="<?php echo base_url(); ?>index.php/home/about_us">About Us</a></li>
